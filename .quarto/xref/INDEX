@@ -1,0 +1,19 @@
+{
+  "index.qmd": {
+    "index.html": "b4863aa4"
+  },
+  "slides-unit1/slides-unit1.qmd": {
+    "slides-unit1.html": "91f46b75"
+  },
+  "slides-unit1/slides-unit1 - NO BORRAR.qmd": {
+    "slides-unit1 - NO BORRAR.html": "1667eebb"
+  },
+  "slides-unit1/slides-unit1_1.qmd": {
+    "slides-unit1_1.html": "f7a386fa",
+    "slides-unit1_1.tex": "ff054c58",
+    "slides-unit1_1.pptx": "d0af86c7"
+  },
+  "slides-unit1/slides-unit1_2.qmd": {
+    "slides-unit1_2.html": "df52dd9b"
+  }
+}

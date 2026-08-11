@@ -1,0 +1,366 @@
+---
+pagetitle: "Unidad 1: Definiciones y Medidas Estadísticas"
+lang: es
+format:
+  revealjs:
+    theme: [dark, ../themes/slides-theme.scss]
+    slide-number: false
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+---
+
+
+
+# Probabilidad y Estadística {style="margin-top: 45px; font-size: 1.4em;"}
+
+<h3 style="font-size: 1.0em;"> Definiciones. Manejo de datos y medidas estadísticas </h3>
+<hr>
+
+<h4 style="font-size: 0.7em; opacity: 0.6""> José Alvarado-Contreras </h4>
+<h4 style="font-size: 0.6em; opacity: 0.6"> 2026 </h4>
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Definiciones. Manejo de datos y medidas estadísticas
+:::
+
+**1.** Introducción y conceptos fundamentales
+
+**2.** Recolección, organización y representación gráfica de datos
+
+**3.** Medidas de tendencia central y posición
+
+**4.** Medidas de dispersión y de forma
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Introducción y conceptos fundamentales
+:::
+
+1. **Estadística**
+   - Estadística descriptiva vs. inferencial
+2. **Población, muestra e individuo**
+   - Unidades de análisis y condiciones de definición
+   - Descriptores numéricos: Parámetro vs. Estadístico
+3. **Variables estadísticas y datos**
+   - Definición de variable y concepto de dato
+   - Clasificación: Cualitativas, cuantitativas y datos binarios
+   - Variables binarias. Codificación numérica
+4. **Escalas de medición**
+   - Escalas nominal, ordinal, intervalo y razón
+
+
+
+# Estadística {background-color="#2d3748"}
+
+Es la ciencia que se encarga de recolectar, organizar, analizar e interpretar datos para transformar la información en conclusiones útiles y ayudar a tomar decisiones acertadas frente a la incertidumbre.
+
+
+
+## Claves de la Estadística {background-color="#f2f2f2" style="font-size: 1.0em;"}
+
+- **Muestra vs. Población** | De lo que ves a lo que realmente existe
+- **Variabilidad vs. Error** | Lo que es naturaleza pura vs. lo que mediste mal
+- **Descripción vs. Modelo** | Resumir el pasado vs. predecir el futuro
+- **Probabilidad** | El lenguaje para hablarle a la incertidumbre
+- **Supuestos vs. Realidad** | El modelo perfecto en el papel vs. la suciedad de los datos
+- **Diseño vs. Análisis** | Si diseñaste mal, ningún modelo salva la torta
+- **Correlación vs. Causalidad** | Moverse juntos no es ser causa y efecto
+- **Significancia vs. Relevancia** | Lo que da un *p*-valor < 0.05 vs. lo que importa en la vida real
+- **Certeza vs. Incertidumbre** | Del confort del determinismo a la honestidad del riesgo
+
+
+
+## Tipos de Estadística
+
+::: {.columns}
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Estadística descriptiva
+
+Resume, organiza y presenta datos recolectados.
+
+* **Objetivo:** Describir una muestra o población.
+* **Herramientas:** 
+  * Tablas de frecuencia
+  * Gráficos
+  * Medidas de tendencia central, de dispersión y de forma
+* **Resultado:** Cuadros resumen y gráficos explicativos.
+:::
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Estadística inferencial
+
+Hace predicciones y saca conclusiones sobre una población a partir de una muestra.
+
+* **Objetivo:** Generalizar y tomar decisiones bajo incertidumbre.
+* **Herramientas:**
+  * Probabilidad
+  * Intervalos de confianza
+  * Pruebas de hipótesis
+* **Resultado:** Conclusiones con un nivel de certeza o margen de error.
+:::
+
+:::
+
+
+
+
+# Población {background-color="#2d3748"}
+
+Conjunto completo de todos los individuos, objetos o medidas que comparten una característica común y que son el foco de un estudio estadístico.
+
+Simplemente un grupo completo de cosas o personas de las que queremos aprender algo.
+
+
+
+## Características de una población
+
+Una población está estadísticamente definida si cumple con:
+
+1. **Delimitación espacio-temporal** | Límites precisos sobre el lugar y el período en el que existen sus elementos.
+
+2. **Criterio de inclusión**  | Condición compartida que determina de forma inequívoca qué elementos pertenecen al conjunto y cuáles no.
+
+3. **Variabilidad interna** |  Presencia de diferencias entre sus miembros respecto a las variables bajo estudio.
+
+4. **Definición de escala**  |  Dimensión total del conjunto, clasificada como finita o potencialmente infinita.
+
+
+
+# Muestra {background-color="#2d3748"}
+
+Subconjunto *representativo* de la población que se selecciona para ser estudiado y analizado directamente.
+
+
+
+## Características de una muestra
+
+1. **Representatividad** | Debe reflejar proporcionalmente la diversidad y características de la población original.
+
+2. **Tamaño adecuado** | Suficientemente grande para reducir el margen de error, pero manejable y viable.
+
+3. **Aleatoriedad** | Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.
+
+4. **Homogeneidad** | Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento.
+
+
+
+# Individuo [(Unidad estadística/de observación)]{style="font-size: 65%;"} {background-color="#2d3748"}
+
+Es cada una de las entidades, elementos, objetos o eventos concretos que integran una población o muestra, sobre los cuales se observan, miden o registran las variables de interés en un estudio.
+
+
+
+## Características de un individuo
+
+1. **Indivisibilidad** | Entidad más pequeña y completa sobre la cual se toma cada medición o registro.
+
+2. **Pertenencia explícita** | Satisface estrictamente los criterios de inclusión de la población bajo estudio.
+
+3. **Capacidad de medición** | Posee o genera las variables y características de interés para el análisis.
+
+4. **Identificabilidad** | Puede diferenciarse de manera única e inequívoca de cualquier otro elemento del conjunto.
+
+
+
+## Tipología de un individuo [(Más allá de la persona)]{style="font-size: 65%;"}
+
+- **Especímenes y componentes físicos**  | Probeta de concreto, perfil estructural, junta soldada, rodamiento o álabe de turbina.
+
+- **Sistemas y ensayos estructurales** | Tramo de tubería, un puente, un ensayo de fatiga o un prototipo de chasis.
+
+- **Entidades computacionales y flujos de datos** | Petición HTTP a un servidor, registro de ejecución, transacción de base de datos o paquete de datos en red.
+
+- **Procesos, eventos y tiempos de operación** | Ciclo de mecanizado, tiempo de parada por falla o falla por desgaste.
+
+- **Unidades agregadas y redes** | Celda de manufactura, red de distribución de agua, servidor en clúster o turno de producción de 8h.
+
+
+
+::: {background-image="../slides-unit1/images/image1.png" background-size="cover"}
+
+#
+
+[Foto por <a href="https://unsplash.com/@t3k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Toni Pomar</a> en <a href="https://unsplash.com/photos/a-group-of-cars-driving-through-a-tunnel-LcUqKLWLgcY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+:::
+
+
+
+# Parámetro {background-color="#2d3748"}
+
+Valor numérico que describe una característica específica de una población completa.
+
+
+
+# Estadístico {background-color="#2d3748"}
+
+Valor numérico que describe una característica de una muestra y sirve para estimar el parámetro poblacional.
+
+
+
+# Estadístico vs Parámetro
+
+El **estadístico** es un valor calculado a partir de una muestra, por lo que varía según la muestra seleccionada (es una variable aleatoria), a diferencia del **parámetro**, que es una constante fija y generalmente desconocida de toda la población.
+
+
+
+## Estadístico vs Parámetro
+
+100 probetas cilíndricas de concreto a los 28 días ($f'_c$ en MPa):
+
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px; text-align: center; font-size: 90%; font-family: monospace; margin: 15px 0;">
+  <div>28.4</div><div>31.2</div><div>25.9</div><div>29.1</div><div>33.0</div><div>27.8</div><div>30.6</div><div>28.3</div><div>24.9</div><div>32.4</div>
+  <div>29.5</div><div>26.8</div><div>31.7</div><div>28.1</div><div>30.2</div><div>27.3</div><div>29.8</div><div>31.0</div><div>34.1</div><div>28.7</div>
+  <div>31.5</div><div>29.3</div><div>26.2</div><div>30.9</div><div>27.6</div><div>32.8</div><div>28.9</div><div>29.0</div><div>32.1</div><div>25.4</div>
+  <div>30.4</div><div>27.1</div><div>35.2</div><div>28.6</div><div>31.3</div><div>24.7</div><div>29.7</div><div>32.5</div><div>27.9</div><div>31.1</div>
+  <div>28.5</div><div>30.1</div><div>26.6</div><div>33.9</div><div>29.2</div><div>31.8</div><div>32.2</div><div>29.6</div><div>30.7</div><div>33.2</div>
+  <div>27.4</div><div>30.8</div><div>31.6</div><div>26.1</div><div>28.8</div><div>34.5</div><div>29.9</div><div>32.0</div><div>25.8</div><div>30.3</div>
+  <div>33.5</div><div>28.2</div><div>29.4</div><div>31.9</div><div>27.0</div><div>30.0</div><div>26.5</div><div>32.7</div><div>28.0</div><div>29.1</div>
+  <div>25.2</div><div>31.4</div><div>28.7</div><div>30.5</div><div>33.8</div><div>27.7</div><div>29.3</div><div>32.3</div><div>26.9</div><div>30.1</div>
+  <div>31.2</div><div>28.4</div><div>34.0</div><div>29.7</div><div>26.3</div><div>32.9</div><div>27.5</div><div>30.9</div><div>31.7</div><div>28.6</div>
+  <div>29.8</div><div>25.7</div><div>32.6</div><div>30.2</div><div>28.1</div><div>33.1</div><div>27.2</div><div>29.5</div><div>31.0</div><div>34.7</div>
+</div>
+
+La media de la población 29.7 MPa
+
+
+
+# Variable {background-color="#2d3748"}
+
+Característica, cualidad o propiedad de un objeto o persona que se puede medir, contar o clasificar, y que toma diferentes valores de un sujeto a otro.
+
+
+
+## Clasificación de las variables [(Según su naturaleza)]{style="font-size: 65%;"} 
+
+
+1. **Cualitativas o Categóricas (Atributos):** Cualidad, característica o categoría no numérica.
+
+    - **Nominales:** Categorías sin orden preestablecido.
+
+    - **Ordinales:** Categorías con un orden, escala o jerarquía natural.
+
+    - **Binarias (Dicotómicas):** Solo admiten dos categorías excluyentes.
+
+      - **Simétricas:** Ambas tienen similar importancia o frecuencia.
+      - **Asimétricas:** Una categoría representa la presencia del evento de interés y la otra la ausencia.
+
+2. **Cuantitativas o Numéricas (Cantidades):** Valores numéricos que permiten realizar operaciones matemáticas.
+
+    - **Discretas:** Valor entero y aislado.
+
+    - **Continuas:** Valor decimal dentro de un intervalo.
+    
+
+
+## Clasificación de las variables [(Según su función o relación)]{style="font-size: 65%;"} 
+
+
+1. **Variables independientes (Causa):** Son aquellas que se manipulan o controlan para observar su efecto.
+
+2. **Variables dependientes (Efecto):** Característica que cambia y se mide como respuesta a la variable independiente.
+
+3. **Variables de confusión:** Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.
+
+4. **Variables extrañas:** Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera.
+
+
+
+# Codificación numérica 
+
+Transformación de datos cualitativos (categorías o texto) en valores numéricos para que puedan ser procesados por modelos matemáticos y algoritmos.
+
+
+
+# Datos {background-color="#2d3748"}
+
+Valores o hechos crudos (números, texto o símbolos) sin procesar que, al analizarse, se convierten en información útil.
+
+
+
+---
+
+::: {style="font-size: 1.4em; text-align: center; margin-top: 5%;"}
+La **variable** es la característica que quieres medir, mientras que el **dato** es el valor real que obtienes al medirla.
+:::
+
+
+
+## Dimensionalidad de los datos
+
+Dependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:
+
+- **Univariantes:** Analizan una sola variable a la vez.
+
+- **Bivariantes:** Estudian dos variables juntas para ver cómo se relacionan entre sí.
+
+- **Multivariantes:** Analizan tres o más variables simultáneamente para entender fenómenos complejos.
+
+
+
+## Datos no agrupados y agrupados
+
+1. **Datos no agrupados:** Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.
+
+2. **Datos agrupados:** Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información.
+
+
+
+## Comparación entre datos no agrupados y agrupados
+
+| | Datos No Agrupados | Datos Agrupados |
+| :--- | :--- | :--- |
+| **Característica** | Muestra cada dato individual | Muestra datos en intervalos o clases |
+| **Fácil cálculo** | Media, mediana y moda se calculan directamente | Requiere fórmulas adaptadas para intervalos |
+| **Pérdida de información** | No hay pérdida de información | Se pierde la especificidad de datos individuales |
+| **Apropiado** | Pequeños conjuntos de datos o análisis detallado | Grandes conjuntos de datos o análisis de tendencias |
+| **Uso de tablas de frecuencia** | No es necesario | Necesario para organizar los datos |
+
+
+
+---
+
+::: {style="font-size: 1.2em; text-align: center; margin-top: 5%;"}
+Los datos se representan principalmente mediante **tablas** para mostrar precisión numérica, **gráficos** para identificar patrones visualmente y **medidas estadísticas** para resumir sus propiedades clave.
+:::
+
+
+
+## Escalas de Medición
+
+| Escala | Propiedad clave | Operaciones válidas | Ejemplo |
+| :--- | :--- | :---: | :--- |
+| **Nominal** | Clasifica en categorías sin orden | $=, \neq$ | Tipo de falla, material |
+| **Ordinal** | Ordena o establece jerarquía | $>, <$ | Severidad de daño |
+| **Intervalo** | Distancia constante, *cero arbitrario* | $+, -$ | Temperatura |
+| **Razón** | Distancia constante, *cero absoluto* | $\times, \div$ | Esfuerzo, masa, longitud |
+
+: {tbl-colwidths="[10,40,15,35]"}
