@@ -204,7 +204,7 @@ Es cada una de las entidades, elementos, objetos o eventos concretos que integra
 
 
 
-::: {background-image="../slides-unit1/images/image1.png" background-size="cover"}
+::: {background-image="image_files/image1.png" background-size="cover"}
 
 #
 
