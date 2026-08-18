@@ -1,24 +1,5 @@
 ---
 pagetitle: "Unidad 1: Definiciones y Medidas Estadísticas"
-title: "Unidad 1"
-subtitle: "Definiciones. Manejo de datos y medidas estadísticas"
-author:
-  - name: "José A. Alvarado-Contreras"
-    url: "https://github.com/alvarado-contreras"
-    orcid: "0000-0000-0000-0000" 
-    email:
-      - "ajose@ula.ve"
-    affiliation:
-      - name: "Universidad de Los Andes"
-        department: "Escuela de Ingeniería Mecánica"
-        city: "Mérida"
-        country: "Venezuela"
-      - name: "Universidad Francisco de Paula Santander Seccional Ocaña"
-        department: "Departamento de Ingeniería Civil"
-        city: "Ocaña"
-        country: "Colombia"
-description: "Diapositivas interactivas sobre conceptos fundamentales de estadística, variables y escalas de medición."
-keywords: ["Estadística", "Variables", "Escalas de medición", "Quarto"]
 lang: es
 format:
   revealjs:
@@ -36,7 +17,6 @@ format:
     highlight-style: github
     fig-align: center
     smaller: false
-    footer: '<a href="https://github.com/alvarado-contreras" target="_blank" rel="noopener">https://github.com/alvarado-contreras</a>'
 ---
 
 
@@ -93,9 +73,7 @@ format:
 
 ## Fuente de datos y obtención
 
-Dimensión procesal de la información estadística.
-
-**Génesis de los datos** | Experimentos vs. Observación
+**Génesis de los datos** | Experimento vs. Observación
 
 **Método de captura** | Instrumentos directos vs. indirectos
 
@@ -103,619 +81,147 @@ Dimensión procesal de la información estadística.
 
 
 
-## Comportamiento Dinámico
 
-::: {.panel-tabset}
+## Diseño experimental {background-color="#2d3748"}
 
-### Visualización
+Estudio donde se manipula deliberadamente una o más variables independientes bajo condiciones controladas para medir su efecto causal sobre una variable dependiente.
 
-![Respuesta armónica del sistema](../slides-unit1/images/groupeddata.png){fig-align="center" width="75%"}
 
-### Código MATLAB
 
-```matlab
-#| eval: false
 
-% Parámetros del sistema
-m = 1.0;    % Masa [kg]
-k = 100.0;  % Rigidez [N/m]
-wn = sqrt(k/m);
+## Diseño observacional {background-color="#2d3748"}
 
-% Respuesta temporal
-t = 0:0.01:5;
-x = cos(wn * t);
+Estudio donde se registra, mide y analiza variables tal como suceden en su entorno natural, sin intervenir ni alterar las condiciones ni a los sujetos.
 
-% Generación de la figura
-figure('Color', 'w');
-plot(t, x, 'LineWidth', 1.5);
-grid on;
-xlabel('Tiempo [s]');
-ylabel('Desplazamiento [m]');
-```
-:::
 
 
-## Comportamiento Dinámico
+## Diseños: Experimental vs. Observacional
 
-:::: {.columns}
+| Criterio | Experimental | Observacional |
+|---|---|---|
+| Control sobre el entorno | Alto control y manipulación directos | Nulo control; registro directo de la realidad |
+| Objetivo principal | Probar relaciones de causa y efecto | Identificar patrones, asociaciones o tendencias |
+| Sesgo característico | Sesgo de laboratorio / validez externa reducida | Variables de confusión no controladas |
+| Inferencia / Validez | Alta validez interna | Alta validez ecológica / externa |
 
-::: {.column width="60%"}
-![](../slides-unit1/images/groupeddata.png){fig-align="center" width="100%"}
-:::
 
-::: {.column width="40%"}
-<details markdown="1" style="max-height: 450px; overflow-y: auto; font-size: 0.7em; border: 1px solid #444; padding: 10px; border-radius: 5px; background: rgba(255,255,255,0.03);">
-<summary style="font-size: 0.85em; color: #aaa; cursor: pointer; font-weight: bold; margin-bottom: 8px;">Ver script de MATLAB</summary>
 
-```matlab
-#| eval: false
 
-% Parámetros del sistema
-m = 1.0;    % Masa [kg]
-k = 100.0;  % Rigidez [N/m]
-wn = sqrt(k/m);
+## Encuesta {background-color="#2d3748"}
 
-% Respuesta temporal
-t = 0:0.01:5;
-x = cos(wn * t);
+Método estructurado de recolección de datos primarios que recopila información cualitativa o cuantitativa sobre opiniones, características o comportamientos de una población mediante la formulación de preguntas.
 
-% Generación de la figura
-figure('Color', 'w');
-plot(t, x, 'LineWidth', 1.5);
-grid on;
-xlabel('Tiempo [s]');
-ylabel('Desplazamiento [m]');
-```
-</details>
 
-:::
-::::
 
 
+## Instrumentos de medición {background-color="#2d3748"}
 
+Herramientas físicas (sensores, calibradores) o conceptuales (cuestionarios, escalas, listas de chequeo) diseñadas para registrar datos operativos de forma válida y confiable.
 
-## Comportamiento Dinámico
 
-![](../slides-unit1/images/groupeddata.png){fig-align="center" width="70%"}
 
-```{.matlab .code-fold eval="false" code-summary="Ver script de MATLAB"}
-% Parámetros del sistema
-m = 1.0;    % Masa [kg]
-k = 100.0;  % Rigidez [N/m]
-wn = sqrt(k/m);
 
-% Respuesta temporal
-t = 0:0.01:5;
-x = cos(wn * t);
+## Medición: Encuestas vs. Instrumentos
 
-% Generación de la figura
-figure('Color', 'w');
-plot(t, x, 'LineWidth', 1.5);
-grid on;
-xlabel('Tiempo [s]');
-ylabel('Desplazamiento [m]');
-```
+| Criterio | Encuestas | Instrumentos de medición |
+|---|---|---|
+| Control sobre el entorno | Bajo control; depende de la respuesta del sujeto | Control estandarizado según procedimiento de lectura |
+| Objetivo principal | Medir percepciones, actitudes o conductas | Capturar magnitudes físicas, métricas o atributos |
+| Sesgo característico | Sesgo de deseabilidad social o de no respuesta | Errores de calibración o sistemáticos del aparato |
+| Inferencia / Validez | Sujeta a la comprensión sintáctica de los ítems | Sujeta a precisión, repetibilidad y sensibilidad |
 
 
 
 
-## Medidas estadísticas {background-color="#2d3748"}
+## Muestreo probabilístico {background-color="#2d3748"}
 
-Valores numéricos que *resumen*, *organizan* y *sintetizan* la información de un conjunto de datos para poder entender su comportamiento global de forma rápida.
+Técnica de selección de muestra donde todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados, lo que permite extrapolar resultados e inferir estadísticamente.
 
 
 
-## Clasificación de las medidas estadísticas
 
-| Tipo | ¿Qué miden? | Ejemplos principales |
-| :--- | :--- | :--- |
-| **Tendencia central** | El punto alrededor del cual se agrupan los datos. | Media, Mediana, Moda |
-| **Dispersión** | Qué tan alejados o separados están los datos respecto al centro. | Varianza, Desviación estándar, Rango |
-| **Posición** | Cómo se divide la distribución en partes iguales. | Cuartiles, Deciles, Percentiles |
-| **Forma** | La simetría y la concentración de los datos. | Asimetría (*Skewness*), Curtosis |
+## Muestreo no probabilístico {background-color="#2d3748"}
 
+Técnica de selección basada en el criterio, accesibilidad o conveniencia del estudio, donde se desconoce la probabilidad de inclusión de cada sujeto, impidiendo la inferencia estadística cuantitativa hacia la población.
 
 
-# Medidas de tendencia central {background-color="#f6f8fa"}
 
-Representan el comportamiento típico de un conjunto de datos en un solo número, identificando el punto medio o central alrededor del cual se agrupa la información.
 
+## Muestreo: Probabilístico vs. No probabilístico
 
+| Criterio | Probabilístico | No probabilístico |
+|---|---|---|
+| Control sobre el entorno | Control estadístico riguroso del azar | Sin control aleatorio; sujeto a conveniencia |
+| Objetivo principal | Garantizar representatividad y generalizar resultados | Explorar fenómenos o estudiar casos de difícil acceso |
+| Sesgo característico | Errores de cobertura o marco muestral | Sesgo de selección explícito |
+| Inferencia / Validez | Permite cálculo de margen de error y confianza | No permite cálculo de error ni inferencia poblacional |
 
-# Media aritmética {background-color="#2d3748"}
 
-Valor central que resulta de sumar todos los datos y dividirlos entre la cantidad total de datos.
 
-$$
-\large \displaystyle
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-$$ 
 
+::: {background-image="../slides-unit1/images/image2.png" background-size="cover"}
 
+# 
 
-# Mediana {background-color="#2d3748"}
+[Foto por <a href="https://unsplash.com/@googledeepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Google DeepMind</a> on <a href="https://unsplash.com/photos/a-group-of-construction-tools-ZJKE4XVlKIA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
 
-Valor que ocupa la posición central de un conjunto de datos ordenados de menor a mayor, dividiendo la muestra en dos partes exactamente iguales.
-
-$$
-\large \displaystyle
-Me = 
-\begin{cases} 
-x_{\left(\frac{n+1}{2}\right)} & \text{si } n \text{ es impar} \\[2ex]
-\frac{1}{2} \left( x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2} + 1\right)} \right) & \text{si } n \text{ es par}
-\end{cases}
-$$
-
-
-
-# Moda {background-color="#2d3748"}
-
-Valor que aparece con mayor frecuencia en un conjunto de datos. Un conjunto puede no se *amodal*, *unimodal*, *bimodal* o *multimodal*.
-
-
-
-# Medidas de dispersión {background-color="#f6f8fa"}
-
-Valores numéricos que indican qué tan alejados o separados están los datos respecto a la media, evaluando la variabilidad de la información y qué tan representativo es su centro.
-
-
-
-# Rango {background-color="#2d3748"}
-
-Diferencia entre el valor máximo y el valor mínimo del conjunto de datos.
-
-$$
-\large \displaystyle
-Rango = x_{\text{máx}} - x_{\text{mín}}
-$$
-
-
-
-# Varianza {background-color="#2d3748"}
-
-Promedio de las desviaciones al cuadrado de cada dato respecto a la media.
-
-$$
-\large \displaystyle
-s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2
-$$
-
-
-
-# Desviación estándar {background-color="#2d3748"}
-
-Indica cuánto se alejan en promedio los datos de la media.
-
-$$
-\large \displaystyle
-s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
-$$
-
-
-
-# Coeficiente de variación {background-color="#2d3748"}
-
-Porcentaje que expresa la variabilidad relativa de la muestra con respecto a su media.
-
-$$
-\large \displaystyle
-CV = \left( \frac{s}{\bar{x}} \right) \cdot 100\%
-$$
-
-
-
-# Rango intercuartílico {background-color="#2d3748"}
-
-Amplitud del 50% central de los datos, calculada como la diferencia entre el tercer y primer cuartil.
-
-$$
-\large \displaystyle
-IQR = Q_3 - Q_1
-$$
-
-
-
-# Medidas de forma {background-color="#f6f8fa"}
-
-Describen la estructura geométrica de la distribución de los datos sin necesidad de graficarlos. Analizan dos aspectos: hacia dónde se inclina la curva (asimetría) y qué tan apuntalada está (curtosis).
-
-
-
-# Asimetría (Skewness) {background-color="#2d3748"}
-
-Mide si los datos se distribuyen de forma uniforme a ambos lados de la media o si se concentran más hacia un extremo.
-
-$$
-\large \displaystyle
-A_s = \frac{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^3}{s^3}
-$$
-
-
-
-# Curtosis o Apuntamiento {background-color="#2d3748"}
-
-Mide el grado de concentración de los datos alrededor de la zona central y el peso de las colas en comparación con una distribución normal.
-
-$$
-\large \displaystyle
-K = \frac{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^4}{s^4} - 3
-$$
-
-
-## Datos Experimentales: Ensayos de Compresión ($f'_c$)
-
-Se evaluaron $N = 50$ probetas cilíndricas de concreto a los 28 días ($f'_c$ en **MPa**):
-
-<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 12px; text-align: center; font-family: monospace; margin: 20px 0;">
-  <div>24.3</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
-  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
-  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
-  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
-  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>35.5</div>
-</div>
-
-:::{.callout-note}
-### Requisito del Proyecto
-La especificación de diseño exige una resistencia nominal mínima de **$f'_c = 30.0\text{ MPa}$**.
-:::
-
-
-## Número de clases
-
-
-<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;">
-  <div>**24.3**</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
-  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
-  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
-  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
-  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>**35.5**</div>
-</div>
-
-<div style="margin-top: 30px;">
-:::{.callout-tip}
-### Regla de Freedman-Diaconis
-Para calcular la amplitud óptima del intervalo de clase ($h$) basada en la dispersión de los datos:
-
-$$h = 2 \cdot \frac{\text{IQR}}{\sqrt[3]{N}}$$
-
-donde $\text{IQR} = Q_3 - Q_1$ es el rango intercuartílico y $N$ es el número de observaciones. El número de clases es:
-
-$$k = \left\lceil \frac{x_{\max} - x_{\min}}{h} \right\rceil$$
-:::
-</div>
-
-
-
-## Número de clases
-
-
-<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;">
-  <div>**24.3**</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
-  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
-  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
-  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
-  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>**35.5**</div>
-</div>
-
-
-<div style="margin-top: 30px;">
-:::{.callout-important style="margin-top: 2em;"}
-### Regla de Sturges
-Para estimar el número de clases ($k$) asumiendo una distribución aproximadamente normal:
-
-$$k = 1 + 3.322 \log_{10}(N)$$
-
-donde $N$ es el número total de observaciones. La amplitud constante del intervalo ($h$) se obtiene como:
-
-$$h = \frac{x_{\max} - x_{\min}}{k}$$
-:::
-</div>
-
-
-
-# Media para datos agrupados {background-color="#2d3748"}
-
-La media ($\bar{x}$) en datos agrupados por intervalos se utiliza la marca de clase, $x_i$ para representar a todos los datos de ese intervalo.
-
-$$
-\large \displaystyle
-\bar{x} = \frac{\sum_{i=1}^{k} f_i \cdot x_i}{n} = \sum_{i=1}^{k} h_i \cdot x_i
-$$
-
-donde:
-
-$$
-\large \displaystyle
-x_i = \frac{L_i + L_s}{2}
-$$
-
-
-
-## Contexto del problema
-
-Algunos estudios reportan mejoras en la predicción cuando se combinan
-métodos clásicos de diseño de experimentos con aprendizaje automático
-[@ejemplo2020].
-
-- Punto clave 1
-- Punto clave 2
-- Punto clave 3
-
-
-
-## Ejemplo de código largo {.scrollable}
-
-Lámina con scroll propio — ideal para bloques de código extensos.
-
-```python
-import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-
-# Cargar datos
-df = pd.read_csv("datos_concreto.csv")
-
-# Variables predictoras y variable respuesta
-X = df.drop(columns=["resistencia"])
-y = df["resistencia"]
-
-# División train / test
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-
-# Entrenamiento del modelo
-modelo = RandomForestRegressor(
-    n_estimators=300,
-    max_depth=8,
-    min_samples_leaf=3,
-    random_state=42,
-)
-modelo.fit(X_train, y_train)
-
-# Predicción y métricas
-y_pred = modelo.predict(X_test)
-rmse = mean_squared_error(y_test, y_pred, squared=False)
-r2 = r2_score(y_test, y_pred)
-
-print(f"RMSE: {rmse:.3f}")
-print(f"R2:   {r2:.3f}")
-
-# Importancia de variables
-importancias = pd.Series(
-    modelo.feature_importances_, index=X.columns
-).sort_values(ascending=False)
-
-print(importancias)
-```
-
-# Sección 2 · Metodología {background-color="#f2f2f2"}
-
-## Dos columnas · texto y texto
-
-::: {layout="[50,50]"}
-
-::: {.column}
-**Enfoque clásico**
-
-- Diseño de experimentos (DOE)
-- ANOVA
-- Superficie de respuesta (RSM)
-:::
-
-::: {.column}
-**Enfoque moderno**
-
-- Modelos de machine learning
-- Validación cruzada
-- Cuantificación de incertidumbre
-:::
-
-:::
-
-## Imagen centrada
-
-![](images/placeholder.svg){fig-align="center" width="55%"}
-
-Pie de imagen o fuente, en texto pequeño.
-
-## Columnas con imagen
-
-::::: {.columns}
-
-:::: {.column width="45%"}
-Texto explicativo a la izquierda. Aquí puedes describir el método,
-el dataset o el resultado que ilustra la imagen de la derecha.
-::::
-
-:::: {.column width="55%"}
-![](images/placeholder.svg){fig-align="center" width="90%"}
-::::
-
-:::::
-
-## Ecuaciones en LaTeX
-
-Modelo de regresión lineal múltiple:
-
-$$
-\hat{y} = \beta_0 + \sum_{i=1}^{n} \beta_i x_i + \varepsilon
-$$
-
-Coeficiente de determinación:
-
-$$
-R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
-$$
-
-También funciona en línea, por ejemplo $\alpha = 0.05$.
-
-# Sección 3 · Resultados {background-color="#f2f2f2"}
-
-## Resultado principal
-
-- Hallazgo 1
-- Hallazgo 2
-- Hallazgo 3
-
-## Referencias
-
-::: {#refs}
 :::
 
 
 
-## ¡Buen trabajo! {background-color="#2c3e50"}
 
-Hemos completado la primera unidad.
+::: {background-image="../slides-unit1/images/image2.png" background-size="cover"}
 
-El pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre.
+# 
 
+[Foto por <a href="https://unsplash.com/@googledeepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Google DeepMind</a> on <a href="https://unsplash.com/photos/a-group-of-construction-tools-ZJKE4XVlKIA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
 
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 85%;"}
+El **sesgo** es una desviación sistemática que, al introducirse en el diseño, la recolección, el análisis o la interpretación, inclina los resultados hacia una dirección errónea.
 
-# **Semana 2** · Clase 3 {background-color="#f2f2f2" #semana2-clase3}
+:::
+:::
 
-<hr>
-
-::: {.text-muted style="font-size: 1.0em;"}
-Datos no agrupados
 :::
 
 
 
-# **Semana 2** · Clase 4 {background-color="#f2f2f2" #semana2-clase4}
 
-<hr>
+::: {background-image="../slides-unit1/images/image2.png" background-size="cover"}
 
-::: {.text-muted style="font-size: 1.0em;"}
-Datos agrupados
+# 
+
+[Foto por <a href="https://unsplash.com/@googledeepmind?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Google DeepMind</a> on <a href="https://unsplash.com/photos/a-group-of-construction-tools-ZJKE4XVlKIA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 85%;"}
+El **sesgo** es una distorsión sistemática que persiste sin importar el tamaño de la muestra; el **error aleatorio**, en cambio, tiende a compensarse al aumentarlo.
+:::
 :::
 
-
-# **Semana 3** · Clase 5 {background-color="#f2f2f2" #semana3-clase5}
-
-<hr>
-
-::: {.text-muted style="font-size: 1.0em;"}
-Tipos de gráficas
-:::
-
-
-
----
-
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/uHRqkGXX55I"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
-
-[Fuente: Simple Learning Pro. (2015). Bar Charts, Pie Charts, Histograms, Stemplots, Timeplots. YouTube.]{.footer}
-
-
-
-# **Semana 3** · Clase 6 {background-color="#f2f2f2" #semana3-clase6}
-
-<hr>
-
-::: {.text-muted style="font-size: 1.0em;"}
-Medidas de tendencia central y de dispersión
 :::
 
 
 
----
 
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/mk8tOD0t8M0"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
+## Tipos comunes de sesgo en datos e investigación
 
-[Fuente: Simple Learning Pro. (2015). Mode, Median, Mean, Range, and Standard Deviation. YouTube.]{.footer}
+* **Sesgo de selección**: Ocurre cuando la muestra seleccionada no representa adecuadamente a la población objetivo debido a un criterio no aleatorio (frecuente en muestreos no probabilísticos).
+* **Sesgo de medición**: Surge por fallas en el instrumento de captura o calibración deficiente de un equipo.
+* **Sesgo de información (encuestas)**: Surge por mala formulación, ambigüedad o carga interpretativa en las preguntas de un cuestionario.
+* **Sesgo del observador**: Distorsión producida por las expectativas, prejuicios o juicio subjetivo del investigador al registrar o evaluar las mediciones.
 
 
 
----
 
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/sK0RY-Qkug4"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
+## Tipos comunes de sesgo en datos e investigación
 
-[Fuente: Simple Learning Pro. (2015). The Effects of Transforming Data on Spread and Centre. YouTube.]{.footer}
+* **Sesgo de respuesta (deseabilidad social)**: Ocurre cuando el participante altera sus respuestas de forma deliberada o inconsciente para ajustarse a lo que considera socialmente aceptable.
+* **Sesgo de no respuesta**: Ocurre cuando quienes no responden difieren sistemáticamente de quienes sí lo hacen, sesgando la muestra efectiva.
+* **Sesgo de confusión**: Ocurre cuando una variable no controlada se asocia tanto con la exposición como con el resultado, generando una relación aparente que no es causal.
+* **Sesgo de confirmación**: Tendencia a recolectar, interpretar o priorizar únicamente los datos que respaldan la hipótesis previa del investigador, ignorando evidencia en contrario.
 
 
 
----
 
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/vcbMinm_1Q8"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
-
-[Fuente: Simple Learning Pro. (2015). The Effects of Outliers on Spread and Centre. YouTube.]{.footer}
-
-
-
----
-
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/tpToLyZibKM"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
-
-[Fuente: Simple Learning Pro. (2015). The Five Number Summary, Boxplots, and Outliers. YouTube.]{.footer}
-
-
-
----
-
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/s6cMpDEzq_4"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
-
-[Fuente: Simple Learning Pro. (2015). Percentiles. YouTube.]{.footer}
-
-
-
-# **Semana 4** · Clase 7 {background-color="#f2f2f2" #semana4-clase7}
-
-<hr>
-
-::: {.text-muted style="font-size: 1.0em;"}
-Medidas de forma
-:::
-
-
-
----
-
-::: {style="width: 95%; margin: 0 auto;"}
-<iframe src="https://www.youtube.com/embed/pfujiA5Mk_U"
-        width="100%"
-        style="aspect-ratio: 16/9; border: 0;"
-        allowfullscreen>
-</iframe>
-:::
-
-[Fuente: Simple Learning Pro. (2015). Symmetry and Skewness. YouTube.]{.footer}
