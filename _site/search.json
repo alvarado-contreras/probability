@@ -1,171 +1,108 @@
 [
   {
-    "objectID": "slides-unit1/slides-unit1.html#unidades-temáticas",
-    "href": "slides-unit1/slides-unit1.html#unidades-temáticas",
-    "title": "Unidad 1",
+    "objectID": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
+    "href": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
+    "title": "Probability — Presentaciones",
     "section": "Unidades temáticas",
     "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#unidad-1",
-    "href": "slides-unit1/slides-unit1.html#unidad-1",
-    "title": "Unidad 1",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nDefiniciones. Manejo de datos y medidas estadísticas\n\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#unidad-1-1",
-    "href": "slides-unit1/slides-unit1.html#unidad-1-1",
-    "title": "Unidad 1",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nIntroducción y conceptos fundamentales\n\n\nEstadística\n\nEstadística descriptiva vs. inferencial\n\nPoblación, muestra e individuo\n\nUnidades de análisis y condiciones de definición\nDescriptores numéricos: Parámetro vs. Estadístico\n\nVariables estadísticas y datos\n\nDefinición de variable y concepto de dato\nClasificación: Cualitativas, cuantitativas y datos binarios\nVariables binarias. Codificación numérica\n\nEscalas de medición\n\nEscalas nominal, ordinal, intervalo y razón"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#claves-de-la-estadística",
-    "href": "slides-unit1/slides-unit1.html#claves-de-la-estadística",
-    "title": "Unidad 1",
-    "section": "Claves de la Estadística",
-    "text": "Claves de la Estadística\n\nMuestra vs. Población | De lo que ves a lo que realmente existe\nVariabilidad vs. Error | Lo que es naturaleza pura vs. lo que mediste mal\nDescripción vs. Modelo | Resumir el pasado vs. predecir el futuro\nProbabilidad | El lenguaje para hablarle a la incertidumbre\nSupuestos vs. Realidad | El modelo perfecto en el papel vs. la suciedad de los datos\nDiseño vs. Análisis | Si diseñaste mal, ningún modelo salva la torta\nCorrelación vs. Causalidad | Moverse juntos no es ser causa y efecto\nSignificancia vs. Relevancia | Lo que da un p-valor &lt; 0.05 vs. lo que importa en la vida real\nCerteza vs. Incertidumbre | Del confort del determinismo a la honestidad del riesgo"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#tipos-de-estadística",
-    "href": "slides-unit1/slides-unit1.html#tipos-de-estadística",
-    "title": "Unidad 1",
-    "section": "Tipos de Estadística",
-    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#características-de-una-muestra",
-    "href": "slides-unit1/slides-unit1.html#características-de-una-muestra",
-    "title": "Unidad 1",
-    "section": "Características de una muestra",
-    "text": "Características de una muestra\n\nRepresentatividad | Debe reflejar proporcionalmente la diversidad y características de la población original.\nTamaño adecuado | Suficientemente grande para reducir el margen de error, pero manejable y viable.\nAleatoriedad | Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.\nHomogeneidad | Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#dimensionalidad-de-los-datos",
-    "href": "slides-unit1/slides-unit1.html#dimensionalidad-de-los-datos",
-    "title": "Unidad 1",
-    "section": "Dimensionalidad de los datos",
-    "text": "Dimensionalidad de los datos\nDependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:\n\nUnivariantes: Analizan una sola variable a la vez.\nBivariantes: Estudian dos variables juntas para ver cómo se relacionan entre sí.\nMultivariantes: Analizan tres o más variables simultáneamente para entender fenómenos complejos."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#clasificación-de-las-variables",
-    "href": "slides-unit1/slides-unit1.html#clasificación-de-las-variables",
+    "objectID": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "href": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
     "title": "Probability — Presentaciones",
-    "section": "Clasificación de las variables",
-    "text": "Clasificación de las variables\nSegún su naturaleza:\n\nCualitativas o Categóricas (Atributos): Cualidad, característica o categoría no numérica.\n\nNominales: Categorías sin orden preestablecido.\nOrdinales: Categorías con un orden, escala o jerarquía natural.\nBinarias (Dicotómicas): Solo admiten dos categorías excluyentes.\n\nSimétricas: Ambas tienen similar importancia o frecuencia.\nAsimétricas: Una categoría representa la presencia del evento de interés y la otra la ausencia.\n\n\nCuantitativas o Numéricas (Cantidades): Valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Valor entero y aislado.\nContinuas: Valor decimal dentro de un intervalo."
+    "section": "Definiciones. Manejo de datos y medidas estadísticas",
+    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#section",
-    "href": "slides-unit1/slides-unit1.html#section",
+    "objectID": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
+    "href": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
     "title": "Probability — Presentaciones",
-    "section": "",
-    "text": "Foto por Toni Pomar en Unsplash"
+    "section": "Recolección, organización y representación gráfica de datos",
+    "text": "Recolección, organización y representación gráfica de datos\n\nFuentes de datos y obtención\n\nDiseños experimentales vs. estudios observacionales\nEncuestas e instrumentos de medición\nMuestreo probabilistico y no probabilistico\n\nTablas de frecuencias\n\nEstructuración para datos no agrupados vs. agrupados\n\nReglas para determinación de bins y ancho de clase\n\nCriterios clásicos: Raíz cuadrada, Sturges y Rice\nCriterios basados en densidad y dispersión: Freedman-Diaconis y Scott\n\nGráficos para variables cualitativas y binarias\n\nRepresentación de categorías, proporciones y atributos dicotómicos\n\nGráficos para variables cuantitativas\n\nVisualización de la forma, centro, dispersión y densidad de datos"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#datos-no-agrupados-y-agrupados",
-    "href": "slides-unit1/slides-unit1.html#datos-no-agrupados-y-agrupados",
-    "title": "Unidad 1",
-    "section": "Datos no agrupados y agrupados",
-    "text": "Datos no agrupados y agrupados\n\nDatos no agrupados: Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.\nDatos agrupados: Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#comparación-entre-datos-no-agrupados-y-agrupados",
-    "href": "slides-unit1/slides-unit1.html#comparación-entre-datos-no-agrupados-y-agrupados",
-    "title": "Unidad 1",
-    "section": "Comparación entre datos no agrupados y agrupados",
-    "text": "Comparación entre datos no agrupados y agrupados\n\n\n\n\n\n\n\n\n\nDatos No Agrupados\nDatos Agrupados\n\n\n\n\nCaracterística\nMuestra cada dato individual\nMuestra datos en intervalos o clases\n\n\nFácil cálculo\nMedia, mediana y moda se calculan directamente\nRequiere fórmulas adaptadas para intervalos\n\n\nPérdida de información\nNo hay pérdida de información\nSe pierde la especificidad de datos individuales\n\n\nApropiado\nPequeños conjuntos de datos o análisis detallado\nGrandes conjuntos de datos o análisis de tendencias\n\n\nUso de tablas de frecuencia\nNo es necesario\nNecesario para organizar los datos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#clasificación-de-las-medidas-estadísticas",
-    "href": "slides-unit1/slides-unit1.html#clasificación-de-las-medidas-estadísticas",
+    "objectID": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
+    "href": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
     "title": "Probability — Presentaciones",
-    "section": "Clasificación de las medidas estadísticas",
-    "text": "Clasificación de las medidas estadísticas\n\n\n\n\n\n\n\n\nTipo\n¿Qué miden?\nEjemplos principales\n\n\n\n\nTendencia central\nEl punto alrededor del cual se agrupan los datos.\nMedia, Mediana, Moda\n\n\nDispersión\nQué tan alejados o separados están los datos respecto al centro.\nVarianza, Desviación estándar, Rango\n\n\nPosición\nCómo se divide la distribución en partes iguales.\nCuartiles, Deciles, Percentiles\n\n\nForma\nLa simetría y la concentración de los datos.\nAsimetría (Skewness), Curtosis"
+    "section": "Fuente de datos y obtención",
+    "text": "Fuente de datos y obtención\nGénesis de los datos | Experimento vs. Observación\nMétodo de captura | Instrumentos directos vs. indirectos\nEstrategia de selección | Muestreo probabilístico vs. no probabilístico"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#datos-experimentales-ensayos-de-compresión-f_c",
-    "href": "slides-unit1/slides-unit1.html#datos-experimentales-ensayos-de-compresión-f_c",
+    "objectID": "slides-unit1/slides-unit1_2.html#diseño-experimental",
+    "href": "slides-unit1/slides-unit1_2.html#diseño-experimental",
     "title": "Probability — Presentaciones",
-    "section": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))",
-    "text": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))\nSe evaluaron \\(N = 50\\) probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\nRequisito del Proyecto\n\n\nLa especificación de diseño exige una resistencia nominal mínima de \\(f'_c = 30.0\\text{ MPa}\\)."
+    "section": "Diseño experimental",
+    "text": "Diseño experimental\nEstudio donde se manipula deliberadamente una o más variables independientes bajo condiciones controladas para medir su efecto causal sobre una variable dependiente."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#número-de-clases",
-    "href": "slides-unit1/slides-unit1.html#número-de-clases",
+    "objectID": "slides-unit1/slides-unit1_2.html#diseño-observacional",
+    "href": "slides-unit1/slides-unit1_2.html#diseño-observacional",
     "title": "Probability — Presentaciones",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\nRegla de Freedman-Diaconis\n\n\nPara calcular la amplitud óptima del intervalo de clase (\\(h\\)) basada en la dispersión de los datos:\n\\[h = 2 \\cdot \\frac{\\text{IQR}}{\\sqrt[3]{N}}\\]\ndonde \\(\\text{IQR} = Q_3 - Q_1\\) es el rango intercuartílico y \\(N\\) es el número de observaciones. El número de clases es:\n\\[k = \\left\\lceil \\frac{x_{\\max} - x_{\\min}}{h} \\right\\rceil\\]"
+    "section": "Diseño observacional",
+    "text": "Diseño observacional\nEstudio donde se registra, mide y analiza variables tal como suceden en su entorno natural, sin intervenir ni alterar las condiciones ni a los sujetos."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#número-de-clases-1",
-    "href": "slides-unit1/slides-unit1.html#número-de-clases-1",
+    "objectID": "slides-unit1/slides-unit1_2.html#diseños-experimental-vs.-observacional",
+    "href": "slides-unit1/slides-unit1_2.html#diseños-experimental-vs.-observacional",
     "title": "Probability — Presentaciones",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\n\nRegla de Sturges\n\n\nPara estimar el número de clases (\\(k\\)) asumiendo una distribución aproximadamente normal:\n\\[k = 1 + 3.322 \\log_{10}(N)\\]\ndonde \\(N\\) es el número total de observaciones. La amplitud constante del intervalo (\\(h\\)) se obtiene como:\n\\[h = \\frac{x_{\\max} - x_{\\min}}{k}\\]"
+    "section": "Diseños: Experimental vs. Observacional",
+    "text": "Diseños: Experimental vs. Observacional\n\n\n\n\n\n\n\n\nCriterio\nExperimental\nObservacional\n\n\n\n\nControl sobre el entorno\nAlto control y manipulación directos\nNulo control; registro directo de la realidad\n\n\nObjetivo principal\nProbar relaciones de causa y efecto\nIdentificar patrones, asociaciones o tendencias\n\n\nSesgo característico\nSesgo de laboratorio / validez externa reducida\nVariables de confusión no controladas\n\n\nInferencia / Validez\nAlta validez interna\nAlta validez ecológica / externa"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#contexto-del-problema",
-    "href": "slides-unit1/slides-unit1.html#contexto-del-problema",
+    "objectID": "slides-unit1/slides-unit1_2.html#encuesta",
+    "href": "slides-unit1/slides-unit1_2.html#encuesta",
     "title": "Probability — Presentaciones",
-    "section": "Contexto del problema",
-    "text": "Contexto del problema\nAlgunos estudios reportan mejoras en la predicción cuando se combinan métodos clásicos de diseño de experimentos con aprendizaje automático (Pérez y Gómez 2020).\n\nPunto clave 1\nPunto clave 2\nPunto clave 3"
+    "section": "Encuesta",
+    "text": "Encuesta\nMétodo estructurado de recolección de datos primarios que recopila información cualitativa o cuantitativa sobre opiniones, características o comportamientos de una población mediante la formulación de preguntas."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#ejemplo-de-código-largo",
-    "href": "slides-unit1/slides-unit1.html#ejemplo-de-código-largo",
+    "objectID": "slides-unit1/slides-unit1_2.html#instrumentos-de-medición",
+    "href": "slides-unit1/slides-unit1_2.html#instrumentos-de-medición",
     "title": "Probability — Presentaciones",
-    "section": "Ejemplo de código largo",
-    "text": "Ejemplo de código largo\nLámina con scroll propio — ideal para bloques de código extensos.\nimport numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_squared_error, r2_score\n\n# Cargar datos\ndf = pd.read_csv(\"datos_concreto.csv\")\n\n# Variables predictoras y variable respuesta\nX = df.drop(columns=[\"resistencia\"])\ny = df[\"resistencia\"]\n\n# División train / test\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Entrenamiento del modelo\nmodelo = RandomForestRegressor(\n    n_estimators=300,\n    max_depth=8,\n    min_samples_leaf=3,\n    random_state=42,\n)\nmodelo.fit(X_train, y_train)\n\n# Predicción y métricas\ny_pred = modelo.predict(X_test)\nrmse = mean_squared_error(y_test, y_pred, squared=False)\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"RMSE: {rmse:.3f}\")\nprint(f\"R2:   {r2:.3f}\")\n\n# Importancia de variables\nimportancias = pd.Series(\n    modelo.feature_importances_, index=X.columns\n).sort_values(ascending=False)\n\nprint(importancias)"
+    "section": "Instrumentos de medición",
+    "text": "Instrumentos de medición\nHerramientas físicas (sensores, calibradores) o conceptuales (cuestionarios, escalas, listas de chequeo) diseñadas para registrar datos operativos de forma válida y confiable."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#dos-columnas-texto-y-texto",
-    "href": "slides-unit1/slides-unit1.html#dos-columnas-texto-y-texto",
+    "objectID": "slides-unit1/slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
+    "href": "slides-unit1/slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
     "title": "Probability — Presentaciones",
-    "section": "Dos columnas · texto y texto",
-    "text": "Dos columnas · texto y texto\n\n\n\nEnfoque clásico\n\nDiseño de experimentos (DOE)\nANOVA\nSuperficie de respuesta (RSM)\n\n\nEnfoque moderno\n\nModelos de machine learning\nValidación cruzada\nCuantificación de incertidumbre"
+    "section": "Medición: Encuestas vs. Instrumentos",
+    "text": "Medición: Encuestas vs. Instrumentos\n\n\n\n\n\n\n\n\nCriterio\nEncuestas\nInstrumentos de medición\n\n\n\n\nControl sobre el entorno\nBajo control; depende de la respuesta del sujeto\nControl estandarizado según procedimiento de lectura\n\n\nObjetivo principal\nMedir percepciones, actitudes o conductas\nCapturar magnitudes físicas, métricas o atributos\n\n\nSesgo característico\nSesgo de deseabilidad social o de no respuesta\nErrores de calibración o sistemáticos del aparato\n\n\nInferencia / Validez\nSujeta a la comprensión sintáctica de los ítems\nSujeta a precisión, repetibilidad y sensibilidad"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#imagen-centrada",
-    "href": "slides-unit1/slides-unit1.html#imagen-centrada",
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico",
     "title": "Probability — Presentaciones",
-    "section": "Imagen centrada",
-    "text": "Imagen centrada\n\nPie de imagen o fuente, en texto pequeño."
+    "section": "Muestreo probabilístico",
+    "text": "Muestreo probabilístico\nTécnica de selección de muestra donde todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados, lo que permite extrapolar resultados e inferir estadísticamente."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#columnas-con-imagen",
-    "href": "slides-unit1/slides-unit1.html#columnas-con-imagen",
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-no-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-no-probabilístico",
     "title": "Probability — Presentaciones",
-    "section": "Columnas con imagen",
-    "text": "Columnas con imagen\n\n\nTexto explicativo a la izquierda. Aquí puedes describir el método, el dataset o el resultado que ilustra la imagen de la derecha."
+    "section": "Muestreo no probabilístico",
+    "text": "Muestreo no probabilístico\nTécnica de selección basada en el criterio, accesibilidad o conveniencia del estudio, donde se desconoce la probabilidad de inclusión de cada sujeto, impidiendo la inferencia estadística cuantitativa hacia la población."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#ecuaciones-en-latex",
-    "href": "slides-unit1/slides-unit1.html#ecuaciones-en-latex",
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
     "title": "Probability — Presentaciones",
-    "section": "Ecuaciones en LaTeX",
-    "text": "Ecuaciones en LaTeX\nModelo de regresión lineal múltiple:\n\\[\n\\hat{y} = \\beta_0 + \\sum_{i=1}^{n} \\beta_i x_i + \\varepsilon\n\\]\nCoeficiente de determinación:\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nTambién funciona en línea, por ejemplo \\(\\alpha = 0.05\\)."
+    "section": "Muestreo: Probabilístico vs. No probabilístico",
+    "text": "Muestreo: Probabilístico vs. No probabilístico\n\n\n\n\n\n\n\n\nCriterio\nProbabilístico\nNo probabilístico\n\n\n\n\nControl sobre el entorno\nControl estadístico riguroso del azar\nSin control aleatorio; sujeto a conveniencia\n\n\nObjetivo principal\nGarantizar representatividad y generalizar resultados\nExplorar fenómenos o estudiar casos de difícil acceso\n\n\nSesgo característico\nErrores de cobertura o marco muestral\nSesgo de selección explícito\n\n\nInferencia / Validez\nPermite cálculo de margen de error y confianza\nNo permite cálculo de error ni inferencia poblacional"
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#resultado-principal",
-    "href": "slides-unit1/slides-unit1.html#resultado-principal",
+    "objectID": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación",
+    "href": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación",
     "title": "Probability — Presentaciones",
-    "section": "Resultado principal",
-    "text": "Resultado principal\n\nHallazgo 1\nHallazgo 2\nHallazgo 3"
+    "section": "Tipos comunes de sesgo en datos e investigación",
+    "text": "Tipos comunes de sesgo en datos e investigación\n\nSesgo de selección: Ocurre cuando la muestra seleccionada no representa adecuadamente a la población objetivo debido a un criterio no aleatorio (frecuente en muestreos no probabilísticos).\nSesgo de medición: Surge por fallas en el instrumento de captura o calibración deficiente de un equipo.\nSesgo de información (encuestas): Surge por mala formulación, ambigüedad o carga interpretativa en las preguntas de un cuestionario.\nSesgo del observador: Distorsión producida por las expectativas, prejuicios o juicio subjetivo del investigador al registrar o evaluar las mediciones."
   },
   {
-    "objectID": "slides-unit1/slides-unit1.html#referencias",
-    "href": "slides-unit1/slides-unit1.html#referencias",
+    "objectID": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación-1",
+    "href": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación-1",
     "title": "Probability — Presentaciones",
-    "section": "Referencias",
-    "text": "Referencias\n\n\nPérez, Juan, y Ana Gómez. 2020. «Modelos de regresión aplicados a materiales de construcción». Revista de Ingeniería Civil 45 (3): 112-30."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#buen-trabajo",
-    "href": "slides-unit1/slides-unit1.html#buen-trabajo",
-    "title": "Probability — Presentaciones",
-    "section": "¡Buen trabajo!",
-    "text": "¡Buen trabajo!\nHemos completado la primera unidad.\nEl pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre."
+    "section": "Tipos comunes de sesgo en datos e investigación",
+    "text": "Tipos comunes de sesgo en datos e investigación\n\nSesgo de respuesta (deseabilidad social): Ocurre cuando el participante altera sus respuestas de forma deliberada o inconsciente para ajustarse a lo que considera socialmente aceptable.\nSesgo de no respuesta: Ocurre cuando quienes no responden difieren sistemáticamente de quienes sí lo hacen, sesgando la muestra efectiva.\nSesgo de confusión: Ocurre cuando una variable no controlada se asocia tanto con la exposición como con el resultado, generando una relación aparente que no es causal.\nSesgo de confirmación: Tendencia a recolectar, interpretar o priorizar únicamente los datos que respaldan la hipótesis previa del investigador, ignorando evidencia en contrario."
   },
   {
     "objectID": "index.html",
@@ -173,412 +110,6 @@
     "title": "Presentaciones — Probabilidad y Estadística",
     "section": "",
     "text": "Unidad 1.1: Conceptos básicos — PDF\nUnidad 1.2: Conceptos básicos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidades-temáticas",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidades-temáticas",
-    "title": "Probability — Presentaciones",
-    "section": "Unidades temáticas",
-    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1",
-    "title": "Probability — Presentaciones",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nDefiniciones. Manejo de datos y medidas estadísticas\n\n\nIntroducción y conceptos fundamentales\nRecolección, organización y representación gráfica de datos\nMedidas de tendencia central y posición\nMedidas de dispersión y de forma"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-1",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-1",
-    "title": "Probability — Presentaciones",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nIntroducción y conceptos fundamentales\n\n\nEstadística\nPoblación, muestra e individuo\nVariables estadísticas: cualitativas, cuantitativas y datos binarios\n\nVariables binarias simétricas vs. asimétricas\nCodificación numérica\n\nEscalas de medición: nominal, ordinal, intervalo, razón\nDiagrama de clasificación de variables y tipos de datos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-2",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-2",
-    "title": "Probability — Presentaciones",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nRecolección, organización y representación gráfica de datos\n\n\nFuentes de datos y métodos de obtención\n\nDiseños experimentales vs. estudios observacionales\nDiseños de encuestas e instrumentos de medición\n\nTablas de frecuencias: datos no agrupados y datos agrupados\nReglas para determinar el número de bins y ancho de clase\n\nRaíz cuadrada, Sturges, Rice, Freedman-Diaconis, Scott\n\nGráficos para variables cualitativas y binarias\nGráficos para variables cuantitativas"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-3",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-3",
-    "title": "Probability — Presentaciones",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nMedidas de tendencia central y posición\n\n\nMedia aritmética, mediana y moda\nCentralidad en datos binarios: La media como proporción\nMedidas de posición: cuartiles, deciles y percentiles\nDiagrama de caja y bigotes"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-4",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#unidad-1-4",
-    "title": "Probability — Presentaciones",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nMedidas de dispersión y de forma\n\n\nRango, varianza, desviación estándar y coeficiente de variación\nDispersión en datos binarios: varianza de una proporción\nRegla empírica (68-95-99.7)\nGráficos de asimetría y curtosis"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#claves-de-la-estadística",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#claves-de-la-estadística",
-    "title": "Probability — Presentaciones",
-    "section": "Claves de la estadística",
-    "text": "Claves de la estadística\n\nControl de la variabilidad: Medir y modelar los cambios constantes en los datos.\nDecisión bajo incertidumbre: Tomar elecciones acertadas cuando el futuro no es predecible.\nSoporte al método científico: Diseñar experimentos y optimizar procesos con rigor."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#tipos-de-estadística",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#tipos-de-estadística",
-    "title": "Probability — Presentaciones",
-    "section": "Tipos de Estadística",
-    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir lo que ocurrió en una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#dimensionalidad-de-los-datos",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#dimensionalidad-de-los-datos",
-    "title": "Probability — Presentaciones",
-    "section": "Dimensionalidad de los datos",
-    "text": "Dimensionalidad de los datos\nDependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:\n\nUnivariantes: Analizan una sola variable a la vez.\nBivariantes: Estudian dos variables juntas para ver cómo se relacionan entre sí.\nMultivariantes: Analizan tres o más variables simultáneamente para entender fenómenos complejos."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#clasificación-de-las-variables",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#clasificación-de-las-variables",
-    "title": "Probability — Presentaciones",
-    "section": "Clasificación de las variables",
-    "text": "Clasificación de las variables\nSegún su naturaleza:\n\nCualitativas o Categóricas (Atributos): Expresan una cualidad, característica o categoría no numérica.\n\nNominales: No tienen un orden preestablecido.\nOrdinales: Siguen un orden, escala o jerarquía natural.\n\nCuantitativas o Numéricas (Cantidades): Expresan valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Toman valores enteros y aislados.\nContinuas: Pueden tomar cualquier valor decimal dentro de un intervalo."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#section",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#section",
-    "title": "Probability — Presentaciones",
-    "section": "",
-    "text": "Según su función o relación:\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#datos-no-agrupados-y-agrupados",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#datos-no-agrupados-y-agrupados",
-    "title": "Probability — Presentaciones",
-    "section": "Datos no agrupados y agrupados",
-    "text": "Datos no agrupados y agrupados\n\nDatos no agrupados: Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.\nDatos agrupados: Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#comparación-entre-datos-no-agrupados-y-agrupados",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#comparación-entre-datos-no-agrupados-y-agrupados",
-    "title": "Probability — Presentaciones",
-    "section": "Comparación entre datos no agrupados y agrupados",
-    "text": "Comparación entre datos no agrupados y agrupados\n\n\n\n\n\n\n\n\n\nDatos No Agrupados\nDatos Agrupados\n\n\n\n\nCaracterística\nMuestra cada dato individual\nMuestra datos en intervalos o clases\n\n\nFácil cálculo\nMedia, mediana y moda se calculan directamente\nRequiere fórmulas adaptadas para intervalos\n\n\nPérdida de información\nNo hay pérdida de información\nSe pierde la especificidad de datos individuales\n\n\nApropiado\nPequeños conjuntos de datos o análisis detallado\nGrandes conjuntos de datos o análisis de tendencias\n\n\nUso de tablas de frecuencia\nNo es necesario\nNecesario para organizar los datos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#características-de-una-muestra",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#características-de-una-muestra",
-    "title": "Probability — Presentaciones",
-    "section": "Características de una muestra",
-    "text": "Características de una muestra\nUna muestra es estadísticamente útil si cumple con cuatro condiciones esenciales:\n\nRepresentatividad: Debe reflejar proporcionalmente la diversidad y características de la población original.\nTamaño adecuado: Suficientemente grande para reducir el margen de error, pero manejable y viable.\nAleatoriedad: Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.\nHomogeneidad: Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#clasificación-de-las-medidas-estadísticas",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#clasificación-de-las-medidas-estadísticas",
-    "title": "Probability — Presentaciones",
-    "section": "Clasificación de las medidas estadísticas",
-    "text": "Clasificación de las medidas estadísticas\n\n\n\n\n\n\n\n\nTipo\n¿Qué miden?\nEjemplos principales\n\n\n\n\nTendencia central\nEl punto alrededor del cual se agrupan los datos.\nMedia, Mediana, Moda\n\n\nDispersión\nQué tan alejados o separados están los datos respecto al centro.\nVarianza, Desviación estándar, Rango\n\n\nPosición\nCómo se divide la distribución en partes iguales.\nCuartiles, Deciles, Percentiles\n\n\nForma\nLa simetría y la concentración de los datos.\nAsimetría (Skewness), Curtosis"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#datos-experimentales-ensayos-de-compresión-f_c",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#datos-experimentales-ensayos-de-compresión-f_c",
-    "title": "Probability — Presentaciones",
-    "section": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))",
-    "text": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))\nSe evaluaron \\(N = 50\\) probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\nRequisito del Proyecto\n\n\nLa especificación de diseño exige una resistencia nominal mínima de \\(f'_c = 30.0\\text{ MPa}\\)."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#número-de-clases",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#número-de-clases",
-    "title": "Probability — Presentaciones",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\nRegla de Freedman-Diaconis\n\n\nPara calcular la amplitud óptima del intervalo de clase (\\(h\\)) basada en la dispersión de los datos:\n\\[h = 2 \\cdot \\frac{\\text{IQR}}{\\sqrt[3]{N}}\\]\ndonde \\(\\text{IQR} = Q_3 - Q_1\\) es el rango intercuartílico y \\(N\\) es el número de observaciones. El número de clases es:\n\\[k = \\left\\lceil \\frac{x_{\\max} - x_{\\min}}{h} \\right\\rceil\\]"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#número-de-clases-1",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#número-de-clases-1",
-    "title": "Probability — Presentaciones",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\n\nRegla de Sturges\n\n\nPara estimar el número de clases (\\(k\\)) asumiendo una distribución aproximadamente normal:\n\\[k = 1 + 3.322 \\log_{10}(N)\\]\ndonde \\(N\\) es el número total de observaciones. La amplitud constante del intervalo (\\(h\\)) se obtiene como:\n\\[h = \\frac{x_{\\max} - x_{\\min}}{k}\\]"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#contexto-del-problema",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#contexto-del-problema",
-    "title": "Probability — Presentaciones",
-    "section": "Contexto del problema",
-    "text": "Contexto del problema\nAlgunos estudios reportan mejoras en la predicción cuando se combinan métodos clásicos de diseño de experimentos con aprendizaje automático (Pérez y Gómez 2020).\n\nPunto clave 1\nPunto clave 2\nPunto clave 3"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#ejemplo-de-código-largo",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#ejemplo-de-código-largo",
-    "title": "Probability — Presentaciones",
-    "section": "Ejemplo de código largo",
-    "text": "Ejemplo de código largo\nLámina con scroll propio — ideal para bloques de código extensos.\nimport numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_squared_error, r2_score\n\n# Cargar datos\ndf = pd.read_csv(\"datos_concreto.csv\")\n\n# Variables predictoras y variable respuesta\nX = df.drop(columns=[\"resistencia\"])\ny = df[\"resistencia\"]\n\n# División train / test\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Entrenamiento del modelo\nmodelo = RandomForestRegressor(\n    n_estimators=300,\n    max_depth=8,\n    min_samples_leaf=3,\n    random_state=42,\n)\nmodelo.fit(X_train, y_train)\n\n# Predicción y métricas\ny_pred = modelo.predict(X_test)\nrmse = mean_squared_error(y_test, y_pred, squared=False)\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"RMSE: {rmse:.3f}\")\nprint(f\"R2:   {r2:.3f}\")\n\n# Importancia de variables\nimportancias = pd.Series(\n    modelo.feature_importances_, index=X.columns\n).sort_values(ascending=False)\n\nprint(importancias)"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#dos-columnas-texto-y-texto",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#dos-columnas-texto-y-texto",
-    "title": "Probability — Presentaciones",
-    "section": "Dos columnas · texto y texto",
-    "text": "Dos columnas · texto y texto\n\n\n\nEnfoque clásico\n\nDiseño de experimentos (DOE)\nANOVA\nSuperficie de respuesta (RSM)\n\n\nEnfoque moderno\n\nModelos de machine learning\nValidación cruzada\nCuantificación de incertidumbre"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#imagen-centrada",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#imagen-centrada",
-    "title": "Probability — Presentaciones",
-    "section": "Imagen centrada",
-    "text": "Imagen centrada\n\nPie de imagen o fuente, en texto pequeño."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#columnas-con-imagen",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#columnas-con-imagen",
-    "title": "Probability — Presentaciones",
-    "section": "Columnas con imagen",
-    "text": "Columnas con imagen\n\n\nTexto explicativo a la izquierda. Aquí puedes describir el método, el dataset o el resultado que ilustra la imagen de la derecha."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#ecuaciones-en-latex",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#ecuaciones-en-latex",
-    "title": "Probability — Presentaciones",
-    "section": "Ecuaciones en LaTeX",
-    "text": "Ecuaciones en LaTeX\nModelo de regresión lineal múltiple:\n\\[\n\\hat{y} = \\beta_0 + \\sum_{i=1}^{n} \\beta_i x_i + \\varepsilon\n\\]\nCoeficiente de determinación:\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nTambién funciona en línea, por ejemplo \\(\\alpha = 0.05\\)."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#resultado-principal",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#resultado-principal",
-    "title": "Probability — Presentaciones",
-    "section": "Resultado principal",
-    "text": "Resultado principal\n\nHallazgo 1\nHallazgo 2\nHallazgo 3"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#referencias",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#referencias",
-    "title": "Probability — Presentaciones",
-    "section": "Referencias",
-    "text": "Referencias\n\n\nPérez, Juan, y Ana Gómez. 2020. «Modelos de regresión aplicados a materiales de construcción». Revista de Ingeniería Civil 45 (3): 112-30."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1 - NO BORRAR.html#buen-trabajo",
-    "href": "slides-unit1/slides-unit1 - NO BORRAR.html#buen-trabajo",
-    "title": "Probability — Presentaciones",
-    "section": "¡Buen trabajo!",
-    "text": "¡Buen trabajo!\nHemos completado la primera unidad.\nEl pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#tipos-de-estadística-1",
-    "href": "slides-unit1/slides-unit1.html#tipos-de-estadística-1",
-    "title": "Probability — Presentaciones",
-    "section": "Tipos de Estadística",
-    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#características-de-una-población",
-    "href": "slides-unit1/slides-unit1.html#características-de-una-población",
-    "title": "Unidad 1",
-    "section": "Características de una población",
-    "text": "Características de una población\nUna población está estadísticamente definida si cumple con:\n\nDelimitación espacio-temporal | Límites precisos sobre el lugar y el período en el que existen sus elementos.\nCriterio de inclusión | Condición compartida que determina de forma inequívoca qué elementos pertenecen al conjunto y cuáles no.\nVariabilidad interna | Presencia de diferencias entre sus miembros respecto a las variables bajo estudio.\nDefinición de escala | Dimensión total del conjunto, clasificada como finita o potencialmente infinita."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#características-de-un-individuo",
-    "href": "slides-unit1/slides-unit1.html#características-de-un-individuo",
-    "title": "Unidad 1",
-    "section": "Características de un individuo",
-    "text": "Características de un individuo\n\nIndivisibilidad | Entidad más pequeña y completa sobre la cual se toma cada medición o registro.\nPertenencia explícita | Satisface estrictamente los criterios de inclusión de la población bajo estudio.\nCapacidad de medición | Posee o genera las variables y características de interés para el análisis.\nIdentificabilidad | Puede diferenciarse de manera única e inequívoca de cualquier otro elemento del conjunto."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#tipología-de-un-individuo-más-allá-de-la-persona",
-    "href": "slides-unit1/slides-unit1.html#tipología-de-un-individuo-más-allá-de-la-persona",
-    "title": "Unidad 1",
-    "section": "Tipología de un individuo (Más allá de la persona)",
-    "text": "Tipología de un individuo (Más allá de la persona)\n\nEspecímenes y componentes físicos | Probeta de concreto, perfil estructural, junta soldada, rodamiento o álabe de turbina.\nSistemas y ensayos estructurales | Tramo de tubería, un puente, un ensayo de fatiga o un prototipo de chasis.\nEntidades computacionales y flujos de datos | Petición HTTP a un servidor, registro de ejecución, transacción de base de datos o paquete de datos en red.\nProcesos, eventos y tiempos de operación | Ciclo de mecanizado, tiempo de parada por falla o falla por desgaste.\nUnidades agregadas y redes | Celda de manufactura, red de distribución de agua, servidor en clúster o turno de producción de 8h."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#tipología-de-un-individuo-más-allá-de-la-persona-1",
-    "href": "slides-unit1/slides-unit1.html#tipología-de-un-individuo-más-allá-de-la-persona-1",
-    "title": "Probability — Presentaciones",
-    "section": "Tipología de un individuo (Más allá de la persona)",
-    "text": "Tipología de un individuo (Más allá de la persona)\nPhoto by Toni Pomar on Unsplash"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#titulo-sobre-la-imagen",
-    "href": "slides-unit1/slides-unit1.html#titulo-sobre-la-imagen",
-    "title": "Probability — Presentaciones",
-    "section": "Titulo sobre la imagen",
-    "text": "Titulo sobre la imagen\nFoto por Toni Pomar en Unsplash"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#section-1",
-    "href": "slides-unit1/slides-unit1.html#section-1",
-    "title": "Probability — Presentaciones",
-    "section": "",
-    "text": "Según su función o relación:\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#section-2",
-    "href": "slides-unit1/slides-unit1.html#section-2",
-    "title": "Probability — Presentaciones",
-    "section": "",
-    "text": "Según su función o relación:\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#estadístico-vs-parámetro-1",
-    "href": "slides-unit1/slides-unit1.html#estadístico-vs-parámetro-1",
-    "title": "Unidad 1",
-    "section": "Estadístico vs Parámetro",
-    "text": "Estadístico vs Parámetro\n100 probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n28.4\n\n\n31.2\n\n\n25.9\n\n\n29.1\n\n\n33.0\n\n\n27.8\n\n\n30.6\n\n\n28.3\n\n\n24.9\n\n\n32.4\n\n\n29.5\n\n\n26.8\n\n\n31.7\n\n\n28.1\n\n\n30.2\n\n\n27.3\n\n\n29.8\n\n\n31.0\n\n\n34.1\n\n\n28.7\n\n\n31.5\n\n\n29.3\n\n\n26.2\n\n\n30.9\n\n\n27.6\n\n\n32.8\n\n\n28.9\n\n\n29.0\n\n\n32.1\n\n\n25.4\n\n\n30.4\n\n\n27.1\n\n\n35.2\n\n\n28.6\n\n\n31.3\n\n\n24.7\n\n\n29.7\n\n\n32.5\n\n\n27.9\n\n\n31.1\n\n\n28.5\n\n\n30.1\n\n\n26.6\n\n\n33.9\n\n\n29.2\n\n\n31.8\n\n\n32.2\n\n\n29.6\n\n\n30.7\n\n\n33.2\n\n\n27.4\n\n\n30.8\n\n\n31.6\n\n\n26.1\n\n\n28.8\n\n\n34.5\n\n\n29.9\n\n\n32.0\n\n\n25.8\n\n\n30.3\n\n\n33.5\n\n\n28.2\n\n\n29.4\n\n\n31.9\n\n\n27.0\n\n\n30.0\n\n\n26.5\n\n\n32.7\n\n\n28.0\n\n\n29.1\n\n\n25.2\n\n\n31.4\n\n\n28.7\n\n\n30.5\n\n\n33.8\n\n\n27.7\n\n\n29.3\n\n\n32.3\n\n\n26.9\n\n\n30.1\n\n\n31.2\n\n\n28.4\n\n\n34.0\n\n\n29.7\n\n\n26.3\n\n\n32.9\n\n\n27.5\n\n\n30.9\n\n\n31.7\n\n\n28.6\n\n\n29.8\n\n\n25.7\n\n\n32.6\n\n\n30.2\n\n\n28.1\n\n\n33.1\n\n\n27.2\n\n\n29.5\n\n\n31.0\n\n\n34.7\n\n\nLa media de la población 29.7 MPa"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#estadístico-vs-parámetro-2",
-    "href": "slides-unit1/slides-unit1.html#estadístico-vs-parámetro-2",
-    "title": "Probability — Presentaciones",
-    "section": "Estadístico vs Parámetro",
-    "text": "Estadístico vs Parámetro\n50 probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n28.4\n\n\n31.2\n\n\n25.9\n\n\n29.1\n\n\n33.0\n\n\n27.8\n\n\n30.6\n\n\n28.3\n\n\n24.9\n\n\n32.4\n\n\n29.5\n\n\n26.8\n\n\n31.7\n\n\n28.1\n\n\n30.2\n\n\n27.3\n\n\n29.8\n\n\n31.0\n\n\n34.1\n\n\n28.7\n\n\n31.5\n\n\n29.3\n\n\n26.2\n\n\n30.9\n\n\n27.6\n\n\n32.8\n\n\n28.9\n\n\n29.0\n\n\n32.1\n\n\n25.4\n\n\n30.4\n\n\n27.1\n\n\n35.2\n\n\n28.6\n\n\n31.3\n\n\n24.7\n\n\n29.7\n\n\n32.5\n\n\n27.9\n\n\n31.1\n\n\n28.5\n\n\n30.1\n\n\n26.6\n\n\n33.9\n\n\n29.2\n\n\n31.8\n\n\n32.2\n\n\n29.6\n\n\n30.7\n\n\n33.2\n\n\n27.4\n\n\n30.8\n\n\n31.6\n\n\n26.1\n\n\n28.8\n\n\n34.5\n\n\n29.9\n\n\n32.0\n\n\n25.8\n\n\n30.3\n\n\n33.5\n\n\n28.2\n\n\n29.4\n\n\n31.9\n\n\n27.0\n\n\n30.0\n\n\n26.5\n\n\n32.7\n\n\n28.0\n\n\n29.1\n\n\n25.2\n\n\n31.4\n\n\n28.7\n\n\n30.5\n\n\n33.8\n\n\n27.7\n\n\n29.3\n\n\n32.3\n\n\n26.9\n\n\n30.1\n\n\n31.2\n\n\n28.4\n\n\n34.0\n\n\n29.7\n\n\n26.3\n\n\n32.9\n\n\n27.5\n\n\n30.9\n\n\n31.7\n\n\n28.6\n\n\n29.8\n\n\n25.7\n\n\n32.6\n\n\n30.2\n\n\n28.1\n\n\n33.1\n\n\n27.2\n\n\n29.5\n\n\n31.0\n\n\n34.7"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#escala-de-medición",
-    "href": "slides-unit1/slides-unit1.html#escala-de-medición",
-    "title": "Probability — Presentaciones",
-    "section": "Escala de medición",
-    "text": "Escala de medición"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#escalas-de-medición",
-    "href": "slides-unit1/slides-unit1.html#escalas-de-medición",
-    "title": "Unidad 1",
-    "section": "Escalas de Medición",
-    "text": "Escalas de Medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#contenido-del-módulo",
-    "href": "slides-unit1/slides-unit1.html#contenido-del-módulo",
-    "title": "Probability — Presentaciones",
-    "section": "Contenido del Módulo",
-    "text": "Contenido del Módulo\n\nEstadística\n\nEstadística descriptiva vs. inferencial\n\nPoblación, muestra e individuo\n\nUnidades de análisis y condiciones de definición\nDescriptores numéricos: Parámetro vs. Estadístico\n\nVariables estadísticas y datos\n\nDefinición de variable y concepto de dato\nClasificación: Cualitativas, cuantitativas y datos binarios\nVariables binarias (simétricas vs. asimétricas) y codificación numérica\n\nEscalas de medición\n\nEscalas nominal, ordinal, intervalo y razón"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#clasificación-de-las-variables-según-su-naturaleza",
-    "href": "slides-unit1/slides-unit1.html#clasificación-de-las-variables-según-su-naturaleza",
-    "title": "Unidad 1",
-    "section": "Clasificación de las variables (Según su naturaleza)",
-    "text": "Clasificación de las variables (Según su naturaleza)\n\nCualitativas o Categóricas (Atributos): Cualidad, característica o categoría no numérica.\n\nNominales: Categorías sin orden preestablecido.\nOrdinales: Categorías con un orden, escala o jerarquía natural.\nBinarias (Dicotómicas): Solo admiten dos categorías excluyentes.\n\nSimétricas: Ambas tienen similar importancia o frecuencia.\nAsimétricas: Una categoría representa la presencia del evento de interés y la otra la ausencia.\n\n\nCuantitativas o Numéricas (Cantidades): Valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Valor entero y aislado.\nContinuas: Valor decimal dentro de un intervalo."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1.html#clasificación-de-las-variables-según-su-función-o-relación",
-    "href": "slides-unit1/slides-unit1.html#clasificación-de-las-variables-según-su-función-o-relación",
-    "title": "Unidad 1",
-    "section": "Clasificación de las variables (Según su función o relación)",
-    "text": "Clasificación de las variables (Según su función o relación)\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
-    "href": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
-    "title": "Unidad 1",
-    "section": "Unidades temáticas",
-    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#unidad-1",
-    "href": "slides-unit1/slides-unit1_2.html#unidad-1",
-    "title": "Unidad 1",
-    "section": "Unidad 1",
-    "text": "Unidad 1\n\nDefiniciones. Manejo de datos y medidas estadísticas\n\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#unidad-1.2",
-    "href": "slides-unit1/slides-unit1_2.html#unidad-1.2",
-    "title": "Unidad 1",
-    "section": "Unidad 1.2",
-    "text": "Unidad 1.2\n\nRecolección, organización y representación gráfica de datos\n\n\nFuentes de datos y obtención\n\nDiseños experimentales vs. estudios observacionales\nEncuestas e instrumentos de medición\n\nTablas de frecuencias\n\nEstructuración para datos no agrupados vs. agrupados\n\nReglas para determinación de bins y ancho de clase\n\nCriterios clásicos: Raíz cuadrada, Sturges y Rice\nCriterios basados en densidad y dispersión: Freedman-Diaconis y Scott\n\nGráficos para variables cualitativas y binarias\n\nRepresentación de categorías, proporciones y atributos dicotómicos\n\nGráficos para variables cuantitativas\n\nVisualización de la forma, centro, dispersión y densidad de datos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#clasificación-de-las-medidas-estadísticas",
-    "href": "slides-unit1/slides-unit1_2.html#clasificación-de-las-medidas-estadísticas",
-    "title": "Unidad 1",
-    "section": "Clasificación de las medidas estadísticas",
-    "text": "Clasificación de las medidas estadísticas\n\n\n\n\n\n\n\n\nTipo\n¿Qué miden?\nEjemplos principales\n\n\n\n\nTendencia central\nEl punto alrededor del cual se agrupan los datos.\nMedia, Mediana, Moda\n\n\nDispersión\nQué tan alejados o separados están los datos respecto al centro.\nVarianza, Desviación estándar, Rango\n\n\nPosición\nCómo se divide la distribución en partes iguales.\nCuartiles, Deciles, Percentiles\n\n\nForma\nLa simetría y la concentración de los datos.\nAsimetría (Skewness), Curtosis"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#datos-experimentales-ensayos-de-compresión-f_c",
-    "href": "slides-unit1/slides-unit1_2.html#datos-experimentales-ensayos-de-compresión-f_c",
-    "title": "Unidad 1",
-    "section": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))",
-    "text": "Datos Experimentales: Ensayos de Compresión (\\(f'_c\\))\nSe evaluaron \\(N = 50\\) probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\nRequisito del Proyecto\n\n\nLa especificación de diseño exige una resistencia nominal mínima de \\(f'_c = 30.0\\text{ MPa}\\)."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#número-de-clases",
-    "href": "slides-unit1/slides-unit1_2.html#número-de-clases",
-    "title": "Unidad 1",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\nRegla de Freedman-Diaconis\n\n\nPara calcular la amplitud óptima del intervalo de clase (\\(h\\)) basada en la dispersión de los datos:\n\\[h = 2 \\cdot \\frac{\\text{IQR}}{\\sqrt[3]{N}}\\]\ndonde \\(\\text{IQR} = Q_3 - Q_1\\) es el rango intercuartílico y \\(N\\) es el número de observaciones. El número de clases es:\n\\[k = \\left\\lceil \\frac{x_{\\max} - x_{\\min}}{h} \\right\\rceil\\]"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#número-de-clases-1",
-    "href": "slides-unit1/slides-unit1_2.html#número-de-clases-1",
-    "title": "Unidad 1",
-    "section": "Número de clases",
-    "text": "Número de clases\n\n\n24.3\n\n\n24.8\n\n\n25.1\n\n\n25.6\n\n\n26.1\n\n\n26.4\n\n\n26.7\n\n\n27.0\n\n\n27.2\n\n\n27.5\n\n\n27.7\n\n\n27.9\n\n\n28.0\n\n\n28.2\n\n\n28.3\n\n\n28.5\n\n\n28.6\n\n\n28.8\n\n\n28.9\n\n\n29.0\n\n\n29.1\n\n\n29.3\n\n\n29.4\n\n\n29.5\n\n\n29.7\n\n\n29.8\n\n\n29.9\n\n\n30.1\n\n\n30.2\n\n\n30.4\n\n\n30.5\n\n\n30.7\n\n\n30.8\n\n\n31.0\n\n\n31.1\n\n\n31.3\n\n\n31.4\n\n\n31.6\n\n\n31.7\n\n\n31.9\n\n\n32.1\n\n\n32.3\n\n\n32.6\n\n\n32.8\n\n\n33.1\n\n\n33.4\n\n\n33.7\n\n\n34.2\n\n\n34.8\n\n\n35.5\n\n\n\n\n\n\n\n\n\n\nRegla de Sturges\n\n\nPara estimar el número de clases (\\(k\\)) asumiendo una distribución aproximadamente normal:\n\\[k = 1 + 3.322 \\log_{10}(N)\\]\ndonde \\(N\\) es el número total de observaciones. La amplitud constante del intervalo (\\(h\\)) se obtiene como:\n\\[h = \\frac{x_{\\max} - x_{\\min}}{k}\\]"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#contexto-del-problema",
-    "href": "slides-unit1/slides-unit1_2.html#contexto-del-problema",
-    "title": "Unidad 1",
-    "section": "Contexto del problema",
-    "text": "Contexto del problema\nAlgunos estudios reportan mejoras en la predicción cuando se combinan métodos clásicos de diseño de experimentos con aprendizaje automático [@ejemplo2020].\n\nPunto clave 1\nPunto clave 2\nPunto clave 3"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#ejemplo-de-código-largo",
-    "href": "slides-unit1/slides-unit1_2.html#ejemplo-de-código-largo",
-    "title": "Unidad 1",
-    "section": "Ejemplo de código largo",
-    "text": "Ejemplo de código largo\nLámina con scroll propio — ideal para bloques de código extensos.\nimport numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_squared_error, r2_score\n\n# Cargar datos\ndf = pd.read_csv(\"datos_concreto.csv\")\n\n# Variables predictoras y variable respuesta\nX = df.drop(columns=[\"resistencia\"])\ny = df[\"resistencia\"]\n\n# División train / test\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Entrenamiento del modelo\nmodelo = RandomForestRegressor(\n    n_estimators=300,\n    max_depth=8,\n    min_samples_leaf=3,\n    random_state=42,\n)\nmodelo.fit(X_train, y_train)\n\n# Predicción y métricas\ny_pred = modelo.predict(X_test)\nrmse = mean_squared_error(y_test, y_pred, squared=False)\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"RMSE: {rmse:.3f}\")\nprint(f\"R2:   {r2:.3f}\")\n\n# Importancia de variables\nimportancias = pd.Series(\n    modelo.feature_importances_, index=X.columns\n).sort_values(ascending=False)\n\nprint(importancias)"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#dos-columnas-texto-y-texto",
-    "href": "slides-unit1/slides-unit1_2.html#dos-columnas-texto-y-texto",
-    "title": "Unidad 1",
-    "section": "Dos columnas · texto y texto",
-    "text": "Dos columnas · texto y texto\n\n\n\nEnfoque clásico\n\nDiseño de experimentos (DOE)\nANOVA\nSuperficie de respuesta (RSM)\n\n\nEnfoque moderno\n\nModelos de machine learning\nValidación cruzada\nCuantificación de incertidumbre"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#imagen-centrada",
-    "href": "slides-unit1/slides-unit1_2.html#imagen-centrada",
-    "title": "Unidad 1",
-    "section": "Imagen centrada",
-    "text": "Imagen centrada\n\nPie de imagen o fuente, en texto pequeño."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#columnas-con-imagen",
-    "href": "slides-unit1/slides-unit1_2.html#columnas-con-imagen",
-    "title": "Unidad 1",
-    "section": "Columnas con imagen",
-    "text": "Columnas con imagen\n\n\nTexto explicativo a la izquierda. Aquí puedes describir el método, el dataset o el resultado que ilustra la imagen de la derecha."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#ecuaciones-en-latex",
-    "href": "slides-unit1/slides-unit1_2.html#ecuaciones-en-latex",
-    "title": "Unidad 1",
-    "section": "Ecuaciones en LaTeX",
-    "text": "Ecuaciones en LaTeX\nModelo de regresión lineal múltiple:\n\\[\n\\hat{y} = \\beta_0 + \\sum_{i=1}^{n} \\beta_i x_i + \\varepsilon\n\\]\nCoeficiente de determinación:\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nTambién funciona en línea, por ejemplo \\(\\alpha = 0.05\\)."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#resultado-principal",
-    "href": "slides-unit1/slides-unit1_2.html#resultado-principal",
-    "title": "Unidad 1",
-    "section": "Resultado principal",
-    "text": "Resultado principal\n\nHallazgo 1\nHallazgo 2\nHallazgo 3"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#referencias",
-    "href": "slides-unit1/slides-unit1_2.html#referencias",
-    "title": "Unidad 1",
-    "section": "Referencias",
-    "text": "Referencias"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#buen-trabajo",
-    "href": "slides-unit1/slides-unit1_2.html#buen-trabajo",
-    "title": "Unidad 1",
-    "section": "¡Buen trabajo!",
-    "text": "¡Buen trabajo!\nHemos completado la primera unidad.\nEl pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre."
   },
   {
     "objectID": "slides-unit1/slides-unit1_1.html#unidades-temáticas",
@@ -691,61 +222,5 @@
     "title": "Probability — Presentaciones",
     "section": "Escalas de Medición",
     "text": "Escalas de Medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
-    "href": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
-    "title": "Unidad 1",
-    "section": "Definiciones. Manejo de datos y medidas estadísticas",
-    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
-    "href": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
-    "title": "Unidad 1",
-    "section": "Recolección, organización y representación gráfica de datos",
-    "text": "Recolección, organización y representación gráfica de datos\n\nFuentes de datos y obtención\n\nDiseños experimentales vs. estudios observacionales\nEncuestas e instrumentos de medición\nMuestreo probabilistico y no probabilistico\n\nTablas de frecuencias\n\nEstructuración para datos no agrupados vs. agrupados\n\nReglas para determinación de bins y ancho de clase\n\nCriterios clásicos: Raíz cuadrada, Sturges y Rice\nCriterios basados en densidad y dispersión: Freedman-Diaconis y Scott\n\nGráficos para variables cualitativas y binarias\n\nRepresentación de categorías, proporciones y atributos dicotómicos\n\nGráficos para variables cuantitativas\n\nVisualización de la forma, centro, dispersión y densidad de datos"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
-    "href": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
-    "title": "Unidad 1",
-    "section": "Fuente de datos y obtención",
-    "text": "Fuente de datos y obtención\nDimensión procesal de la información estadística.\nGénesis de los datos | Experimentos vs. Observación\nMétodo de captura | Instrumentos directos vs. indirectos\nEstrategia de selección | Muestreo probabilístico vs. no probabilístico"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#medidas-estadísticas",
-    "href": "slides-unit1/slides-unit1_2.html#medidas-estadísticas",
-    "title": "Unidad 1",
-    "section": "Medidas estadísticas",
-    "text": "Medidas estadísticas\nValores numéricos que resumen, organizan y sintetizan la información de un conjunto de datos para poder entender su comportamiento global de forma rápida."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#título-de-la-diapositiva",
-    "href": "slides-unit1/slides-unit1_2.html#título-de-la-diapositiva",
-    "title": "Unidad 1",
-    "section": "Título de la Diapositiva",
-    "text": "Título de la Diapositiva\n\nVisualizaciónCódigo MATLAB\n\n\n\n\n\nRespuesta armónica del sistema\n\n\n\n\n% Parámetros del sistema\nm = 1.0;    % Masa [kg]\nk = 100.0;  % Rigidez [N/m]\nwn = sqrt(k/m);\n\n% Respuesta temporal\nt = 0:0.01:5;\nx = cos(wn * t);\n\n% Generación de la figura\nfigure('Color', 'w');\nplot(t, x, 'LineWidth', 1.5, 'Color', '#0072BD');\ngrid on;\nxlabel('Tiempo [s]');\nylabel('Desplazamiento [m]');\ntitle('Respuesta Libre');\n\n\n## Medidas estadísticas {background-color=\"#2d3748\"}\n\nValores numéricos que *resumen*, *organizan* y *sintetizan* la información de un conjunto de datos para poder entender su comportamiento global de forma rápida.\n\n\n\n## Clasificación de las medidas estadísticas\n\n| Tipo | ¿Qué miden? | Ejemplos principales |\n| :--- | :--- | :--- |\n| **Tendencia central** | El punto alrededor del cual se agrupan los datos. | Media, Mediana, Moda |\n| **Dispersión** | Qué tan alejados o separados están los datos respecto al centro. | Varianza, Desviación estándar, Rango |\n| **Posición** | Cómo se divide la distribución en partes iguales. | Cuartiles, Deciles, Percentiles |\n| **Forma** | La simetría y la concentración de los datos. | Asimetría (*Skewness*), Curtosis |\n\n\n\n# Medidas de tendencia central {background-color=\"#f6f8fa\"}\n\nRepresentan el comportamiento típico de un conjunto de datos en un solo número, identificando el punto medio o central alrededor del cual se agrupa la información.\n\n\n\n# Media aritmética {background-color=\"#2d3748\"}\n\nValor central que resulta de sumar todos los datos y dividirlos entre la cantidad total de datos.\n\n$$\n\\large \\displaystyle\n\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i\n$$ \n\n\n\n# Mediana {background-color=\"#2d3748\"}\n\nValor que ocupa la posición central de un conjunto de datos ordenados de menor a mayor, dividiendo la muestra en dos partes exactamente iguales.\n\n$$\n\\large \\displaystyle\nMe = \n\\begin{cases} \nx_{\\left(\\frac{n+1}{2}\\right)} & \\text{si } n \\text{ es impar} \\\\[2ex]\n\\frac{1}{2} \\left( x_{\\left(\\frac{n}{2}\\right)} + x_{\\left(\\frac{n}{2} + 1\\right)} \\right) & \\text{si } n \\text{ es par}\n\\end{cases}\n$$\n\n\n\n# Moda {background-color=\"#2d3748\"}\n\nValor que aparece con mayor frecuencia en un conjunto de datos. Un conjunto puede no se *amodal*, *unimodal*, *bimodal* o *multimodal*.\n\n\n\n# Medidas de dispersión {background-color=\"#f6f8fa\"}\n\nValores numéricos que indican qué tan alejados o separados están los datos respecto a la media, evaluando la variabilidad de la información y qué tan representativo es su centro.\n\n\n\n# Rango {background-color=\"#2d3748\"}\n\nDiferencia entre el valor máximo y el valor mínimo del conjunto de datos.\n\n$$\n\\large \\displaystyle\nRango = x_{\\text{máx}} - x_{\\text{mín}}\n$$\n\n\n\n# Varianza {background-color=\"#2d3748\"}\n\nPromedio de las desviaciones al cuadrado de cada dato respecto a la media.\n\n$$\n\\large \\displaystyle\ns^2 = \\frac{1}{n - 1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2\n$$\n\n\n\n# Desviación estándar {background-color=\"#2d3748\"}\n\nIndica cuánto se alejan en promedio los datos de la media.\n\n$$\n\\large \\displaystyle\ns = \\sqrt{\\frac{1}{n - 1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2}\n$$\n\n\n\n# Coeficiente de variación {background-color=\"#2d3748\"}\n\nPorcentaje que expresa la variabilidad relativa de la muestra con respecto a su media.\n\n$$\n\\large \\displaystyle\nCV = \\left( \\frac{s}{\\bar{x}} \\right) \\cdot 100\\%\n$$\n\n\n\n# Rango intercuartílico {background-color=\"#2d3748\"}\n\nAmplitud del 50% central de los datos, calculada como la diferencia entre el tercer y primer cuartil.\n\n$$\n\\large \\displaystyle\nIQR = Q_3 - Q_1\n$$\n\n\n\n# Medidas de forma {background-color=\"#f6f8fa\"}\n\nDescriben la estructura geométrica de la distribución de los datos sin necesidad de graficarlos. Analizan dos aspectos: hacia dónde se inclina la curva (asimetría) y qué tan apuntalada está (curtosis).\n\n\n\n# Asimetría (Skewness) {background-color=\"#2d3748\"}\n\nMide si los datos se distribuyen de forma uniforme a ambos lados de la media o si se concentran más hacia un extremo.\n\n$$\n\\large \\displaystyle\nA_s = \\frac{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^3}{s^3}\n$$\n\n\n\n# Curtosis o Apuntamiento {background-color=\"#2d3748\"}\n\nMide el grado de concentración de los datos alrededor de la zona central y el peso de las colas en comparación con una distribución normal.\n\n$$\n\\large \\displaystyle\nK = \\frac{\\frac{1}{n} \\sum_{i=1}^{n} (x_i - \\bar{x})^4}{s^4} - 3\n$$\n\n\n## Datos Experimentales: Ensayos de Compresión ($f'_c$)\n\nSe evaluaron $N = 50$ probetas cilíndricas de concreto a los 28 días ($f'_c$ en **MPa**):\n\n&lt;div style=\"display: grid; grid-template-columns: repeat(10, 1fr); gap: 12px; text-align: center; font-family: monospace; margin: 20px 0;\"&gt;\n  &lt;div&gt;24.3&lt;/div&gt;&lt;div&gt;24.8&lt;/div&gt;&lt;div&gt;25.1&lt;/div&gt;&lt;div&gt;25.6&lt;/div&gt;&lt;div&gt;26.1&lt;/div&gt;&lt;div&gt;26.4&lt;/div&gt;&lt;div&gt;26.7&lt;/div&gt;&lt;div&gt;27.0&lt;/div&gt;&lt;div&gt;27.2&lt;/div&gt;&lt;div&gt;27.5&lt;/div&gt;\n  &lt;div&gt;27.7&lt;/div&gt;&lt;div&gt;27.9&lt;/div&gt;&lt;div&gt;28.0&lt;/div&gt;&lt;div&gt;28.2&lt;/div&gt;&lt;div&gt;28.3&lt;/div&gt;&lt;div&gt;28.5&lt;/div&gt;&lt;div&gt;28.6&lt;/div&gt;&lt;div&gt;28.8&lt;/div&gt;&lt;div&gt;28.9&lt;/div&gt;&lt;div&gt;29.0&lt;/div&gt;\n  &lt;div&gt;29.1&lt;/div&gt;&lt;div&gt;29.3&lt;/div&gt;&lt;div&gt;29.4&lt;/div&gt;&lt;div&gt;29.5&lt;/div&gt;&lt;div&gt;29.7&lt;/div&gt;&lt;div&gt;29.8&lt;/div&gt;&lt;div&gt;29.9&lt;/div&gt;&lt;div&gt;30.1&lt;/div&gt;&lt;div&gt;30.2&lt;/div&gt;&lt;div&gt;30.4&lt;/div&gt;\n  &lt;div&gt;30.5&lt;/div&gt;&lt;div&gt;30.7&lt;/div&gt;&lt;div&gt;30.8&lt;/div&gt;&lt;div&gt;31.0&lt;/div&gt;&lt;div&gt;31.1&lt;/div&gt;&lt;div&gt;31.3&lt;/div&gt;&lt;div&gt;31.4&lt;/div&gt;&lt;div&gt;31.6&lt;/div&gt;&lt;div&gt;31.7&lt;/div&gt;&lt;div&gt;31.9&lt;/div&gt;\n  &lt;div&gt;32.1&lt;/div&gt;&lt;div&gt;32.3&lt;/div&gt;&lt;div&gt;32.6&lt;/div&gt;&lt;div&gt;32.8&lt;/div&gt;&lt;div&gt;33.1&lt;/div&gt;&lt;div&gt;33.4&lt;/div&gt;&lt;div&gt;33.7&lt;/div&gt;&lt;div&gt;34.2&lt;/div&gt;&lt;div&gt;34.8&lt;/div&gt;&lt;div&gt;35.5&lt;/div&gt;\n&lt;/div&gt;\n\n:::{.callout-note}\n### Requisito del Proyecto\nLa especificación de diseño exige una resistencia nominal mínima de **$f'_c = 30.0\\text{ MPa}$**.\n:::\n\n\n## Número de clases\n\n\n&lt;div style=\"display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;\"&gt;\n  &lt;div&gt;**24.3**&lt;/div&gt;&lt;div&gt;24.8&lt;/div&gt;&lt;div&gt;25.1&lt;/div&gt;&lt;div&gt;25.6&lt;/div&gt;&lt;div&gt;26.1&lt;/div&gt;&lt;div&gt;26.4&lt;/div&gt;&lt;div&gt;26.7&lt;/div&gt;&lt;div&gt;27.0&lt;/div&gt;&lt;div&gt;27.2&lt;/div&gt;&lt;div&gt;27.5&lt;/div&gt;\n  &lt;div&gt;27.7&lt;/div&gt;&lt;div&gt;27.9&lt;/div&gt;&lt;div&gt;28.0&lt;/div&gt;&lt;div&gt;28.2&lt;/div&gt;&lt;div&gt;28.3&lt;/div&gt;&lt;div&gt;28.5&lt;/div&gt;&lt;div&gt;28.6&lt;/div&gt;&lt;div&gt;28.8&lt;/div&gt;&lt;div&gt;28.9&lt;/div&gt;&lt;div&gt;29.0&lt;/div&gt;\n  &lt;div&gt;29.1&lt;/div&gt;&lt;div&gt;29.3&lt;/div&gt;&lt;div&gt;29.4&lt;/div&gt;&lt;div&gt;29.5&lt;/div&gt;&lt;div&gt;29.7&lt;/div&gt;&lt;div&gt;29.8&lt;/div&gt;&lt;div&gt;29.9&lt;/div&gt;&lt;div&gt;30.1&lt;/div&gt;&lt;div&gt;30.2&lt;/div&gt;&lt;div&gt;30.4&lt;/div&gt;\n  &lt;div&gt;30.5&lt;/div&gt;&lt;div&gt;30.7&lt;/div&gt;&lt;div&gt;30.8&lt;/div&gt;&lt;div&gt;31.0&lt;/div&gt;&lt;div&gt;31.1&lt;/div&gt;&lt;div&gt;31.3&lt;/div&gt;&lt;div&gt;31.4&lt;/div&gt;&lt;div&gt;31.6&lt;/div&gt;&lt;div&gt;31.7&lt;/div&gt;&lt;div&gt;31.9&lt;/div&gt;\n  &lt;div&gt;32.1&lt;/div&gt;&lt;div&gt;32.3&lt;/div&gt;&lt;div&gt;32.6&lt;/div&gt;&lt;div&gt;32.8&lt;/div&gt;&lt;div&gt;33.1&lt;/div&gt;&lt;div&gt;33.4&lt;/div&gt;&lt;div&gt;33.7&lt;/div&gt;&lt;div&gt;34.2&lt;/div&gt;&lt;div&gt;34.8&lt;/div&gt;&lt;div&gt;**35.5**&lt;/div&gt;\n&lt;/div&gt;\n\n&lt;div style=\"margin-top: 30px;\"&gt;\n:::{.callout-tip}\n### Regla de Freedman-Diaconis\nPara calcular la amplitud óptima del intervalo de clase ($h$) basada en la dispersión de los datos:\n\n$$h = 2 \\cdot \\frac{\\text{IQR}}{\\sqrt[3]{N}}$$\n\ndonde $\\text{IQR} = Q_3 - Q_1$ es el rango intercuartílico y $N$ es el número de observaciones. El número de clases es:\n\n$$k = \\left\\lceil \\frac{x_{\\max} - x_{\\min}}{h} \\right\\rceil$$\n:::\n&lt;/div&gt;\n\n\n\n## Número de clases\n\n\n&lt;div style=\"display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;\"&gt;\n  &lt;div&gt;**24.3**&lt;/div&gt;&lt;div&gt;24.8&lt;/div&gt;&lt;div&gt;25.1&lt;/div&gt;&lt;div&gt;25.6&lt;/div&gt;&lt;div&gt;26.1&lt;/div&gt;&lt;div&gt;26.4&lt;/div&gt;&lt;div&gt;26.7&lt;/div&gt;&lt;div&gt;27.0&lt;/div&gt;&lt;div&gt;27.2&lt;/div&gt;&lt;div&gt;27.5&lt;/div&gt;\n  &lt;div&gt;27.7&lt;/div&gt;&lt;div&gt;27.9&lt;/div&gt;&lt;div&gt;28.0&lt;/div&gt;&lt;div&gt;28.2&lt;/div&gt;&lt;div&gt;28.3&lt;/div&gt;&lt;div&gt;28.5&lt;/div&gt;&lt;div&gt;28.6&lt;/div&gt;&lt;div&gt;28.8&lt;/div&gt;&lt;div&gt;28.9&lt;/div&gt;&lt;div&gt;29.0&lt;/div&gt;\n  &lt;div&gt;29.1&lt;/div&gt;&lt;div&gt;29.3&lt;/div&gt;&lt;div&gt;29.4&lt;/div&gt;&lt;div&gt;29.5&lt;/div&gt;&lt;div&gt;29.7&lt;/div&gt;&lt;div&gt;29.8&lt;/div&gt;&lt;div&gt;29.9&lt;/div&gt;&lt;div&gt;30.1&lt;/div&gt;&lt;div&gt;30.2&lt;/div&gt;&lt;div&gt;30.4&lt;/div&gt;\n  &lt;div&gt;30.5&lt;/div&gt;&lt;div&gt;30.7&lt;/div&gt;&lt;div&gt;30.8&lt;/div&gt;&lt;div&gt;31.0&lt;/div&gt;&lt;div&gt;31.1&lt;/div&gt;&lt;div&gt;31.3&lt;/div&gt;&lt;div&gt;31.4&lt;/div&gt;&lt;div&gt;31.6&lt;/div&gt;&lt;div&gt;31.7&lt;/div&gt;&lt;div&gt;31.9&lt;/div&gt;\n  &lt;div&gt;32.1&lt;/div&gt;&lt;div&gt;32.3&lt;/div&gt;&lt;div&gt;32.6&lt;/div&gt;&lt;div&gt;32.8&lt;/div&gt;&lt;div&gt;33.1&lt;/div&gt;&lt;div&gt;33.4&lt;/div&gt;&lt;div&gt;33.7&lt;/div&gt;&lt;div&gt;34.2&lt;/div&gt;&lt;div&gt;34.8&lt;/div&gt;&lt;div&gt;**35.5**&lt;/div&gt;\n&lt;/div&gt;\n\n\n&lt;div style=\"margin-top: 30px;\"&gt;\n:::{.callout-important style=\"margin-top: 2em;\"}\n### Regla de Sturges\nPara estimar el número de clases ($k$) asumiendo una distribución aproximadamente normal:\n\n$$k = 1 + 3.322 \\log_{10}(N)$$\n\ndonde $N$ es el número total de observaciones. La amplitud constante del intervalo ($h$) se obtiene como:\n\n$$h = \\frac{x_{\\max} - x_{\\min}}{k}$$\n:::\n&lt;/div&gt;\n\n\n\n# Media para datos agrupados {background-color=\"#2d3748\"}\n\nLa media ($\\bar{x}$) en datos agrupados por intervalos se utiliza la marca de clase, $x_i$ para representar a todos los datos de ese intervalo.\n\n$$\n\\large \\displaystyle\n\\bar{x} = \\frac{\\sum_{i=1}^{k} f_i \\cdot x_i}{n} = \\sum_{i=1}^{k} h_i \\cdot x_i\n$$\n\ndonde:\n\n$$\n\\large \\displaystyle\nx_i = \\frac{L_i + L_s}{2}\n$$\n\n\n\n## Contexto del problema\n\nAlgunos estudios reportan mejoras en la predicción cuando se combinan\nmétodos clásicos de diseño de experimentos con aprendizaje automático\n[@ejemplo2020].\n\n- Punto clave 1\n- Punto clave 2\n- Punto clave 3\n\n\n\n## Ejemplo de código largo {.scrollable}\n\nLámina con scroll propio — ideal para bloques de código extensos.\n\n```python\nimport numpy as np\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_squared_error, r2_score\n\n# Cargar datos\ndf = pd.read_csv(\"datos_concreto.csv\")\n\n# Variables predictoras y variable respuesta\nX = df.drop(columns=[\"resistencia\"])\ny = df[\"resistencia\"]\n\n# División train / test\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Entrenamiento del modelo\nmodelo = RandomForestRegressor(\n    n_estimators=300,\n    max_depth=8,\n    min_samples_leaf=3,\n    random_state=42,\n)\nmodelo.fit(X_train, y_train)\n\n# Predicción y métricas\ny_pred = modelo.predict(X_test)\nrmse = mean_squared_error(y_test, y_pred, squared=False)\nr2 = r2_score(y_test, y_pred)\n\nprint(f\"RMSE: {rmse:.3f}\")\nprint(f\"R2:   {r2:.3f}\")\n\n# Importancia de variables\nimportancias = pd.Series(\n    modelo.feature_importances_, index=X.columns\n).sort_values(ascending=False)\n\nprint(importancias)\n\nSección 2 · Metodología\n\n\n\nDos columnas · texto y texto\n\n\n\nEnfoque clásico\n\nDiseño de experimentos (DOE)\nANOVA\nSuperficie de respuesta (RSM)\n\n\nEnfoque moderno\n\nModelos de machine learning\nValidación cruzada\nCuantificación de incertidumbre\n\n\n\n\n\nImagen centrada\n\n\n\n\n\nPie de imagen o fuente, en texto pequeño.\n\n\nColumnas con imagen\n\n\nTexto explicativo a la izquierda. Aquí puedes describir el método, el dataset o el resultado que ilustra la imagen de la derecha.\n\n\n\n\n\n\n\n\n\nEcuaciones en LaTeX\nModelo de regresión lineal múltiple:\n\\[\n\\hat{y} = \\beta_0 + \\sum_{i=1}^{n} \\beta_i x_i + \\varepsilon\n\\]\nCoeficiente de determinación:\n\\[\nR^2 = 1 - \\frac{SS_{res}}{SS_{tot}}\n\\]\nTambién funciona en línea, por ejemplo \\(\\alpha = 0.05\\).\n\n\n\nSección 3 · Resultados\n\n\n\nResultado principal\n\nHallazgo 1\nHallazgo 2\nHallazgo 3\n\n\n\nReferencias\n\n\n\n\n\n¡Buen trabajo!\nHemos completado la primera unidad.\nEl pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre.\n\n\n\nSemana 2 · Clase 3\n\n\nDatos no agrupados\n\n\n\n\nSemana 2 · Clase 4\n\n\nDatos agrupados\n\n\n\n\nSemana 3 · Clase 5\n\n\nTipos de gráficas\n\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). Bar Charts, Pie Charts, Histograms, Stemplots, Timeplots. YouTube.\n\n\n\nSemana 3 · Clase 6\n\n\nMedidas de tendencia central y de dispersión\n\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). Mode, Median, Mean, Range, and Standard Deviation. YouTube.\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). The Effects of Transforming Data on Spread and Centre. YouTube.\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). The Effects of Outliers on Spread and Centre. YouTube.\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). The Five Number Summary, Boxplots, and Outliers. YouTube.\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). Percentiles. YouTube.\n\n\n\nSemana 4 · Clase 7\n\n\nMedidas de forma\n\n\n\n\n\n\nFuente: Simple Learning Pro. (2015). Symmetry and Skewness. YouTube."
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico",
-    "href": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico",
-    "title": "Unidad 1",
-    "section": "Comportamiento Dinámico",
-    "text": "Comportamiento Dinámico\n\nVisualizaciónCódigo MATLAB\n\n\n\n\n\nRespuesta armónica del sistema\n\n\n\n\n#| eval: false\n\n% Parámetros del sistema\nm = 1.0;    % Masa [kg]\nk = 100.0;  % Rigidez [N/m]\nwn = sqrt(k/m);\n\n% Respuesta temporal\nt = 0:0.01:5;\nx = cos(wn * t);\n\n% Generación de la figura\nfigure('Color', 'w');\nplot(t, x, 'LineWidth', 1.5);\ngrid on;\nxlabel('Tiempo [s]');\nylabel('Desplazamiento [m]');"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico-1",
-    "href": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico-1",
-    "title": "Unidad 1",
-    "section": "Comportamiento Dinámico",
-    "text": "Comportamiento Dinámico\n\n\n\n\n\n\n\n\n\n\nVer script de MATLAB\n\n#| eval: false\n\n% Parámetros del sistema\nm = 1.0;    % Masa [kg]\nk = 100.0;  % Rigidez [N/m]\nwn = sqrt(k/m);\n\n% Respuesta temporal\nt = 0:0.01:5;\nx = cos(wn * t);\n\n% Generación de la figura\nfigure('Color', 'w');\nplot(t, x, 'LineWidth', 1.5);\ngrid on;\nxlabel('Tiempo [s]');\nylabel('Desplazamiento [m]');"
-  },
-  {
-    "objectID": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico-2",
-    "href": "slides-unit1/slides-unit1_2.html#comportamiento-dinámico-2",
-    "title": "Unidad 1",
-    "section": "Comportamiento Dinámico",
-    "text": "Comportamiento Dinámico\n\n% Parámetros del sistema\nm = 1.0;    % Masa [kg]\nk = 100.0;  % Rigidez [N/m]\nwn = sqrt(k/m);\n\n% Respuesta temporal\nt = 0:0.01:5;\nx = cos(wn * t);\n\n% Generación de la figura\nfigure('Color', 'w');\nplot(t, x, 'LineWidth', 1.5);\ngrid on;\nxlabel('Tiempo [s]');\nylabel('Desplazamiento [m]');"
   }
 ]
