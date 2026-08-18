@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "slides-unit1_1.html#unidades-temáticas",
+    "href": "slides-unit1_1.html#unidades-temáticas",
+    "title": "Probability — Presentaciones",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1_1.html#unidad-1",
+    "href": "slides-unit1_1.html#unidad-1",
+    "title": "Probability — Presentaciones",
+    "section": "Unidad 1",
+    "text": "Unidad 1\n\nDefiniciones. Manejo de datos y medidas estadísticas\n\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1_1.html#unidad-1-1",
+    "href": "slides-unit1_1.html#unidad-1-1",
+    "title": "Probability — Presentaciones",
+    "section": "Unidad 1",
+    "text": "Unidad 1\n\nIntroducción y conceptos fundamentales\n\n\nEstadística\n\nEstadística descriptiva vs. inferencial\n\nPoblación, muestra e individuo\n\nUnidades de análisis y condiciones de definición\nDescriptores numéricos: Parámetro vs. Estadístico\n\nVariables estadísticas y datos\n\nDefinición de variable y concepto de dato\nClasificación: Cualitativas, cuantitativas y datos binarios\nVariables binarias. Codificación numérica\n\nEscalas de medición\n\nEscalas nominal, ordinal, intervalo y razón"
+  },
+  {
+    "objectID": "slides-unit1_1.html#claves-de-la-estadística",
+    "href": "slides-unit1_1.html#claves-de-la-estadística",
+    "title": "Probability — Presentaciones",
+    "section": "Claves de la Estadística",
+    "text": "Claves de la Estadística\n\nMuestra vs. Población | De lo que ves a lo que realmente existe\nVariabilidad vs. Error | Lo que es naturaleza pura vs. lo que mediste mal\nDescripción vs. Modelo | Resumir el pasado vs. predecir el futuro\nProbabilidad | El lenguaje para hablarle a la incertidumbre\nSupuestos vs. Realidad | El modelo perfecto en el papel vs. la suciedad de los datos\nDiseño vs. Análisis | Si diseñaste mal, ningún modelo salva la torta\nCorrelación vs. Causalidad | Moverse juntos no es ser causa y efecto\nSignificancia vs. Relevancia | Lo que da un p-valor &lt; 0.05 vs. lo que importa en la vida real\nCerteza vs. Incertidumbre | Del confort del determinismo a la honestidad del riesgo"
+  },
+  {
+    "objectID": "slides-unit1_1.html#tipos-de-estadística",
+    "href": "slides-unit1_1.html#tipos-de-estadística",
+    "title": "Probability — Presentaciones",
+    "section": "Tipos de Estadística",
+    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-una-población",
+    "href": "slides-unit1_1.html#características-de-una-población",
+    "title": "Probability — Presentaciones",
+    "section": "Características de una población",
+    "text": "Características de una población\nUna población está estadísticamente definida si cumple con:\n\nDelimitación espacio-temporal | Límites precisos sobre el lugar y el período en el que existen sus elementos.\nCriterio de inclusión | Condición compartida que determina de forma inequívoca qué elementos pertenecen al conjunto y cuáles no.\nVariabilidad interna | Presencia de diferencias entre sus miembros respecto a las variables bajo estudio.\nDefinición de escala | Dimensión total del conjunto, clasificada como finita o potencialmente infinita."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-una-muestra",
+    "href": "slides-unit1_1.html#características-de-una-muestra",
+    "title": "Probability — Presentaciones",
+    "section": "Características de una muestra",
+    "text": "Características de una muestra\n\nRepresentatividad | Debe reflejar proporcionalmente la diversidad y características de la población original.\nTamaño adecuado | Suficientemente grande para reducir el margen de error, pero manejable y viable.\nAleatoriedad | Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.\nHomogeneidad | Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-un-individuo",
+    "href": "slides-unit1_1.html#características-de-un-individuo",
+    "title": "Probability — Presentaciones",
+    "section": "Características de un individuo",
+    "text": "Características de un individuo\n\nIndivisibilidad | Entidad más pequeña y completa sobre la cual se toma cada medición o registro.\nPertenencia explícita | Satisface estrictamente los criterios de inclusión de la población bajo estudio.\nCapacidad de medición | Posee o genera las variables y características de interés para el análisis.\nIdentificabilidad | Puede diferenciarse de manera única e inequívoca de cualquier otro elemento del conjunto."
+  },
+  {
+    "objectID": "slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "href": "slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "title": "Probability — Presentaciones",
+    "section": "Tipología de un individuo (Más allá de la persona)",
+    "text": "Tipología de un individuo (Más allá de la persona)\n\nEspecímenes y componentes físicos | Probeta de concreto, perfil estructural, junta soldada, rodamiento o álabe de turbina.\nSistemas y ensayos estructurales | Tramo de tubería, un puente, un ensayo de fatiga o un prototipo de chasis.\nEntidades computacionales y flujos de datos | Petición HTTP a un servidor, registro de ejecución, transacción de base de datos o paquete de datos en red.\nProcesos, eventos y tiempos de operación | Ciclo de mecanizado, tiempo de parada por falla o falla por desgaste.\nUnidades agregadas y redes | Celda de manufactura, red de distribución de agua, servidor en clúster o turno de producción de 8h."
+  },
+  {
+    "objectID": "slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "href": "slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "title": "Probability — Presentaciones",
+    "section": "Estadístico vs Parámetro",
+    "text": "Estadístico vs Parámetro\n100 probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n28.4\n\n\n31.2\n\n\n25.9\n\n\n29.1\n\n\n33.0\n\n\n27.8\n\n\n30.6\n\n\n28.3\n\n\n24.9\n\n\n32.4\n\n\n29.5\n\n\n26.8\n\n\n31.7\n\n\n28.1\n\n\n30.2\n\n\n27.3\n\n\n29.8\n\n\n31.0\n\n\n34.1\n\n\n28.7\n\n\n31.5\n\n\n29.3\n\n\n26.2\n\n\n30.9\n\n\n27.6\n\n\n32.8\n\n\n28.9\n\n\n29.0\n\n\n32.1\n\n\n25.4\n\n\n30.4\n\n\n27.1\n\n\n35.2\n\n\n28.6\n\n\n31.3\n\n\n24.7\n\n\n29.7\n\n\n32.5\n\n\n27.9\n\n\n31.1\n\n\n28.5\n\n\n30.1\n\n\n26.6\n\n\n33.9\n\n\n29.2\n\n\n31.8\n\n\n32.2\n\n\n29.6\n\n\n30.7\n\n\n33.2\n\n\n27.4\n\n\n30.8\n\n\n31.6\n\n\n26.1\n\n\n28.8\n\n\n34.5\n\n\n29.9\n\n\n32.0\n\n\n25.8\n\n\n30.3\n\n\n33.5\n\n\n28.2\n\n\n29.4\n\n\n31.9\n\n\n27.0\n\n\n30.0\n\n\n26.5\n\n\n32.7\n\n\n28.0\n\n\n29.1\n\n\n25.2\n\n\n31.4\n\n\n28.7\n\n\n30.5\n\n\n33.8\n\n\n27.7\n\n\n29.3\n\n\n32.3\n\n\n26.9\n\n\n30.1\n\n\n31.2\n\n\n28.4\n\n\n34.0\n\n\n29.7\n\n\n26.3\n\n\n32.9\n\n\n27.5\n\n\n30.9\n\n\n31.7\n\n\n28.6\n\n\n29.8\n\n\n25.7\n\n\n32.6\n\n\n30.2\n\n\n28.1\n\n\n33.1\n\n\n27.2\n\n\n29.5\n\n\n31.0\n\n\n34.7\n\n\nLa media de la población 29.7 MPa"
+  },
+  {
+    "objectID": "slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "href": "slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "title": "Probability — Presentaciones",
+    "section": "Clasificación de las variables (Según su naturaleza)",
+    "text": "Clasificación de las variables (Según su naturaleza)\n\nCualitativas o Categóricas (Atributos): Cualidad, característica o categoría no numérica.\n\nNominales: Categorías sin orden preestablecido.\nOrdinales: Categorías con un orden, escala o jerarquía natural.\nBinarias (Dicotómicas): Solo admiten dos categorías excluyentes.\n\nSimétricas: Ambas tienen similar importancia o frecuencia.\nAsimétricas: Una categoría representa la presencia del evento de interés y la otra la ausencia.\n\n\nCuantitativas o Numéricas (Cantidades): Valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Valor entero y aislado.\nContinuas: Valor decimal dentro de un intervalo."
+  },
+  {
+    "objectID": "slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "href": "slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "title": "Probability — Presentaciones",
+    "section": "Clasificación de las variables (Según su función o relación)",
+    "text": "Clasificación de las variables (Según su función o relación)\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
+  },
+  {
+    "objectID": "slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "href": "slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "title": "Probability — Presentaciones",
+    "section": "Dimensionalidad de los datos",
+    "text": "Dimensionalidad de los datos\nDependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:\n\nUnivariantes: Analizan una sola variable a la vez.\nBivariantes: Estudian dos variables juntas para ver cómo se relacionan entre sí.\nMultivariantes: Analizan tres o más variables simultáneamente para entender fenómenos complejos."
+  },
+  {
+    "objectID": "slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "title": "Probability — Presentaciones",
+    "section": "Datos no agrupados y agrupados",
+    "text": "Datos no agrupados y agrupados\n\nDatos no agrupados: Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.\nDatos agrupados: Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información."
+  },
+  {
+    "objectID": "slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "title": "Probability — Presentaciones",
+    "section": "Comparación entre datos no agrupados y agrupados",
+    "text": "Comparación entre datos no agrupados y agrupados\n\n\n\n\n\n\n\n\n\nDatos No Agrupados\nDatos Agrupados\n\n\n\n\nCaracterística\nMuestra cada dato individual\nMuestra datos en intervalos o clases\n\n\nFácil cálculo\nMedia, mediana y moda se calculan directamente\nRequiere fórmulas adaptadas para intervalos\n\n\nPérdida de información\nNo hay pérdida de información\nSe pierde la especificidad de datos individuales\n\n\nApropiado\nPequeños conjuntos de datos o análisis detallado\nGrandes conjuntos de datos o análisis de tendencias\n\n\nUso de tablas de frecuencia\nNo es necesario\nNecesario para organizar los datos"
+  },
+  {
+    "objectID": "slides-unit1_1.html#escalas-de-medición",
+    "href": "slides-unit1_1.html#escalas-de-medición",
+    "title": "Probability — Presentaciones",
+    "section": "Escalas de Medición",
+    "text": "Escalas de Medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#unidades-temáticas",
+    "href": "slides-unit1/slides-unit1_1.html#unidades-temáticas",
+    "title": "Probability — Presentaciones",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#unidad-1",
+    "href": "slides-unit1/slides-unit1_1.html#unidad-1",
+    "title": "Probability — Presentaciones",
+    "section": "Unidad 1",
+    "text": "Unidad 1\n\nDefiniciones. Manejo de datos y medidas estadísticas\n\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#unidad-1-1",
+    "href": "slides-unit1/slides-unit1_1.html#unidad-1-1",
+    "title": "Probability — Presentaciones",
+    "section": "Unidad 1",
+    "text": "Unidad 1\n\nIntroducción y conceptos fundamentales\n\n\nEstadística\n\nEstadística descriptiva vs. inferencial\n\nPoblación, muestra e individuo\n\nUnidades de análisis y condiciones de definición\nDescriptores numéricos: Parámetro vs. Estadístico\n\nVariables estadísticas y datos\n\nDefinición de variable y concepto de dato\nClasificación: Cualitativas, cuantitativas y datos binarios\nVariables binarias. Codificación numérica\n\nEscalas de medición\n\nEscalas nominal, ordinal, intervalo y razón"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#claves-de-la-estadística",
+    "href": "slides-unit1/slides-unit1_1.html#claves-de-la-estadística",
+    "title": "Probability — Presentaciones",
+    "section": "Claves de la Estadística",
+    "text": "Claves de la Estadística\n\nMuestra vs. Población | De lo que ves a lo que realmente existe\nVariabilidad vs. Error | Lo que es naturaleza pura vs. lo que mediste mal\nDescripción vs. Modelo | Resumir el pasado vs. predecir el futuro\nProbabilidad | El lenguaje para hablarle a la incertidumbre\nSupuestos vs. Realidad | El modelo perfecto en el papel vs. la suciedad de los datos\nDiseño vs. Análisis | Si diseñaste mal, ningún modelo salva la torta\nCorrelación vs. Causalidad | Moverse juntos no es ser causa y efecto\nSignificancia vs. Relevancia | Lo que da un p-valor &lt; 0.05 vs. lo que importa en la vida real\nCerteza vs. Incertidumbre | Del confort del determinismo a la honestidad del riesgo"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#tipos-de-estadística",
+    "href": "slides-unit1/slides-unit1_1.html#tipos-de-estadística",
+    "title": "Probability — Presentaciones",
+    "section": "Tipos de Estadística",
+    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#características-de-una-población",
+    "href": "slides-unit1/slides-unit1_1.html#características-de-una-población",
+    "title": "Probability — Presentaciones",
+    "section": "Características de una población",
+    "text": "Características de una población\nUna población está estadísticamente definida si cumple con:\n\nDelimitación espacio-temporal | Límites precisos sobre el lugar y el período en el que existen sus elementos.\nCriterio de inclusión | Condición compartida que determina de forma inequívoca qué elementos pertenecen al conjunto y cuáles no.\nVariabilidad interna | Presencia de diferencias entre sus miembros respecto a las variables bajo estudio.\nDefinición de escala | Dimensión total del conjunto, clasificada como finita o potencialmente infinita."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#características-de-una-muestra",
+    "href": "slides-unit1/slides-unit1_1.html#características-de-una-muestra",
+    "title": "Probability — Presentaciones",
+    "section": "Características de una muestra",
+    "text": "Características de una muestra\n\nRepresentatividad | Debe reflejar proporcionalmente la diversidad y características de la población original.\nTamaño adecuado | Suficientemente grande para reducir el margen de error, pero manejable y viable.\nAleatoriedad | Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.\nHomogeneidad | Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#características-de-un-individuo",
+    "href": "slides-unit1/slides-unit1_1.html#características-de-un-individuo",
+    "title": "Probability — Presentaciones",
+    "section": "Características de un individuo",
+    "text": "Características de un individuo\n\nIndivisibilidad | Entidad más pequeña y completa sobre la cual se toma cada medición o registro.\nPertenencia explícita | Satisface estrictamente los criterios de inclusión de la población bajo estudio.\nCapacidad de medición | Posee o genera las variables y características de interés para el análisis.\nIdentificabilidad | Puede diferenciarse de manera única e inequívoca de cualquier otro elemento del conjunto."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "href": "slides-unit1/slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "title": "Probability — Presentaciones",
+    "section": "Tipología de un individuo (Más allá de la persona)",
+    "text": "Tipología de un individuo (Más allá de la persona)\n\nEspecímenes y componentes físicos | Probeta de concreto, perfil estructural, junta soldada, rodamiento o álabe de turbina.\nSistemas y ensayos estructurales | Tramo de tubería, un puente, un ensayo de fatiga o un prototipo de chasis.\nEntidades computacionales y flujos de datos | Petición HTTP a un servidor, registro de ejecución, transacción de base de datos o paquete de datos en red.\nProcesos, eventos y tiempos de operación | Ciclo de mecanizado, tiempo de parada por falla o falla por desgaste.\nUnidades agregadas y redes | Celda de manufactura, red de distribución de agua, servidor en clúster o turno de producción de 8h."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "href": "slides-unit1/slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "title": "Probability — Presentaciones",
+    "section": "Estadístico vs Parámetro",
+    "text": "Estadístico vs Parámetro\n100 probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n28.4\n\n\n31.2\n\n\n25.9\n\n\n29.1\n\n\n33.0\n\n\n27.8\n\n\n30.6\n\n\n28.3\n\n\n24.9\n\n\n32.4\n\n\n29.5\n\n\n26.8\n\n\n31.7\n\n\n28.1\n\n\n30.2\n\n\n27.3\n\n\n29.8\n\n\n31.0\n\n\n34.1\n\n\n28.7\n\n\n31.5\n\n\n29.3\n\n\n26.2\n\n\n30.9\n\n\n27.6\n\n\n32.8\n\n\n28.9\n\n\n29.0\n\n\n32.1\n\n\n25.4\n\n\n30.4\n\n\n27.1\n\n\n35.2\n\n\n28.6\n\n\n31.3\n\n\n24.7\n\n\n29.7\n\n\n32.5\n\n\n27.9\n\n\n31.1\n\n\n28.5\n\n\n30.1\n\n\n26.6\n\n\n33.9\n\n\n29.2\n\n\n31.8\n\n\n32.2\n\n\n29.6\n\n\n30.7\n\n\n33.2\n\n\n27.4\n\n\n30.8\n\n\n31.6\n\n\n26.1\n\n\n28.8\n\n\n34.5\n\n\n29.9\n\n\n32.0\n\n\n25.8\n\n\n30.3\n\n\n33.5\n\n\n28.2\n\n\n29.4\n\n\n31.9\n\n\n27.0\n\n\n30.0\n\n\n26.5\n\n\n32.7\n\n\n28.0\n\n\n29.1\n\n\n25.2\n\n\n31.4\n\n\n28.7\n\n\n30.5\n\n\n33.8\n\n\n27.7\n\n\n29.3\n\n\n32.3\n\n\n26.9\n\n\n30.1\n\n\n31.2\n\n\n28.4\n\n\n34.0\n\n\n29.7\n\n\n26.3\n\n\n32.9\n\n\n27.5\n\n\n30.9\n\n\n31.7\n\n\n28.6\n\n\n29.8\n\n\n25.7\n\n\n32.6\n\n\n30.2\n\n\n28.1\n\n\n33.1\n\n\n27.2\n\n\n29.5\n\n\n31.0\n\n\n34.7\n\n\nLa media de la población 29.7 MPa"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "href": "slides-unit1/slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "title": "Probability — Presentaciones",
+    "section": "Clasificación de las variables (Según su naturaleza)",
+    "text": "Clasificación de las variables (Según su naturaleza)\n\nCualitativas o Categóricas (Atributos): Cualidad, característica o categoría no numérica.\n\nNominales: Categorías sin orden preestablecido.\nOrdinales: Categorías con un orden, escala o jerarquía natural.\nBinarias (Dicotómicas): Solo admiten dos categorías excluyentes.\n\nSimétricas: Ambas tienen similar importancia o frecuencia.\nAsimétricas: Una categoría representa la presencia del evento de interés y la otra la ausencia.\n\n\nCuantitativas o Numéricas (Cantidades): Valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Valor entero y aislado.\nContinuas: Valor decimal dentro de un intervalo."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "href": "slides-unit1/slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "title": "Probability — Presentaciones",
+    "section": "Clasificación de las variables (Según su función o relación)",
+    "text": "Clasificación de las variables (Según su función o relación)\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "href": "slides-unit1/slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "title": "Probability — Presentaciones",
+    "section": "Dimensionalidad de los datos",
+    "text": "Dimensionalidad de los datos\nDependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:\n\nUnivariantes: Analizan una sola variable a la vez.\nBivariantes: Estudian dos variables juntas para ver cómo se relacionan entre sí.\nMultivariantes: Analizan tres o más variables simultáneamente para entender fenómenos complejos."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1/slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "title": "Probability — Presentaciones",
+    "section": "Datos no agrupados y agrupados",
+    "text": "Datos no agrupados y agrupados\n\nDatos no agrupados: Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.\nDatos agrupados: Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1/slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "title": "Probability — Presentaciones",
+    "section": "Comparación entre datos no agrupados y agrupados",
+    "text": "Comparación entre datos no agrupados y agrupados\n\n\n\n\n\n\n\n\n\nDatos No Agrupados\nDatos Agrupados\n\n\n\n\nCaracterística\nMuestra cada dato individual\nMuestra datos en intervalos o clases\n\n\nFácil cálculo\nMedia, mediana y moda se calculan directamente\nRequiere fórmulas adaptadas para intervalos\n\n\nPérdida de información\nNo hay pérdida de información\nSe pierde la especificidad de datos individuales\n\n\nApropiado\nPequeños conjuntos de datos o análisis detallado\nGrandes conjuntos de datos o análisis de tendencias\n\n\nUso de tablas de frecuencia\nNo es necesario\nNecesario para organizar los datos"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_1.html#escalas-de-medición",
+    "href": "slides-unit1/slides-unit1_1.html#escalas-de-medición",
+    "title": "Probability — Presentaciones",
+    "section": "Escalas de Medición",
+    "text": "Escalas de Medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Presentaciones — Probabilidad y Estadística",
+    "section": "",
+    "text": "Unidad 1.1: Conceptos básicos — PDF\nUnidad 1.2: Conceptos básicos"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
+    "href": "slides-unit1/slides-unit1_2.html#unidades-temáticas",
+    "title": "Probability — Presentaciones",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "href": "slides-unit1/slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "title": "Probability — Presentaciones",
+    "section": "Definiciones. Manejo de datos y medidas estadísticas",
+    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
+    "href": "slides-unit1/slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
+    "title": "Probability — Presentaciones",
+    "section": "Recolección, organización y representación gráfica de datos",
+    "text": "Recolección, organización y representación gráfica de datos\n\nFuentes de datos y obtención\n\nDiseños experimentales vs. estudios observacionales\nEncuestas e instrumentos de medición\nMuestreo probabilistico y no probabilistico\n\nTablas de frecuencias\n\nEstructuración para datos no agrupados vs. agrupados\n\nReglas para determinación de bins y ancho de clase\n\nCriterios clásicos: Raíz cuadrada, Sturges y Rice\nCriterios basados en densidad y dispersión: Freedman-Diaconis y Scott\n\nGráficos para variables cualitativas y binarias\n\nRepresentación de categorías, proporciones y atributos dicotómicos\n\nGráficos para variables cuantitativas\n\nVisualización de la forma, centro, dispersión y densidad de datos"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
+    "href": "slides-unit1/slides-unit1_2.html#fuente-de-datos-y-obtención",
+    "title": "Probability — Presentaciones",
+    "section": "Fuente de datos y obtención",
+    "text": "Fuente de datos y obtención\nGénesis de los datos | Experimento vs. Observación\nMétodo de captura | Instrumentos directos vs. indirectos\nEstrategia de selección | Muestreo probabilístico vs. no probabilístico"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#diseño-experimental",
+    "href": "slides-unit1/slides-unit1_2.html#diseño-experimental",
+    "title": "Probability — Presentaciones",
+    "section": "Diseño experimental",
+    "text": "Diseño experimental\nEstudio donde se manipula deliberadamente una o más variables independientes bajo condiciones controladas para medir su efecto causal sobre una variable dependiente."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#diseño-observacional",
+    "href": "slides-unit1/slides-unit1_2.html#diseño-observacional",
+    "title": "Probability — Presentaciones",
+    "section": "Diseño observacional",
+    "text": "Diseño observacional\nEstudio donde se registra, mide y analiza variables tal como suceden en su entorno natural, sin intervenir ni alterar las condiciones ni a los sujetos."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#diseños-experimental-vs.-observacional",
+    "href": "slides-unit1/slides-unit1_2.html#diseños-experimental-vs.-observacional",
+    "title": "Probability — Presentaciones",
+    "section": "Diseños: Experimental vs. Observacional",
+    "text": "Diseños: Experimental vs. Observacional\n\n\n\n\n\n\n\n\nCriterio\nExperimental\nObservacional\n\n\n\n\nControl sobre el entorno\nAlto control y manipulación directos\nNulo control; registro directo de la realidad\n\n\nObjetivo principal\nProbar relaciones de causa y efecto\nIdentificar patrones, asociaciones o tendencias\n\n\nSesgo característico\nSesgo de laboratorio / validez externa reducida\nVariables de confusión no controladas\n\n\nInferencia / Validez\nAlta validez interna\nAlta validez ecológica / externa"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#encuesta",
+    "href": "slides-unit1/slides-unit1_2.html#encuesta",
+    "title": "Probability — Presentaciones",
+    "section": "Encuesta",
+    "text": "Encuesta\nMétodo estructurado de recolección de datos primarios que recopila información cualitativa o cuantitativa sobre opiniones, características o comportamientos de una población mediante la formulación de preguntas."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#instrumentos-de-medición",
+    "href": "slides-unit1/slides-unit1_2.html#instrumentos-de-medición",
+    "title": "Probability — Presentaciones",
+    "section": "Instrumentos de medición",
+    "text": "Instrumentos de medición\nHerramientas físicas (sensores, calibradores) o conceptuales (cuestionarios, escalas, listas de chequeo) diseñadas para registrar datos operativos de forma válida y confiable."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
+    "href": "slides-unit1/slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
+    "title": "Probability — Presentaciones",
+    "section": "Medición: Encuestas vs. Instrumentos",
+    "text": "Medición: Encuestas vs. Instrumentos\n\n\n\n\n\n\n\n\nCriterio\nEncuestas\nInstrumentos de medición\n\n\n\n\nControl sobre el entorno\nBajo control; depende de la respuesta del sujeto\nControl estandarizado según procedimiento de lectura\n\n\nObjetivo principal\nMedir percepciones, actitudes o conductas\nCapturar magnitudes físicas, métricas o atributos\n\n\nSesgo característico\nSesgo de deseabilidad social o de no respuesta\nErrores de calibración o sistemáticos del aparato\n\n\nInferencia / Validez\nSujeta a la comprensión sintáctica de los ítems\nSujeta a precisión, repetibilidad y sensibilidad"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico",
+    "title": "Probability — Presentaciones",
+    "section": "Muestreo probabilístico",
+    "text": "Muestreo probabilístico\nTécnica de selección de muestra donde todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados, lo que permite extrapolar resultados e inferir estadísticamente."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-no-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-no-probabilístico",
+    "title": "Probability — Presentaciones",
+    "section": "Muestreo no probabilístico",
+    "text": "Muestreo no probabilístico\nTécnica de selección basada en el criterio, accesibilidad o conveniencia del estudio, donde se desconoce la probabilidad de inclusión de cada sujeto, impidiendo la inferencia estadística cuantitativa hacia la población."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "href": "slides-unit1/slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "title": "Probability — Presentaciones",
+    "section": "Muestreo: Probabilístico vs. No probabilístico",
+    "text": "Muestreo: Probabilístico vs. No probabilístico\n\n\n\n\n\n\n\n\nCriterio\nProbabilístico\nNo probabilístico\n\n\n\n\nControl sobre el entorno\nControl estadístico riguroso del azar\nSin control aleatorio; sujeto a conveniencia\n\n\nObjetivo principal\nGarantizar representatividad y generalizar resultados\nExplorar fenómenos o estudiar casos de difícil acceso\n\n\nSesgo característico\nErrores de cobertura o marco muestral\nSesgo de selección explícito\n\n\nInferencia / Validez\nPermite cálculo de margen de error y confianza\nNo permite cálculo de error ni inferencia poblacional"
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación",
+    "href": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación",
+    "title": "Probability — Presentaciones",
+    "section": "Tipos comunes de sesgo en datos e investigación",
+    "text": "Tipos comunes de sesgo en datos e investigación\n\nSesgo de selección: Ocurre cuando la muestra seleccionada no representa adecuadamente a la población objetivo debido a un criterio no aleatorio (frecuente en muestreos no probabilísticos).\nSesgo de medición: Surge por fallas en el instrumento de captura o calibración deficiente de un equipo.\nSesgo de información (encuestas): Surge por mala formulación, ambigüedad o carga interpretativa en las preguntas de un cuestionario.\nSesgo del observador: Distorsión producida por las expectativas, prejuicios o juicio subjetivo del investigador al registrar o evaluar las mediciones."
+  },
+  {
+    "objectID": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación-1",
+    "href": "slides-unit1/slides-unit1_2.html#tipos-comunes-de-sesgo-en-datos-e-investigación-1",
+    "title": "Probability — Presentaciones",
+    "section": "Tipos comunes de sesgo en datos e investigación",
+    "text": "Tipos comunes de sesgo en datos e investigación\n\nSesgo de respuesta (deseabilidad social): Ocurre cuando el participante altera sus respuestas de forma deliberada o inconsciente para ajustarse a lo que considera socialmente aceptable.\nSesgo de no respuesta: Ocurre cuando quienes no responden difieren sistemáticamente de quienes sí lo hacen, sesgando la muestra efectiva.\nSesgo de confusión: Ocurre cuando una variable no controlada se asocia tanto con la exposición como con el resultado, generando una relación aparente que no es causal.\nSesgo de confirmación: Tendencia a recolectar, interpretar o priorizar únicamente los datos que respaldan la hipótesis previa del investigador, ignorando evidencia en contrario."
+  }
+]
