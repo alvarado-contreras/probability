@@ -1,0 +1,6 @@
+---
+title: "Presentaciones — Probabilidad y Estadística"
+---
+
+- [Unidad 1.1: Conceptos básicos](slides-unit1/slides-unit1_1.qmd) — [PDF](probability/slides-unit1/slides-unit1_1.pdf){target="_blank" rel="noopener noreferrer"}
+- [Unidad 1.2: Conceptos básicos](slides-unit1/slides-unit1_2.qmd)

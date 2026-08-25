@@ -1,0 +1,837 @@
+---
+pagetitle: "Unidad 1"
+subtitle: "Definiciones. Manejo de datos y medidas estadísticas"
+author: "José Alvarado-Contreras"
+lang: es
+format:
+  revealjs:
+    theme: [dark, ../themes/slides-theme.scss]
+    slide-number: false
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+    bibliography: referencias.bib
+    footer: '<a href="https://github.com/alvarado-contreras" target="_blank" rel="noopener">https://github.com/alvarado-contreras</a>'
+---
+
+
+
+# Probabilidad y Estadística {style="margin-top: 45px; font-size: 1.4em;"}
+
+<h3 style="font-size: 1.0em;"> Definiciones. Manejo de datos y medidas estadísticas </h3>
+<hr>
+
+<h4 style="font-size: 0.7em; opacity: 0.6""> José Alvarado-Contreras </h4>
+<h4 style="font-size: 0.6em; opacity: 0.6"> 2026 </h4>
+<br>
+
+
+[.]{.footer}
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Definiciones. Manejo de datos y medidas estadísticas
+:::
+
+1. Introducción y conceptos fundamentales
+2. Recolección, organización y representación gráfica de datos
+3. Medidas de tendencia central y posición
+4. Medidas de dispersión y de forma
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Introducción y conceptos fundamentales
+:::
+
+1. Estadística
+2. Población, muestra e individuo
+3. Variables estadísticas: cualitativas, cuantitativas y datos binarios
+    - Variables binarias simétricas vs. asimétricas
+    - Codificación numérica
+4. Escalas de medición: nominal, ordinal, intervalo, razón
+5. Diagrama de clasificación de variables y tipos de datos
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Recolección, organización y representación gráfica de datos
+:::
+
+1. Fuentes de datos y métodos de obtención
+    - Diseños experimentales vs. estudios observacionales
+    - Diseños de encuestas e instrumentos de medición
+2. Tablas de frecuencias: datos no agrupados y datos agrupados
+3. Reglas para determinar el número de bins y ancho de clase
+    - Raíz cuadrada, Sturges, Rice, Freedman-Diaconis, Scott
+4. Gráficos para variables cualitativas y binarias
+5. Gráficos para variables cuantitativas
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Medidas de tendencia central y posición
+:::
+
+1. Media aritmética, mediana y moda
+2. Centralidad en datos binarios: La media como proporción
+3. Medidas de posición: cuartiles, deciles y percentiles
+4. Diagrama de caja y bigotes
+
+
+
+## Unidad 1 
+
+:::{style="font-size: 1.0em; margin-top: -0.5em; margin-bottom: 1.5em;"}
+Medidas de dispersión y de forma
+:::
+
+
+1. Rango, varianza, desviación estándar y coeficiente de variación
+2. Dispersión en datos binarios: varianza de una proporción
+3. Regla empírica (68-95-99.7)
+4. Gráficos de asimetría y curtosis
+
+
+
+# **Semana 1** · Clase 2 {background-color="#f2f2f2" #semana1-clase2}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Definiciones y conceptos básicos
+:::
+
+
+
+# Estadística {background-color="#2d3748"}
+
+Es la ciencia que se encarga de recolectar, organizar, analizar e interpretar datos para transformar la información en conclusiones útiles y ayudar a tomar decisiones acertadas frente a la incertidumbre.
+
+
+
+## Claves de la estadística {background-color="#f2f2f2" style="font-size: 1.0em;"}
+
+- **Control de la variabilidad:** Medir y modelar los cambios constantes en los datos.
+- **Decisión bajo incertidumbre:** Tomar elecciones acertadas cuando el futuro no es predecible.
+- **Soporte al método científico:** Diseñar experimentos y optimizar procesos con rigor.
+
+
+
+## Tipos de Estadística
+
+::: {.columns}
+
+::: {.column style="width: 50%; font-size: 0.9em;"}
+### Estadística descriptiva
+
+Resume, organiza y presenta datos recolectados.
+
+* **Objetivo:** Describir lo que ocurrió en una muestra o población.
+* **Herramientas:** 
+  * Tablas de frecuencia
+  * Gráficos
+  * Medidas de tendencia central, de dispersión y de forma
+* **Resultado:** Cuadros resumen y gráficos explicativos.
+:::
+
+::: {.column style="width: 50%; font-size: 0.9em;"}
+### Estadística inferencial
+
+Hace predicciones y saca conclusiones sobre una población a partir de una muestra.
+
+* **Objetivo:** Generalizar y tomar decisiones bajo incertidumbre.
+* **Herramientas:**
+  * Probabilidad
+  * Intervalos de confianza
+  * Pruebas de hipótesis
+* **Resultado:** Conclusiones con un nivel de certeza o margen de error.
+:::
+
+:::
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/MXaJ7sa7q-8"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). Introduction to Statistics. YouTube.]{.footer}
+
+
+
+# Datos {background-color="#2d3748"}
+
+Valores o hechos crudos (números, texto o símbolos) sin procesar que, al analizarse, se convierten en información útil.
+
+
+
+## Dimensionalidad de los datos
+
+Dependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:
+
+- **Univariantes:** Analizan una sola variable a la vez.
+- **Bivariantes:** Estudian dos variables juntas para ver cómo se relacionan entre sí.
+- **Multivariantes:** Analizan tres o más variables simultáneamente para entender fenómenos complejos.
+
+
+
+# Variable {background-color="#2d3748"}
+
+Característica, cualidad o propiedad de un objeto o persona que se puede medir, contar o clasificar, y que toma diferentes valores de un sujeto a otro.
+
+
+
+---
+
+::: {style="font-size: 1.4em; text-align: center; margin-top: 5%;"}
+La **variable** es la característica que quieres medir, mientras que el **dato** es el valor real que obtienes al medirla.
+:::
+
+
+
+## Clasificación de las variables
+
+Según su naturaleza:
+
+1. **Cualitativas o Categóricas (Atributos):** Expresan una cualidad, característica o categoría no numérica.
+
+    - **Nominales:** No tienen un orden preestablecido.
+    - **Ordinales:** Siguen un orden, escala o jerarquía natural.
+
+2. **Cuantitativas o Numéricas (Cantidades):** Expresan valores numéricos que permiten realizar operaciones matemáticas.
+
+    - **Discretas:** Toman valores enteros y aislados.
+    - **Continuas:** Pueden tomar cualquier valor decimal dentro de un intervalo.
+
+##
+
+Según su función o relación:
+
+1. **Variables independientes (Causa):** Son aquellas que se manipulan o controlan para observar su efecto.
+2. **Variables dependientes (Efecto):** Característica que cambia y se mide como respuesta a la variable independiente.
+3. **Variables de confusión:** Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.
+4. **Variables extrañas:** Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera.
+
+
+
+## Datos no agrupados y agrupados
+
+1. **Datos no agrupados:** Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.
+
+2. **Datos agrupados:** Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información.
+
+
+
+## Comparación entre datos no agrupados y agrupados
+
+| | Datos No Agrupados | Datos Agrupados |
+| :--- | :--- | :--- |
+| **Característica** | Muestra cada dato individual | Muestra datos en intervalos o clases |
+| **Fácil cálculo** | Media, mediana y moda se calculan directamente | Requiere fórmulas adaptadas para intervalos |
+| **Pérdida de información** | No hay pérdida de información | Se pierde la especificidad de datos individuales |
+| **Apropiado** | Pequeños conjuntos de datos o análisis detallado | Grandes conjuntos de datos o análisis de tendencias |
+| **Uso de tablas de frecuencia** | No es necesario | Necesario para organizar los datos |
+
+
+
+---
+
+::: {style="font-size: 1.2em; text-align: center; margin-top: 5%;"}
+Los datos se representan principalmente mediante **tablas** para mostrar precisión numérica, **gráficos** para identificar patrones visualmente y **medidas estadísticas** para resumir sus propiedades clave.
+:::
+
+
+
+# Población {background-color="#2d3748"}
+
+Conjunto completo de todos los individuos, objetos o medidas que comparten una característica común y que son el foco de un estudio estadístico.
+
+
+
+# Muestra {background-color="#2d3748"}
+
+Subconjunto *representativo* de la población que se selecciona para ser estudiado y analizado directamente.
+
+
+
+## Características de una muestra
+
+Una muestra es estadísticamente útil si cumple con cuatro condiciones esenciales:
+
+- **Representatividad:** Debe reflejar proporcionalmente la diversidad y características de la población original.
+
+- **Tamaño adecuado:** Suficientemente grande para reducir el margen de error, pero manejable y viable.
+
+- **Aleatoriedad:** Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.
+
+- **Homogeneidad:** Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento.
+
+
+
+# Parámetro {background-color="#2d3748"}
+
+Valor numérico que describe una característica específica de una población completa.
+
+
+
+# Estadístico {background-color="#2d3748"}
+
+Valor numérico que describe una característica de una muestra y sirve para estimar el parámetro poblacional.
+
+
+
+# Medidas estadísticas {background-color="#2d3748"}
+
+Valores numéricos que *resumen*, *organizan* y *sintetizan* la información de un conjunto de datos para poder entender su comportamiento global de forma rápida.
+
+
+
+## Clasificación de las medidas estadísticas
+
+| Tipo | ¿Qué miden? | Ejemplos principales |
+| :--- | :--- | :--- |
+| **Tendencia central** | El punto alrededor del cual se agrupan los datos. | Media, Mediana, Moda |
+| **Dispersión** | Qué tan alejados o separados están los datos respecto al centro. | Varianza, Desviación estándar, Rango |
+| **Posición** | Cómo se divide la distribución en partes iguales. | Cuartiles, Deciles, Percentiles |
+| **Forma** | La simetría y la concentración de los datos. | Asimetría (*Skewness*), Curtosis |
+
+
+
+# Medidas de tendencia central {background-color="#f6f8fa"}
+
+Representan el comportamiento típico de un conjunto de datos en un solo número, identificando el punto medio o central alrededor del cual se agrupa la información.
+
+
+
+# Media aritmética {background-color="#2d3748"}
+
+Valor central que resulta de sumar todos los datos y dividirlos entre la cantidad total de datos.
+
+$$
+\large \displaystyle
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$ 
+
+
+
+# Mediana {background-color="#2d3748"}
+
+Valor que ocupa la posición central de un conjunto de datos ordenados de menor a mayor, dividiendo la muestra en dos partes exactamente iguales.
+
+$$
+\large \displaystyle
+Me = 
+\begin{cases} 
+x_{\left(\frac{n+1}{2}\right)} & \text{si } n \text{ es impar} \\[2ex]
+\frac{1}{2} \left( x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2} + 1\right)} \right) & \text{si } n \text{ es par}
+\end{cases}
+$$
+
+
+
+# Moda {background-color="#2d3748"}
+
+Valor que aparece con mayor frecuencia en un conjunto de datos. Un conjunto puede no se *amodal*, *unimodal*, *bimodal* o *multimodal*.
+
+
+
+# Medidas de dispersión {background-color="#f6f8fa"}
+
+Valores numéricos que indican qué tan alejados o separados están los datos respecto a la media, evaluando la variabilidad de la información y qué tan representativo es su centro.
+
+
+
+# Rango {background-color="#2d3748"}
+
+Diferencia entre el valor máximo y el valor mínimo del conjunto de datos.
+
+$$
+\large \displaystyle
+Rango = x_{\text{máx}} - x_{\text{mín}}
+$$
+
+
+
+# Varianza {background-color="#2d3748"}
+
+Promedio de las desviaciones al cuadrado de cada dato respecto a la media.
+
+$$
+\large \displaystyle
+s^2 = \frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
+
+
+
+# Desviación estándar {background-color="#2d3748"}
+
+Indica cuánto se alejan en promedio los datos de la media.
+
+$$
+\large \displaystyle
+s = \sqrt{\frac{1}{n - 1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
+$$
+
+
+
+# Coeficiente de variación {background-color="#2d3748"}
+
+Porcentaje que expresa la variabilidad relativa de la muestra con respecto a su media.
+
+$$
+\large \displaystyle
+CV = \left( \frac{s}{\bar{x}} \right) \cdot 100\%
+$$
+
+
+
+# Rango intercuartílico {background-color="#2d3748"}
+
+Amplitud del 50% central de los datos, calculada como la diferencia entre el tercer y primer cuartil.
+
+$$
+\large \displaystyle
+IQR = Q_3 - Q_1
+$$
+
+
+
+# Medidas de forma {background-color="#f6f8fa"}
+
+Describen la estructura geométrica de la distribución de los datos sin necesidad de graficarlos. Analizan dos aspectos: hacia dónde se inclina la curva (asimetría) y qué tan apuntalada está (curtosis).
+
+
+
+# Asimetría (Skewness) {background-color="#2d3748"}
+
+Mide si los datos se distribuyen de forma uniforme a ambos lados de la media o si se concentran más hacia un extremo.
+
+$$
+\large \displaystyle
+A_s = \frac{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^3}{s^3}
+$$
+
+
+
+# Curtosis o Apuntamiento {background-color="#2d3748"}
+
+Mide el grado de concentración de los datos alrededor de la zona central y el peso de las colas en comparación con una distribución normal.
+
+$$
+\large \displaystyle
+K = \frac{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^4}{s^4} - 3
+$$
+
+
+## Datos Experimentales: Ensayos de Compresión ($f'_c$)
+
+Se evaluaron $N = 50$ probetas cilíndricas de concreto a los 28 días ($f'_c$ en **MPa**):
+
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 12px; text-align: center; font-family: monospace; margin: 20px 0;">
+  <div>24.3</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
+  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
+  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
+  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
+  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>35.5</div>
+</div>
+
+:::{.callout-note}
+### Requisito del Proyecto
+La especificación de diseño exige una resistencia nominal mínima de **$f'_c = 30.0\text{ MPa}$**.
+:::
+
+
+## Número de clases
+
+
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;">
+  <div>**24.3**</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
+  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
+  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
+  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
+  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>**35.5**</div>
+</div>
+
+<div style="margin-top: 30px;">
+:::{.callout-tip}
+### Regla de Freedman-Diaconis
+Para calcular la amplitud óptima del intervalo de clase ($h$) basada en la dispersión de los datos:
+
+$$h = 2 \cdot \frac{\text{IQR}}{\sqrt[3]{N}}$$
+
+donde $\text{IQR} = Q_3 - Q_1$ es el rango intercuartílico y $N$ es el número de observaciones. El número de clases es:
+
+$$k = \left\lceil \frac{x_{\max} - x_{\min}}{h} \right\rceil$$
+:::
+</div>
+
+
+
+## Número de clases
+
+
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; text-align: center; font-family: monospace; font-size: 0.75em; max-width: 80%; margin: 15px auto;">
+  <div>**24.3**</div><div>24.8</div><div>25.1</div><div>25.6</div><div>26.1</div><div>26.4</div><div>26.7</div><div>27.0</div><div>27.2</div><div>27.5</div>
+  <div>27.7</div><div>27.9</div><div>28.0</div><div>28.2</div><div>28.3</div><div>28.5</div><div>28.6</div><div>28.8</div><div>28.9</div><div>29.0</div>
+  <div>29.1</div><div>29.3</div><div>29.4</div><div>29.5</div><div>29.7</div><div>29.8</div><div>29.9</div><div>30.1</div><div>30.2</div><div>30.4</div>
+  <div>30.5</div><div>30.7</div><div>30.8</div><div>31.0</div><div>31.1</div><div>31.3</div><div>31.4</div><div>31.6</div><div>31.7</div><div>31.9</div>
+  <div>32.1</div><div>32.3</div><div>32.6</div><div>32.8</div><div>33.1</div><div>33.4</div><div>33.7</div><div>34.2</div><div>34.8</div><div>**35.5**</div>
+</div>
+
+
+<div style="margin-top: 30px;">
+:::{.callout-important style="margin-top: 2em;"}
+### Regla de Sturges
+Para estimar el número de clases ($k$) asumiendo una distribución aproximadamente normal:
+
+$$k = 1 + 3.322 \log_{10}(N)$$
+
+donde $N$ es el número total de observaciones. La amplitud constante del intervalo ($h$) se obtiene como:
+
+$$h = \frac{x_{\max} - x_{\min}}{k}$$
+:::
+</div>
+
+
+
+# Media para datos agrupados {background-color="#2d3748"}
+
+La media ($\bar{x}$) en datos agrupados por intervalos se utiliza la marca de clase, $x_i$ para representar a todos los datos de ese intervalo.
+
+$$
+\large \displaystyle
+\bar{x} = \frac{\sum_{i=1}^{k} f_i \cdot x_i}{n} = \sum_{i=1}^{k} h_i \cdot x_i
+$$
+
+donde:
+
+$$
+\large \displaystyle
+x_i = \frac{L_i + L_s}{2}
+$$
+
+
+
+## Contexto del problema
+
+Algunos estudios reportan mejoras en la predicción cuando se combinan
+métodos clásicos de diseño de experimentos con aprendizaje automático
+[@ejemplo2020].
+
+- Punto clave 1
+- Punto clave 2
+- Punto clave 3
+
+
+
+## Ejemplo de código largo {.scrollable}
+
+Lámina con scroll propio — ideal para bloques de código extensos.
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Cargar datos
+df = pd.read_csv("datos_concreto.csv")
+
+# Variables predictoras y variable respuesta
+X = df.drop(columns=["resistencia"])
+y = df["resistencia"]
+
+# División train / test
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# Entrenamiento del modelo
+modelo = RandomForestRegressor(
+    n_estimators=300,
+    max_depth=8,
+    min_samples_leaf=3,
+    random_state=42,
+)
+modelo.fit(X_train, y_train)
+
+# Predicción y métricas
+y_pred = modelo.predict(X_test)
+rmse = mean_squared_error(y_test, y_pred, squared=False)
+r2 = r2_score(y_test, y_pred)
+
+print(f"RMSE: {rmse:.3f}")
+print(f"R2:   {r2:.3f}")
+
+# Importancia de variables
+importancias = pd.Series(
+    modelo.feature_importances_, index=X.columns
+).sort_values(ascending=False)
+
+print(importancias)
+```
+
+# Sección 2 · Metodología {background-color="#f2f2f2"}
+
+## Dos columnas · texto y texto
+
+::: {layout="[50,50]"}
+
+::: {.column}
+**Enfoque clásico**
+
+- Diseño de experimentos (DOE)
+- ANOVA
+- Superficie de respuesta (RSM)
+:::
+
+::: {.column}
+**Enfoque moderno**
+
+- Modelos de machine learning
+- Validación cruzada
+- Cuantificación de incertidumbre
+:::
+
+:::
+
+## Imagen centrada
+
+![](images/placeholder.svg){fig-align="center" width="55%"}
+
+Pie de imagen o fuente, en texto pequeño.
+
+## Columnas con imagen
+
+::::: {.columns}
+
+:::: {.column width="45%"}
+Texto explicativo a la izquierda. Aquí puedes describir el método,
+el dataset o el resultado que ilustra la imagen de la derecha.
+::::
+
+:::: {.column width="55%"}
+![](images/placeholder.svg){fig-align="center" width="90%"}
+::::
+
+:::::
+
+## Ecuaciones en LaTeX
+
+Modelo de regresión lineal múltiple:
+
+$$
+\hat{y} = \beta_0 + \sum_{i=1}^{n} \beta_i x_i + \varepsilon
+$$
+
+Coeficiente de determinación:
+
+$$
+R^2 = 1 - \frac{SS_{res}}{SS_{tot}}
+$$
+
+También funciona en línea, por ejemplo $\alpha = 0.05$.
+
+# Sección 3 · Resultados {background-color="#f2f2f2"}
+
+## Resultado principal
+
+- Hallazgo 1
+- Hallazgo 2
+- Hallazgo 3
+
+## Referencias
+
+::: {#refs}
+:::
+
+
+
+## ¡Buen trabajo! {background-color="#2c3e50"}
+
+Hemos completado la primera unidad.
+
+El pensamiento estadístico no se domina memorizando fórmulas, sino practicando con datos reales. Cada unidad nos acerca más a pensar como ingeniero frente a la incertidumbre.
+
+
+
+# **Semana 2** · Clase 3 {background-color="#f2f2f2" #semana2-clase3}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Datos no agrupados
+:::
+
+
+
+# **Semana 2** · Clase 4 {background-color="#f2f2f2" #semana2-clase4}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Datos agrupados
+:::
+
+
+# **Semana 3** · Clase 5 {background-color="#f2f2f2" #semana3-clase5}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Tipos de gráficas
+:::
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/uHRqkGXX55I"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). Bar Charts, Pie Charts, Histograms, Stemplots, Timeplots. YouTube.]{.footer}
+
+
+
+# **Semana 3** · Clase 6 {background-color="#f2f2f2" #semana3-clase6}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Medidas de tendencia central y de dispersión
+:::
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/mk8tOD0t8M0"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). Mode, Median, Mean, Range, and Standard Deviation. YouTube.]{.footer}
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/sK0RY-Qkug4"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). The Effects of Transforming Data on Spread and Centre. YouTube.]{.footer}
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/vcbMinm_1Q8"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). The Effects of Outliers on Spread and Centre. YouTube.]{.footer}
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/tpToLyZibKM"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). The Five Number Summary, Boxplots, and Outliers. YouTube.]{.footer}
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/s6cMpDEzq_4"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). Percentiles. YouTube.]{.footer}
+
+
+
+# **Semana 4** · Clase 7 {background-color="#f2f2f2" #semana4-clase7}
+
+<hr>
+
+::: {.text-muted style="font-size: 1.0em;"}
+Medidas de forma
+:::
+
+
+
+---
+
+::: {style="width: 95%; margin: 0 auto;"}
+<iframe src="https://www.youtube.com/embed/pfujiA5Mk_U"
+        width="100%"
+        style="aspect-ratio: 16/9; border: 0;"
+        allowfullscreen>
+</iframe>
+:::
+
+[Fuente: Simple Learning Pro. (2015). Symmetry and Skewness. YouTube.]{.footer}

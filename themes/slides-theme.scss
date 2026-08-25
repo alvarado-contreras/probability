@@ -1,0 +1,137 @@
+/*-- scss:defaults --*/
+
+// ── Google Fonts ─────────────────────────────────────────────
+// Cambia estas familias por las que prefieras de fonts.google.com
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+$presentation-font-family: $font-family-sans-serif;
+$presentation-heading-font: $font-family-sans-serif;
+$code-font: "Fira Code", monospace;
+
+// Paleta minimalista
+$body-bg: #ffffff;
+$body-color: #1f2328;
+$presentation-heading-color: #111418;
+$link-color: #2563eb;
+$selection-bg: #cfe0ff;
+
+// Grises complementarios:
+$text-muted: #636c76;   // Texto secundario
+$border-color: #d0d7de; // Bordes y líneas
+$bg-secondary: #f6f8fa; // Fondos suaves / cards
+
+// Tamaños
+$presentation-font-size-root: 26px;
+$presentation-h1-font-size: 1.8em;
+$presentation-h2-font-size: 1.4em;
+$presentation-h3-font-size: 1.1em;
+$presentation-heading-font-weight: 600;
+$presentation-heading-line-height: 1.2;
+
+/*-- scss:rules --*/
+
+.reveal {
+  letter-spacing: 0.1px;
+
+  h1, h2, h3 {
+    font-weight: $presentation-heading-font-weight;
+    letter-spacing: -0.02em;
+  }
+
+  // Barra fina bajo el título de cada lámina de contenido — detalle minimalista
+  .slide h2 {
+    position: relative;
+    padding-bottom: 0.35em;
+    margin-bottom: 0.6em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 48px;
+      height: 3px;
+      background: $link-color;
+      border-radius: 2px;
+    }
+  }
+
+  // Slide de título principal
+  .title-slide {
+    text-align: left;
+
+    h1.title {
+      font-size: 2.1em;
+    }
+    p.subtitle {
+      font-weight: 400;
+      color: #5b6470;
+      font-size: 1.1em;
+    }
+  }
+
+  // Bloques de código: look "subventana"
+  pre {
+    box-shadow: none;
+    border: 1px solid #e2e5e9;
+    border-radius: 8px;
+    background: #f8f9fa;
+  }
+  pre code {
+    font-family: $code-font;
+    font-size: 0.62em;
+    line-height: 1.45;
+  }
+
+  // Slides marcadas como .scrollable (código largo) quedan con scroll propio
+  section.scrollable {
+    overflow-y: auto;
+  }
+
+  // Columnas
+  .columns {
+    display: flex;
+    gap: 2.2em;
+    align-items: flex-start;
+  }
+  .column {
+    flex: 1;
+  }
+
+  // Utilidad para centrar imágenes/contenido (NO usar el nombre "center":
+  // reveal.js ya usa esa clase internamente para el centrado vertical global)
+  .center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  // Slides de sección/transición (fondo gris claro)
+  section.transition,
+  section[data-background-color="#f2f2f2"] {
+    h1, h2 {
+      color: #111418;
+    }
+    &::after {
+      content: none;
+    }
+  }
+
+  .reveal .slides section .fragment.highlight-current-blue {
+    color: $link-color;
+  }
+
+  // Referencias
+  #refs {
+    font-size: 0.62em;
+    line-height: 1.5;
+  }
+
+  .reveal small, .reveal .subtitle-slide p {
+    color: #5b6470;
+  }
+}
