@@ -222,5 +222,1566 @@
     "title": "Probability — Presentaciones",
     "section": "Escalas de Medición",
     "text": "Escalas de Medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
+  },
+  {
+    "objectID": "slides-unit1_3.html#unidades-temáticas",
+    "href": "slides-unit1_3.html#unidades-temáticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1_3.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "href": "slides-unit1_3.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Definiciones. Manejo de datos y medidas estadísticas",
+    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1_3.html#medidas-de-tendencia-central-y-posición",
+    "href": "slides-unit1_3.html#medidas-de-tendencia-central-y-posición",
+    "title": "Probabilidad y Estadística",
+    "section": "Medidas de tendencia central y posición",
+    "text": "Medidas de tendencia central y posición\n\nOrganización de datos\n\nDatos no agrupados vs. agrupados\nConstrucción de tablas de frecuencia\n\nMedidas de tendencia central\n\nMedia muestral y media ponderada muestral\nMediana muestral y moda muestral\nValor atípico y media recortada\nCriterios de selección según distribución y valores atípicos\n\nMedidas de posición\n\nCuartiles, deciles y percentiles\nDiagrama de caja y bigotes\n\nComparación e interpretación\n\nPertinencia de las medidas según distribución y valores atípicos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#fuente-de-datos-y-obtención",
+    "href": "slides-unit1_3.html#fuente-de-datos-y-obtención",
+    "title": "Probabilidad y Estadística",
+    "section": "Fuente de datos y obtención",
+    "text": "Fuente de datos y obtención\nGénesis de los datos | Observación vs. Experimento\nMétodo de captura | Instrumentos directos vs. indirectos\nEstrategia de selección | Muestreo probabilístico vs. no probabilístico"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-un-estudio-observacional",
+    "href": "slides-unit1_3.html#características-de-un-estudio-observacional",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de un estudio observacional",
+    "text": "Características de un estudio observacional\n\nSin manipulación de variables\nCondiciones naturales, no controladas\nSin aleatorización de sujetos o tratamientos\nAsociación, no relación causal\nVulnerable a variables de confusión"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-un-estudio-experimental",
+    "href": "slides-unit1_3.html#características-de-un-estudio-experimental",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de un estudio experimental",
+    "text": "Características de un estudio experimental\n\nManipulación deliberada de factores\nControl de condiciones y variables extrañas\nAleatorización en la asignación de tratamientos\nReplicación para estimar el error\nInferencia causal como objetivo"
+  },
+  {
+    "objectID": "slides-unit1_3.html#estudio-experimental-vs.-observacional",
+    "href": "slides-unit1_3.html#estudio-experimental-vs.-observacional",
+    "title": "Probabilidad y Estadística",
+    "section": "Estudio: Experimental vs. Observacional",
+    "text": "Estudio: Experimental vs. Observacional\n\n\n\nCriterio\nExperimental\nObservacional\n\n\n\n\nControl\nManipulación directa\nRegistro sin intervención\n\n\nObjetivo\nCausa y efecto\nPatrones y asociaciones\n\n\nSesgo típico\nValidez externa reducida\nVariables de confusión\n\n\nValidez\nInterna\nEcológica / externa"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-una-encuesta",
+    "href": "slides-unit1_3.html#características-de-una-encuesta",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de una encuesta",
+    "text": "Características de una encuesta\n\nInstrumento estructurado de preguntas\nRecolecta datos auto-reportados\nAplicable a muestras de una población\nDatos cualitativos o cuantitativos\nVulnerable a sesgos de respuesta"
+  },
+  {
+    "objectID": "slides-unit1_3.html#no-sólo-encuestas",
+    "href": "slides-unit1_3.html#no-sólo-encuestas",
+    "title": "Probabilidad y Estadística",
+    "section": "No sólo encuestas",
+    "text": "No sólo encuestas\nLa encuesta no es el único instrumento para estudios observacionales, entre otros encontramos:\n\n\n\nInstrumento\nFunción\n\n\n\n\nDiario de campo\nNotas y reflexiones detalladas del observador\n\n\nGuía de observación\nPauta con aspectos clave a registrar\n\n\nLista de cotejo\nMarca presencia/ausencia de un evento\n\n\nEscala de apreciación\nMide intensidad o frecuencia de una conducta"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-los-instrumentos-de-medición",
+    "href": "slides-unit1_3.html#características-de-los-instrumentos-de-medición",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los instrumentos de medición",
+    "text": "Características de los instrumentos de medición\n\nValidez | Mide lo que dice medir\nConfiabilidad | Resultados consistentes y repetibles\nPrecisión | Sensibilidad ante cambios reales\nCalibración | Frente a un estándar conocido\nFísicos o conceptuales | Según la variable"
+  },
+  {
+    "objectID": "slides-unit1_3.html#medición-encuestas-vs.-instrumentos",
+    "href": "slides-unit1_3.html#medición-encuestas-vs.-instrumentos",
+    "title": "Probabilidad y Estadística",
+    "section": "Medición: Encuestas vs. Instrumentos",
+    "text": "Medición: Encuestas vs. Instrumentos\n\n\n\nCriterio\nEncuestas\nInstrumentos\n\n\n\n\nControl\nDepende del sujeto\nEstandarizado\n\n\nObjetivo\nPercepciones y conductas\nMagnitudes físicas\n\n\nSesgo típico\nDeseabilidad social\nError de calibración\n\n\nValidez\nComprensión del ítem\nPrecisión y repetibilidad"
+  },
+  {
+    "objectID": "slides-unit1_3.html#muestreo-probabilístico",
+    "href": "slides-unit1_3.html#muestreo-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo probabilístico",
+    "text": "Muestreo probabilístico\nTécnica de selección de muestra donde todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados, lo que permite extrapolar resultados e inferir estadísticamente."
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-del-muestreo-probabilístico",
+    "href": "slides-unit1_3.html#características-del-muestreo-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Características del muestreo probabilístico",
+    "text": "Características del muestreo probabilístico\n\nProbabilidad conocida de selección\nSelección basada en el azar\nPermite inferencia estadística\nReduce el sesgo de selección\nRequiere marco muestral de la población"
+  },
+  {
+    "objectID": "slides-unit1_3.html#muestreo-no-probabilístico",
+    "href": "slides-unit1_3.html#muestreo-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo no probabilístico",
+    "text": "Muestreo no probabilístico\nTécnica de selección basada en el criterio, accesibilidad o conveniencia del estudio, donde se desconoce la probabilidad de inclusión de cada sujeto, impidiendo la inferencia estadística cuantitativa hacia la población."
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-del-muestreo-no-probabilístico",
+    "href": "slides-unit1_3.html#características-del-muestreo-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Características del muestreo no probabilístico",
+    "text": "Características del muestreo no probabilístico\n\nProbabilidad desconocida de selección\nSelección por criterio o conveniencia\nNo permite inferencia estadística\nMayor riesgo de sesgo de selección\nÚtil en estudios exploratorios"
+  },
+  {
+    "objectID": "slides-unit1_3.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "href": "slides-unit1_3.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo: Probabilístico vs. No probabilístico",
+    "text": "Muestreo: Probabilístico vs. No probabilístico\n\n\n\nCriterio\nProbabilístico\nNo probabilístico\n\n\n\n\nControl\nRiguroso, aleatorio\nPor conveniencia\n\n\nObjetivo\nRepresentatividad\nExplorar casos de difícil acceso\n\n\nSesgo típico\nError de cobertura\nSesgo de selección\n\n\nValidez\nMargen de error calculable\nSin inferencia poblacional"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio",
+    "href": "slides-unit1_3.html#caso-de-estudio",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nPara evaluar el diámetro de 500 ejes producidos en un turno, se numeran todos del 1 al 500, y mediante un generador de números aleatorios se seleccionan 40 para su medición."
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-1",
+    "href": "slides-unit1_3.html#caso-de-estudio-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nCon el fin de evaluar la satisfacción de clientes en un centro comercial, se encuesta a las primeras 50 personas dispuestas a responder, ubicadas en la entrada principal durante la mañana."
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-2",
+    "href": "slides-unit1_3.html#caso-de-estudio-2",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nTras dividir una planta en 5 zonas según tipo de maquinaria, se seleccionan aleatoriamente 3 de los 10 equipos disponibles en cada zona para instalar sensores de vibración."
+  },
+  {
+    "objectID": "slides-unit1_3.html#usos-de-las-tablas-de-frecuencia",
+    "href": "slides-unit1_3.html#usos-de-las-tablas-de-frecuencia",
+    "title": "Probabilidad y Estadística",
+    "section": "Usos de las tablas de frecuencia",
+    "text": "Usos de las tablas de frecuencia\n\nDetectar patrones de concentración o dispersión en los datos\nComparar categorías o clases entre sí de forma directa\nIdentificar valores atípicos o poco frecuentes\nResumir grandes volúmenes de datos en un formato legible\nServir de base para construir gráficos estadísticos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-los-datos-no-agrupados",
+    "href": "slides-unit1_3.html#características-de-los-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos no agrupados",
+    "text": "Características de los datos no agrupados\n\nSe listan valores individuales, sin rangos\nAplica cuando hay pocos valores distintos\nCada fila muestra: valor, frecuencia, frecuencia relativa\nNo hay pérdida de información individual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-los-datos-agrupados",
+    "href": "slides-unit1_3.html#características-de-los-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos agrupados",
+    "text": "Características de los datos agrupados\n\nLos valores se organizan en intervalos de clase\nAplica cuando hay muchos valores distintos o datos continuos\nCada clase resume varios valores en un solo rango\nFacilita la lectura, pero pierde detalle individual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#no-agrupados-vs.-agrupados",
+    "href": "slides-unit1_3.html#no-agrupados-vs.-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "No agrupados vs. agrupados",
+    "text": "No agrupados vs. agrupados\n\n\n\n\n\n\n\n\nCriterio\nNo agrupados\nAgrupados\n\n\n\n\nCuándo usar\nPocos valores distintos\nMuchos valores o datos continuos\n\n\nUnidad de análisis\nValor individual\nIntervalo de clase\n\n\nDetalle\nSin pérdida de información\nSe pierde el dato exacto\n\n\nLectura\nMás extensa\nMás resumida y clara"
+  },
+  {
+    "objectID": "slides-unit1_3.html#reglas-para-el-ancho-de-clase",
+    "href": "slides-unit1_3.html#reglas-para-el-ancho-de-clase",
+    "title": "Probabilidad y Estadística",
+    "section": "Reglas para el ancho de clase",
+    "text": "Reglas para el ancho de clase\nAntes de construir una tabla de datos agrupados, hay que decidir cuántas clases usar y qué tan ancha debe ser cada una."
+  },
+  {
+    "objectID": "slides-unit1_3.html#reglas-para-el-número-de-clases",
+    "href": "slides-unit1_3.html#reglas-para-el-número-de-clases",
+    "title": "Probabilidad y Estadística",
+    "section": "Reglas para el número de clases",
+    "text": "Reglas para el número de clases\n\nRegla empírica: entre 5 y 20 clases, según tamaño de muestra\nRegla de Sturges: \\(k = 1 + 3.322 \\log(n)\\)\nRegla de la raíz: \\(k = \\sqrt{n}\\)\nMuy pocas clases ocultan patrones; muy muchas fragmentan los datos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#otras-reglas-referencia",
+    "href": "slides-unit1_3.html#otras-reglas-referencia",
+    "title": "Probabilidad y Estadística",
+    "section": "Otras reglas (referencia)",
+    "text": "Otras reglas (referencia)\n\nRegla de Rice: \\(k = 2 \\cdot n^{1/3}\\)\nRegla de Scott: \\(\\text{ancho} = 3.49 \\cdot \\sigma / n^{1/3}\\)\nRegla de Freedman-Diaconis: \\(\\text{ancho} = 2 \\cdot \\text{RIQ} / n^{1/3}\\)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#ancho-de-clase",
+    "href": "slides-unit1_3.html#ancho-de-clase",
+    "title": "Probabilidad y Estadística",
+    "section": "Ancho de clase",
+    "text": "Ancho de clase\n\n\\(\\text{ancho} = \\dfrac{\\text{valor}_{max} - \\text{valor}_{min}}{k}\\)\nSe recomienda redondear hacia arriba para cubrir todo el rango\nTodas las clases deben tener, idealmente, el mismo ancho"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-datos-cuantitativos",
+    "href": "slides-unit1_3.html#caso-de-estudio-datos-cuantitativos",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (datos cuantitativos)",
+    "text": "Caso de estudio (datos cuantitativos)\nAl registrar el consumo eléctrico mensual (en kWh) de 50 viviendas de un mismo sector residencial, con un mínimo de 183.6 kWh y un máximo de 419.4 kWh, se pide construir una tabla de frecuencias agrupando estos datos en clases."
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-miles-de-ciclos-hasta-falla",
+    "href": "slides-unit1_3.html#datos-miles-de-ciclos-hasta-falla",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (miles de ciclos hasta falla)",
+    "text": "Datos (miles de ciclos hasta falla)\n\n\n163\n\n\n392\n\n\n269\n\n\n366\n\n\n605\n\n\n299\n\n\n287\n\n\n162\n\n\n222\n\n\n287\n\n\n348\n\n\n405\n\n\n253\n\n\n159\n\n\n227\n\n\n483\n\n\n206\n\n\n273\n\n\n509\n\n\n141\n\n\n319\n\n\n537\n\n\n211\n\n\n302\n\n\n483\n\n\n182\n\n\n294\n\n\n378\n\n\n344\n\n\n277\n\n\n204\n\n\n284\n\n\n250\n\n\n280\n\n\n248\n\n\n425\n\n\n386\n\n\n234\n\n\n310\n\n\n224\n\n\n273\n\n\n245\n\n\n339\n\n\n250\n\n\n275\n\n\n364\n\n\n262\n\n\n480\n\n\n197\n\n\n373"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-datos-cualitativos",
+    "href": "slides-unit1_3.html#caso-de-estudio-datos-cualitativos",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (datos cualitativos)",
+    "text": "Caso de estudio (datos cualitativos)\nAl clasificar 60 piezas defectuosas según el tipo de falla detectada en la línea de producción, se pide construir una tabla de frecuencias y un diagrama de barras."
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-tipo-de-falla",
+    "href": "slides-unit1_3.html#datos-tipo-de-falla",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (tipo de falla)",
+    "text": "Datos (tipo de falla)\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad"
+  },
+  {
+    "objectID": "slides-unit1_3.html#gráficos-para-variables-cualitativas",
+    "href": "slides-unit1_3.html#gráficos-para-variables-cualitativas",
+    "title": "Probabilidad y Estadística",
+    "section": "Gráficos para variables cualitativas",
+    "text": "Gráficos para variables cualitativas\nRepresentan categorías, proporciones o atributos dicotómicos mediante conteos o porcentajes por grupo."
+  },
+  {
+    "objectID": "slides-unit1_3.html#diagrama-de-barras",
+    "href": "slides-unit1_3.html#diagrama-de-barras",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama de barras",
+    "text": "Diagrama de barras\n\n\n\nCompara frecuencias entre categorías\nBarras de igual ancho, altura proporcional a la frecuencia\nAplica a variables nominales u ordinales\nÚtil para pocas categorías (idealmente menos de 10)\n\n\n\n\nDistribución de defectos detectados en línea de producción"
+  },
+  {
+    "objectID": "slides-unit1_3.html#diagrama-circular-torta",
+    "href": "slides-unit1_3.html#diagrama-circular-torta",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama circular (torta)",
+    "text": "Diagrama circular (torta)\n\n\n\nMuestra la proporción de cada categoría sobre el total\nAplica cuando las categorías son mutuamente excluyentes\nPierde claridad con más de 5-6 categorías\nMenos preciso que las barras para comparar valores cercanos\n\n\n\n\nDistribución de defectos detectados en línea de producción"
+  },
+  {
+    "objectID": "slides-unit1_3.html#gráficos-para-variables-cuantitativas",
+    "href": "slides-unit1_3.html#gráficos-para-variables-cuantitativas",
+    "title": "Probabilidad y Estadística",
+    "section": "Gráficos para variables cuantitativas",
+    "text": "Gráficos para variables cuantitativas\nMuestran la forma, el centro, la dispersión o la densidad de un conjunto de datos numéricos."
+  },
+  {
+    "objectID": "slides-unit1_3.html#histograma",
+    "href": "slides-unit1_3.html#histograma",
+    "title": "Probabilidad y Estadística",
+    "section": "Histograma",
+    "text": "Histograma\n\n\n\nMuestra la distribución de frecuencias en clases o intervalos\nRevela la forma de los datos (simetría, sesgo, modalidad)\nRequiere decidir el número de clases (Sturges, Scott, etc.)\nAplica a variables continuas o discretas con muchos valores\n\n\n\n\nCiclos hasta falla de rodamientos (miles de ciclos)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#diagrama-de-puntos",
+    "href": "slides-unit1_3.html#diagrama-de-puntos",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama de puntos",
+    "text": "Diagrama de puntos\n\n\n\nRepresenta cada observación como un punto individual\nApila los puntos que comparten un mismo valor o rango\nNo requiere calcular clases ni medidas estadísticas\nAplica a variables cuantitativas con pocos o medianos datos\n\n\n\n\nCiclos hasta falla de rodamientos (miles de ciclos)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#tipos-comunes-de-sesgo",
+    "href": "slides-unit1_3.html#tipos-comunes-de-sesgo",
+    "title": "Probabilidad y Estadística",
+    "section": "Tipos comunes de sesgo",
+    "text": "Tipos comunes de sesgo\n\nSelección: muestra no representativa de la población\nMedición: falla o mala calibración del instrumento\nInformación: preguntas mal formuladas o ambiguas\nObservador: juicio subjetivo del investigador\nRespuesta: el participante ajusta su respuesta a lo socialmente aceptable\nNo respuesta: quienes no responden difieren de quienes sí"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-3",
+    "href": "slides-unit1_3.html#caso-de-estudio-3",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUna planta evalúa la resistencia de un nuevo aditivo para concreto. Se fabricaron 20 probetas, curadas bajo condiciones normales. Al momento del ensayo de compresión, el laboratorio reporta los siguientes resultados. ¿La conclusión de que el aditivo cumple el estándar (≥30 MPa) es confiable?\n\n\n32.1\n\n\n34.5\n\n\n31.8\n\n\n33.2\n\n\n35.0\n\n\n32.7\n\n\n34.1\n\n\n33.6\n\n\n31.5\n\n\n34.8\n\n\n32.9\n\n\n33.4\n\n\nProbetas fabricadas: 20   |   Probetas ensayadas: 12"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-4",
+    "href": "slides-unit1_3.html#caso-de-estudio-4",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUn fabricante de sensores de presión evalúa la precisión de un nuevo modelo, más costoso que el anterior. Un técnico especializado recibe 6 pares de sensores etiquetados como “modelo nuevo” y “modelo anterior” y realiza las mediciones de calibración. ¿La comparación de precisión entre ambos modelos es confiable?\n\n\nNuevo\n\n\n0.077\n\n\n0.057\n\n\n0.051\n\n\n0.022\n\n\n0.046\n\n\n0.045\n\n\nAntiguo\n\n\n0.078\n\n\n0.067\n\n\n0.079\n\n\n0.070\n\n\n0.054\n\n\n0.098\n\n\nError de medición (menor = más preciso)  |  Media nuevo: 0.050    Media antiguo: 0.074"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-5",
+    "href": "slides-unit1_3.html#caso-de-estudio-5",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nEl supervisor de una planta encuesta presencialmente a 12 de sus operarios sobre su cumplimiento del protocolo de seguridad, en una escala de 1 a 10. Las calificaciones obtenidas se resumen a continuación. ¿Los resultados reflejan el cumplimiento real?\n\n\n10\n\n\n8\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n8\n\n\n8\n\n\n9\n\n\nAutorreporte de cumplimiento (1 = nunca, 10 = siempre)  |  Media: 8.8"
+  },
+  {
+    "objectID": "slides-unit1_3.html#error-aleatorio-vs.-error-sistemático",
+    "href": "slides-unit1_3.html#error-aleatorio-vs.-error-sistemático",
+    "title": "Probabilidad y Estadística",
+    "section": "Error aleatorio vs. error sistemático",
+    "text": "Error aleatorio vs. error sistemático\n\nError aleatorio: varía sin patrón, se compensa al aumentar el tamaño de la muestra\nError sistemático: se repite en la misma dirección, no se corrige con más datos\nEl error sistemático es lo que llamamos sesgo\nReducir ambos requiere estrategias distintas: aleatorización vs. corrección del método"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-6",
+    "href": "slides-unit1_3.html#caso-de-estudio-6",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUn técnico mide el diámetro de una misma pieza patrón (valor real conocido: 50.00 mm) usando un calibrador, repitiendo la medición varias veces. ¿Qué ocurre con el error al aumentar el número de mediciones?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#con-5-mediciones",
+    "href": "slides-unit1_3.html#con-5-mediciones",
+    "title": "Probabilidad y Estadística",
+    "section": "Con 5 mediciones",
+    "text": "Con 5 mediciones\n\n\n49.90\n\n\n49.78\n\n\n52.08\n\n\n47.49\n\n\n51.49\n\n\nMedia: 50.15 mm  |  Error respecto al valor real: 0.15 mm"
+  },
+  {
+    "objectID": "slides-unit1_3.html#con-50-mediciones",
+    "href": "slides-unit1_3.html#con-50-mediciones",
+    "title": "Probabilidad y Estadística",
+    "section": "Con 50 mediciones",
+    "text": "Con 50 mediciones\n\n\n46.58\n\n\n49.59\n\n\n49.53\n\n\n52.26\n\n\n49.97\n\n\n48.77\n\n\n52.75\n\n\n53.22\n\n\n48.62\n\n\n51.38\n\n\n49.10\n\n\n50.32\n\n\n50.51\n\n\n47.45\n\n\n50.13\n\n\n47.88\n\n\n48.02\n\n\n49.08\n\n\n46.03\n\n\n47.05\n\n\n50.46\n\n\n51.29\n\n\n51.70\n\n\n49.07\n\n\n51.39\n\n\n53.14\n\n\n52.36\n\n\n47.23\n\n\n46.51\n\n\n50.81\n\n\n52.49\n\n\n49.95\n\n\n51.91\n\n\n50.49\n\n\n50.45\n\n\n50.59\n\n\n50.44\n\n\n49.15\n\n\n53.69\n\n\n51.84\n\n\n48.88\n\n\n49.43\n\n\n47.92\n\n\n50.96\n\n\n47.15\n\n\n49.33\n\n\n51.49\n\n\n51.12\n\n\n51.15\n\n\n47.64\n\n\nMedia: 49.97 mm  |  Error respecto al valor real: −0.03 mm"
+  },
+  {
+    "objectID": "slides-unit1_3.html#convergencia-del-error",
+    "href": "slides-unit1_3.html#convergencia-del-error",
+    "title": "Probabilidad y Estadística",
+    "section": "Convergencia del error",
+    "text": "Convergencia del error\n\n\n\nLa media acumulada oscila con pocas mediciones\nSe estabiliza cerca del valor real al aumentar n\nAsí se comporta el error aleatorio, no el sesgo\nUn sesgo no convergería hacia el valor real\n\n\n\n\nMedia acumulada vs. número de mediciones"
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-no-agrupados-vs.-agrupados",
+    "href": "slides-unit1_3.html#datos-no-agrupados-vs.-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos no agrupados vs. agrupados",
+    "text": "Datos no agrupados vs. agrupados\n\nNo agrupados | Valores individuales, sin clasificar\nAgrupados | Valores organizados en intervalos de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-los-datos-no-agrupados-1",
+    "href": "slides-unit1_3.html#características-de-los-datos-no-agrupados-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos no agrupados",
+    "text": "Características de los datos no agrupados\n\nSe listan valores individuales, sin rangos\nAplica cuando hay pocos valores distintos\nCada fila muestra: valor, frecuencia, frecuencia relativa\nNo hay pérdida de información individual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#características-de-los-datos-agrupados-1",
+    "href": "slides-unit1_3.html#características-de-los-datos-agrupados-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos agrupados",
+    "text": "Características de los datos agrupados\n\nLos valores se organizan en intervalos de clase\nAplica cuando hay muchos valores distintos o datos continuos\nCada clase resume varios valores en un solo rango\nFacilita la lectura, pero pierde detalle individual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#número-de-clases",
+    "href": "slides-unit1_3.html#número-de-clases",
+    "title": "Probabilidad y Estadística",
+    "section": "Número de clases",
+    "text": "Número de clases\n\nEn este curso: Sturges (\\(k = 1 + 3.322 \\log(n)\\)) y raíz (\\(k = \\sqrt{n}\\))\nExisten otros criterios (empírica, Rice, Scott, Freedman-Diaconis)\nMuy pocas clases ocultan patrones; muy muchas fragmentan los datos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#ancho-de-clase-1",
+    "href": "slides-unit1_3.html#ancho-de-clase-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Ancho de clase",
+    "text": "Ancho de clase\n\n\\[\\text{ancho} = \\frac{\\text{valor}_{max} - \\text{valor}_{min}}{k}\\]\n\n\nSe recomienda redondear hacia arriba para cubrir todo el rango\nTodas las clases deben tener, idealmente, el mismo ancho\nLos límites no deben superponerse entre clases"
+  },
+  {
+    "objectID": "slides-unit1_3.html#elementos-de-una-tabla-de-frecuencias",
+    "href": "slides-unit1_3.html#elementos-de-una-tabla-de-frecuencias",
+    "title": "Probabilidad y Estadística",
+    "section": "Elementos de una tabla de frecuencias",
+    "text": "Elementos de una tabla de frecuencias\n\nClase (intervalo de clase) | Rango de valores que agrupa un subconjunto de datos\nMarca de clase | Punto medio del intervalo\nLímite inferior | Valor mínimo de la clase\nLímite superior | Valor máximo de la clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#contenidos-de-esta-sesión",
+    "href": "slides-unit1_3.html#contenidos-de-esta-sesión",
+    "title": "Probabilidad y Estadística",
+    "section": "Contenidos de esta sesión",
+    "text": "Contenidos de esta sesión\n\n¿Por qué comparar tratamientos?\nLenguaje de la inferencia estadística\nLa distribución t de Student\nPrueba t para dos muestras independientes\nPrueba t pareada\nVerificación de supuestos\nTamaño de muestra"
+  },
+  {
+    "objectID": "slides-unit1_3.html#ejemplo-guía-mortero-de-cemento",
+    "href": "slides-unit1_3.html#ejemplo-guía-mortero-de-cemento",
+    "title": "Probabilidad y Estadística",
+    "section": "Ejemplo guía: mortero de cemento",
+    "text": "Ejemplo guía: mortero de cemento\n\nDos formulaciones para preparar mortero de cemento (con y sin un aditivo modificador de polímero)\nVariable de respuesta: resistencia a la tensión\nPregunta experimental: ¿la formulación modificada es más resistente que la formulación estándar?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#hipótesis-nula-y-alternativa",
+    "href": "slides-unit1_3.html#hipótesis-nula-y-alternativa",
+    "title": "Probabilidad y Estadística",
+    "section": "Hipótesis nula y alternativa",
+    "text": "Hipótesis nula y alternativa\n\nH₀ (nula): no hay diferencia entre los tratamientos — \\(\\mu_1 = \\mu_2\\)\nH₁ (alternativa): sí hay diferencia — \\(\\mu_1 \\neq \\mu_2\\)\nLa prueba busca evidencia en contra de H₀; nunca la “demuestra” verdadera"
+  },
+  {
+    "objectID": "slides-unit1_3.html#interpretación-práctica",
+    "href": "slides-unit1_3.html#interpretación-práctica",
+    "title": "Probabilidad y Estadística",
+    "section": "Interpretación práctica",
+    "text": "Interpretación práctica\n\nValor-p pequeño → evidencia en contra de H₀\nUmbral convencional: \\(\\alpha = 0.05\\) (es una convención, no una ley física)\nEl valor-p no es la probabilidad de que H₀ sea verdadera — es un error de interpretación extremadamente común"
+  },
+  {
+    "objectID": "slides-unit1_3.html#los-dos-tipos-de-error",
+    "href": "slides-unit1_3.html#los-dos-tipos-de-error",
+    "title": "Probabilidad y Estadística",
+    "section": "Los dos tipos de error",
+    "text": "Los dos tipos de error\n\n\n\n\nH₀ verdadera\nH₀ falsa\n\n\n\n\nNo rechazo H₀\nDecisión correcta\nError tipo II (\\(\\beta\\))\n\n\nRechazo H₀\nError tipo I (\\(\\alpha\\))\nDecisión correcta\n\n\n\n\nReducir \\(\\alpha\\) generalmente aumenta \\(\\beta\\) — es un balance, no un problema que se “resuelve” sin costo"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-y-varianza-muestral",
+    "href": "slides-unit1_3.html#media-y-varianza-muestral",
+    "title": "Probabilidad y Estadística",
+    "section": "Media y varianza muestral",
+    "text": "Media y varianza muestral\n\\[\n\\bar{y} = \\dfrac{\\sum_{i=1}^n y_i}{n} \\qquad\\qquad\ns^2 = \\dfrac{\\sum_{i=1}^n (y_i - \\bar{y})^2}{n - 1}\n\\]\nSe divide entre \\(n-1\\) (y no entre \\(n\\)) para obtener un estimador insesgado de \\(\\sigma^2\\)."
+  },
+  {
+    "objectID": "slides-unit1_3.html#supuestos-del-modelo",
+    "href": "slides-unit1_3.html#supuestos-del-modelo",
+    "title": "Probabilidad y Estadística",
+    "section": "Supuestos del modelo",
+    "text": "Supuestos del modelo\n\nAmbas muestras provienen de poblaciones normales\nLas observaciones son independientes\nLas varianzas de ambas poblaciones son iguales (existe una versión del t-test — Welch — que relaja este supuesto, pero no se extiende bien a modelos ANOVA más complejos)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#estadístico-de-prueba",
+    "href": "slides-unit1_3.html#estadístico-de-prueba",
+    "title": "Probabilidad y Estadística",
+    "section": "Estadístico de prueba",
+    "text": "Estadístico de prueba\n\\[\nt_0 = \\dfrac{\\bar{y}_1 - \\bar{y}_2}{s_p \\sqrt{\\dfrac{1}{n_1} + \\dfrac{1}{n_2}}}\n\\]\ndonde \\(s_p\\) es la desviación estándar combinada (pooled) de ambas muestras."
+  },
+  {
+    "objectID": "slides-unit1_3.html#aplicación-al-ejemplo-mortero-de-cemento",
+    "href": "slides-unit1_3.html#aplicación-al-ejemplo-mortero-de-cemento",
+    "title": "Probabilidad y Estadística",
+    "section": "Aplicación al ejemplo: mortero de cemento",
+    "text": "Aplicación al ejemplo: mortero de cemento\n\n\n\nTratamiento\nN\nMedia\nDesv. Est.\nError Est.\n\n\n\n\n1\n10\n16.764\n0.316\n0.10\n\n\n2\n10\n17.042\n0.248\n0.078\n\n\n\nDiferencia estimada: \\(\\bar{y}_1 - \\bar{y}_2 = -0.278\\)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#nota-sobre-los-datos",
+    "href": "slides-unit1_3.html#nota-sobre-los-datos",
+    "title": "Probabilidad y Estadística",
+    "section": "Nota sobre los datos",
+    "text": "Nota sobre los datos\nLas 20 observaciones individuales del ejemplo original no están disponibles públicamente — solo se reportan las estadísticas descriptivas (media, desviación estándar, n). Los valores usados en el código de esta sección son datos reconstruidos que reproducen esas mismas estadísticas, para poder mostrar el cálculo completo. No son el dataset histórico literal, y eso debe quedar claro si se reutiliza este material."
+  },
+  {
+    "objectID": "slides-unit1_3.html#los-datos-en-python",
+    "href": "slides-unit1_3.html#los-datos-en-python",
+    "title": "Probabilidad y Estadística",
+    "section": "Los datos en Python",
+    "text": "Los datos en Python\n\nimport numpy as np\nimport pandas as pd\n\n# Datos reconstruidos a partir de las estadísticas reportadas\n# (media, desviación estándar, n=10 por grupo). Ver nota anterior.\ntrt1 = np.array([17.216, 17.126, 17.035, 16.945, 16.854,\n                  16.674, 16.583, 16.493, 16.402, 16.312])\ntrt2 = np.array([17.397, 17.326, 17.255, 17.184, 17.113,\n                  16.971, 16.900, 16.829, 16.758, 16.687])\n\ndf = pd.DataFrame({\n    \"resistencia\": np.concatenate([trt1, trt2]),\n    \"tratamiento\": [\"1\"] * 10 + [\"2\"] * 10\n})\n\ndf.groupby(\"tratamiento\")[\"resistencia\"].agg([\"mean\", \"std\", \"count\"])\n\n\n\n\n\n\n\n\nmean\nstd\ncount\n\n\ntratamiento\n\n\n\n\n\n\n\n1\n16.764\n0.316105\n10\n\n\n2\n17.042\n0.248218\n10"
+  },
+  {
+    "objectID": "slides-unit1_3.html#boxplot-comparativo",
+    "href": "slides-unit1_3.html#boxplot-comparativo",
+    "title": "Probabilidad y Estadística",
+    "section": "Boxplot comparativo",
+    "text": "Boxplot comparativo\n\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots()\ndf.boxplot(column=\"resistencia\", by=\"tratamiento\", ax=ax)\nax.set_title(\"Resistencia a la tensión por tratamiento\")\nax.set_xlabel(\"Tratamiento\")\nax.set_ylabel(\"Resistencia (kgf/cm²)\")\nplt.suptitle(\"\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nLos dos grupos muestran dispersión similar y sin valores atípicos evidentes — consistente con el supuesto de varianzas iguales."
+  },
+  {
+    "objectID": "slides-unit1_3.html#gráfico-de-probabilidad-normal",
+    "href": "slides-unit1_3.html#gráfico-de-probabilidad-normal",
+    "title": "Probabilidad y Estadística",
+    "section": "Gráfico de probabilidad normal",
+    "text": "Gráfico de probabilidad normal\n\nfrom scipy import stats\n\nfig, axes = plt.subplots(1, 2, figsize=(8, 4))\nstats.probplot(trt1, dist=\"norm\", plot=axes[0])\naxes[0].set_title(\"Tratamiento 1\")\nstats.probplot(trt2, dist=\"norm\", plot=axes[1])\naxes[1].set_title(\"Tratamiento 2\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nCon n = 10 por grupo, el gráfico de probabilidad normal es la herramienta más honesta: no hay potencia suficiente para que una prueba formal de normalidad sea confiable."
+  },
+  {
+    "objectID": "slides-unit1_3.html#prueba-t-en-python",
+    "href": "slides-unit1_3.html#prueba-t-en-python",
+    "title": "Probabilidad y Estadística",
+    "section": "Prueba t en Python",
+    "text": "Prueba t en Python\n\nt_stat, p_value = stats.ttest_ind(trt1, trt2, equal_var=True)\ngl = len(trt1) + len(trt2) - 2\n\nprint(f\"t = {t_stat:.2f}\")\nprint(f\"gl = {gl}\")\nprint(f\"p-valor = {p_value:.3f}\")\n\nt = -2.19\ngl = 18\np-valor = 0.042"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-de-la-prueba",
+    "href": "slides-unit1_3.html#resultado-de-la-prueba",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado de la prueba",
+    "text": "Resultado de la prueba\n\\[\nt_0 \\approx -2.19 \\qquad p\\text{-valor} \\approx 0.043 \\qquad gl = 17\n\\]\nCon \\(\\alpha = 0.05\\): como \\(p &lt; \\alpha\\), se rechaza H₀ — pero es un resultado límite, hay que reportarlo con esa salvedad."
+  },
+  {
+    "objectID": "slides-unit1_3.html#intervalo-de-confianza-en-python",
+    "href": "slides-unit1_3.html#intervalo-de-confianza-en-python",
+    "title": "Probabilidad y Estadística",
+    "section": "Intervalo de confianza en Python",
+    "text": "Intervalo de confianza en Python\n\nn1, n2 = len(trt1), len(trt2)\ns1, s2 = trt1.std(ddof=1), trt2.std(ddof=1)\nsp2 = ((n1 - 1) * s1**2 + (n2 - 1) * s2**2) / (n1 + n2 - 2)\nsp = np.sqrt(sp2)\n\ndiff = trt1.mean() - trt2.mean()\nse_diff = sp * np.sqrt(1/n1 + 1/n2)\nt_crit = stats.t.ppf(0.975, df=gl)\n\nci_low = diff - t_crit * se_diff\nci_high = diff + t_crit * se_diff\n\nprint(f\"Diferencia = {diff:.3f}\")\nprint(f\"IC 95%: ({ci_low:.3f}, {ci_high:.3f})\")\n\nDiferencia = -0.278\nIC 95%: (-0.545, -0.011)\n\n\nEl cero no está contenido en el intervalo: consistente con el rechazo de H₀. El intervalo aporta algo que el valor-p solo no da: una idea de la magnitud de la diferencia."
+  },
+  {
+    "objectID": "slides-unit1_3.html#pareado-o-independiente",
+    "href": "slides-unit1_3.html#pareado-o-independiente",
+    "title": "Probabilidad y Estadística",
+    "section": "¿Pareado o independiente?",
+    "text": "¿Pareado o independiente?\n\nPareado: mismo sujeto medido antes/después, o unidades emparejadas por un bloque natural (ej. mismo lote de materia prima)\nIndependiente: unidades distintas, asignadas al azar sin relación entre ellas\nElegir mal el diseño no se corrige después con estadística más sofisticada — el error queda en los datos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#estadístico-de-la-prueba-pareada",
+    "href": "slides-unit1_3.html#estadístico-de-la-prueba-pareada",
+    "title": "Probabilidad y Estadística",
+    "section": "Estadístico de la prueba pareada",
+    "text": "Estadístico de la prueba pareada\n\\[\nt_0 = \\dfrac{\\bar{d}}{s_d / \\sqrt{n}} \\qquad\nd_i = y_{1i} - y_{2i}\n\\]\nSe trabaja sobre las diferencias individuales, no sobre las medias de cada grupo por separado."
+  },
+  {
+    "objectID": "slides-unit1_3.html#ejemplo-pareado-en-python",
+    "href": "slides-unit1_3.html#ejemplo-pareado-en-python",
+    "title": "Probabilidad y Estadística",
+    "section": "Ejemplo pareado en Python",
+    "text": "Ejemplo pareado en Python\n\n# Ejemplo ilustrativo (datos simulados, no del caso del mortero):\n# medición de dureza en 8 piezas, antes y después de un tratamiento térmico\nantes = np.array([48.2, 50.1, 47.5, 49.8, 51.0, 46.9, 48.7, 50.4])\ndespues = np.array([49.5, 50.9, 48.0, 51.2, 52.1, 47.8, 49.9, 51.0])\n\nt_pareada, p_pareada = stats.ttest_rel(despues, antes)\nd = despues - antes\n\nprint(f\"Diferencia media = {d.mean():.3f}\")\nprint(f\"t = {t_pareada:.2f}\")\nprint(f\"p-valor = {p_pareada:.3f}\")\n\nDiferencia media = 0.975\nt = 8.40\np-valor = 0.000\n\n\nNótese que ttest_rel exige que los datos estén en el mismo orden (cada posición del arreglo es la misma unidad experimental en ambos grupos) — un error de alineación aquí invalida el resultado sin dar ningún aviso."
+  },
+  {
+    "objectID": "slides-unit1_3.html#normalidad",
+    "href": "slides-unit1_3.html#normalidad",
+    "title": "Probabilidad y Estadística",
+    "section": "Normalidad",
+    "text": "Normalidad\n\nGráfico de probabilidad normal\nBoxplot: útil también para detectar valores atípicos\nCon muestras muy pequeñas, verificar normalidad es en sí mismo difícil — hay que ser honestos sobre esa limitación"
+  },
+  {
+    "objectID": "slides-unit1_3.html#homogeneidad-de-varianzas",
+    "href": "slides-unit1_3.html#homogeneidad-de-varianzas",
+    "title": "Probabilidad y Estadística",
+    "section": "Homogeneidad de varianzas",
+    "text": "Homogeneidad de varianzas\n\nComparación visual del spread en boxplots o dotplots\nPruebas formales (Levene, F) existen, pero son sensibles a desviaciones de normalidad — no son un sustituto de la inspección visual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#de-qué-depende",
+    "href": "slides-unit1_3.html#de-qué-depende",
+    "title": "Probabilidad y Estadística",
+    "section": "¿De qué depende?",
+    "text": "¿De qué depende?\n\nEl tamaño del efecto que se quiere detectar\nLa variabilidad de los datos (\\(\\sigma\\))\nLa potencia deseada (\\(1-\\beta\\))\nEl nivel de significancia (\\(\\alpha\\))"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resumen-de-la-sesión",
+    "href": "slides-unit1_3.html#resumen-de-la-sesión",
+    "title": "Probabilidad y Estadística",
+    "section": "Resumen de la sesión",
+    "text": "Resumen de la sesión\n\nComparar tratamientos exige separar el efecto real del ruido aleatorio\nH₀/H₁, valor-p y errores tipo I/II son el lenguaje base de esa separación\nLa prueba t (independiente o pareada) depende de supuestos que deben verificarse, no darse por hecho\nEl tamaño de muestra determina qué tan pequeño un efecto real se puede llegar a detectar"
+  },
+  {
+    "objectID": "slides-unit1_3.html#próxima-sesión",
+    "href": "slides-unit1_3.html#próxima-sesión",
+    "title": "Probabilidad y Estadística",
+    "section": "Próxima sesión",
+    "text": "Próxima sesión\nDe la comparación de dos tratamientos a la comparación de más de dos: introducción al análisis de varianza (ANOVA) de un factor."
+  },
+  {
+    "objectID": "slides-unit1_3.html#número-de-clases-repetida",
+    "href": "slides-unit1_3.html#número-de-clases-repetida",
+    "title": "Probabilidad y Estadística",
+    "section": "Número de clases (repetida)",
+    "text": "Número de clases (repetida)\n\nEn este curso se usan: Sturges, \\(k = 1 + 3.322 \\log(n)\\), y raíz, \\(k = \\sqrt{n}\\)\nOtros criterios (empírica, Rice, Scott, Freedman-Diaconis) no se profundizan aquí\nMuy pocas clases ocultan patrones; muy muchas fragmentan los datos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#ancho-de-clase-repetida",
+    "href": "slides-unit1_3.html#ancho-de-clase-repetida",
+    "title": "Probabilidad y Estadística",
+    "section": "Ancho de clase (repetida)",
+    "text": "Ancho de clase (repetida)\n\n\\[\\text{ancho} = \\omega = \\frac{x_{max} - x_{min}}{k}\\]\n\n\nSe redondea hacia arriba para cubrir todo el rango\nTodas las clases deben tener el mismo ancho\nLos límites no deben superponerse entre clases"
+  },
+  {
+    "objectID": "slides-unit1_3.html#frecuencia-absoluta-y-relativa-1",
+    "href": "slides-unit1_3.html#frecuencia-absoluta-y-relativa-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Frecuencia absoluta y relativa",
+    "text": "Frecuencia absoluta y relativa\n\nFrecuencia absoluta (\\(f_i\\)) | Número de veces que aparece un valor o clase\nFrecuencia relativa (\\(h_i\\)) | Proporción respecto al total, \\(h_i = f_i / n\\)\nFrecuencia acumulada absoluta (\\(F_i\\)) | Suma de \\(f_i\\) hasta la clase actual\nFrecuencia acumulada relativa (\\(H_i\\)) | Suma de \\(h_i\\) hasta la clase actual\n\n\n\n\n\nClase\n\\(f_i\\)\n\\(h_i\\)\n\\(F_i\\)\n\\(H_i\\)\n\n\n\n\n…\n…\n…\n…\n…"
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-resistencia-en-mpa",
+    "href": "slides-unit1_3.html#datos-resistencia-en-mpa",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (resistencia en MPa)",
+    "text": "Datos (resistencia en MPa)\n\n\n28.4\n\n\n31.2\n\n\n26.7\n\n\n34.5\n\n\n22.3\n\n\n29.8\n\n\n33.1\n\n\n27.9\n\n\n30.6\n\n\n25.4\n\n\n36.2\n\n\n28.9\n\n\n31.7\n\n\n24.8\n\n\n29.3\n\n\n32.5\n\n\n27.1\n\n\n30.2\n\n\n35.8\n\n\n26.3\n\n\n29.6\n\n\n33.9\n\n\n28.1\n\n\n31.4\n\n\n25.9\n\n\n27.6\n\n\n30.9\n\n\n34.2\n\n\n26.8\n\n\n29.1\n\n\n32.8\n\n\n28.5\n\n\n30.4\n\n\n27.3\n\n\n33.6\n\n\n25.1\n\n\n29.9\n\n\n31.9\n\n\n26.5\n\n\n38.4\n\n\n28.7\n\n\n30.1\n\n\n27.8\n\n\n32.2\n\n\n29.4\n\n\n26.1\n\n\n31.6\n\n\n28.2\n\n\n39.8\n\n\n30.7"
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-días-de-entrega",
+    "href": "slides-unit1_3.html#datos-días-de-entrega",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (días de entrega)",
+    "text": "Datos (días de entrega)\n\n\n7\n\n\n12\n\n\n5\n\n\n9\n\n\n14\n\n\n6\n\n\n10\n\n\n8\n\n\n15\n\n\n4\n\n\n11\n\n\n7\n\n\n13\n\n\n6\n\n\n9\n\n\n16\n\n\n5\n\n\n10\n\n\n8\n\n\n12\n\n\n3\n\n\n9\n\n\n14\n\n\n7\n\n\n11\n\n\n6\n\n\n10\n\n\n8\n\n\n13\n\n\n7\n\n\n15\n\n\n9\n\n\n6\n\n\n12\n\n\n8\n\n\n10\n\n\n7\n\n\n17\n\n\n9\n\n\n5\n\n\n11\n\n\n8\n\n\n13\n\n\n6\n\n\n10\n\n\n9\n\n\n7\n\n\n18\n\n\n12\n\n\n8"
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-consumo-en-kwh",
+    "href": "slides-unit1_3.html#datos-consumo-en-kwh",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (consumo en kWh)",
+    "text": "Datos (consumo en kWh)\n\n\n288.6\n\n\n314.3\n\n\n401.8\n\n\n291.8\n\n\n301.9\n\n\n321.0\n\n\n224.3\n\n\n302.9\n\n\n331.2\n\n\n370.3\n\n\n202.6\n\n\n252.8\n\n\n201.8\n\n\n374.3\n\n\n346.4\n\n\n190.1\n\n\n415.7\n\n\n411.5\n\n\n336.9\n\n\n327.7\n\n\n217.8\n\n\n183.6\n\n\n306.8\n\n\n194.3\n\n\n225.6\n\n\n238.1\n\n\n187.2\n\n\n291.3\n\n\n285.7\n\n\n382.2\n\n\n304.6\n\n\n333.7\n\n\n299.9\n\n\n339.0\n\n\n289.8\n\n\n246.8\n\n\n419.4\n\n\n419.0\n\n\n381.7\n\n\n349.9\n\n\n255.7\n\n\n235.1\n\n\n249.4\n\n\n196.9\n\n\n363.9\n\n\n276.1\n\n\n383.2\n\n\n272.8\n\n\n409.9\n\n\n383.4"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-aritmética-datos-no-agrupados",
+    "href": "slides-unit1_3.html#media-aritmética-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Media aritmética (datos no agrupados)",
+    "text": "Media aritmética (datos no agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\]\n\n\nSuma de todos los valores \\(x_i\\), dividida entre el total de valores \\(n\\)\nSensible a valores atípicos\nAplica cuando se conocen los valores individuales"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-aritmética-datos-agrupados",
+    "href": "slides-unit1_3.html#media-aritmética-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Media aritmética (datos agrupados)",
+    "text": "Media aritmética (datos agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{k} f_i \\cdot m_i}{n}\\]\n\nSe usa la:\n\nmarca de clase (\\(m_i\\)) en lugar del valor exacto\nfrecuencia de la clase (\\(f_i\\)); número de clases (\\(k\\))\nEs una aproximación, no el valor exacto"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-ponderada-1",
+    "href": "slides-unit1_3.html#media-ponderada-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Media ponderada",
+    "text": "Media ponderada\n\n\\[\\bar{x}_w = \\frac{\\sum_{i=1}^{n} w_i \\cdot x_i}{\\sum_{i=1}^{n} w_i}\\]\n\n\n\\(w_i\\), peso o importancia asignada a cada valor\nSe usa cuando no todos los datos pesan igual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-aritmética-datos-no-agrupados-1",
+    "href": "slides-unit1_3.html#media-aritmética-datos-no-agrupados-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Media aritmética (datos no agrupados)",
+    "text": "Media aritmética (datos no agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\]\n\n\nSuma de todos los valores, dividida entre \\(n\\)\nSensible a valores atípicos\nAplica cuando se conocen los valores individuales"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-aritmética-datos-agrupados-1",
+    "href": "slides-unit1_3.html#media-aritmética-datos-agrupados-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Media aritmética (datos agrupados)",
+    "text": "Media aritmética (datos agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{k} f_i \\cdot m_i}{n}\\]\n\n\nSe usa la marca de clase (\\(m_i\\)) en lugar del valor exacto\n\\(f_i\\): frecuencia de la clase; \\(k\\): número de clases\nEs una aproximación, no el valor exacto"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-retomando-el-consumo-eléctrico",
+    "href": "slides-unit1_3.html#caso-de-estudio-retomando-el-consumo-eléctrico",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (retomando el consumo eléctrico)",
+    "text": "Caso de estudio (retomando el consumo eléctrico)\nCon los 50 datos de consumo eléctrico mensual (kWh) ya presentados, calcule la media aritmética como dato no agrupado y compárela con la media obtenida al agrupar los datos en la tabla de frecuencias ya construida."
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-ponderada-3",
+    "href": "slides-unit1_3.html#media-ponderada-3",
+    "title": "Probabilidad y Estadística",
+    "section": "Media ponderada",
+    "text": "Media ponderada\n\n\\[\\bar{x}_w = \\frac{\\sum_{i=1}^{n} w_i \\cdot x_i}{\\sum_{i=1}^{n} w_i}\\]\n\n\n\\(w_i\\): peso o importancia asignada a cada valor\nSe usa cuando no todos los datos pesan igual\nEjemplo típico: promedio ponderado por volumen o severidad"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-tasa-de-defectos-por-planta",
+    "href": "slides-unit1_3.html#caso-de-estudio-tasa-de-defectos-por-planta",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (tasa de defectos por planta)",
+    "text": "Caso de estudio (tasa de defectos por planta)\nUna empresa tiene 4 plantas con distinta tasa de defectos por lote y distinto volumen de producción mensual. Se pide calcular la tasa de defectos promedio de la empresa, ponderada por volumen.\n\n\n\nPlanta\nTasa de defectos (%)\nVolumen (unidades)\n\n\n\n\nA\n1.2\n8,000\n\n\nB\n2.5\n3,000\n\n\nC\n0.8\n12,000\n\n\nD\n3.1\n2,000"
+  },
+  {
+    "objectID": "slides-unit1_3.html#mediana-datos-no-agrupados",
+    "href": "slides-unit1_3.html#mediana-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Mediana (datos no agrupados)",
+    "text": "Mediana (datos no agrupados)\n\nSe ordenan los datos de menor a mayor\nSi \\(n\\) es impar: el valor central\nSi \\(n\\) es par: promedio de los dos valores centrales\nNo se ve afectada por valores atípicos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#mediana-datos-agrupados",
+    "href": "slides-unit1_3.html#mediana-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Mediana (datos agrupados)",
+    "text": "Mediana (datos agrupados)\n\n\\[Me = L_i + \\left( \\frac{\\frac{n}{2} - F_{i-1}}{f_i} \\right) \\cdot c\\]\n\n\n\\(L_i\\): límite inferior de la clase mediana\n\\(F_{i-1}\\): frecuencia acumulada de la clase anterior\n\\(f_i\\): frecuencia de la clase mediana\n\\(c\\): ancho de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-datos-no-agrupados",
+    "href": "slides-unit1_3.html#moda-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda (datos no agrupados)",
+    "text": "Moda (datos no agrupados)\n\nValor que más se repite en el conjunto de datos\nPuede no existir o haber más de una (bimodal, multimodal)\nEs la única medida de tendencia central aplicable a datos cualitativos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-datos-agrupados-método-de-distancias",
+    "href": "slides-unit1_3.html#moda-datos-agrupados-método-de-distancias",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda (datos agrupados — método de distancias)",
+    "text": "Moda (datos agrupados — método de distancias)\n\n\\[Mo = L_i + \\left( \\frac{d_1}{d_1 + d_2} \\right) \\cdot c\\]\n\n\n\\(L_i\\): límite inferior de la clase modal\n\\(d_1\\): diferencia entre \\(f_i\\) y la frecuencia de la clase anterior\n\\(d_2\\): diferencia entre \\(f_i\\) y la frecuencia de la clase siguiente"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-datos-agrupados-fórmula-de-pearson",
+    "href": "slides-unit1_3.html#moda-datos-agrupados-fórmula-de-pearson",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda (datos agrupados — fórmula de Pearson)",
+    "text": "Moda (datos agrupados — fórmula de Pearson)\n\n\\[Mo = 3 \\cdot Me - 2 \\cdot \\bar{x}\\]\n\n\nEstimación indirecta usando media y mediana ya calculadas\nVálida solo bajo el supuesto de una distribución moderadamente asimétrica\nNo requiere identificar la clase modal directamente"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-comparación-de-métodos",
+    "href": "slides-unit1_3.html#caso-de-estudio-comparación-de-métodos",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (comparación de métodos)",
+    "text": "Caso de estudio (comparación de métodos)\nRetomando la tabla de frecuencias del consumo eléctrico, calcule la moda usando el método de distancias y la fórmula de Pearson. Compare los resultados.\n¿Coinciden? ¿Qué método le parece más confiable para este conjunto de datos, por qué?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#cuál-medida-usar",
+    "href": "slides-unit1_3.html#cuál-medida-usar",
+    "title": "Probabilidad y Estadística",
+    "section": "¿Cuál medida usar?",
+    "text": "¿Cuál medida usar?\n\n\n\nSituación\nMedida recomendada\n\n\n\n\nDistribución simétrica, sin atípicos\nMedia\n\n\nPresencia de valores atípicos\nMediana\n\n\nDatos cualitativos\nModa\n\n\nDistribución muy asimétrica\nMediana"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-sensibilidad-de-la-media",
+    "href": "slides-unit1_3.html#caso-de-estudio-sensibilidad-de-la-media",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (sensibilidad de la media)",
+    "text": "Caso de estudio (sensibilidad de la media)\nUn sensor registra automáticamente el peso (en gramos) de 12 empaques de un producto durante una hora de producción, como parte de un control de calidad continuo.\n\n\n12.1\n\n\n11.9\n\n\n12.3\n\n\n12.0\n\n\n11.8\n\n\n12.2\n\n\n12.4\n\n\n11.7\n\n\n45.6\n\n\n12.1\n\n\n11.9\n\n\n12.0\n\n\nCalcule la media con los 12 datos y compárela con la media excluyendo el noveno registro. ¿Qué pudo haber causado ese valor? ¿Debería excluirse sin más?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado",
+    "href": "slides-unit1_3.html#resultado",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#criterios-de-agrupación",
+    "href": "slides-unit1_3.html#criterios-de-agrupación",
+    "title": "Probabilidad y Estadística",
+    "section": "Criterios de agrupación",
+    "text": "Criterios de agrupación\n\nPertinencia | Aplica a variables continuas o discretas con alta dispersión\nNúmero de clases (\\(k\\)) | Se determina con Sturges o raíz cuadrada, evitando muy pocas o demasiadas clases\nAncho constante (\\(\\omega\\)) | Todos los intervalos deben tener la misma amplitud\nMutua exclusión | Intervalos semiabiertos \\([L_i, L_s)\\), cada dato pertenece a una sola clase\nExhaustividad | El primer límite inferior \\(\\leq x_{min}\\); el último límite superior \\(\\geq x_{max}\\)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-muestral-datos-no-agrupados",
+    "href": "slides-unit1_3.html#media-muestral-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Media muestral (datos no agrupados)",
+    "text": "Media muestral (datos no agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}\\]\n\n\nSuma de todos los valores \\(x_i\\), dividida entre el total de valores \\(n\\)\nSensible a valores atípicos\nAplica cuando se conocen los valores individuales"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-muestral-datos-agrupados",
+    "href": "slides-unit1_3.html#media-muestral-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Media muestral (datos agrupados)",
+    "text": "Media muestral (datos agrupados)\n\n\\[\\bar{x} = \\frac{\\sum_{i=1}^{k} f_i \\cdot m_i}{n}\\]\n\n\n\\(m_i\\), marca de clase  \\(f_i\\), frecuencia de la clase  \\(k\\), número de clases  \\(n\\), tamaño de la muestra\n\n La media muestral es una aproximación, no el valor exacto"
+  },
+  {
+    "objectID": "slides-unit1_3.html#mediana-muestral-datos-no-agrupados",
+    "href": "slides-unit1_3.html#mediana-muestral-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Mediana muestral (datos no agrupados)",
+    "text": "Mediana muestral (datos no agrupados)\n\nSe ordenan los datos de menor a mayor\nSi \\(n\\) es impar, el valor central\nSi \\(n\\) es par, promedio de los dos valores centrales\nNo se ve afectada por valores atípicos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#mediana-muestral-datos-agrupados",
+    "href": "slides-unit1_3.html#mediana-muestral-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Mediana muestral (datos agrupados)",
+    "text": "Mediana muestral (datos agrupados)\n\n\\[Me = L_i + \\left( \\frac{\\frac{n}{2} - F_{i-1}}{f_i} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase mediana  \\(F_{i-1}\\), frecuencia acumulada de la clase anterior  \\(f_i\\), frecuencia de la clase mediana  \\(\\omega\\), ancho de clase  \\(n\\), tamaño de la muestra"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-muestral-datos-no-agrupados",
+    "href": "slides-unit1_3.html#moda-muestral-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda muestral (datos no agrupados)",
+    "text": "Moda muestral (datos no agrupados)\n\nValor que más se repite en el conjunto de datos\nPuede no existir o haber más de una (bimodal, multimodal)\nEs la única medida de tendencia central aplicable a datos cualitativos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-muestral-datos-agrupados-método-de-distancias",
+    "href": "slides-unit1_3.html#moda-muestral-datos-agrupados-método-de-distancias",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda muestral (datos agrupados — método de distancias)",
+    "text": "Moda muestral (datos agrupados — método de distancias)\n\n\\[Mo = L_i + \\left( \\frac{d_1}{d_1 + d_2} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase modal  \\(d_1\\), diferencia entre \\(f_i\\) y la frecuencia de la clase anterior \\(f_{i-1}\\)  \\(d_2\\), diferencia entre \\(f_i\\) y la frecuencia de la clase siguiente \\(f_{i+1}\\)  \\(\\omega\\), ancho de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-muestral-datos-agrupados-fórmula-de-pearson",
+    "href": "slides-unit1_3.html#moda-muestral-datos-agrupados-fórmula-de-pearson",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda muestral (datos agrupados — fórmula de Pearson)",
+    "text": "Moda muestral (datos agrupados — fórmula de Pearson)\n\n\\[Mo = 3 Me - 2 \\bar{x}\\]\n\n\nEstimación indirecta usando media y mediana ya calculadas\nVálida solo bajo el supuesto de una distribución moderadamente asimétrica\nNo requiere identificar la clase modal directamente"
+  },
+  {
+    "objectID": "slides-unit1_3.html#valor-atípico-1",
+    "href": "slides-unit1_3.html#valor-atípico-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Valor atípico",
+    "text": "Valor atípico\n\nNo hay una regla única para identificarlo; existen varios criterios (boxplot, z-score, entre otros)\nPuede deberse a un error de medición o registro o a una observación genuinamente distinta\nAfecta más a la media que a la mediana o la moda\nNo se debe eliminar sin antes investigar su causa"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-recortada-1",
+    "href": "slides-unit1_3.html#media-recortada-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Media recortada",
+    "text": "Media recortada\n\nSe ordenan los datos y se recorta un p% de cada extremo\nSe calcula la media aritmética de los valores restantes\nValores comunes: recortes al 5%, 10% o 20%\nLa mediana es un caso extremo: recorta todo excepto el valor central"
+  },
+  {
+    "objectID": "slides-unit1_2.html#unidades-temáticas",
+    "href": "slides-unit1_2.html#unidades-temáticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "href": "slides-unit1_2.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Definiciones. Manejo de datos y medidas estadísticas",
+    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
+    "href": "slides-unit1_2.html#recolección-organización-y-representación-gráfica-de-datos",
+    "title": "Probabilidad y Estadística",
+    "section": "Recolección, organización y representación gráfica de datos",
+    "text": "Recolección, organización y representación gráfica de datos\n\nFuentes de datos y obtención\n\nDiseños experimentales vs. estudios observacionales\nEncuestas e instrumentos de medición\nMuestreo probabilistico y no probabilistico\n\nTablas de frecuencias\n\nEstructuración para datos no agrupados vs. agrupados\nReglas para determinación de los anchos de clase\n\nGráficos para variables cualitativas y cuantitativas\n\nRepresentación de categorías, proporciones y atributos dicotómicos\nVisualización de la forma, centro, dispersión y densidad de datos\n\nSesgo y la recolección de datos\n\nSesgo vs. error aleatorio. Tipos de sesgo en la etapa de recolección"
+  },
+  {
+    "objectID": "slides-unit1_2.html#fuente-de-datos-y-obtención",
+    "href": "slides-unit1_2.html#fuente-de-datos-y-obtención",
+    "title": "Probabilidad y Estadística",
+    "section": "Fuente de datos y obtención",
+    "text": "Fuente de datos y obtención\nGénesis de los datos | Observación vs. Experimento\nMétodo de captura | Instrumentos directos vs. indirectos\nEstrategia de selección | Muestreo probabilístico vs. no probabilístico"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-un-estudio-observacional",
+    "href": "slides-unit1_2.html#características-de-un-estudio-observacional",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de un estudio observacional",
+    "text": "Características de un estudio observacional\n\nSin manipulación de variables\nCondiciones naturales, no controladas\nSin aleatorización de sujetos o tratamientos\nAsociación, no relación causal\nVulnerable a variables de confusión"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-un-estudio-experimental",
+    "href": "slides-unit1_2.html#características-de-un-estudio-experimental",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de un estudio experimental",
+    "text": "Características de un estudio experimental\n\nManipulación deliberada de factores\nControl de condiciones y variables extrañas\nAleatorización en la asignación de tratamientos\nReplicación para estimar el error\nInferencia causal como objetivo"
+  },
+  {
+    "objectID": "slides-unit1_2.html#estudio-experimental-vs.-observacional",
+    "href": "slides-unit1_2.html#estudio-experimental-vs.-observacional",
+    "title": "Probabilidad y Estadística",
+    "section": "Estudio: Experimental vs. Observacional",
+    "text": "Estudio: Experimental vs. Observacional\n\n\n\nCriterio\nExperimental\nObservacional\n\n\n\n\nControl\nManipulación directa\nRegistro sin intervención\n\n\nObjetivo\nCausa y efecto\nPatrones y asociaciones\n\n\nSesgo típico\nValidez externa reducida\nVariables de confusión\n\n\nValidez\nInterna\nEcológica / externa"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-una-encuesta",
+    "href": "slides-unit1_2.html#características-de-una-encuesta",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de una encuesta",
+    "text": "Características de una encuesta\n\nInstrumento estructurado de preguntas\nRecolecta datos auto-reportados\nAplicable a muestras de una población\nDatos cualitativos o cuantitativos\nVulnerable a sesgos de respuesta"
+  },
+  {
+    "objectID": "slides-unit1_2.html#no-sólo-encuestas",
+    "href": "slides-unit1_2.html#no-sólo-encuestas",
+    "title": "Probabilidad y Estadística",
+    "section": "No sólo encuestas",
+    "text": "No sólo encuestas\nLa encuesta no es el único instrumento para estudios observacionales, entre otros encontramos:\n\n\n\nInstrumento\nFunción\n\n\n\n\nDiario de campo\nNotas y reflexiones detalladas del observador\n\n\nGuía de observación\nPauta con aspectos clave a registrar\n\n\nLista de cotejo\nMarca presencia/ausencia de un evento\n\n\nEscala de apreciación\nMide intensidad o frecuencia de una conducta"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-los-instrumentos-de-medición",
+    "href": "slides-unit1_2.html#características-de-los-instrumentos-de-medición",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los instrumentos de medición",
+    "text": "Características de los instrumentos de medición\n\nValidez | Mide lo que dice medir\nConfiabilidad | Resultados consistentes y repetibles\nPrecisión | Sensibilidad ante cambios reales\nCalibración | Frente a un estándar conocido\nFísicos o conceptuales | Según la variable"
+  },
+  {
+    "objectID": "slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
+    "href": "slides-unit1_2.html#medición-encuestas-vs.-instrumentos",
+    "title": "Probabilidad y Estadística",
+    "section": "Medición: Encuestas vs. Instrumentos",
+    "text": "Medición: Encuestas vs. Instrumentos\n\n\n\nCriterio\nEncuestas\nInstrumentos\n\n\n\n\nControl\nDepende del sujeto\nEstandarizado\n\n\nObjetivo\nPercepciones y conductas\nMagnitudes físicas\n\n\nSesgo típico\nDeseabilidad social\nError de calibración\n\n\nValidez\nComprensión del ítem\nPrecisión y repetibilidad"
+  },
+  {
+    "objectID": "slides-unit1_2.html#muestreo-probabilístico",
+    "href": "slides-unit1_2.html#muestreo-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo probabilístico",
+    "text": "Muestreo probabilístico\nTécnica de selección de muestra donde todos los elementos de la población tienen una probabilidad conocida y diferente de cero de ser seleccionados, lo que permite extrapolar resultados e inferir estadísticamente."
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-del-muestreo-probabilístico",
+    "href": "slides-unit1_2.html#características-del-muestreo-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Características del muestreo probabilístico",
+    "text": "Características del muestreo probabilístico\n\nProbabilidad conocida de selección\nSelección basada en el azar\nPermite inferencia estadística\nReduce el sesgo de selección\nRequiere marco muestral de la población"
+  },
+  {
+    "objectID": "slides-unit1_2.html#muestreo-no-probabilístico",
+    "href": "slides-unit1_2.html#muestreo-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo no probabilístico",
+    "text": "Muestreo no probabilístico\nTécnica de selección basada en el criterio, accesibilidad o conveniencia del estudio, donde se desconoce la probabilidad de inclusión de cada sujeto, impidiendo la inferencia estadística cuantitativa hacia la población."
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-del-muestreo-no-probabilístico",
+    "href": "slides-unit1_2.html#características-del-muestreo-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Características del muestreo no probabilístico",
+    "text": "Características del muestreo no probabilístico\n\nProbabilidad desconocida de selección\nSelección por criterio o conveniencia\nNo permite inferencia estadística\nMayor riesgo de sesgo de selección\nÚtil en estudios exploratorios"
+  },
+  {
+    "objectID": "slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "href": "slides-unit1_2.html#muestreo-probabilístico-vs.-no-probabilístico",
+    "title": "Probabilidad y Estadística",
+    "section": "Muestreo: Probabilístico vs. No probabilístico",
+    "text": "Muestreo: Probabilístico vs. No probabilístico\n\n\n\nCriterio\nProbabilístico\nNo probabilístico\n\n\n\n\nControl\nRiguroso, aleatorio\nPor conveniencia\n\n\nObjetivo\nRepresentatividad\nExplorar casos de difícil acceso\n\n\nSesgo típico\nError de cobertura\nSesgo de selección\n\n\nValidez\nMargen de error calculable\nSin inferencia poblacional"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio",
+    "href": "slides-unit1_2.html#caso-de-estudio",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nPara evaluar el diámetro de 500 ejes producidos en un turno, se numeran todos del 1 al 500, y mediante un generador de números aleatorios se seleccionan 40 para su medición."
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-1",
+    "href": "slides-unit1_2.html#caso-de-estudio-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nCon el fin de evaluar la satisfacción de clientes en un centro comercial, se encuesta a las primeras 50 personas dispuestas a responder, ubicadas en la entrada principal durante la mañana."
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-2",
+    "href": "slides-unit1_2.html#caso-de-estudio-2",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nTras dividir una planta en 5 zonas según tipo de maquinaria, se seleccionan aleatoriamente 3 de los 10 equipos disponibles en cada zona para instalar sensores de vibración."
+  },
+  {
+    "objectID": "slides-unit1_2.html#usos-de-las-tablas-de-frecuencia",
+    "href": "slides-unit1_2.html#usos-de-las-tablas-de-frecuencia",
+    "title": "Probabilidad y Estadística",
+    "section": "Usos de las tablas de frecuencia",
+    "text": "Usos de las tablas de frecuencia\n\nDetectar patrones de concentración o dispersión en los datos\nComparar categorías o clases entre sí de forma directa\nIdentificar valores atípicos o poco frecuentes\nResumir grandes volúmenes de datos en un formato legible\nServir de base para construir gráficos estadísticos"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-los-datos-no-agrupados",
+    "href": "slides-unit1_2.html#características-de-los-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos no agrupados",
+    "text": "Características de los datos no agrupados\n\nSe listan valores individuales, sin rangos\nAplica cuando hay pocos valores distintos\nCada fila muestra: valor, frecuencia, frecuencia relativa\nNo hay pérdida de información individual"
+  },
+  {
+    "objectID": "slides-unit1_2.html#características-de-los-datos-agrupados",
+    "href": "slides-unit1_2.html#características-de-los-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de los datos agrupados",
+    "text": "Características de los datos agrupados\n\nLos valores se organizan en intervalos de clase\nAplica cuando hay muchos valores distintos o datos continuos\nCada clase resume varios valores en un solo rango\nFacilita la lectura, pero pierde detalle individual"
+  },
+  {
+    "objectID": "slides-unit1_2.html#no-agrupados-vs.-agrupados",
+    "href": "slides-unit1_2.html#no-agrupados-vs.-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "No agrupados vs. agrupados",
+    "text": "No agrupados vs. agrupados\n\n\n\n\n\n\n\n\nCriterio\nNo agrupados\nAgrupados\n\n\n\n\nCuándo usar\nPocos valores distintos\nMuchos valores o datos continuos\n\n\nUnidad de análisis\nValor individual\nIntervalo de clase\n\n\nDetalle\nSin pérdida de información\nSe pierde el dato exacto\n\n\nLectura\nMás extensa\nMás resumida y clara"
+  },
+  {
+    "objectID": "slides-unit1_2.html#reglas-para-el-ancho-de-clase",
+    "href": "slides-unit1_2.html#reglas-para-el-ancho-de-clase",
+    "title": "Probabilidad y Estadística",
+    "section": "Reglas para el ancho de clase",
+    "text": "Reglas para el ancho de clase\nAntes de construir una tabla de datos agrupados, hay que decidir cuántas clases usar y qué tan ancha debe ser cada una."
+  },
+  {
+    "objectID": "slides-unit1_2.html#reglas-para-el-número-de-clases",
+    "href": "slides-unit1_2.html#reglas-para-el-número-de-clases",
+    "title": "Probabilidad y Estadística",
+    "section": "Reglas para el número de clases",
+    "text": "Reglas para el número de clases\n\nRegla empírica: entre 5 y 20 clases, según tamaño de muestra\nRegla de Sturges: \\(k = 1 + 3.322 \\log(n)\\)\nRegla de la raíz: \\(k = \\sqrt{n}\\)\nMuy pocas clases ocultan patrones; muy muchas fragmentan los datos"
+  },
+  {
+    "objectID": "slides-unit1_2.html#otras-reglas-referencia",
+    "href": "slides-unit1_2.html#otras-reglas-referencia",
+    "title": "Probabilidad y Estadística",
+    "section": "Otras reglas (referencia)",
+    "text": "Otras reglas (referencia)\n\nRegla de Rice: \\(k = 2 \\cdot n^{1/3}\\)\nRegla de Scott: \\(\\text{ancho} = 3.49 \\cdot \\sigma / n^{1/3}\\)\nRegla de Freedman-Diaconis: \\(\\text{ancho} = 2 \\cdot \\text{RIQ} / n^{1/3}\\)"
+  },
+  {
+    "objectID": "slides-unit1_2.html#ancho-de-clase",
+    "href": "slides-unit1_2.html#ancho-de-clase",
+    "title": "Probabilidad y Estadística",
+    "section": "Ancho de clase",
+    "text": "Ancho de clase\n\n\\[\\text{ancho} = \\omega = \\frac{\\text{valor}_{max} - \\text{valor}_{min}}{k}\\]\n\n\nSe recomienda redondear hacia arriba para cubrir todo el rango\nTodas las clases deben tener, idealmente, el mismo ancho\nLos límites no deben superponerse entre clases"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-datos-cuantitativos",
+    "href": "slides-unit1_2.html#caso-de-estudio-datos-cuantitativos",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (datos cuantitativos)",
+    "text": "Caso de estudio (datos cuantitativos)\nAl registrar la cantidad de ciclos hasta la falla (en miles) de 50 rodamientos sometidos a una prueba de fatiga, con un mínimo de 141 mil ciclos y un máximo de 605 mil, se pide construir una tabla de frecuencias agrupando estos datos en clases."
+  },
+  {
+    "objectID": "slides-unit1_2.html#datos-miles-de-ciclos-hasta-falla",
+    "href": "slides-unit1_2.html#datos-miles-de-ciclos-hasta-falla",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (miles de ciclos hasta falla)",
+    "text": "Datos (miles de ciclos hasta falla)\n\n\n163\n\n\n392\n\n\n269\n\n\n366\n\n\n605\n\n\n299\n\n\n287\n\n\n162\n\n\n222\n\n\n287\n\n\n348\n\n\n405\n\n\n253\n\n\n159\n\n\n227\n\n\n483\n\n\n206\n\n\n273\n\n\n509\n\n\n141\n\n\n319\n\n\n537\n\n\n211\n\n\n302\n\n\n483\n\n\n182\n\n\n294\n\n\n378\n\n\n344\n\n\n277\n\n\n204\n\n\n284\n\n\n250\n\n\n280\n\n\n248\n\n\n425\n\n\n386\n\n\n234\n\n\n310\n\n\n224\n\n\n273\n\n\n245\n\n\n339\n\n\n250\n\n\n275\n\n\n364\n\n\n262\n\n\n480\n\n\n197\n\n\n373"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-datos-cualitativos",
+    "href": "slides-unit1_2.html#caso-de-estudio-datos-cualitativos",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (datos cualitativos)",
+    "text": "Caso de estudio (datos cualitativos)\nAl clasificar 60 piezas defectuosas según el tipo de falla detectada en la línea de producción, se pide construir una tabla de frecuencias y un diagrama de barras."
+  },
+  {
+    "objectID": "slides-unit1_2.html#datos-tipo-de-falla",
+    "href": "slides-unit1_2.html#datos-tipo-de-falla",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (tipo de falla)",
+    "text": "Datos (tipo de falla)\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nRayón\n\n\nGrieta\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad\n\n\nRayón\n\n\nGrieta\n\n\nRayón\n\n\nDeformación\n\n\nGrieta\n\n\nRayón\n\n\nPorosidad"
+  },
+  {
+    "objectID": "slides-unit1_2.html#gráficos-para-variables-cualitativas",
+    "href": "slides-unit1_2.html#gráficos-para-variables-cualitativas",
+    "title": "Probabilidad y Estadística",
+    "section": "Gráficos para variables cualitativas",
+    "text": "Gráficos para variables cualitativas\nRepresentan categorías, proporciones o atributos dicotómicos mediante conteos o porcentajes por grupo."
+  },
+  {
+    "objectID": "slides-unit1_2.html#diagrama-de-barras",
+    "href": "slides-unit1_2.html#diagrama-de-barras",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama de barras",
+    "text": "Diagrama de barras\n\n\n\nCompara frecuencias entre categorías\nBarras de igual ancho, altura proporcional a la frecuencia\nAplica a variables nominales u ordinales\nÚtil para pocas categorías (idealmente menos de 10)\n\n\n\n\nDistribución de defectos detectados en línea de producción"
+  },
+  {
+    "objectID": "slides-unit1_2.html#diagrama-circular-torta",
+    "href": "slides-unit1_2.html#diagrama-circular-torta",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama circular (torta)",
+    "text": "Diagrama circular (torta)\n\n\n\nMuestra la proporción de cada categoría sobre el total\nAplica cuando las categorías son mutuamente excluyentes\nPierde claridad con más de 5-6 categorías\nMenos preciso que las barras para comparar valores cercanos\n\n\n\n\nDistribución de defectos detectados en línea de producción"
+  },
+  {
+    "objectID": "slides-unit1_2.html#gráficos-para-variables-cuantitativas",
+    "href": "slides-unit1_2.html#gráficos-para-variables-cuantitativas",
+    "title": "Probabilidad y Estadística",
+    "section": "Gráficos para variables cuantitativas",
+    "text": "Gráficos para variables cuantitativas\nMuestran la forma, el centro, la dispersión o la densidad de un conjunto de datos numéricos."
+  },
+  {
+    "objectID": "slides-unit1_2.html#histograma",
+    "href": "slides-unit1_2.html#histograma",
+    "title": "Probabilidad y Estadística",
+    "section": "Histograma",
+    "text": "Histograma\n\n\n\nMuestra la distribución de frecuencias en clases o intervalos\nRevela la forma de los datos (simetría, sesgo, modalidad)\nRequiere decidir el número de clases (Sturges, Scott, etc.)\nAplica a variables continuas o discretas con muchos valores\n\n\n\n\nCiclos hasta falla de rodamientos (miles de ciclos)"
+  },
+  {
+    "objectID": "slides-unit1_2.html#diagrama-de-puntos",
+    "href": "slides-unit1_2.html#diagrama-de-puntos",
+    "title": "Probabilidad y Estadística",
+    "section": "Diagrama de puntos",
+    "text": "Diagrama de puntos\n\n\n\nRepresenta cada observación como un punto individual\nApila los puntos que comparten un mismo valor o rango\nNo requiere calcular clases ni medidas estadísticas\nAplica a variables cuantitativas con pocos o medianos datos\n\n\n\n\nCiclos hasta falla de rodamientos (miles de ciclos)"
+  },
+  {
+    "objectID": "slides-unit1_2.html#tipos-comunes-de-sesgo",
+    "href": "slides-unit1_2.html#tipos-comunes-de-sesgo",
+    "title": "Probabilidad y Estadística",
+    "section": "Tipos comunes de sesgo",
+    "text": "Tipos comunes de sesgo\n\nSelección: muestra no representativa de la población\nMedición: falla o mala calibración del instrumento\nInformación: preguntas mal formuladas o ambiguas\nObservador: juicio subjetivo del investigador\nRespuesta: el participante ajusta su respuesta a lo socialmente aceptable\nNo respuesta: quienes no responden difieren de quienes sí"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-3",
+    "href": "slides-unit1_2.html#caso-de-estudio-3",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUna planta evalúa la resistencia de un nuevo aditivo para concreto. Se fabricaron 20 probetas, curadas bajo condiciones normales. Al momento del ensayo de compresión, el laboratorio reporta los siguientes resultados. ¿La conclusión de que el aditivo cumple el estándar (≥30 MPa) es confiable?\n\n\n32.1\n\n\n34.5\n\n\n31.8\n\n\n33.2\n\n\n35.0\n\n\n32.7\n\n\n34.1\n\n\n33.6\n\n\n31.5\n\n\n34.8\n\n\n32.9\n\n\n33.4\n\n\nProbetas fabricadas: 20   |   Probetas ensayadas: 12"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-4",
+    "href": "slides-unit1_2.html#caso-de-estudio-4",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUn fabricante de sensores de presión evalúa la precisión de un nuevo modelo, más costoso que el anterior. Un técnico especializado recibe 6 pares de sensores etiquetados como “modelo nuevo” y “modelo anterior” y realiza las mediciones de calibración. ¿La comparación de precisión entre ambos modelos es confiable?\n\n\nNuevo\n\n\n0.077\n\n\n0.057\n\n\n0.051\n\n\n0.022\n\n\n0.046\n\n\n0.045\n\n\nAntiguo\n\n\n0.078\n\n\n0.067\n\n\n0.079\n\n\n0.070\n\n\n0.054\n\n\n0.098\n\n\nError de medición (menor = más preciso)  |  Media nuevo: 0.050    Media antiguo: 0.074"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-5",
+    "href": "slides-unit1_2.html#caso-de-estudio-5",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nEl supervisor de una planta encuesta presencialmente a 12 de sus operarios sobre su cumplimiento del protocolo de seguridad, en una escala de 1 a 10. Las calificaciones obtenidas se resumen a continuación. ¿Los resultados reflejan el cumplimiento real?\n\n\n10\n\n\n8\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n9\n\n\n8\n\n\n8\n\n\n9\n\n\nAutorreporte de cumplimiento (1 = nunca, 10 = siempre)  |  Media: 8.8"
+  },
+  {
+    "objectID": "slides-unit1_2.html#error-aleatorio-vs.-error-sistemático",
+    "href": "slides-unit1_2.html#error-aleatorio-vs.-error-sistemático",
+    "title": "Probabilidad y Estadística",
+    "section": "Error aleatorio vs. error sistemático",
+    "text": "Error aleatorio vs. error sistemático\n\nError aleatorio: varía sin patrón, se compensa al aumentar el tamaño de la muestra\nError sistemático: se repite en la misma dirección, no se corrige con más datos\nEl error sistemático es lo que llamamos sesgo\nReducir ambos requiere estrategias distintas: aleatorización vs. corrección del método"
+  },
+  {
+    "objectID": "slides-unit1_2.html#caso-de-estudio-6",
+    "href": "slides-unit1_2.html#caso-de-estudio-6",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio",
+    "text": "Caso de estudio\nUn técnico mide el diámetro de una misma pieza patrón (valor real conocido: 50.00 mm) usando un calibrador, repitiendo la medición varias veces. ¿Qué ocurre con el error al aumentar el número de mediciones?"
+  },
+  {
+    "objectID": "slides-unit1_2.html#con-5-mediciones",
+    "href": "slides-unit1_2.html#con-5-mediciones",
+    "title": "Probabilidad y Estadística",
+    "section": "Con 5 mediciones",
+    "text": "Con 5 mediciones\n\n\n49.90\n\n\n49.78\n\n\n52.08\n\n\n47.49\n\n\n51.49\n\n\nMedia: 50.15 mm  |  Error respecto al valor real: 0.15 mm"
+  },
+  {
+    "objectID": "slides-unit1_2.html#con-50-mediciones",
+    "href": "slides-unit1_2.html#con-50-mediciones",
+    "title": "Probabilidad y Estadística",
+    "section": "Con 50 mediciones",
+    "text": "Con 50 mediciones\n\n\n46.58\n\n\n49.59\n\n\n49.53\n\n\n52.26\n\n\n49.97\n\n\n48.77\n\n\n52.75\n\n\n53.22\n\n\n48.62\n\n\n51.38\n\n\n49.10\n\n\n50.32\n\n\n50.51\n\n\n47.45\n\n\n50.13\n\n\n47.88\n\n\n48.02\n\n\n49.08\n\n\n46.03\n\n\n47.05\n\n\n50.46\n\n\n51.29\n\n\n51.70\n\n\n49.07\n\n\n51.39\n\n\n53.14\n\n\n52.36\n\n\n47.23\n\n\n46.51\n\n\n50.81\n\n\n52.49\n\n\n49.95\n\n\n51.91\n\n\n50.49\n\n\n50.45\n\n\n50.59\n\n\n50.44\n\n\n49.15\n\n\n53.69\n\n\n51.84\n\n\n48.88\n\n\n49.43\n\n\n47.92\n\n\n50.96\n\n\n47.15\n\n\n49.33\n\n\n51.49\n\n\n51.12\n\n\n51.15\n\n\n47.64\n\n\nMedia: 49.97 mm  |  Error respecto al valor real: −0.03 mm"
+  },
+  {
+    "objectID": "slides-unit1_2.html#convergencia-del-error",
+    "href": "slides-unit1_2.html#convergencia-del-error",
+    "title": "Probabilidad y Estadística",
+    "section": "Convergencia del error",
+    "text": "Convergencia del error\n\n\n\nLa media acumulada oscila con pocas mediciones\nSe estabiliza cerca del valor real al aumentar n\nAsí se comporta el error aleatorio, no el sesgo\nUn sesgo no convergería hacia el valor real\n\n\n\n\nMedia acumulada vs. número de mediciones"
+  },
+  {
+    "objectID": "slides-unit1_3.html#media-ponderada-muestral-1",
+    "href": "slides-unit1_3.html#media-ponderada-muestral-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Media ponderada muestral",
+    "text": "Media ponderada muestral\n\n\\[\\bar{x}_w = \\frac{\\sum_{i=1}^{n} w_i \\cdot x_i}{\\sum_{i=1}^{n} w_i}\\]\n\n\n\\(w_i\\), peso o importancia asignada a cada valor\nSe usa cuando no todos los datos pesan igual"
+  },
+  {
+    "objectID": "slides-unit1_3.html#cuartiles-deciles-y-percentiles",
+    "href": "slides-unit1_3.html#cuartiles-deciles-y-percentiles",
+    "title": "Probabilidad y Estadística",
+    "section": "Cuartiles, deciles y percentiles",
+    "text": "Cuartiles, deciles y percentiles\n\nCuartiles (\\(Q_1, Q_2, Q_3\\)) | Dividen los datos en 4 partes iguales\nDeciles (\\(D_1, \\ldots, D_9\\)) | Dividen los datos en 10 partes iguales\nPercentiles (\\(P_1, \\ldots, P_{99}\\)) | Dividen los datos en 100 partes iguales"
+  },
+  {
+    "objectID": "slides-unit1_3.html#posición-datos-no-agrupados",
+    "href": "slides-unit1_3.html#posición-datos-no-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Posición (datos no agrupados)",
+    "text": "Posición (datos no agrupados)\n\n\\[\\text{Posición} = \\frac{k \\cdot n}{m}\\]\n\n\n\\(k\\), número del cuartil/decil/percentil buscado  \\(m\\), total de divisiones (4, 10 o 100)\n\n Datos ordenados de menor a mayor antes de aplicar la fórmula"
+  },
+  {
+    "objectID": "slides-unit1_3.html#posición-datos-agrupados",
+    "href": "slides-unit1_3.html#posición-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Posición (datos agrupados)",
+    "text": "Posición (datos agrupados)\n\n\\[P_k = L_i + \\left( \\frac{\\frac{k \\cdot n}{m} - F_{i-1}}{f_i} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase donde cae la posición  \\(k\\), número del cuartil/decil/percentil buscado  \\(m\\), total de divisiones (4, 10 o 100)  \\(F_{i-1}\\), frecuencia acumulada de la clase anterior  \\(f_i\\), frecuencia de la clase  \\(\\omega\\), ancho de clase\n\n Misma estructura que la mediana, cambiando la posición buscada"
+  },
+  {
+    "objectID": "slides-unit1_3.html#rango-intercuartílico",
+    "href": "slides-unit1_3.html#rango-intercuartílico",
+    "title": "Probabilidad y Estadística",
+    "section": "Rango intercuartílico",
+    "text": "Rango intercuartílico\n\n\\[RIC = Q_3 - Q_1\\]\n\n\nMide la dispersión del 50% central de los datos\nMenos sensible a valores atípicos que el rango total\nSe usa para definir los límites del boxplot"
+  },
+  {
+    "objectID": "slides-unit1_3.html#elementos-del-boxplot",
+    "href": "slides-unit1_3.html#elementos-del-boxplot",
+    "title": "Probabilidad y Estadística",
+    "section": "Elementos del boxplot",
+    "text": "Elementos del boxplot\n\nCaja | De \\(Q_1\\) a \\(Q_3\\), con una línea en \\(Q_2\\) (mediana)\nBigotes | Se extienden hasta 1.5 veces el RIC desde la caja\nValores atípicos | Aquellos puntos fuera del alcance de los bigotes"
+  },
+  {
+    "objectID": "slides-unit1_3.html#boxplot-construcción",
+    "href": "slides-unit1_3.html#boxplot-construcción",
+    "title": "Probabilidad y Estadística",
+    "section": "Boxplot (construcción)",
+    "text": "Boxplot (construcción)\n\nRango intercuartílico | \\(RIC = Q_3 - Q_1\\)\nLímite inferior del bigote | \\(Q_1 - 1.5 \\cdot RIC\\)\nLímite superior del bigote | \\(Q_3 + 1.5 \\cdot RIC\\)\n\n Cualquier dato fuera de ese rango se marca como atípico"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-tiempos-de-reparación",
+    "href": "slides-unit1_3.html#caso-de-estudio-tiempos-de-reparación",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (tiempos de reparación)",
+    "text": "Caso de estudio (tiempos de reparación)\nSe registró el tiempo de reparación (en horas) de 43 órdenes de mantenimiento correctivo en una planta durante un mes. Se pide calcular cuartiles, RIC y construir el diagrama de caja y bigotes correspondiente."
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-horas-de-reparación",
+    "href": "slides-unit1_3.html#datos-horas-de-reparación",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (horas de reparación)",
+    "text": "Datos (horas de reparación)\n\n\n0.3\n\n\n2.2\n\n\n2.3\n\n\n2.4\n\n\n2.4\n\n\n2.4\n\n\n2.5\n\n\n2.5\n\n\n2.6\n\n\n2.8\n\n\n2.8\n\n\n2.9\n\n\n3.0\n\n\n3.2\n\n\n3.3\n\n\n3.5\n\n\n3.9\n\n\n4.0\n\n\n4.0\n\n\n4.1\n\n\n4.4\n\n\n4.4\n\n\n4.6\n\n\n4.8\n\n\n4.8\n\n\n4.8\n\n\n5.3\n\n\n5.5\n\n\n5.6\n\n\n5.8\n\n\n5.8\n\n\n5.8\n\n\n6.1\n\n\n6.2\n\n\n6.2\n\n\n6.4\n\n\n7.3\n\n\n7.4\n\n\n7.6\n\n\n8.2\n\n\n8.3\n\n\n15.2\n\n\n16.8"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-1",
+    "href": "slides-unit1_3.html#resultado-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#qué-aporta-cada-grupo-de-medidas",
+    "href": "slides-unit1_3.html#qué-aporta-cada-grupo-de-medidas",
+    "title": "Probabilidad y Estadística",
+    "section": "Qué aporta cada grupo de medidas",
+    "text": "Qué aporta cada grupo de medidas\n\n\n\nGrupo\nQué responde\n\n\n\n\nTendencia central\n¿Dónde se concentran los datos?\n\n\nPosición\n¿Dónde cae un dato respecto al resto?\n\n\nDispersión\n¿Qué tan esparcidos están los datos?\n\n\nAsimetría y curtosis\n¿Qué forma tiene la distribución?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-síntesis",
+    "href": "slides-unit1_3.html#caso-de-estudio-síntesis",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (síntesis)",
+    "text": "Caso de estudio (síntesis)\nRetomando los 43 datos de tiempo de reparación, presente un resumen completo: media, mediana, moda, cuartiles, RIC, desviación estándar, asimetría y curtosis. A partir de ese resumen, redacte una conclusión sobre el comportamiento del proceso de mantenimiento."
+  },
+  {
+    "objectID": "slides-unit1_3.html#rango-intercuartílico-1",
+    "href": "slides-unit1_3.html#rango-intercuartílico-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Rango intercuartílico",
+    "text": "Rango intercuartílico\n\n\\[RIC = Q_3 - Q_1\\]\n\n\nMide la dispersión del 50% central de los datos\nMenos sensible a valores atípicos que el rango total\nSe usa para definir los límites del boxplot"
+  },
+  {
+    "objectID": "slides-unit1_3.html#elementos-del-boxplot-1",
+    "href": "slides-unit1_3.html#elementos-del-boxplot-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Elementos del boxplot",
+    "text": "Elementos del boxplot\n\nCaja | Va de \\(Q_1\\) a \\(Q_3\\), con una línea en \\(Q_2\\) (mediana)\nBigotes | Se extienden hasta 1.5 veces el RIC desde la caja\nValores atípicos | Aquellos puntos fuera del alcance de los bigotes"
+  },
+  {
+    "objectID": "slides-unit1_3.html#boxplot-construcción-1",
+    "href": "slides-unit1_3.html#boxplot-construcción-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Boxplot (construcción)",
+    "text": "Boxplot (construcción)\n\nLímite inferior del bigote: \\(Q_1 - 1.5 \\cdot RIC\\)\nLímite superior del bigote: \\(Q_3 + 1.5 \\cdot RIC\\)\nCualquier dato fuera de ese rango se marca como atípico"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-tiempos-de-reparación-1",
+    "href": "slides-unit1_3.html#caso-de-estudio-tiempos-de-reparación-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (tiempos de reparación)",
+    "text": "Caso de estudio (tiempos de reparación)\nSe registró el tiempo de reparación (en horas) de 43 órdenes de mantenimiento correctivo en una planta durante un mes. Se pide calcular cuartiles, RIC y construir el diagrama de caja y bigotes correspondiente."
+  },
+  {
+    "objectID": "slides-unit1_3.html#datos-horas-de-reparación-1",
+    "href": "slides-unit1_3.html#datos-horas-de-reparación-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos (horas de reparación)",
+    "text": "Datos (horas de reparación)\n\n\n0.3\n\n\n2.2\n\n\n2.3\n\n\n2.4\n\n\n2.4\n\n\n2.4\n\n\n2.5\n\n\n2.5\n\n\n2.6\n\n\n2.8\n\n\n2.8\n\n\n2.9\n\n\n3.0\n\n\n3.2\n\n\n3.3\n\n\n3.5\n\n\n3.9\n\n\n4.0\n\n\n4.0\n\n\n4.1\n\n\n4.4\n\n\n4.4\n\n\n4.6\n\n\n4.8\n\n\n4.8\n\n\n4.8\n\n\n5.3\n\n\n5.5\n\n\n5.6\n\n\n5.8\n\n\n5.8\n\n\n5.8\n\n\n6.1\n\n\n6.2\n\n\n6.2\n\n\n6.4\n\n\n7.3\n\n\n7.4\n\n\n7.6\n\n\n8.2\n\n\n8.3\n\n\n15.2\n\n\n16.8"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-2",
+    "href": "slides-unit1_3.html#resultado-2",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#rango",
+    "href": "slides-unit1_3.html#rango",
+    "title": "Probabilidad y Estadística",
+    "section": "Rango",
+    "text": "Rango\n\n\\[R = x_{max} - x_{min}\\]\n\n\nMedida de dispersión más simple\nUsa solo los valores extremos, ignora el resto\nMuy sensible a valores atípicos"
+  },
+  {
+    "objectID": "slides-unit1_3.html#población-vs.-muestra-notación",
+    "href": "slides-unit1_3.html#población-vs.-muestra-notación",
+    "title": "Probabilidad y Estadística",
+    "section": "Población vs. muestra (notación)",
+    "text": "Población vs. muestra (notación)\n\nPoblación | \\(\\mu\\) (media), \\(\\sigma^2\\) (varianza), \\(\\sigma\\) (desviación estándar)\nMuestra | \\(\\bar{x}\\) (media), \\(s^2\\) (varianza), \\(s\\) (desviación estándar)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#varianza-poblacional",
+    "href": "slides-unit1_3.html#varianza-poblacional",
+    "title": "Probabilidad y Estadística",
+    "section": "Varianza poblacional",
+    "text": "Varianza poblacional\n\n\\[\\sigma^2 = \\frac{\\sum_{i=1}^{N} (x_i - \\mu)^2}{N}\\]\n\n\n\\(\\mu\\), media poblacional  \\(N\\), tamaño de la población\n\n Se usa cuando se tienen todos los datos de la población"
+  },
+  {
+    "objectID": "slides-unit1_3.html#varianza-muestral",
+    "href": "slides-unit1_3.html#varianza-muestral",
+    "title": "Probabilidad y Estadística",
+    "section": "Varianza muestral",
+    "text": "Varianza muestral\n\n\\[s^2 = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}{n - 1}\\]\n\n\n\\(\\bar{x}\\), media muestral  \\(n-1\\), corrección de Bessel"
+  },
+  {
+    "objectID": "slides-unit1_3.html#corrección-de-bessel",
+    "href": "slides-unit1_3.html#corrección-de-bessel",
+    "title": "Probabilidad y Estadística",
+    "section": "Corrección de Bessel",
+    "text": "Corrección de Bessel\n\nLa varianza muestral usa \\(n-1\\) en vez de \\(n\\) en el denominador\nSin la corrección, \\(s^2\\) subestima sistemáticamente la varianza poblacional\n\\(n-1\\) compensa la pérdida de un grado de libertad al estimar \\(\\bar{x}\\) desde la misma muestra"
+  },
+  {
+    "objectID": "slides-unit1_3.html#desviación-estándar",
+    "href": "slides-unit1_3.html#desviación-estándar",
+    "title": "Probabilidad y Estadística",
+    "section": "Desviación estándar",
+    "text": "Desviación estándar\n\n\\[\\sigma = \\sqrt{\\sigma^2} \\qquad s = \\sqrt{s^2}\\]\n\n\nRaíz cuadrada de la varianza\nExpresada en las mismas unidades que los datos originales\nMedida de dispersión más usada en la práctica"
+  },
+  {
+    "objectID": "slides-unit1_3.html#coeficiente-de-variación",
+    "href": "slides-unit1_3.html#coeficiente-de-variación",
+    "title": "Probabilidad y Estadística",
+    "section": "Coeficiente de variación",
+    "text": "Coeficiente de variación\n\n\\[CV = \\frac{\\sigma}{\\mu} \\cdot 100\\% \\qquad CV = \\frac{s}{\\bar{x}} \\cdot 100\\%\\]\n\n\nDispersión relativa a la media, expresada en porcentaje\nPermite comparar dispersión entre conjuntos con unidades distintas\nNo tiene sentido si \\(\\mu\\) (o \\(\\bar{x}\\)) es cercano a cero"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación",
+    "href": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (retomando tiempos de reparación)",
+    "text": "Caso de estudio (retomando tiempos de reparación)\nCon los 43 datos de tiempo de reparación ya presentados, calcule el rango, la varianza muestral y la desviación estándar muestral. Note el efecto de los dos valores atípicos (15.2 y 16.8) sobre estos resultados."
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-3",
+    "href": "slides-unit1_3.html#resultado-3",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-comparando-dispersión-relativa",
+    "href": "slides-unit1_3.html#caso-de-estudio-comparando-dispersión-relativa",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (comparando dispersión relativa)",
+    "text": "Caso de estudio (comparando dispersión relativa)\nSe comparan dos variables de una planta: el tiempo de reparación (horas) y el costo de repuestos por orden (pesos). ¿Cuál de las dos tiene mayor dispersión relativa?\n\n\n\nVariable\nMedia\nDesviación estándar\n\n\n\n\nTiempo de reparación\n5.0 h\n3.0 h\n\n\nCosto de repuestos\n$2250000\n$360000\n\n\n\n¿Tiene sentido comparar directamente 3.0 con 360000?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-4",
+    "href": "slides-unit1_3.html#resultado-4",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#coeficiente-de-asimetría-de-fisher",
+    "href": "slides-unit1_3.html#coeficiente-de-asimetría-de-fisher",
+    "title": "Probabilidad y Estadística",
+    "section": "Coeficiente de asimetría de Fisher",
+    "text": "Coeficiente de asimetría de Fisher\n\n\\[g_1 = \\frac{\\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^3}{s^3}\\]\n\n\n\\(g_1 = 0\\), distribución simétrica  \\(g_1 &gt; 0\\), asimetría positiva (cola hacia la derecha)  \\(g_1 &lt; 0\\), asimetría negativa (cola hacia la izquierda)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#asimetría-y-las-medidas-de-tendencia-central",
+    "href": "slides-unit1_3.html#asimetría-y-las-medidas-de-tendencia-central",
+    "title": "Probabilidad y Estadística",
+    "section": "Asimetría y las medidas de tendencia central",
+    "text": "Asimetría y las medidas de tendencia central\n\nAsimetría positiva: Media \\(&gt;\\) Mediana \\(&gt;\\) Moda  Asimetría negativa: Media \\(&lt;\\) Mediana \\(&lt;\\) Moda  Simétrica: Media \\(\\approx\\) Mediana \\(\\approx\\) Moda"
+  },
+  {
+    "objectID": "slides-unit1_3.html#cuál-medida-usar-1",
+    "href": "slides-unit1_3.html#cuál-medida-usar-1",
+    "title": "Probabilidad y Estadística",
+    "section": "¿Cuál medida usar?",
+    "text": "¿Cuál medida usar?\n\n\n\nSituación\nMedida recomendada\n\n\n\n\nDistribución simétrica, sin atípicos\nMedia\n\n\nPresencia de valores atípicos\nMediana\n\n\nDatos cualitativos\nModa\n\n\nDistribución muy asimétrica\nMediana"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación-1",
+    "href": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (retomando tiempos de reparación)",
+    "text": "Caso de estudio (retomando tiempos de reparación)\nCon los 43 datos de tiempo de reparación ya presentados, calcule el coeficiente de asimetría y el de curtosis. Relacione el resultado con los valores atípicos ya identificados en el boxplot."
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-5",
+    "href": "slides-unit1_3.html#resultado-5",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#z-score",
+    "href": "slides-unit1_3.html#z-score",
+    "title": "Probabilidad y Estadística",
+    "section": "z-score",
+    "text": "z-score\n\n\\[z = \\frac{x - \\mu}{\\sigma} \\qquad z = \\frac{x - \\bar{x}}{s}\\]\n\n\n\\(z = 0\\), el valor coincide con la media  \\(z &gt; 0\\), por encima de la media; \\(z &lt; 0\\), por debajo  \\(|z| &gt; 2\\), criterio estricto para detectar atípicos  \\(|z| &gt; 3\\), criterio común, solo desviaciones extremas\n\n Como criterio de atípicos, supone una distribución aproximadamente simétrica. Con datos muy asimétricos, conviene usar el boxplot en su lugar"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación-2",
+    "href": "slides-unit1_3.html#caso-de-estudio-retomando-tiempos-de-reparación-2",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (retomando tiempos de reparación)",
+    "text": "Caso de estudio (retomando tiempos de reparación)\nCalcule el z-score de una orden que tomó 15.2 horas y de otra que tomó 5.5 horas, usando la media y desviación estándar ya calculadas (\\(\\bar{x} = 4.99\\), \\(s = 3.08\\))."
+  },
+  {
+    "objectID": "slides-unit1_3.html#resultado-6",
+    "href": "slides-unit1_3.html#resultado-6",
+    "title": "Probabilidad y Estadística",
+    "section": "Resultado",
+    "text": "Resultado\n\n\\(z_{15.2} = 3.32\\) → muy por encima de la media, confirma que es atípico\n\\(z_{5.5} = 0.17\\) → prácticamente en la media, valor normal\nEl umbral \\(|z|&gt;3\\) coincide con lo que ya vimos con el boxplot para este mismo dato"
+  },
+  {
+    "objectID": "slides-unit1_3.html#formas-según-asimetría",
+    "href": "slides-unit1_3.html#formas-según-asimetría",
+    "title": "Probabilidad y Estadística",
+    "section": "Formas según asimetría",
+    "text": "Formas según asimetría"
+  },
+  {
+    "objectID": "slides-unit1_3.html#formas-según-curtosis",
+    "href": "slides-unit1_3.html#formas-según-curtosis",
+    "title": "Probabilidad y Estadística",
+    "section": "Formas según curtosis",
+    "text": "Formas según curtosis"
+  },
+  {
+    "objectID": "slides-unit1_3.html#qué-aporta-cada-grupo-de-medidas-1",
+    "href": "slides-unit1_3.html#qué-aporta-cada-grupo-de-medidas-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Qué aporta cada grupo de medidas",
+    "text": "Qué aporta cada grupo de medidas\n\n\n\nGrupo\nQué responde\n\n\n\n\nTendencia central\n¿Dónde se concentran los datos?\n\n\nPosición\n¿Dónde cae un dato respecto al resto?\n\n\nDispersión\n¿Qué tan esparcidos están los datos?\n\n\nAsimetría y curtosis\n¿Qué forma tiene la distribución?"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-síntesis-1",
+    "href": "slides-unit1_3.html#caso-de-estudio-síntesis-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (síntesis)",
+    "text": "Caso de estudio (síntesis)\nRetomando los 43 datos de tiempo de reparación, presente un resumen completo: media, mediana, moda, cuartiles, RIC, desviación estándar, asimetría y curtosis. A partir de ese resumen, redacte una conclusión sobre el comportamiento del proceso de mantenimiento."
+  },
+  {
+    "objectID": "slides-unit1_3.html#posición-datos-agrupados-1",
+    "href": "slides-unit1_3.html#posición-datos-agrupados-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Posición (datos agrupados)",
+    "text": "Posición (datos agrupados)\n\n\\[P_k = L_i + \\left( \\frac{\\frac{k \\cdot n}{m} - F_{i-1}}{f_i} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase donde cae la posición  \\(k\\), número del cuartil/decil/percentil buscado  \\(m\\), total de divisiones (4, 10 o 100)  \\(F_{i-1}\\), frecuencia acumulada de la clase anterior  \\(f_i\\), frecuencia de la clase  \\(\\omega\\), ancho de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#z-score-como-criterio-de-detección",
+    "href": "slides-unit1_3.html#z-score-como-criterio-de-detección",
+    "title": "Probabilidad y Estadística",
+    "section": "Z-score como criterio de detección",
+    "text": "Z-score como criterio de detección\n\nSe calcula \\(z\\) para cada dato y se compara contra un umbral\n\\(|z| &gt; 2\\): criterio más estricto, marca más datos como atípicos\n\\(|z| &gt; 3\\): criterio más común, solo señala desviaciones extremas\nSupone una distribución aproximadamente simétrica; con datos muy asimétricos, conviene usar el boxplot en su lugar"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-muestral-datos-agrupados",
+    "href": "slides-unit1_3.html#moda-muestral-datos-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda muestral (datos agrupados)",
+    "text": "Moda muestral (datos agrupados)\n\n\\[Mo = L_i + \\left( \\frac{f_i - f_{i-1}}{2f_i - f_{i-1} - f_{i+1}} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase modal  \\(f_{i-1}\\), frecuencia de la clase anterior  \\(f_i\\), frecuencia de la clase modal  \\(f_{i+1}\\), frecuencia de la clase siguiente  \\(\\omega\\), ancho de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#moda-muestral-datos-agrupados-usando-frecuencias",
+    "href": "slides-unit1_3.html#moda-muestral-datos-agrupados-usando-frecuencias",
+    "title": "Probabilidad y Estadística",
+    "section": "Moda muestral (datos agrupados — usando frecuencias)",
+    "text": "Moda muestral (datos agrupados — usando frecuencias)\n\n\\[Mo = L_i + \\left( \\frac{f_i - f_{i-1}}{2f_i - f_{i-1} - f_{i+1}} \\right) \\cdot \\omega\\]\n\n\n\\(L_i\\), límite inferior de la clase modal  \\(f_{i-1}\\), frecuencia de la clase anterior  \\(f_i\\), frecuencia de la clase modal  \\(f_{i+1}\\), frecuencia de la clase siguiente  \\(\\omega\\), ancho de clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#coeficiente-de-asimetría-de-fisher-1",
+    "href": "slides-unit1_3.html#coeficiente-de-asimetría-de-fisher-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Coeficiente de asimetría de Fisher",
+    "text": "Coeficiente de asimetría de Fisher\n\n\\[g_1 = \\frac{\\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^3}{s^3}\\]\n\n\n\\(g_1 = 0\\), distribución simétrica  \\(g_1 &gt; 0\\), asimetría positiva (cola hacia la derecha)  \\(g_1 &lt; 0\\), asimetría negativa (cola hacia la izquierda)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#coeficiente-de-curtosis",
+    "href": "slides-unit1_3.html#coeficiente-de-curtosis",
+    "title": "Probabilidad y Estadística",
+    "section": "Coeficiente de curtosis",
+    "text": "Coeficiente de curtosis\n\n\\[g_2 = \\frac{\\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^4}{s^4} - 3\\]\n\n\n\\(g_2 = 0\\), mesocúrtica (similar a la normal)  \\(g_2 &gt; 0\\), leptocúrtica (colas pesadas, más apuntada)  \\(g_2 &lt; 0\\), platicúrtica (colas ligeras, más achatada)"
+  },
+  {
+    "objectID": "slides-unit1_3.html#elementos-de-una-tabla-de-frecuencias-1",
+    "href": "slides-unit1_3.html#elementos-de-una-tabla-de-frecuencias-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Elementos de una tabla de frecuencias",
+    "text": "Elementos de una tabla de frecuencias\n\nClase (intervalo de clase) | Rango de valores que agrupa un subconjunto de datos\nMarca de clase | Punto medio del intervalo\nLímite inferior | Valor mínimo de la clase\nLímite superior | Valor máximo de la clase"
+  },
+  {
+    "objectID": "slides-unit1_3.html#caso-de-estudio-retomando-los-empaques",
+    "href": "slides-unit1_3.html#caso-de-estudio-retomando-los-empaques",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio (retomando los empaques)",
+    "text": "Caso de estudio (retomando los empaques)\nCon los 12 datos de peso de empaques ya presentados, calcule la media recortada al 10%. Recuerde: \\(n \\cdot p / 100 = 12 \\cdot 10 / 100 = 1.2\\), que se redondea a 1 dato por extremo.\nCompare este resultado con la media sin recortar (14.83 g) y con la media excluyendo manualmente el valor atípico (12.04 g)."
+  },
+  {
+    "objectID": "slides-unit1_1.html#unidades-temáticas",
+    "href": "slides-unit1_1.html#unidades-temáticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Unidades temáticas",
+    "text": "Unidades temáticas\n\nUnidad 1: Definiciones. Manejo de datos y medidas estadísticas\nUnidad 2: Probabilidad y muestreo\nUnidad 3: Variables aleatorias discretas y continuas y sus distribuciones\nUnidad 4: Distribuciones muestrales. Introducción a los intervalos de confianza\nUnidad 5: Análisis de regresión y correlación"
+  },
+  {
+    "objectID": "slides-unit1_1.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "href": "slides-unit1_1.html#definiciones.-manejo-de-datos-y-medidas-estadísticas",
+    "title": "Probabilidad y Estadística",
+    "section": "Definiciones. Manejo de datos y medidas estadísticas",
+    "text": "Definiciones. Manejo de datos y medidas estadísticas\n1. Introducción y conceptos fundamentales\n2. Recolección, organización y representación gráfica de datos\n3. Medidas de tendencia central y posición\n4. Medidas de dispersión y de forma"
+  },
+  {
+    "objectID": "slides-unit1_1.html#introducción-y-conceptos-fundamentales",
+    "href": "slides-unit1_1.html#introducción-y-conceptos-fundamentales",
+    "title": "Probabilidad y Estadística",
+    "section": "Introducción y conceptos fundamentales",
+    "text": "Introducción y conceptos fundamentales\n\nEstadística\n\nEstadística descriptiva vs. inferencial\n\nPoblación, muestra e individuo\n\nUnidades de análisis y condiciones de definición\nDescriptores numéricos: Parámetro vs. Estadístico\n\nVariables estadísticas y datos\n\nDefinición de variable y concepto de dato\nClasificación: Cualitativas, cuantitativas y datos binarios\nVariables binarias. Codificación numérica\n\nEscalas de medición\n\nEscalas nominal, ordinal, intervalo y razón"
+  },
+  {
+    "objectID": "slides-unit1_1.html#claves-de-la-estadística",
+    "href": "slides-unit1_1.html#claves-de-la-estadística",
+    "title": "Probabilidad y Estadística",
+    "section": "Claves de la Estadística",
+    "text": "Claves de la Estadística\n\nMuestra vs. Población | De lo que ves a lo que realmente existe\nVariabilidad vs. Error | Lo que es naturaleza pura vs. lo que mediste mal\nDescripción vs. Modelo | Resumir el pasado vs. predecir el futuro\nProbabilidad | El lenguaje para hablarle a la incertidumbre\nSupuestos vs. Realidad | El modelo perfecto en el papel vs. la suciedad de los datos\nDiseño vs. Análisis | Si diseñaste mal, ningún modelo salva la torta\nCorrelación vs. Causalidad | Moverse juntos no es ser causa y efecto\nSignificancia vs. Relevancia | Lo que da un p-valor &lt; 0.05 vs. lo que importa en la vida real\nCerteza vs. Incertidumbre | Del confort del determinismo a la honestidad del riesgo"
+  },
+  {
+    "objectID": "slides-unit1_1.html#tipos-de-estadística",
+    "href": "slides-unit1_1.html#tipos-de-estadística",
+    "title": "Probabilidad y Estadística",
+    "section": "Tipos de Estadística",
+    "text": "Tipos de Estadística\n\n\nEstadística descriptiva\nResume, organiza y presenta datos recolectados.\n\nObjetivo: Describir una muestra o población.\nHerramientas:\n\nTablas de frecuencia\nGráficos\nMedidas de tendencia central, de dispersión y de forma\n\nResultado: Cuadros resumen y gráficos explicativos.\n\n\nEstadística inferencial\nHace predicciones y saca conclusiones sobre una población a partir de una muestra.\n\nObjetivo: Generalizar y tomar decisiones bajo incertidumbre.\nHerramientas:\n\nProbabilidad\nIntervalos de confianza\nPruebas de hipótesis\n\nResultado: Conclusiones con un nivel de certeza o margen de error."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-una-población",
+    "href": "slides-unit1_1.html#características-de-una-población",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de una población",
+    "text": "Características de una población\nUna población está estadísticamente definida si cumple con:\n\nDelimitación espacio-temporal | Límites precisos sobre el lugar y el período en el que existen sus elementos.\nCriterio de inclusión | Condición compartida que determina de forma inequívoca qué elementos pertenecen al conjunto y cuáles no.\nVariabilidad interna | Presencia de diferencias entre sus miembros respecto a las variables bajo estudio.\nDefinición de escala | Dimensión total del conjunto, clasificada como finita o potencialmente infinita."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-una-muestra",
+    "href": "slides-unit1_1.html#características-de-una-muestra",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de una muestra",
+    "text": "Características de una muestra\n\nRepresentatividad | Debe reflejar proporcionalmente la diversidad y características de la población original.\nTamaño adecuado | Suficientemente grande para reducir el margen de error, pero manejable y viable.\nAleatoriedad | Selección libre de sesgos individuales, donde todos tengan probabilidad de ser elegidos.\nHomogeneidad | Aplicación uniforme de los mismos criterios de inclusión y exclusión para cada elemento."
+  },
+  {
+    "objectID": "slides-unit1_1.html#características-de-un-individuo",
+    "href": "slides-unit1_1.html#características-de-un-individuo",
+    "title": "Probabilidad y Estadística",
+    "section": "Características de un individuo",
+    "text": "Características de un individuo\n\nIndivisibilidad | Entidad más pequeña y completa sobre la cual se toma cada medición o registro.\nPertenencia explícita | Satisface estrictamente los criterios de inclusión de la población bajo estudio.\nCapacidad de medición | Posee o genera las variables y características de interés para el análisis.\nIdentificabilidad | Puede diferenciarse de manera única e inequívoca de cualquier otro elemento del conjunto."
+  },
+  {
+    "objectID": "slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "href": "slides-unit1_1.html#tipología-de-un-individuo-más-allá-de-la-persona",
+    "title": "Probabilidad y Estadística",
+    "section": "Tipología de un individuo (Más allá de la persona)",
+    "text": "Tipología de un individuo (Más allá de la persona)\n\nEspecímenes y componentes físicos | Probeta de concreto, perfil estructural, junta soldada, rodamiento o álabe de turbina.\nSistemas y ensayos estructurales | Tramo de tubería, un puente, un ensayo de fatiga o un prototipo de chasis.\nEntidades computacionales y flujos de datos | Petición HTTP a un servidor, registro de ejecución, transacción de base de datos o paquete de datos en red.\nProcesos, eventos y tiempos de operación | Ciclo de mecanizado, tiempo de parada por falla o falla por desgaste.\nUnidades agregadas y redes | Celda de manufactura, red de distribución de agua, servidor en clúster o turno de producción de 8h."
+  },
+  {
+    "objectID": "slides-unit1_1.html#estadístico-vs-parámetro",
+    "href": "slides-unit1_1.html#estadístico-vs-parámetro",
+    "title": "Probabilidad y Estadística",
+    "section": "Estadístico vs Parámetro",
+    "text": "Estadístico vs Parámetro\nEl estadístico es un valor calculado a partir de una muestra, por lo que varía según la muestra seleccionada (es una variable aleatoria), a diferencia del parámetro, que es una constante fija y generalmente desconocida de toda la población."
+  },
+  {
+    "objectID": "slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "href": "slides-unit1_1.html#estadístico-vs-parámetro-1",
+    "title": "Probabilidad y Estadística",
+    "section": "Estadístico vs Parámetro",
+    "text": "Estadístico vs Parámetro\n100 probetas cilíndricas de concreto a los 28 días (\\(f'_c\\) en MPa):\n\n\n28.4\n\n\n31.2\n\n\n25.9\n\n\n29.1\n\n\n33.0\n\n\n27.8\n\n\n30.6\n\n\n28.3\n\n\n24.9\n\n\n32.4\n\n\n29.5\n\n\n26.8\n\n\n31.7\n\n\n28.1\n\n\n30.2\n\n\n27.3\n\n\n29.8\n\n\n31.0\n\n\n34.1\n\n\n28.7\n\n\n31.5\n\n\n29.3\n\n\n26.2\n\n\n30.9\n\n\n27.6\n\n\n32.8\n\n\n28.9\n\n\n29.0\n\n\n32.1\n\n\n25.4\n\n\n30.4\n\n\n27.1\n\n\n35.2\n\n\n28.6\n\n\n31.3\n\n\n24.7\n\n\n29.7\n\n\n32.5\n\n\n27.9\n\n\n31.1\n\n\n28.5\n\n\n30.1\n\n\n26.6\n\n\n33.9\n\n\n29.2\n\n\n31.8\n\n\n32.2\n\n\n29.6\n\n\n30.7\n\n\n33.2\n\n\n27.4\n\n\n30.8\n\n\n31.6\n\n\n26.1\n\n\n28.8\n\n\n34.5\n\n\n29.9\n\n\n32.0\n\n\n25.8\n\n\n30.3\n\n\n33.5\n\n\n28.2\n\n\n29.4\n\n\n31.9\n\n\n27.0\n\n\n30.0\n\n\n26.5\n\n\n32.7\n\n\n28.0\n\n\n29.1\n\n\n25.2\n\n\n31.4\n\n\n28.7\n\n\n30.5\n\n\n33.8\n\n\n27.7\n\n\n29.3\n\n\n32.3\n\n\n26.9\n\n\n30.1\n\n\n31.2\n\n\n28.4\n\n\n34.0\n\n\n29.7\n\n\n26.3\n\n\n32.9\n\n\n27.5\n\n\n30.9\n\n\n31.7\n\n\n28.6\n\n\n29.8\n\n\n25.7\n\n\n32.6\n\n\n30.2\n\n\n28.1\n\n\n33.1\n\n\n27.2\n\n\n29.5\n\n\n31.0\n\n\n34.7\n\n\nLa media de la población 29.7 MPa"
+  },
+  {
+    "objectID": "slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "href": "slides-unit1_1.html#clasificación-de-las-variables-según-su-naturaleza",
+    "title": "Probabilidad y Estadística",
+    "section": "Clasificación de las variables (Según su naturaleza)",
+    "text": "Clasificación de las variables (Según su naturaleza)\n\nCualitativas o Categóricas (Atributos): Cualidad, característica o categoría no numérica.\n\nNominales: Categorías sin orden preestablecido.\nOrdinales: Categorías con un orden, escala o jerarquía natural.\nBinarias (Dicotómicas): Solo admiten dos categorías excluyentes.\n\nSimétricas: Ambas tienen similar importancia o frecuencia.\nAsimétricas: Una categoría representa la presencia del evento de interés y la otra la ausencia.\n\n\nCuantitativas o Numéricas (Cantidades): Valores numéricos que permiten realizar operaciones matemáticas.\n\nDiscretas: Valor entero y aislado.\nContinuas: Valor decimal dentro de un intervalo."
+  },
+  {
+    "objectID": "slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "href": "slides-unit1_1.html#clasificación-de-las-variables-según-su-función-o-relación",
+    "title": "Probabilidad y Estadística",
+    "section": "Clasificación de las variables (Según su función o relación)",
+    "text": "Clasificación de las variables (Según su función o relación)\n\nVariables independientes (Causa): Son aquellas que se manipulan o controlan para observar su efecto.\nVariables dependientes (Efecto): Característica que cambia y se mide como respuesta a la variable independiente.\nVariables de confusión: Factores externos que pueden influir tanto en la causa como en el efecto, distorsionando la relación real entre ellos.\nVariables extrañas: Variables que no son objeto de estudio pero que podrían alterar los resultados si no se controlan de alguna manera."
+  },
+  {
+    "objectID": "slides-unit1_1.html#codificación-numérica",
+    "href": "slides-unit1_1.html#codificación-numérica",
+    "title": "Probabilidad y Estadística",
+    "section": "Codificación numérica",
+    "text": "Codificación numérica\nTransformación de datos cualitativos (categorías o texto) en valores numéricos para que puedan ser procesados por modelos matemáticos y algoritmos."
+  },
+  {
+    "objectID": "slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "href": "slides-unit1_1.html#dimensionalidad-de-los-datos",
+    "title": "Probabilidad y Estadística",
+    "section": "Dimensionalidad de los datos",
+    "text": "Dimensionalidad de los datos\nDependiendo de cuántas características de la población analicemos al mismo tiempo, los datos se clasifican según su dimensión en:\n\nUnivariantes: Analizan una sola variable a la vez.\nBivariantes: Estudian dos variables juntas para ver cómo se relacionan entre sí.\nMultivariantes: Analizan tres o más variables simultáneamente para entender fenómenos complejos."
+  },
+  {
+    "objectID": "slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1_1.html#datos-no-agrupados-y-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Datos no agrupados y agrupados",
+    "text": "Datos no agrupados y agrupados\n\nDatos no agrupados: Valores recolectados tal cual, presentados como una lista individual de datos. Se usan cuando la muestra es pequeña o hay muy poca variedad de valores.\nDatos agrupados: Se organizan en intervalos o clases y se presentan en una tabla de frecuencias. Esto es común cuando se manejan grandes conjuntos de datos, ya que ayuda a resumir y simplificar la información."
+  },
+  {
+    "objectID": "slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "href": "slides-unit1_1.html#comparación-entre-datos-no-agrupados-y-agrupados",
+    "title": "Probabilidad y Estadística",
+    "section": "Comparación entre datos no agrupados y agrupados",
+    "text": "Comparación entre datos no agrupados y agrupados\n\n\n\n\n\n\n\n\n\nDatos No Agrupados\nDatos Agrupados\n\n\n\n\nCaracterística\nMuestra cada dato individual\nMuestra datos en intervalos o clases\n\n\nFácil cálculo\nMedia, mediana y moda se calculan directamente\nRequiere fórmulas adaptadas para intervalos\n\n\nPérdida de información\nNo hay pérdida de información\nSe pierde la especificidad de datos individuales\n\n\nApropiado\nPequeños conjuntos de datos o análisis detallado\nGrandes conjuntos de datos o análisis de tendencias\n\n\nUso de tablas de frecuencia\nNo es necesario\nNecesario para organizar los datos"
+  },
+  {
+    "objectID": "slides-unit1_1.html#escalas-de-medición",
+    "href": "slides-unit1_1.html#escalas-de-medición",
+    "title": "Probabilidad y Estadística",
+    "section": "Escalas de medición",
+    "text": "Escalas de medición\n\n\n\n\n\n\n\n\n\nEscala\nPropiedad clave\nOperaciones válidas\nEjemplo\n\n\n\n\nNominal\nClasifica en categorías sin orden\n\\(=, \\neq\\)\nTipo de falla, material\n\n\nOrdinal\nOrdena o establece jerarquía\n\\(&gt;, &lt;\\)\nSeveridad de daño\n\n\nIntervalo\nDistancia constante, cero arbitrario\n\\(+, -\\)\nTemperatura\n\n\nRazón\nDistancia constante, cero absoluto\n\\(\\times, \\div\\)\nEsfuerzo, masa, longitud"
+  },
+  {
+    "objectID": "slides-unit1_1.html#caso-de-estudio-registro-de-sensores-en-planta",
+    "href": "slides-unit1_1.html#caso-de-estudio-registro-de-sensores-en-planta",
+    "title": "Probabilidad y Estadística",
+    "section": "Caso de estudio: Registro de sensores en planta",
+    "text": "Caso de estudio: Registro de sensores en planta\n\n\n\nID\n\n\nTimestamp\n\n\nTipo sensor\n\n\nNivel\n\n\nCiclos\n\n\nTemp. (°C)\n\n\nPresión (bar)\n\n\nVibr. (mm/s)\n\n\nVoltaje (V)\n\n\n\n\n1\n\n\n2026-08-20 06:15\n\n\nVibración\n\n\nMedio\n\n\n218\n\n\n88.90\n\n\n4.90\n\n\n3.10\n\n\n225.3\n\n\n2\n\n\n2026-08-20 06:30\n\n\nVibración\n\n\nBajo\n\n\n304\n\n\n34.08\n\n\n1.23\n\n\n3.72\n\n\n218.8\n\n\n3\n\n\n2026-08-20 06:45\n\n\nTemperatura\n\n\nMedio\n\n\n186\n\n\n51.07\n\n\n3.16\n\n\n3.18\n\n\n221.6\n\n\n4\n\n\n2026-08-20 07:00\n\n\nVibración\n\n\nMedio\n\n\n203\n\n\n41.35\n\n\n2.78\n\n\n1.71\n\n\n212.9\n\n\n5\n\n\n2026-08-20 07:15\n\n\nPresión\n\n\nAlto\n\n\n639\n\n\n92.02\n\n\n2.20\n\n\n0.22\n\n\n214.1\n\n\n6\n\n\n2026-08-20 07:30\n\n\nTemperatura\n\n\nMedio\n\n\n968\n\n\n21.72\n\n\n5.70\n\n\n0.11\n\n\n220.3\n\n\n7\n\n\n2026-08-20 07:45\n\n\nTemperatura\n\n\nAlto\n\n\n703\n\n\n39.43\n\n\n7.72\n\n\n4.37\n\n\n228.5\n\n\n8\n\n\n2026-08-20 08:00\n\n\nVibración\n\n\nBajo\n\n\n899\n\n\n93.61\n\n\n4.09\n\n\n4.09\n\n\n220.9\n\n\n9\n\n\n2026-08-20 08:15\n\n\nPresión\n\n\nBajo\n\n\n335\n\n\n22.18\n\n\n1.28\n\n\n0.65\n\n\n215.0\n\n\n10\n\n\n2026-08-20 08:30\n\n\nVibración\n\n\nBajo\n\n\n235\n\n\n90.73\n\n\n3.90\n\n\n1.98\n\n\n216.0\n\n\n11\n\n\n2026-08-20 08:45\n\n\nTemperatura\n\n\nAlto\n\n\n845\n\n\n27.07\n\n\n3.75\n\n\n0.27\n\n\n220.9\n\n\n12\n\n\n2026-08-20 09:00\n\n\nPresión\n\n\nBajo\n\n\n819\n\n\n34.15\n\n\n3.79\n\n\n1.30\n\n\n225.9\n\n\n13\n\n\n2026-08-20 09:15\n\n\nVibración\n\n\nBajo\n\n\n607\n\n\n57.01\n\n\n5.75\n\n\n4.70\n\n\n228.9\n\n\n14\n\n\n2026-08-20 09:30\n\n\nPresión\n\n\nMedio\n\n\n360\n\n\n46.45\n\n\n4.86\n\n\n3.74\n\n\n217.5\n\n\n15\n\n\n2026-08-20 09:45\n\n\nPresión\n\n\nBajo\n\n\n493\n\n\n84.48\n\n\n1.50\n\n\n2.44\n\n\n227.0\n\n\n16\n\n\n2026-08-20 10:00\n\n\nPresión\n\n\nBajo\n\n\n733\n\n\n80.04\n\n\n0.68\n\n\n2.91\n\n\n218.2\n\n\n17\n\n\n2026-08-20 10:15\n\n\nPresión\n\n\nMedio\n\n\n210\n\n\n24.05\n\n\n2.21\n\n\n2.32\n\n\n224.1\n\n\n18\n\n\n2026-08-20 10:30\n\n\nVibración\n\n\nBajo\n\n\n805\n\n\n89.11\n\n\n9.08\n\n\n2.10\n\n\n228.0\n\n\n19\n\n\n2026-08-20 10:45\n\n\nVibración\n\n\nBajo\n\n\n177\n\n\n59.50\n\n\n6.45\n\n\n4.48\n\n\n229.3\n\n\n20\n\n\n2026-08-20 11:00\n\n\nPresión\n\n\nMedio\n\n\n191\n\n\n73.25\n\n\n6.81\n\n\n3.86\n\n\n229.5\n\n\n21\n\n\n2026-08-20 11:15\n\n\nVibración\n\n\nBajo\n\n\n709\n\n\n37.97\n\n\n2.49\n\n\n1.88\n\n\n226.2\n\n\n22\n\n\n2026-08-20 11:30\n\n\nTemperatura\n\n\nBajo\n\n\n535\n\n\n80.99\n\n\n2.88\n\n\n0.41\n\n\n214.8\n\n\n23\n\n\n2026-08-20 11:45\n\n\nVibración\n\n\nMedio\n\n\n697\n\n\n45.80\n\n\n7.88\n\n\n4.63\n\n\n225.2\n\n\n24\n\n\n2026-08-20 12:00\n\n\nPresión\n\n\nAlto\n\n\n242\n\n\n32.78\n\n\n5.76\n\n\n1.82\n\n\n224.8\n\n\n25\n\n\n2026-08-20 12:15\n\n\nPresión\n\n\nAlto\n\n\n871\n\n\n93.52\n\n\n8.89\n\n\n3.56\n\n\n228.7\n\n\n26\n\n\n2026-08-20 12:30\n\n\nPresión\n\n\nBajo\n\n\n475\n\n\n63.20\n\n\n7.96\n\n\n0.57\n\n\n212.5\n\n\n27\n\n\n2026-08-20 12:45\n\n\nVibración\n\n\nAlto\n\n\n363\n\n\n90.86\n\n\n7.18\n\n\n2.20\n\n\n213.3\n\n\n28\n\n\n2026-08-20 13:00\n\n\nVibración\n\n\nMedio\n\n\n936\n\n\n72.77\n\n\n7.56\n\n\n4.31\n\n\n224.0\n\n\n29\n\n\n2026-08-20 13:15\n\n\nPresión\n\n\nMedio\n\n\n407\n\n\n27.43\n\n\n3.00\n\n\n0.85\n\n\n212.2\n\n\n30\n\n\n2026-08-20 13:30\n\n\nVibración\n\n\nMedio\n\n\n717\n\n\n72.29\n\n\n4.33\n\n\n4.25\n\n\n219.4"
   }
 ]

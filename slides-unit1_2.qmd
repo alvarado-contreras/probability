@@ -414,8 +414,8 @@ Antes de construir una tabla de datos agrupados, hay que decidir cuántas clases
 
 ## Ancho de clase {background-color="#e2e8f0"}
 
-::: {style="text-align: center; margin: 20px 0;"}
-$$\text{ancho} = \frac{\text{valor}_{max} - \text{valor}_{min}}{k}$$
+::: {style="text-align: center; margin: 20px 0; font-size: 1.2em;"}
+$$\text{ancho} = \omega = \frac{\text{valor}_{max} - \text{valor}_{min}}{k}$$
 :::
 
 1. Se recomienda **redondear hacia arriba** para cubrir todo el rango

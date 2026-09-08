@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<script src="slides-unit1_3_files/libs/clipboard/clipboard.min.js"></script>
+<script src="slides-unit1_3_files/libs/quarto-html/tabby.min.js"></script>
+<script src="slides-unit1_3_files/libs/quarto-html/popper.min.js"></script>
+<script src="slides-unit1_3_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="slides-unit1_3_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="slides-unit1_3_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="slides-unit1_3_files/libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <meta name="author" content="José A. Alvarado-Contreras">
+  <title>Medidas Estadísticas</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slides-unit1_3_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="slides-unit1_3_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="slides-unit1_3_files/libs/revealjs/dist/theme/quarto-a314005ec4bb6e08f706e4b298a21928.css">
+  <link href="slides-unit1_3_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="slides-unit1_3_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="slides-unit1_3_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="slides-unit1_3_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Probabilidad y Estadística</h1>
+  <p class="subtitle">Definiciones. Manejo de Datos y Medidas Estadísticas</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+José A. Alvarado-Contreras 
+</div>
+</div>
+</div>
+
+</section>
+<section>
+<section id="manejo-de-datos-y-medidas-estadísticas" class="title-slide slide level1 center" style="margin-top: 45px; font-size: 1.2em;">
+<h1>Manejo de datos y medidas estadísticas</h1>
+<h3 style="font-size: 1.0em;">
+Medidas de tendencia central y posición
+</h3>
+<hr>
+<h4 style="font-size: 0.6em; opacity: 0.6">
+Septiembre 2026
+</h4>
+</section>
+<section id="unidades-temáticas" class="slide level2 center" data-background-color="#e4e4e7" style="font-size: 1.0em;">
+<h2>Unidades temáticas</h2>
+<ul>
+<li><strong>Unidad 1:</strong> Definiciones. Manejo de datos y medidas estadísticas</li>
+<li><strong>Unidad 2:</strong> Probabilidad y muestreo</li>
+<li><strong>Unidad 3:</strong> Variables aleatorias discretas y continuas y sus distribuciones</li>
+<li><strong>Unidad 4:</strong> Distribuciones muestrales. Introducción a los intervalos de confianza</li>
+<li><strong>Unidad 5:</strong> Análisis de regresión y correlación</li>
+</ul>
+</section>
+<section id="definiciones.-manejo-de-datos-y-medidas-estadísticas" class="slide level2 center">
+<h2>Definiciones. Manejo de datos y medidas estadísticas</h2>
+<p><strong>1.</strong> Introducción y conceptos fundamentales</p>
+<p><strong>2.</strong> Recolección, organización y representación gráfica de datos</p>
+<p><strong>3. Medidas de tendencia central y posición</strong></p>
+<p><strong>4.</strong> Medidas de dispersión y de forma</p>
+</section>
+<section id="medidas-de-tendencia-central-y-posición" class="slide level2 center">
+<h2>Medidas de tendencia central y posición</h2>
+<ol type="1">
+<li><strong>Organización de datos</strong>
+<ul>
+<li>Datos no agrupados vs.&nbsp;agrupados</li>
+<li>Construcción de tablas de frecuencia</li>
+</ul></li>
+<li><strong>Medidas de tendencia central</strong>
+<ul>
+<li>Media muestral y media ponderada muestral</li>
+<li>Mediana muestral y moda muestral</li>
+<li>Valor atípico y media recortada</li>
+<li>Criterios de selección según distribución y valores atípicos</li>
+</ul></li>
+<li><strong>Medidas de posición</strong>
+<ul>
+<li>Cuartiles, deciles y percentiles</li>
+<li>Diagrama de caja y bigotes</li>
+</ul></li>
+<li><strong>Comparación e interpretación</strong>
+<ul>
+<li>Pertinencia de las medidas según distribución y valores atípicos</li>
+</ul></li>
+</ol>
+</section></section>
+<section id="section" class="title-slide slide level1 center" data-background-image="image_files/bigdata.jpg" data-background-size="cover" data-background-position="center 30%">
+<h1></h1>
+<p><span class="footer">Foto por <a href="https://www.pexels.com/photo/digital-monitor-flashing-stocks-exchange-11798249/">Romulo Queiroz</a> en <a href="https://www.pexels.com/@romulo-queiroz-2079642/">Pexels</a></span></p>
+</section>
+
+<section>
+<section id="organización-de-datos" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Organización de datos</h1>
+<p>Antes de calcular medidas de tendencia central y de posición, los datos deben organizarse según su naturaleza y volumen.</p>
+</section>
+<section id="datos-no-agrupados-vs.-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Datos no agrupados vs.&nbsp;agrupados</h2>
+<ol type="1">
+<li><strong>No agrupados</strong> | Valores individuales, sin clasificar</li>
+<li><strong>Agrupados</strong> | Valores organizados en intervalos de clase</li>
+</ol>
+</section>
+<section id="criterios-de-agrupación" class="slide level2 center" data-background-color="#e2e8f0" style="font-size: 1.0em;">
+<h2>Criterios de agrupación</h2>
+<ol type="1">
+<li><strong>Pertinencia</strong> | Aplica a variables continuas o discretas con alta dispersión</li>
+<li><strong>Número de clases (</strong><span style="font-size: 1.1em;"><span class="math inline">\(k\)</span></span><strong>)</strong> | Se determina con Sturges o raíz cuadrada, evitando muy pocas o demasiadas clases</li>
+<li><strong>Ancho constante (</strong><span style="font-size: 1.1em;"><span class="math inline">\(\omega\)</span></span><strong>)</strong> | Todos los intervalos deben tener la misma amplitud</li>
+<li><strong>Mutua exclusión</strong> | Intervalos semiabiertos <span style="font-size: 1.1em;"><span class="math inline">\([L_i, L_s)\)</span></span>, cada dato pertenece a una sola clase</li>
+<li><strong>Exhaustividad</strong> | El primer límite inferior <span style="font-size: 1.2em;"><span class="math inline">\(\leq x_{min}\)</span></span>; el último límite superior <span style="font-size: 1.2em;"><span class="math inline">\(\geq x_{max}\)</span></span></li>
+</ol>
+</section>
+<section id="número-de-clases-repetida" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Número de clases <span style="font-size: 65%;">(repetida)</span></h2>
+<ol type="1">
+<li>En este curso se usan: Sturges, <span style="font-size: 1.1em;"><span class="math inline">\(k = 1 + 3.322 \log(n)\)</span></span>, y raíz, <span style="font-size: 1.1em;"><span class="math inline">\(k = \sqrt{n}\)</span></span></li>
+<li>Otros criterios (empírica, Rice, Scott, Freedman-Diaconis) no se profundizan aquí</li>
+<li>Muy pocas clases ocultan patrones; muy muchas fragmentan los datos</li>
+</ol>
+</section>
+<section id="ancho-de-clase-repetida" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Ancho de clase <span style="font-size: 65%;">(repetida)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\text{ancho} = \omega = \frac{x_{max} - x_{min}}{k}\]</span></p>
+</div>
+<ol type="1">
+<li>Se <strong>redondea hacia arriba</strong> para cubrir todo el rango</li>
+<li>Todas las clases deben tener el <strong>mismo ancho</strong></li>
+<li>Los límites no deben <strong>superponerse</strong> entre clases</li>
+</ol>
+</section></section>
+<section>
+<section id="elementos-de-una-tabla-de-frecuencias" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Elementos de una tabla de frecuencias</h1>
+<p>Estructura mínima que permite organizar datos agrupados en clases, con sus respectivas medidas de posición y conteo.</p>
+</section>
+<section id="elementos-de-una-tabla-de-frecuencias-1" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Elementos de una tabla de frecuencias</h2>
+<ol type="1">
+<li><strong>Clase (intervalo de clase)</strong> | Rango de valores que agrupa un subconjunto de datos</li>
+<li><strong>Marca de clase</strong> | Punto medio del intervalo</li>
+<li><strong>Límite inferior</strong> | Valor mínimo de la clase</li>
+<li><strong>Límite superior</strong> | Valor máximo de la clase</li>
+</ol>
+</section></section>
+<section>
+<section id="frecuencia-absoluta-y-relativa" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Frecuencia absoluta y relativa</h1>
+<p>Medidas que indican cuántas veces aparece un valor o clase y qué proporción representa respecto al total de datos.</p>
+</section>
+<section id="frecuencia-absoluta-y-relativa-1" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Frecuencia absoluta y relativa</h2>
+<ol type="1">
+<li><strong>Frecuencia absoluta (</strong><span style="font-size: 1.1em;"><span class="math inline">\(f_i\)</span></span><strong>)</strong> | Número de veces que aparece un valor o clase</li>
+<li><strong>Frecuencia relativa (</strong><span style="font-size: 1.1em;"><span class="math inline">\(h_i\)</span></span><strong>)</strong> | Proporción respecto al total, <span style="font-size: 1.2em;"><span class="math inline">\(h_i = f_i / n\)</span></span></li>
+<li><strong>Frecuencia acumulada absoluta (</strong><span style="font-size: 1.1em;"><span class="math inline">\(F_i\)</span></span><strong>)</strong> | Suma de <span style="font-size: 1.2em;"><span class="math inline">\(f_i\)</span></span> hasta la clase actual</li>
+<li><strong>Frecuencia acumulada relativa (</strong><span style="font-size: 1.1em;"><span class="math inline">\(H_i\)</span></span><strong>)</strong> | Suma de <span style="font-size: 1.2em;"><span class="math inline">\(h_i\)</span></span> hasta la clase actual</li>
+</ol>
+<p><br></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Clase</th>
+<th><span class="math inline">\(f_i\)</span></th>
+<th><span class="math inline">\(h_i\)</span></th>
+<th><span class="math inline">\(F_i\)</span></th>
+<th><span class="math inline">\(H_i\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="caso-de-estudio-datos-cuantitativos" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(datos cuantitativos)</span></h2>
+<p>Al registrar el consumo eléctrico mensual (en kWh) de 50 viviendas de un mismo sector residencial, con un mínimo de 183.6 kWh y un máximo de 419.4 kWh, se pide construir una tabla de frecuencias agrupando estos datos en clases.</p>
+</section>
+<section id="datos-consumo-en-kwh" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Datos <span style="font-size: 65%;">(consumo en kWh)</span></h2>
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px; text-align: center; font-size: 90%; font-family: monospace; margin: 15px 0;">
+<div>
+288.6
+</div>
+<div>
+314.3
+</div>
+<div>
+401.8
+</div>
+<div>
+291.8
+</div>
+<div>
+301.9
+</div>
+<div>
+321.0
+</div>
+<div>
+224.3
+</div>
+<div>
+302.9
+</div>
+<div>
+331.2
+</div>
+<div>
+370.3
+</div>
+<div>
+202.6
+</div>
+<div>
+252.8
+</div>
+<div>
+201.8
+</div>
+<div>
+374.3
+</div>
+<div>
+346.4
+</div>
+<div>
+190.1
+</div>
+<div>
+415.7
+</div>
+<div>
+411.5
+</div>
+<div>
+336.9
+</div>
+<div>
+327.7
+</div>
+<div>
+217.8
+</div>
+<div>
+183.6
+</div>
+<div>
+306.8
+</div>
+<div>
+194.3
+</div>
+<div>
+225.6
+</div>
+<div>
+238.1
+</div>
+<div>
+187.2
+</div>
+<div>
+291.3
+</div>
+<div>
+285.7
+</div>
+<div>
+382.2
+</div>
+<div>
+304.6
+</div>
+<div>
+333.7
+</div>
+<div>
+299.9
+</div>
+<div>
+339.0
+</div>
+<div>
+289.8
+</div>
+<div>
+246.8
+</div>
+<div>
+419.4
+</div>
+<div>
+419.0
+</div>
+<div>
+381.7
+</div>
+<div>
+349.9
+</div>
+<div>
+255.7
+</div>
+<div>
+235.1
+</div>
+<div>
+249.4
+</div>
+<div>
+196.9
+</div>
+<div>
+363.9
+</div>
+<div>
+276.1
+</div>
+<div>
+383.2
+</div>
+<div>
+272.8
+</div>
+<div>
+409.9
+</div>
+<div>
+383.4
+</div>
+</div>
+</section></section>
+<section>
+<section id="valor-atípico" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Valor atípico</h1>
+<p>Observación que se aleja notablemente del resto de los datos, ya sea por un valor extremo o por una causa identificable (error, condición distinta, caso excepcional).</p>
+</section>
+<section id="valor-atípico-1" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Valor atípico</h2>
+<ol type="1">
+<li>No hay una regla única para identificarlo; existen varios criterios (boxplot, z-score, entre otros)</li>
+<li>Puede deberse a un <strong>error de medición o registro</strong> o a una observación genuinamente distinta</li>
+<li>Afecta más a la <strong>media</strong> que a la mediana o la moda</li>
+<li>No se debe eliminar sin antes <strong>investigar su causa</strong></li>
+</ol>
+</section></section>
+<section>
+<section id="media-muestral" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Media muestral</h1>
+<p>Medida de tendencia central que resulta de sumar todos los valores de un conjunto de datos y dividir entre el número total de observaciones.</p>
+<div style="text-align: center; margin: 20px 0; font-size: 1.3em;">
+<p><span class="math display">\[\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\]</span></p>
+</div>
+</section>
+<section id="media-muestral-datos-no-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Media muestral <span style="font-size: 65%;">(datos no agrupados)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}\]</span></p>
+</div>
+<ol type="1">
+<li>Suma de todos los valores <span style="font-size: 1.2em;"><span class="math inline">\(x_i\)</span></span>, dividida entre el total de valores <span style="font-size: 1.2em;"><span class="math inline">\(n\)</span></span></li>
+<li>Sensible a <strong>valores atípicos</strong></li>
+<li>Aplica cuando se conocen los <strong>valores individuales</strong></li>
+</ol>
+</section>
+<section id="media-muestral-datos-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Media muestral <span style="font-size: 65%;">(datos agrupados)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\bar{x} = \frac{\sum_{i=1}^{k} f_i \cdot m_i}{n}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.2em;"><span class="math inline">\(m_i\)</span></span>, marca de clase <br> <span style="font-size: 1.2em;"><span class="math inline">\(f_i\)</span></span>, frecuencia de la clase <br> <span style="font-size: 1.2em;"><span class="math inline">\(k\)</span></span>, número de clases <br> <span style="font-size: 1.2em;"><span class="math inline">\(n\)</span></span>, tamaño de la muestra</p>
+</div>
+<p><br> La media muestral es una <strong>aproximación</strong>, no el valor exacto</p>
+</section>
+<section id="caso-de-estudio-retomando-el-consumo-eléctrico" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(retomando el consumo eléctrico)</span></h2>
+<p>Con los 50 datos de consumo eléctrico mensual (kWh) ya presentados, calcule la media aritmética como dato no agrupado y compárela con la media obtenida al agrupar los datos en la tabla de frecuencias ya construida.</p>
+</section></section>
+<section>
+<section id="media-ponderada-muestral" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Media ponderada muestral</h1>
+<p>Media aritmética muestral donde cada valor se multiplica por un peso que refleja su importancia relativa dentro del conjunto.</p>
+<div style="text-align: center; margin: 20px 0; font-size: 1.3em;">
+<p><span class="math display">\[\bar{x}_w = \frac{\sum_{i=1}^{n} w_i \cdot x_i}{\sum_{i=1}^{n} w_i}\]</span></p>
+</div>
+</section>
+<section id="media-ponderada-muestral-1" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Media ponderada muestral</h2>
+<div style="text-align: center; margin: 20px 0;  font-size: 1.2em;">
+<p><span class="math display">\[\bar{x}_w = \frac{\sum_{i=1}^{n} w_i \cdot x_i}{\sum_{i=1}^{n} w_i}\]</span></p>
+</div>
+<ol type="1">
+<li><span style="font-size: 1.2em;"><span class="math inline">\(w_i\)</span></span>, peso o importancia asignada a cada valor</li>
+<li>Se usa cuando <strong>no todos los datos pesan igual</strong></li>
+</ol>
+</section>
+<section id="caso-de-estudio-tasa-de-defectos-por-planta" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(tasa de defectos por planta)</span></h2>
+<p>Una empresa tiene 4 plantas con distinta tasa de defectos por lote y distinto volumen de producción mensual. Se pide calcular la tasa de defectos promedio de la empresa, ponderada por volumen.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Planta</th>
+<th style="text-align: right;">Tasa de defectos (%)</th>
+<th style="text-align: right;">Volumen (unidades)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">8,000</td>
+</tr>
+<tr class="even">
+<td>B</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">3,000</td>
+</tr>
+<tr class="odd">
+<td>C</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">12,000</td>
+</tr>
+<tr class="even">
+<td>D</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">2,000</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="mediana-muestral" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Mediana muestral</h1>
+<p>Valor que divide un conjunto de datos ordenados en dos partes iguales: la mitad de las observaciones queda por debajo y la mitad por encima.</p>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[Me = \begin{cases} x_{\left(\frac{n+1}{2}\right)} &amp; n \text{ impar} \\[6pt] \dfrac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2} &amp; n \text{ par} \end{cases}\]</span></p>
+</div>
+</section>
+<section id="mediana-muestral-datos-no-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Mediana muestral <span style="font-size: 65%;">(datos no agrupados)</span></h2>
+<ol type="1">
+<li>Se ordenan los datos de <strong>menor a mayor</strong></li>
+<li>Si <span style="font-size: 1.2em;"><span class="math inline">\(n\)</span></span> es impar, el valor central</li>
+<li>Si <span style="font-size: 1.2em;"><span class="math inline">\(n\)</span></span> es par, promedio de los dos valores centrales</li>
+<li>No se ve afectada por <strong>valores atípicos</strong></li>
+</ol>
+</section>
+<section id="mediana-muestral-datos-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Mediana muestral <span style="font-size: 65%;">(datos agrupados)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[Me = L_i + \left( \frac{\frac{n}{2} - F_{i-1}}{f_i} \right) \cdot \omega\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(L_i\)</span></span>, límite inferior de la clase mediana <br> <span style="font-size: 1.1em;"><span class="math inline">\(F_{i-1}\)</span></span>, frecuencia acumulada de la clase anterior <br> <span style="font-size: 1.1em;"><span class="math inline">\(f_i\)</span></span>, frecuencia de la clase mediana <br> <span style="font-size: 1.1em;"><span class="math inline">\(\omega\)</span></span>, ancho de clase <br> <span style="font-size: 1.1em;"><span class="math inline">\(n\)</span></span>, tamaño de la muestra</p>
+</div>
+</section></section>
+<section>
+<section id="moda-muestral" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Moda muestral</h1>
+<p>Valor o clase que se presenta con mayor frecuencia dentro de un conjunto de datos.</p>
+</section>
+<section id="moda-muestral-datos-no-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Moda muestral <span style="font-size: 65%;">(datos no agrupados)</span></h2>
+<ol type="1">
+<li>Valor que <strong>más se repite</strong> en el conjunto de datos</li>
+<li>Puede no existir o haber más de una (bimodal, multimodal)</li>
+<li>Es la única medida de tendencia central aplicable a datos <strong>cualitativos</strong></li>
+</ol>
+</section>
+<section id="moda-muestral-datos-agrupados-usando-frecuencias" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Moda muestral <span style="font-size: 65%;">(datos agrupados — usando frecuencias)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[Mo = L_i + \left( \frac{f_i - f_{i-1}}{2f_i - f_{i-1} - f_{i+1}} \right) \cdot \omega\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(L_i\)</span></span>, límite inferior de la clase modal <br> <span style="font-size: 1.1em;"><span class="math inline">\(f_{i-1}\)</span></span>, frecuencia de la clase anterior <br> <span style="font-size: 1.1em;"><span class="math inline">\(f_i\)</span></span>, frecuencia de la clase modal <br> <span style="font-size: 1.1em;"><span class="math inline">\(f_{i+1}\)</span></span>, frecuencia de la clase siguiente <br> <span style="font-size: 1.1em;"><span class="math inline">\(\omega\)</span></span>, ancho de clase</p>
+</div>
+</section>
+<section id="moda-muestral-datos-agrupados-fórmula-de-pearson" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Moda muestral <span style="font-size: 65%;">(datos agrupados — fórmula de Pearson)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[Mo = 3 Me - 2 \bar{x}\]</span></p>
+</div>
+<ol type="1">
+<li>Estimación indirecta usando <strong>media</strong> y <strong>mediana</strong> ya calculadas</li>
+<li>Válida solo bajo el supuesto de una distribución <strong>moderadamente asimétrica</strong></li>
+<li>No requiere identificar la clase modal directamente</li>
+</ol>
+</section>
+<section id="caso-de-estudio-comparación-de-métodos" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(comparación de métodos)</span></h2>
+<p>Retomando la tabla de frecuencias del consumo eléctrico, calcule la moda usando el método de distancias y la fórmula de Pearson. Compare los resultados.</p>
+<p>¿Coinciden? ¿Qué método le parece más confiable para este conjunto de datos, por qué?</p>
+</section></section>
+<section id="section-1" class="title-slide slide level1 center" data-background-image="image_files/measurement.jpg" data-background-size="cover" data-background-position="center 30%">
+<h1></h1>
+<p><span class="footer">Foto por <a href="https://www.pexels.com/es-es/foto/primer-plano-de-un-comparador-de-cuadrante-mitutoyo-en-el-taller-38291710/">Adinath Gilande</a> en <a href="https://www.pexels.com/es-es/@adinath-gilande-617966960/">Pexels</a></span></p>
+</section>
+
+<section>
+<section id="criterios-de-selección" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Criterios de selección</h1>
+<p>Ninguna medida de tendencia central es universalmente mejor; la elección depende de la forma de los datos y la presencia de valores atípicos.</p>
+</section>
+<section id="cuál-medida-usar" class="slide level2 center" data-background-color="#e2e8f0" style="font-size: 1.0em;">
+<h2>¿Cuál medida usar?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Situación</th>
+<th>Medida recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distribución simétrica, sin atípicos</td>
+<td>Media</td>
+</tr>
+<tr class="even">
+<td>Presencia de valores atípicos</td>
+<td>Mediana</td>
+</tr>
+<tr class="odd">
+<td>Datos cualitativos</td>
+<td>Moda</td>
+</tr>
+<tr class="even">
+<td>Distribución muy asimétrica</td>
+<td>Mediana</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="caso-de-estudio-sensibilidad-de-la-media" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(sensibilidad de la media)</span></h2>
+<p>Un sensor registra automáticamente el peso (en gramos) de 12 empaques de un producto durante una hora de producción, como parte de un control de calidad continuo.</p>
+<div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; text-align: center; font-size: 95%; font-family: monospace; margin: 15px 0;">
+<div>
+12.1
+</div>
+<div>
+11.9
+</div>
+<div>
+12.3
+</div>
+<div>
+12.0
+</div>
+<div>
+11.8
+</div>
+<div>
+12.2
+</div>
+<div>
+12.4
+</div>
+<div>
+11.7
+</div>
+<div>
+45.6
+</div>
+<div>
+12.1
+</div>
+<div>
+11.9
+</div>
+<div>
+12.0
+</div>
+</div>
+<p>Calcule la media con los 12 datos y compárela con la media excluyendo el noveno registro. ¿Qué pudo haber causado ese valor? ¿Debería excluirse sin más?</p>
+</section></section>
+<section>
+<section id="media-recortada" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Media recortada</h1>
+<p>Media aritmética calculada tras eliminar un porcentaje igual de valores en cada extremo de los datos ordenados, para reducir la influencia de valores atípicos.</p>
+</section>
+<section id="media-recortada-1" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Media recortada</h2>
+<ol type="1">
+<li>Se ordenan los datos y se <strong>recorta un p%</strong> de cada extremo</li>
+<li>Se calcula la media aritmética de los valores restantes</li>
+<li>Valores comunes: recortes al <strong>5%</strong>, <strong>10%</strong> o <strong>20%</strong></li>
+<li>La mediana es un caso extremo: recorta todo excepto el valor central</li>
+</ol>
+</section>
+<section id="caso-de-estudio-retomando-los-empaques" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(retomando los empaques)</span></h2>
+<p>Con los 12 datos de peso de empaques ya presentados, calcule la media recortada al 10%. Recuerde: <span style="font-size: 1.1em;"><span class="math inline">\(n \cdot p / 100 = 12 \cdot 10 / 100 = 1.2\)</span></span>, que se redondea a 1 dato por extremo.</p>
+<p>Compare este resultado con la media sin recortar (14.83 g) y con la media excluyendo manualmente el valor atípico (12.04 g).</p>
+</section></section>
+<section>
+<section id="medidas-de-posición" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Medidas de posición</h1>
+<p>Valores que dividen un conjunto de datos ordenados en partes proporcionales, permitiendo ubicar una observación en relación con el resto.</p>
+</section>
+<section id="cuartiles-deciles-y-percentiles" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Cuartiles, deciles y percentiles</h2>
+<ol type="1">
+<li><strong>Cuartiles (<span style="font-size: 1.1em;"><span class="math inline">\(Q_1, Q_2, Q_3\)</span></span>)</strong> | Dividen los datos en 4 partes iguales</li>
+<li><strong>Deciles (<span style="font-size: 1.1em;"><span class="math inline">\(D_1, \ldots, D_9\)</span></span>)</strong> | Dividen los datos en 10 partes iguales</li>
+<li><strong>Percentiles (<span style="font-size: 1.1em;"><span class="math inline">\(P_1, \ldots, P_{99}\)</span></span>)</strong> | Dividen los datos en 100 partes iguales</li>
+</ol>
+</section>
+<section id="posición-datos-no-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Posición <span style="font-size: 65%;">(datos no agrupados)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\text{Posición} = \frac{k \cdot n}{m}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(k\)</span></span>, número del cuartil/decil/percentil buscado <br> <span style="font-size: 1.1em;"><span class="math inline">\(m\)</span></span>, total de divisiones (4, 10 o 100)</p>
+</div>
+<p><br> Datos ordenados de menor a mayor antes de aplicar la fórmula</p>
+</section>
+<section id="posición-datos-agrupados" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Posición <span style="font-size: 65%;">(datos agrupados)</span></h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[P_k = L_i + \left( \frac{\frac{k \cdot n}{m} - F_{i-1}}{f_i} \right) \cdot \omega\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(L_i\)</span></span>, límite inferior de la clase donde cae la posición <br> <span style="font-size: 1.1em;"><span class="math inline">\(k\)</span></span>, número del cuartil/decil/percentil buscado <br> <span style="font-size: 1.1em;"><span class="math inline">\(m\)</span></span>, total de divisiones (4, 10 o 100) <br> <span style="font-size: 1.1em;"><span class="math inline">\(F_{i-1}\)</span></span>, frecuencia acumulada de la clase anterior <br> <span style="font-size: 1.1em;"><span class="math inline">\(f_i\)</span></span>, frecuencia de la clase <br> <span style="font-size: 1.1em;"><span class="math inline">\(\omega\)</span></span>, ancho de clase</p>
+</div>
+<p><br> Misma estructura que la mediana, cambiando la posición buscada</p>
+</section></section>
+<section>
+<section id="diagrama-de-caja-y-bigotes" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Diagrama de caja y bigotes</h1>
+<p>Representación gráfica que resume la posición, dispersión y simetría de un conjunto de datos a partir de sus cuartiles.</p>
+</section>
+<section id="rango-intercuartílico" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Rango intercuartílico</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[RIC = Q_3 - Q_1\]</span></p>
+</div>
+<ol type="1">
+<li>Mide la <strong>dispersión del 50% central</strong> de los datos</li>
+<li>Menos sensible a valores atípicos que el rango total</li>
+<li>Se usa para definir los límites del boxplot</li>
+</ol>
+</section>
+<section id="elementos-del-boxplot" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Elementos del boxplot</h2>
+<ol type="1">
+<li><strong>Caja</strong> | De <span style="font-size: 1.1em;"><span class="math inline">\(Q_1\)</span></span> a <span style="font-size: 1.1em;"><span class="math inline">\(Q_3\)</span></span>, con una línea en <span style="font-size: 1.1em;"><span class="math inline">\(Q_2\)</span></span> (mediana)</li>
+<li><strong>Bigotes</strong> | Se extienden hasta 1.5 veces el RIC desde la caja</li>
+<li><strong>Valores atípicos</strong> | Aquellos puntos fuera del alcance de los bigotes</li>
+</ol>
+</section>
+<section id="boxplot-construcción" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Boxplot <span style="font-size: 65%;">(construcción)</span></h2>
+<ol type="1">
+<li><strong>Rango intercuartílico</strong> | <span style="font-size: 1.1em;"><span class="math inline">\(RIC = Q_3 - Q_1\)</span></span></li>
+<li><strong>Límite inferior del bigote</strong> | <span style="font-size: 1.1em;"><span class="math inline">\(Q_1 - 1.5 \cdot RIC\)</span></span></li>
+<li><strong>Límite superior del bigote</strong> | <span style="font-size: 1.1em;"><span class="math inline">\(Q_3 + 1.5 \cdot RIC\)</span></span></li>
+</ol>
+<p><br> Cualquier dato fuera de ese rango se marca como <strong>atípico</strong></p>
+</section>
+<section id="caso-de-estudio-tiempos-de-reparación" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(tiempos de reparación)</span></h2>
+<p>Se registró el tiempo de reparación (en horas) de 43 órdenes de mantenimiento correctivo en una planta durante un mes. Se pide calcular cuartiles, RIC y construir el diagrama de caja y bigotes correspondiente.</p>
+</section>
+<section id="datos-horas-de-reparación" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Datos <span style="font-size: 65%;">(horas de reparación)</span></h2>
+<div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px; text-align: center; font-size: 90%; font-family: monospace; margin: 15px 0;">
+<div>
+0.3
+</div>
+<div>
+2.2
+</div>
+<div>
+2.3
+</div>
+<div>
+2.4
+</div>
+<div>
+2.4
+</div>
+<div>
+2.4
+</div>
+<div>
+2.5
+</div>
+<div>
+2.5
+</div>
+<div>
+2.6
+</div>
+<div>
+2.8
+</div>
+<div>
+2.8
+</div>
+<div>
+2.9
+</div>
+<div>
+3.0
+</div>
+<div>
+3.2
+</div>
+<div>
+3.3
+</div>
+<div>
+3.5
+</div>
+<div>
+3.9
+</div>
+<div>
+4.0
+</div>
+<div>
+4.0
+</div>
+<div>
+4.1
+</div>
+<div>
+4.4
+</div>
+<div>
+4.4
+</div>
+<div>
+4.6
+</div>
+<div>
+4.8
+</div>
+<div>
+4.8
+</div>
+<div>
+4.8
+</div>
+<div>
+5.3
+</div>
+<div>
+5.5
+</div>
+<div>
+5.6
+</div>
+<div>
+5.8
+</div>
+<div>
+5.8
+</div>
+<div>
+5.8
+</div>
+<div>
+6.1
+</div>
+<div>
+6.2
+</div>
+<div>
+6.2
+</div>
+<div>
+6.4
+</div>
+<div>
+7.3
+</div>
+<div>
+7.4
+</div>
+<div>
+7.6
+</div>
+<div>
+8.2
+</div>
+<div>
+8.3
+</div>
+<div>
+15.2
+</div>
+<div>
+16.8
+</div>
+</div>
+</section></section>
+<section id="section-2" class="title-slide slide level1 center" data-background-image="image_files/cripto.jpg" data-background-size="cover" data-background-position="center 30%">
+<h1></h1>
+<p><span class="footer">Foto por <a href="https://www.pexels.com/es-es/@thales13/">Rafael Minguet Delgado</a> en <a href="https://www.pexels.com/es-es/foto/primer-plano-de-graficos-de-negociacion-de-criptomonedas-38375327/">Pexels</a></span></p>
+</section>
+
+<section>
+<section id="medidas-de-dispersión" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Medidas de dispersión</h1>
+<p>Cuantifican qué tan dispersos o concentrados están los datos respecto a una medida de tendencia central.</p>
+</section>
+<section id="rango" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Rango</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[R = x_{max} - x_{min}\]</span></p>
+</div>
+<ol type="1">
+<li>Medida de dispersión <strong>más simple</strong></li>
+<li>Usa solo los valores extremos, ignora el resto</li>
+<li>Muy sensible a <strong>valores atípicos</strong></li>
+</ol>
+</section>
+<section id="población-vs.-muestra-notación" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Población vs.&nbsp;muestra <span style="font-size: 65%;">(notación)</span></h2>
+<ol type="1">
+<li><strong>Población</strong> | <span style="font-size: 1.1em;"><span class="math inline">\(\mu\)</span></span> (media), <span style="font-size: 1.1em;"><span class="math inline">\(\sigma^2\)</span></span> (varianza), <span style="font-size: 1.1em;"><span class="math inline">\(\sigma\)</span></span> (desviación estándar)</li>
+<li><strong>Muestra</strong> | <span style="font-size: 1.1em;"><span class="math inline">\(\bar{x}\)</span></span> (media), <span style="font-size: 1.1em;"><span class="math inline">\(s^2\)</span></span> (varianza), <span style="font-size: 1.1em;"><span class="math inline">\(s\)</span></span> (desviación estándar)</li>
+</ol>
+</section></section>
+<section>
+<section id="varianza" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Varianza</h1>
+<p>Medida que cuantifica el promedio de las desviaciones al cuadrado respecto a la media, expresando la dispersión en unidades al cuadrado.</p>
+</section>
+<section id="varianza-poblacional" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Varianza poblacional</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(\mu\)</span></span>, media poblacional <br> <span style="font-size: 1.1em;"><span class="math inline">\(N\)</span></span>, tamaño de la población</p>
+</div>
+<p><br> Se usa cuando se tienen <strong>todos</strong> los datos de la población</p>
+</section>
+<section id="varianza-muestral" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Varianza muestral</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(\bar{x}\)</span></span>, media muestral <br> <span style="font-size: 1.1em;"><span class="math inline">\(n-1\)</span></span>, corrección de Bessel</p>
+</div>
+</section>
+<section id="corrección-de-bessel" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Corrección de Bessel</h2>
+<ol type="1">
+<li>La varianza muestral usa <span style="font-size: 1.1em;"><span class="math inline">\(n-1\)</span></span> en vez de <span style="font-size: 1.1em;"><span class="math inline">\(n\)</span></span> en el denominador</li>
+<li>Sin la corrección, <span style="font-size: 1.1em;"><span class="math inline">\(s^2\)</span></span> <strong>subestima</strong> sistemáticamente la varianza poblacional</li>
+<li><span style="font-size: 1.1em;"><span class="math inline">\(n-1\)</span></span> compensa la pérdida de un grado de libertad al estimar <span style="font-size: 1.1em;"><span class="math inline">\(\bar{x}\)</span></span> desde la misma muestra</li>
+</ol>
+</section>
+<section id="desviación-estándar" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Desviación estándar</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[\sigma = \sqrt{\sigma^2} \qquad s = \sqrt{s^2}\]</span></p>
+</div>
+<ol type="1">
+<li>Raíz cuadrada de la varianza</li>
+<li>Expresada en las <strong>mismas unidades</strong> que los datos originales</li>
+<li>Medida de dispersión más usada en la práctica</li>
+</ol>
+</section>
+<section id="coeficiente-de-variación" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Coeficiente de variación</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[CV = \frac{\sigma}{\mu} \cdot 100\% \qquad CV = \frac{s}{\bar{x}} \cdot 100\%\]</span></p>
+</div>
+<ol type="1">
+<li>Dispersión relativa a la media, expresada en <strong>porcentaje</strong></li>
+<li>Permite comparar dispersión entre conjuntos con <strong>unidades distintas</strong></li>
+<li>No tiene sentido si <span style="font-size: 1.1em;"><span class="math inline">\(\mu\)</span></span> (o <span style="font-size: 1.1em;"><span class="math inline">\(\bar{x}\)</span></span>) es cercano a cero</li>
+</ol>
+</section>
+<section id="caso-de-estudio-retomando-tiempos-de-reparación" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(retomando tiempos de reparación)</span></h2>
+<p>Con los 43 datos de tiempo de reparación ya presentados, calcule el rango, la varianza muestral y la desviación estándar muestral. Note el efecto de los dos valores atípicos (15.2 y 16.8) sobre estos resultados.</p>
+</section>
+<section id="caso-de-estudio-comparando-dispersión-relativa" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(comparando dispersión relativa)</span></h2>
+<p>Se comparan dos variables de una planta: el tiempo de reparación (horas) y el costo de repuestos por orden (pesos). ¿Cuál de las dos tiene mayor dispersión relativa?</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th style="text-align: right;">Media</th>
+<th style="text-align: right;">Desviación estándar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tiempo de reparación</td>
+<td style="text-align: right;">5.0 h</td>
+<td style="text-align: right;">3.0 h</td>
+</tr>
+<tr class="even">
+<td>Costo de repuestos</td>
+<td style="text-align: right;">$2250000</td>
+<td style="text-align: right;">$360000</td>
+</tr>
+</tbody>
+</table>
+<p>¿Tiene sentido comparar directamente 3.0 con 360000?</p>
+</section></section>
+<section>
+<section id="asimetría" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Asimetría</h1>
+<p>Mide el grado en que una distribución se aleja de la simetría, indicando si los datos se concentran más hacia un lado de la media.</p>
+</section>
+<section id="coeficiente-de-asimetría-de-fisher" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Coeficiente de asimetría de Fisher</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[g_1 = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^3}{s^3}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(g_1 = 0\)</span></span>, distribución <strong>simétrica</strong> <br> <span style="font-size: 1.1em;"><span class="math inline">\(g_1 &gt; 0\)</span></span>, asimetría <strong>positiva</strong> (cola hacia la derecha) <br> <span style="font-size: 1.1em;"><span class="math inline">\(g_1 &lt; 0\)</span></span>, asimetría <strong>negativa</strong> (cola hacia la izquierda)</p>
+</div>
+</section>
+<section id="formas-según-asimetría" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Formas según asimetría</h2>
+<div style="text-align: center;">
+<p><img data-src="image_files/asimetria_casos.png" style="width:120.0%"></p>
+</div>
+</section></section>
+<section>
+<section id="curtosis" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Curtosis</h1>
+<p>Mide qué tan concentrados o dispersos están los datos alrededor de la media, en comparación con una distribución normal, reflejando el peso de las colas.</p>
+</section>
+<section id="coeficiente-de-curtosis" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Coeficiente de curtosis</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[g_2 = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^4}{s^4} - 3\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(g_2 = 0\)</span></span>, <strong>mesocúrtica</strong> (similar a la normal) <br> <span style="font-size: 1.1em;"><span class="math inline">\(g_2 &gt; 0\)</span></span>, <strong>leptocúrtica</strong> (colas pesadas, más apuntada) <br> <span style="font-size: 1.1em;"><span class="math inline">\(g_2 &lt; 0\)</span></span>, <strong>platicúrtica</strong> (colas ligeras, más achatada)</p>
+</div>
+</section>
+<section id="formas-según-curtosis" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Formas según curtosis</h2>
+<div style="text-align: center;">
+<p><img data-src="image_files/curtosis_casos.png" style="width:120.0%"></p>
+</div>
+</section>
+<section id="asimetría-y-las-medidas-de-tendencia-central" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>Asimetría y las medidas de tendencia central</h2>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p>Asimetría positiva: Media <span style="font-size: 1.1em;"><span class="math inline">\(&gt;\)</span></span> Mediana <span style="font-size: 1.1em;"><span class="math inline">\(&gt;\)</span></span> Moda <br> Asimetría negativa: Media <span style="font-size: 1.1em;"><span class="math inline">\(&lt;\)</span></span> Mediana <span style="font-size: 1.1em;"><span class="math inline">\(&lt;\)</span></span> Moda <br> Simétrica: Media <span style="font-size: 1.1em;"><span class="math inline">\(\approx\)</span></span> Mediana <span style="font-size: 1.1em;"><span class="math inline">\(\approx\)</span></span> Moda</p>
+</div>
+</section>
+<section id="cuál-medida-usar-1" class="slide level2 center" data-background-color="#e2e8f0" style="font-size: 1.0em;">
+<h2>¿Cuál medida usar?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Situación</th>
+<th>Medida recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Distribución simétrica, sin atípicos</td>
+<td>Media</td>
+</tr>
+<tr class="even">
+<td>Presencia de valores atípicos</td>
+<td>Mediana</td>
+</tr>
+<tr class="odd">
+<td>Datos cualitativos</td>
+<td>Moda</td>
+</tr>
+<tr class="even">
+<td>Distribución muy asimétrica</td>
+<td>Mediana</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="caso-de-estudio-retomando-tiempos-de-reparación-1" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(retomando tiempos de reparación)</span></h2>
+<p>Con los 43 datos de tiempo de reparación ya presentados, calcule el coeficiente de asimetría y el de curtosis. Relacione el resultado con los valores atípicos ya identificados en el boxplot.</p>
+</section></section>
+<section>
+<section id="puntuación-estandarizada-z-score" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Puntuación estandarizada (z-score)</h1>
+<p>Indica cuántas desviaciones estándar se aleja un valor de la media, permitiendo comparar datos de distintas distribuciones en una misma escala.</p>
+</section>
+<section id="z-score" class="slide level2 center" data-background-color="#e2e8f0">
+<h2>z-score</h2>
+<div style="text-align: center; margin: 20px 0; font-size: 1.2em;">
+<p><span class="math display">\[z = \frac{x - \mu}{\sigma} \qquad z = \frac{x - \bar{x}}{s}\]</span></p>
+</div>
+<div style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;">
+<p><span style="font-size: 1.1em;"><span class="math inline">\(z = 0\)</span></span>, el valor <strong>coincide</strong> con la media <br> <span style="font-size: 1.1em;"><span class="math inline">\(z &gt; 0\)</span></span>, por encima de la media; <span style="font-size: 1.1em;"><span class="math inline">\(z &lt; 0\)</span></span>, por debajo <br> <span style="font-size: 1.1em;"><span class="math inline">\(|z| &gt; 2\)</span></span>, criterio <strong>estricto</strong> para detectar atípicos <br> <span style="font-size: 1.1em;"><span class="math inline">\(|z| &gt; 3\)</span></span>, criterio <strong>común</strong>, solo desviaciones extremas</p>
+</div>
+<p><br> Como criterio de atípicos, supone una distribución <strong>aproximadamente simétrica</strong>. Con datos muy asimétricos, conviene usar el boxplot en su lugar</p>
+</section>
+<section id="caso-de-estudio-retomando-tiempos-de-reparación-2" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(retomando tiempos de reparación)</span></h2>
+<p>Calcule el z-score de una orden que tomó 15.2 horas y de otra que tomó 5.5 horas, usando la media y desviación estándar ya calculadas (<span class="math inline">\(\bar{x} = 4.99\)</span>, <span class="math inline">\(s = 3.08\)</span>).</p>
+</section></section>
+<section>
+<section id="comparación-e-interpretación" class="title-slide slide level1 center" data-background-color="#2d3748">
+<h1>Comparación e interpretación</h1>
+<p>Ninguna medida por sí sola describe completamente un conjunto de datos: tendencia central, posición y dispersión se complementan.</p>
+</section>
+<section id="qué-aporta-cada-grupo-de-medidas" class="slide level2 center" data-background-color="#e2e8f0" style="font-size: 1.0em;">
+<h2>Qué aporta cada grupo de medidas</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Grupo</th>
+<th>Qué responde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tendencia central</td>
+<td>¿Dónde se concentran los datos?</td>
+</tr>
+<tr class="even">
+<td>Posición</td>
+<td>¿Dónde cae un dato respecto al resto?</td>
+</tr>
+<tr class="odd">
+<td>Dispersión</td>
+<td>¿Qué tan esparcidos están los datos?</td>
+</tr>
+<tr class="even">
+<td>Asimetría y curtosis</td>
+<td>¿Qué forma tiene la distribución?</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="caso-de-estudio-síntesis" class="slide level2 center" data-background-color="#f2f2f2">
+<h2>Caso de estudio <span style="font-size: 65%;">(síntesis)</span></h2>
+<p>Retomando los 43 datos de tiempo de reparación, presente un resumen completo: media, mediana, moda, cuartiles, RIC, desviación estándar, asimetría y curtosis. A partir de ese resumen, redacte una conclusión sobre el comportamiento del proceso de mantenimiento.</p>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="slides-unit1_3_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="slides-unit1_3_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiado");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiado");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
