@@ -1,4 +1,4 @@
-quar---
+---
 title: "Probabilidad y Estadística"
 subtitle: "Definiciones. Manejo de Datos y Medidas Estadísticas"
 pagetitle: "Conceptos Fundamentales"
