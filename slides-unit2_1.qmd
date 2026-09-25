@@ -1,0 +1,574 @@
+---
+title: "Probabilidad y Estadística"
+subtitle: "Fundamentos de probabilidad"
+pagetitle: "Fundamentos de probabilidad"
+author-meta: José A. Alvarado-Contreras
+affiliation-meta: Universidad de Los Andes - Venezuela
+author: José A. Alvarado-Contreras
+affilation: Universidad Francisco de Paula Santander
+lang: es
+format:
+  revealjs:
+    theme: [slides-theme.scss]
+    slide-number: false
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+    auto-stretch: false
+---
+
+
+
+
+# Introducción a probabilidad {style="margin-top: 45px; font-size: 1.2em;"}
+
+<h3 style="font-size: 1.0em;"> Experimentos, espacio muestral y axiomas de probabilidad </h3>
+<hr>
+
+<h4 style="font-size: 0.6em; opacity: 0.6"> Septiembre 2026 </h4>
+
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+
+## Contenido de la sesión {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **1.** Clases de experimentos
+- **2.** Teoría de la probabilidad: espacio muestral
+- **3.** Repaso de teoría de conjuntos
+- **4.** Evento y álgebra de eventos
+- **5.** $\sigma$-álgebra
+- **6.** Probabilidad: concepto, axiomas y ley de los grandes números
+- **7.** Probabilidad clásica y geométrica
+
+
+
+
+# Experimento {background-color="#2d3748"}
+
+Procedimiento controlado en el que se realizan acciones o modificaciones para observar, medir y analizar sus resultados. Busca descubrir cómo funciona algo, comprobar una hipótesis, estudiar un fenómeno o establecer relaciones de causa y efecto.
+
+
+
+
+## Clases de experimentos {background-color="#e2e8f0"}
+
+- **Experimentos deterministas** | Son aquellos en los que, si se mantienen las mismas condiciones iniciales, el resultado siempre es el mismo y se puede predecir con total certeza
+- **Experimentos aleatorios** | Son aquellos que, aun repitiéndose bajo las mismas condiciones, ofrecen resultados impredecibles debido a que interviene el azar. No se puede asegurar un desenlace único.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+La frontera entre ambos no es filosófica, es de modelado. Se trata un fenómeno como aleatorio cuando el costo de modelar todas sus causas supera el beneficio de describir directamente su variabilidad estadística.
+:::
+
+
+
+::: {background-image="image_files/magic.jpg" background-size="cover"}
+
+# 
+
+[Foto por <a href="https://unsplash.com/@legolevel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arnór Ingi Júlíusson</a> en <a href="https://unsplash.com/photos/a-pile-of-blue-and-white-playing-cards-r5aSUjW5Gag?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 85%;"}
+**Para las matemáticas, el azar no es una *fuerza mágica* ni una falta de leyes.**
+:::
+:::
+
+:::
+
+
+
+
+## Azar en probabilidades {background-color="#e2e8f0"}
+
+- **Azar intrínseco (indeterminismo real)** | Ocurre cuando, según la mejor teoría física actual, ni siquiera en principio es posible predecir el resultado.
+- **Azar epistémico (falta de información)** | Ocurre cuando el sistema es tan complejo y sensible que no podemos medir todas sus variables, aunque en principio sean deterministas.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 15px;"}
+Casi todo el azar que se modela en ingeniería es epistémico, no es que el universo sea impredecible, es que no tenemos ni tendremos acceso práctico a todas las variables.
+:::
+
+
+
+
+## Azar epistémico [(incertidumbre epistémica)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+La nucleación y propagación de microgrietas en una junta soldada depende del tamaño de grano, la orientación cristalina, el campo de esfuerzos residuales del proceso térmico y la geometría exacta del pie de soldadura, variables que, aunque en principio deterministas, no se pueden medir todas antes de que la pieza entre en servicio.
+
+A esto se suma que los ensayos no destructivos convencionales tienen un límite de resolución que impide detectar vacíos microscópicos antes del servicio y que las reglas de diseño simplificadas ignoran el orden exacto de aplicación de las cargas. La dispersión observada en la vida útil no es un misterio físico, es información que no tenemos.
+
+
+
+
+# Fundamentos de la teoría de la probabilidad {background-color="#2d3748"}
+
+Proporciona el marco y modelo matemático formal aplicable a la descripción, cuantificación e interpretación rigurosa de los fenómenos aleatorios.
+
+
+
+
+## Modelo de probabilidad {background-color="#e2e8f0"}
+
+La construcción del modelo se basa en tres conceptos:
+
+1. **Espacio muestral, $\Omega$** | Conjunto de todos los resultados posibles de un experimento aleatorio
+2. **Eventos** | Subconjuntos de $\Omega$
+3. **Álgebra de eventos** | Reglas para combinar eventos
+
+
+
+
+## Espacio muestral {background-color="#e2e8f0"}
+
+::: {style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;"}
+
+::: {style="border-left: 2px solid #888; padding-left: 15px;"}
+**Civil**
+
+Inspección de una junta soldada:
+
+$\Omega = \{\text{Apta}, \text{No apta}\}$
+
+Categórico (dicotómico)
+:::
+
+::: {style="border-left: 2px solid #888; padding-left: 15px;"}
+**Mecánica**
+
+Piezas defectuosas en un lote de 50:
+
+$\Omega = \{0, 1, \dots, 50\}$
+
+Discreto finito (conteo)
+:::
+
+::: {style="border-left: 2px solid #888; padding-left: 15px;"}
+**Sistemas**
+
+Latencia de una petición HTTP (ms):
+
+$\Omega = \{x \in \mathbb{R} : x > 0\}$
+
+Continuo
+:::
+
+:::
+
+
+
+
+## Evento o suceso {background-color="#e2e8f0"}
+
+Un evento es todo subconjunto de $\Omega$, o el posible resultado para un experimento.
+
+
+
+
+## Caso de estudio [(control de calidad de un lote)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Lote de 50 piezas mecanizadas, $X$ = número de piezas defectuosas.
+
+$$
+A = \{X \ge 3\} \;\; \text{(se rechaza)} \qquad\qquad A^c = \{0,1,2\} \;\; \text{(se acepta)}
+$$
+
+El umbral 3 es una decisión de ingeniería, no un dato matemático: cambiarlo cambia el riesgo del proveedor y del comprador.
+
+
+
+
+::: {background-image="image_files/poker.jpg" background-size="cover"}
+
+# 
+
+[Foto por <a href="https://unsplash.com/@amandagraphc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amanda Jones</a> en <a href="https://unsplash.com/photos/a-pile-of-playing-cards-sitting-on-top-of-each-other-P787-xixGio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 85%;"}
+**El álgebra de eventos es el conjunto de reglas que decide qué combinaciones de resultados se pueden medir con una probabilidad.**
+:::
+:::
+
+:::
+
+
+
+
+## Espacio muestral: Baraja inglesa {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+\text{Picas }: \quad & \spadesuit\text{A} \quad \spadesuit2 \quad \spadesuit3 \quad \spadesuit4 \quad \spadesuit5 \quad \spadesuit6 \quad \spadesuit7 \quad \spadesuit8 \quad \spadesuit9 \quad \spadesuit10 \quad \spadesuit\text{J} \quad \spadesuit\text{Q} \quad \spadesuit\text{K} \\[6pt]
+\text{Corazones }: \quad & \heartsuit\text{A} \quad \heartsuit2 \quad \heartsuit3 \quad \heartsuit4 \quad \heartsuit5 \quad \heartsuit6 \quad \heartsuit7 \quad \heartsuit8 \quad \heartsuit9 \quad \heartsuit10 \quad \heartsuit\text{J} \quad \heartsuit\text{Q} \quad \heartsuit\text{K} \\[6pt]
+\text{Diamantes }: \quad & \diamondsuit\text{A} \quad \diamondsuit2 \quad \diamondsuit3 \quad \diamondsuit4 \quad \diamondsuit5 \quad \diamondsuit6 \quad \diamondsuit7 \quad \diamondsuit8 \quad \diamondsuit9 \quad \diamondsuit10 \quad \diamondsuit\text{J} \quad \diamondsuit\text{Q} \quad \diamondsuit\text{K} \\[6pt]
+\text{Tréboles }: \quad & \clubsuit\text{A} \quad \clubsuit2 \quad \clubsuit3 \quad \clubsuit4 \quad \clubsuit5 \quad \clubsuit6 \quad \clubsuit7 \quad \clubsuit8 \quad \clubsuit9 \quad \clubsuit10 \quad \clubsuit\text{J} \quad \clubsuit\text{Q} \quad \clubsuit\text{K}
+\end{aligned}
+$$
+
+
+
+
+# Teoría básica de conjuntos {background-color="#2d3748"}
+
+Es el lenguaje unificado y pilar formal sobre el cual se construyen casi todas las ramas de la matemática como el álgebra, la geometría, el cálculo y la probabilidad.
+
+
+
+
+## Diagrama de Venn {background-color="#e2e8f0"}
+
+::: {style="text-align: center; margin: 20px 0;"}
+<svg viewBox="0 0 400 220" width="70%">
+  <circle cx="160" cy="110" r="80" fill="#94a3b8" fill-opacity="0.5" stroke="#334155" stroke-width="2"/>
+  <circle cx="240" cy="110" r="80" fill="#64748b" fill-opacity="0.5" stroke="#334155" stroke-width="2"/>
+  <rect x="20" y="20" width="360" height="180" fill="none" stroke="#334155" stroke-width="2"/>
+  <text x="120" y="60" font-size="20" fill="#1e293b">A</text>
+  <text x="270" y="60" font-size="20" fill="#1e293b">B</text>
+  <text x="30" y="35" font-size="16" fill="#1e293b">&#937;</text>
+  <text x="185" y="115" font-size="16" fill="#1e293b">A&#8745;B</text>
+</svg>
+:::
+
+El rectángulo representa $\Omega$; cada círculo, un evento; la zona traslapada, $A \cap B$.
+
+
+
+
+## Definiciones básicas {background-color="#e2e8f0"}
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;"}
+**Conjunto**, $A = \{x \mid P(x)\}$ | Colección bien definida de objetos o elementos.
+
+**Pertenencia**, $x \in A$ | Relación que indica que $x$ es un elemento de $A$.
+
+**Inclusión**, $A \subseteq B$ | Relación donde todo elemento de $A$ pertenece a $B$.
+
+**Conjunto vacío**, $\emptyset$ | Colección especial que no posee ningún elemento.
+
+**Conjunto universal**, $\Omega$ | Colección global con todos los elementos bajo estudio.
+:::
+
+
+
+
+## Formas de representar un conjunto {background-color="#e2e8f0"}
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;"}
+**Por extensión** | Se listan los elementos
+
+$A = \{2, 4, 6, 8\}$
+:::
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+**Por comprensión** | Se define una propiedad
+
+$A = \{x \in \mathbb{Z}^{+} : x \text{ es par}, \; x \le 8\}$
+:::
+
+
+
+
+## Cardinalidad de un conjunto {background-color="#e2e8f0"}
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8;"}
+**Cardinalidad**, $|A|$ | Número de elementos distintos que contiene un conjunto $A$.
+
+**Conjunto finito**, $|A| = n$ | El número de elementos es un entero no negativo $n \in \mathbb{N}$.
+
+**Conjunto vacío**, $|\emptyset| = 0$ | Carece de elementos, por lo que su conteo es cero.
+
+**Conjunto infinito**, $|A| = \infty$ | No se puede contar con un número finito.
+:::
+
+
+
+
+## Operaciones básicas {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+A \cup B &= \{x \in \Omega : x \in A \;\text{ó}\; x \in B\} &&\text{unión} \\[6pt]
+A \cap B &= \{x \in \Omega : x \in A \;\text{y}\; x \in B\} &&\text{intersección} \\[6pt]
+A^c &= \{x \in \Omega : x \notin A\} &&\text{complemento} \\[6pt]
+A - B &= \{x \in \Omega : x \in A \;\text{y}\; x \notin B\} &&\text{diferencia}
+\end{aligned}
+$$
+
+La diferencia también se escribe $A \setminus B$, nosotros usaremos $A - B$.
+
+
+
+
+## Diferencia simétrica {background-color="#e2e8f0"}
+
+$$
+A \,\triangle\, B = (A \cup B) - (B \cap A)
+$$
+
+Equivalente a $(A-B)\cup(B-A)$, elementos que están en $A$ o en $B$, pero no en ambos.
+
+
+
+
+## Leyes de conjuntos {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+A \cup B &= B \cup A &&\text{conmutativa de la unión} \\[6pt]
+A \cap B &= B \cap A &&\text{conmutativa de la intersección} \\[6pt]
+(A \cup B) \cup C &= A \cup (B \cup C) &&\text{asociativa de la unión} \\[6pt]
+(A \cap B) \cap C &= A \cap (B \cap C) &&\text{asociativa de la intersección} \\[6pt]
+A \cup (B \cap C) &= (A \cup B) \cap (A \cup C) &&\text{distributiva de la unión sobre intersección} \\[6pt]
+A \cap (B \cup C) &= (A \cap B) \cup (A \cap C) &&\text{distributiva de la intersección sobre unión}
+\end{aligned}
+$$
+
+
+
+
+## Leyes con $\emptyset$ y $\Omega$ {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+A \cup \emptyset &= A &&\text{identidad de la unión} \\[6pt]
+A \cap \Omega &= A &&\text{identidad de la intersección} \\[6pt]
+A \cup \Omega &= \Omega &&\text{dominación de la unión} \\[6pt]
+A \cap \emptyset &= \emptyset &&\text{dominación de la intersección} \\[6pt]
+A \cup A^c &= \Omega &&\text{complemento de la unión} \\[6pt]
+A \cap A^c &= \emptyset &&\text{complemento de la intersección}
+\end{aligned}
+$$
+
+
+
+
+## Leyes de De Morgan (conjuntos) {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+(A \cup B)^c &= A^c \cap B^c \\[6pt]
+(A \cap B)^c &= A^c \cup B^c
+\end{aligned}
+$$
+
+Versión general, sobre conjuntos cualesquiera. Luego se retoma sobre eventos, generalizadas a $n$ eventos y aplicadas a confiabilidad de sistemas.
+
+
+
+
+# Producto cartesiano {background-color="#2d3748"}
+
+Construye el espacio muestral de experimentos en varias etapas, combinando elementos de dos conjuntos en pares ordenados.
+
+
+
+
+## Producto cartesiano {background-color="#e2e8f0"}
+
+$$
+A \times B = \{(a,b) : a \in A, \; b \in B\}
+$$
+
+$$
+|A \times B| = |A| \cdot |B|
+$$
+
+El resultado no es un subconjunto de $A$ ni de $B$: sus elementos son pares ordenados.
+
+
+
+
+## Disjuntos dos a dos vs. intersección total vacía {background-color="#e2e8f0"}
+
+$$
+\begin{aligned}
+\text{Intersección total vacía:} \quad & \bigcap_{i=1}^{n} A_i = \emptyset \\[8pt]
+\text{Disjuntos dos a dos:} \quad & A_i \cap A_j = \emptyset \quad \forall i \neq j
+\end{aligned}
+$$
+
+<br>
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 15px;"}
+**Relación lógica de implicación:** ser disjuntos dos a dos implica que la intersección total es vacía, pero no al revés.
+:::
+
+
+
+
+## Caso de estudio [(homologación de materiales)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Un material se homologa para uso estructural si y solo si cumple simultáneamente con tres criterios normativos:
+
+$$
+H = R \cap T \cap Q
+$$
+
+donde:
+
+<div style="margin-left: 20px; margin-top: 5px;">
+  $R$: Cumple con la resistencia mecánica mínima. <br>
+  $T$: Cumple con la tolerancia dimensional especificada. <br>
+  $Q$: Cumple con la composición química requerida.
+</div>
+
+<br>
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 15px;"}
+**Implicación en control de calidad:** la intersección ($R \cap T \cap Q$) es el criterio estricto de homologación; la unión ($R \cup T \cup Q$, cumplimiento parcial) no la garantiza.
+:::
+
+
+
+
+## Actividad [(identidades con diagramas de Venn)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Para cada igualdad, dibuje el diagrama de Venn de ambos lados por separado y compare las regiones sombreadas; si coinciden, la igualdad es válida.
+
+<div style="margin-left: 20px; margin-top: 5px;">
+  a. $A = (A\cap B) \cup (A \cap B^c)$
+  b. $A^c - B^c = B - A$
+  c. $A \cap B^c = A - (A \cap B)$
+  d. $A \cup B = A \cup (B \cap A^c)$
+  e. $(A - B) - C = A - (B - C)$
+  f. $A - (B \cap C) = (A - B) \cup (A - C)$
+</div>
+
+
+
+
+## Teoría de conjuntos vs. Álgebra de eventos {background-color="#e2e8f0"}
+
+<style>
+.booktabs-table table {
+  border-collapse: collapse;
+  border-top: 2px solid #333 !important;
+  border-bottom: 2px solid #333 !important;
+  width: 100%;
+}
+.booktabs-table th {
+  border-bottom: 1.5px solid #333 !important;
+  border-top: none !important;
+  padding: 8px !important;
+}
+.booktabs-table td {
+  border: none !important;
+  padding: 6px 8px !important;
+}
+</style>
+
+::: {.booktabs-table}
+| Teoría de conjuntos | Teoría de la probabilidad |
+| :--- | :--- |
+| Conjunto universal ($\Omega$) | Espacio muestral |
+| Elemento ($\omega \in \Omega$) | Suceso elemental |
+| Subconjunto ($A \subseteq \Omega$) | Evento o suceso |
+| Conjunto vacío ($\emptyset$) | Evento imposible |
+| Unión ($A \cup B$) | Ocurre al menos uno ($A$ o $B$) |
+| Intersección ($A \cap B$) | Ocurrencia simultánea ($A$ y $B$) |
+| Complemento ($A^c$) | Evento contrario (No $A$) |
+| Conjuntos disjuntos ($A \cap B = \emptyset$) | Eventos mutuamente excluyentes |
+:::
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 20px; font-size: 85%;"}
+**Equivalencia estructural:** Este diccionario establece la correspondencia biunívoca entre la teoría de conjuntos y la axiomática de probabilidad.
+:::
+
+
+
+
+# Álgebra de eventos {background-color="#2d3748"}
+
+Ahora se retoman las leyes de conjuntos, ya generalizadas a $n$ eventos y aplicadas a la confiabilidad de sistemas.
+
+
+
+
+## Leyes de De Morgan generalizadas {background-color="#e2e8f0"}
+
+Para una colección finita o arbitraria de eventos $\{A_i\}_{i=1}^n$:
+
+$$
+\begin{aligned}
+\left( \bigcup_{i=1}^n A_i \right)^c &= \bigcap_{i=1}^n A_i^c &&\text{No ocurre ninguno implica que ocurren todos los contrarios} \\[8pt]
+\left( \bigcap_{i=1}^n A_i \right)^c &= \bigcup_{i=1}^n A_i^c &&\text{No ocurren todos a la vez  implica que ocurre al menos un contrario}
+\end{aligned}
+$$
+
+<br>
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 20px;"}
+**Equivalencia lógica en sistemas complejos:**
+<div style="margin-left: 20px; margin-top: 5px;">
+  <b>Complemento de la unión:</b> Falla total del sistema solo si fallan individualmente todos sus componentes redundantes.<br>
+  <b>Complemento de la intersección:</b> Interrupción del flujo operacional tan pronto como al menos un elemento en serie deja de funcionar.
+</div>
+:::
+
+
+
+
+## Caso de estudio [(confiabilidad de sistemas)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Transmisión de señal entre dos puntos a través de tres componentes. Sea $C_i$: el componente $i$ funciona, $i \in \{1,2,3\}$. El espacio de estados es $\Omega = \{0,1\}^3$, con $|\Omega| = 2^3 = 8$ configuraciones.
+
+$$
+\begin{aligned}
+\text{Configuración en Serie:} \quad & \text{Funciona} = C_1 \cap C_2 \cap C_3 \quad \implies \quad \text{Falla} = C_1^c \cup C_2^c \cup C_3^c \\[6pt]
+\text{Configuración en Paralelo:} \quad & \text{Funciona} = C_1 \cup C_2 \cup C_3 \quad \implies \quad \text{Falla} = C_1^c \cap C_2^c \cap C_3^c
+\end{aligned}
+$$
+
+<br>
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 15px;"}
+**Modelado topológico de fallos:**
+<div style="margin-left: 20px; margin-top: 5px;">
+  <b>Aplicación de De Morgan:</b> El evento "Falla" es la aplicación directa del complemento sobre el evento "Funciona". <br>
+  <b>Extrapolación conceptual:</b> Esta misma formulación gobierna desde la redundancia de microservicios hasta el diseño estructural de elementos redundantes.
+</div>
+:::
+
+
+
+
+## Caso de estudio [(confiabilidad en puentes colgantes)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Sea un puente sustentado por 4 cables principales, donde $A_i$: "el cable $i$ falla" ($i = 1, 2, 3, 4$).
+
+El colapso del sistema ocurre si y solo si fallan todos los cables simultáneamente:
+
+$$
+\text{Colapso} = \bigcap_{i=1}^{4} A_i
+$$
+
+Aplicando el Teorema de De Morgan, la supervivencia del puente se expresa como:
+
+$$
+\text{No colapso} = \left(\bigcap_{i=1}^{4} A_i\right)^c = \bigcup_{i=1}^{4} A_i^c
+$$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.6; margin-top: 15px;"}
+**Estrategia de cálculo en ingeniería:** Evaluar $P(\text{No colapso}) = 1 - P(\text{Colapso})$ reduce el análisis a un único evento intersección, evitando descomponer la unión $\bigcup A_i^c$ sobre eventos no disjuntos.
+:::
+
+
