@@ -1,0 +1,694 @@
+---
+title: "Probabilidad y Estadística"
+subtitle: "Fundamentos de probabilidad"
+pagetitle: "Fundamentos de probabilidad"
+author-meta: José A. Alvarado-Contreras
+affiliation-meta: Universidad de Los Andes - Venezuela
+author: José A. Alvarado-Contreras
+affiliation: Universidad Francisco de Paula Santander
+lang: es
+format:
+  revealjs:
+    theme: [slides-theme.scss]
+    slide-number: false
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+    auto-stretch: false
+---
+
+
+
+# Introducción a probabilidad {style="margin-top: 45px; font-size: 1.2em;"}
+
+<h3 style="font-size: 1.0em;"> Axiomas, enfoques y reglas de la probabilidad </h3>
+<hr>
+
+<h4 style="font-size: 0.6em; opacity: 0.6"> Octubre 2026 </h4>
+
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+
+## Contenido de la sesión {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **1.** Experimentos aleatorios, espacio muestral y eventos
+- **2.** Axiomas de probabilidad
+- **3.** Interpretaciones y técnicas de cálculo
+- **4.** Probabilidad clásica y geométrica
+- **5.** Probabilidad frecuencial
+- **6.** Probabilidad modelada y simulada
+- **7.** Probabilidad conjunta, marginal, condicional y total
+- **8.** Probabilidad bayesiana
+
+
+
+
+# Espacio muestral y eventos {background-color="#2d3748"}
+
+Todo cálculo de probabilidad parte de un experimento cuyo resultado no puede predecirse con certeza.
+
+
+
+
+## Experimento, espacio muestral y evento {background-color="#e2e8f0"}
+
+* **Experimento aleatorio** | Proceso con resultados conocidos de antemano pero no predecibles en cada repetición.
+
+* **Espacio muestral $\Omega$** | Conjunto de todos los resultados posibles.
+
+* **Evento $A$** | Subconjunto de $\Omega$ al que se le asigna una probabilidad.
+
+
+
+
+# Probabilidad {background-color="#2d3748"}
+
+Medida matemática de la incertidumbre asociada a la ocurrencia de eventos en un experimento aleatorio, cuyos valores se encuentran entre 0 y 1.
+
+
+
+
+## Axiomas de Kolmogorov {background-color="#e2e8f0"}
+
+Cualquier forma de asignar probabilidades debe cumplir:
+
+**1.** $P(A)\ge 0$ para todo evento $A$.
+
+**2.** $P(\Omega)=1$.
+
+**3.** Si $A_1,A_2,\ldots$ son mutuamente excluyentes, $P\left(\bigcup_i A_i\right)=\sum_i P(A_i)$.
+
+
+
+
+## Interpretaciones y técnicas de cálculo {background-color="#e2e8f0"}
+
+**Interpretaciones** | Qué significa una probabilidad
+
+* **Clásica** | Proporción de casos favorables entre casos posibles, todos igualmente probables. Su extensión a espacios continuos es la geométrica.
+* **Frecuencial** | Proporción de veces que ocurre el evento en ensayos repetidos.
+* **Bayesiana** | Grado de creencia, actualizado con nueva evidencia.
+
+**Técnicas de cálculo** | Cómo se obtiene el número
+
+* **Modelada** | Asigna probabilidades mediante distribuciones.
+* **Simulada** | Estima probabilidades reproduciendo el experimento en computador.
+
+
+
+
+# Probabilidad clásica {background-color="#2d3748"}
+
+Se determina a partir de la relación entre casos favorables y casos posibles, suponiendo que todos son igualmente probables.
+
+
+
+
+## Supuestos de la probabilidad clásica {background-color="#e2e8f0"}
+
+* **Equidad** | Todos los resultados posibles tienen la misma probabilidad.
+
+* **Conteo** | El espacio muestral es finito y sus resultados pueden enumerarse.
+ 
+* **Limitación** | No aplica cuando los resultados no son igualmente probables.
+
+
+
+
+## Cuantificación de la probabilidad clásica {background-color="#e2e8f0"}
+
+Requiere identificar el espacio muestral y utilizar el conteo para relacionar los casos favorables con el total de casos posibles.
+
+$$ P(A)=\frac{|A|}{|\Omega|} $$
+
+donde $A$ es el evento de interés y $\Omega$ el espacio muestral.
+
+
+
+
+## Aplicaciones de la probabilidad clásica {background-color="#e2e8f0"}
+
+* **Control de calidad** | Extraer al azar piezas de un lote para calcular la probabilidad de incluir elementos defectuosos.
+
+* **Inspección de obra** | Elegir al azar qué soldaduras o anclajes se revisan y calcular la probabilidad de que la muestra incluya uno deficiente.
+
+* **Exploración geotécnica** | Sortear los sondeos entre una cuadrícula finita de puntos y calcular la probabilidad de que alguno caiga en una zona crítica.
+
+* **Diseño de experimentos** | Asignar al azar mezclas a los moldes y calcular la probabilidad de cada asignación posible.
+
+* **Seguridad informática** | Calcular la probabilidad de acertar al azar una clave o PIN de longitud fija.
+
+
+
+
+## Caso de estudio [(control de calidad del concreto)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Se seleccionan 3 probetas de concreto de un lote para realizar un ensayo de resistencia. Se sabe que cada probeta tiene la misma probabilidad de resultar conforme o no conforme, independientemente de las demás. ¿Cuál es la probabilidad de que exactamente 2 de las 3 probetas sean conformes?
+
+
+
+
+# Probabilidad geométrica {background-color="#2d3748"}
+
+Extiende el enfoque clásico a espacios muestrales continuos, donde el conteo es imposible y la probabilidad se calcula como una razón de medidas.
+
+
+
+
+## Supuestos de la probabilidad geométrica {background-color="#e2e8f0"}
+
+* **Continuidad** | Los resultados forman una región con longitud, área o volumen finito y positivo.
+
+* **Uniformidad** | La probabilidad es proporcional a la medida de la región y no depende de su posición.
+
+* **Limitación** | Sin un método de selección explícito, *al azar* es ambiguo en espacios continuos, ya que la regla utilizada para elegir altera el resultado.
+
+
+
+
+## Cuantificación de la probabilidad geométrica {background-color="#e2e8f0"}
+
+Requiere identificar la región que representa el espacio muestral y la región favorable y comparar sus medidas.
+
+$$ P(A)=\frac{m(A)}{m(\Omega)} $$
+
+donde $m$ es la longitud, el área o el volumen según la dimensión del problema.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Un punto aislado tiene medida cero y por tanto probabilidad cero; probabilidad cero no equivale a evento imposible.
+:::
+
+
+
+
+## Aplicaciones de la probabilidad geométrica {background-color="#e2e8f0"}
+
+* **Ingeniería de tránsito** | Un vehículo llega al azar a un semáforo y se calcula la probabilidad de que encuentre luz roja.
+
+* **Tuberías y redes** | Una fuga ocurre en un punto cualquiera de un tramo homogéneo y se calcula la probabilidad de que caiga entre dos válvulas.
+
+* **Inspección de pavimentos y losas** | Un núcleo se extrae en un punto aleatorio de la superficie y se calcula la probabilidad de que caiga sobre una zona defectuosa de área conocida.
+
+* **Exploración geotécnica** | Un sondeo se ubica al azar en un predio y se calcula la probabilidad de que intercepte una cavidad de sección conocida.
+
+* **Logística de obra** | Dos camiones llegan al azar dentro de una misma hora a una zona de descarga con un solo puesto y se calcula la probabilidad de que coincidan si cada uno espera 10 minutos como máximo.
+
+
+
+
+## Caso de estudio [(rotura de un cable)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Un cable de 10 m de longitud se rompe en un punto al azar a lo largo de su extensión. ¿Cuál es la probabilidad de que la rotura ocurra a menos de 2 m de alguno de los extremos?
+
+
+
+
+# Probabilidad frecuencial {background-color="#2d3748"}
+
+Estima la ocurrencia de un evento mediante la proporción de veces que sucede en ensayos repetidos.
+
+
+
+
+## Elementos de la probabilidad frecuencial {background-color="#e2e8f0"}
+
+* **Ocurrencias** | Número de veces $n_A$ que sucede el evento.
+
+* **Ensayos** | Número total $N$ de repeticiones, realizadas en condiciones comparables.
+
+* **Limitación** | Exige poder repetir el experimento. Con pocos ensayos la estimación es poco confiable.
+
+
+
+
+## Cuantificación de la probabilidad frecuencial {background-color="#e2e8f0"}
+
+Requiere realizar ensayos repetidos y relacionar las veces que ocurre el evento con el total de ensayos.
+
+$$ P(A)\approx\frac{n_A}{N} $$
+
+donde $n_A$ es el número de veces que ocurre el evento $A$ y $N$ el número total de ensayos.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Según la ley de los grandes números, la proporción $n_A/N$ se acerca a $P(A)$ a medida que $N$ crece.
+:::
+
+
+
+
+## Aplicaciones de la probabilidad frecuencial {background-color="#e2e8f0"}
+
+* **Confiabilidad de equipos** | Se ensayan equipos y se estima la probabilidad de falla antes de la vida útil especificada con la proporción de unidades que fallaron.
+
+* **Control de calidad del concreto** | Con los resultados históricos de las probetas de una planta se estima la probabilidad de que una probeta no alcance la resistencia especificada.
+
+* **Seguridad vial** | Con los registros de accidentes de una intersección se estima la probabilidad de que un mes cualquiera registre al menos un siniestro.
+
+* **Hidrología** | Con registros históricos de caudales o precipitaciones se estima la frecuencia con que se supera un umbral, base del concepto de periodo de retorno.
+
+* **Redes y sistemas informáticos** | Con los registros de operación se estima la proporción de paquetes perdidos o de solicitudes que fallan.
+
+
+
+
+## Caso de estudio [(fallas en rodamientos)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+En una máquina de ensayo se monitorean 200 rodamientos. De ellos, 14 presentan una falla prematura antes de alcanzar la vida útil especificada.
+¿Cuál es la probabilidad estimada de que un rodamiento presente una falla prematura?
+
+
+
+
+# Probabilidad modelada {background-color="#2d3748"}
+
+Representa fenómenos inciertos mediante modelos matemáticos que describen la distribución de sus posibles resultados.
+
+
+
+
+## Elementos de la probabilidad modelada {background-color="#e2e8f0"}
+
+* **Variable** | Característica del fenómeno cuyo valor es incierto, por ejemplo el número de fallas en un lote.
+
+* **Distribución** | Regla que describe qué tan probable es cada valor de la variable.
+
+* **Modelo** | Supuestos y parámetros que fijan la distribución. Las probabilidades obtenidas son tan válidas como el modelo.
+
+Se desarrolla en la Unidad 3.
+
+
+
+
+# Probabilidad simulada {background-color="#2d3748"}
+
+Estima la ocurrencia de eventos mediante la reproducción computacional de experimentos aleatorios.
+
+
+
+
+## Elementos de la probabilidad simulada {background-color="#e2e8f0"}
+
+* **Simulación** | Programa que imita el fenómeno con números pseudoaleatorios.
+
+* **Repetición** | Miles o millones de realizaciones del experimento.
+
+* **Estimación** | Proporción de realizaciones en las que ocurre el evento.
+
+* **Limitación** | El resultado es aproximado y depende del modelo programado.
+
+
+
+
+# Probabilidad conjunta {background-color="#2d3748"}
+
+Describe la ocurrencia simultánea de dos o más eventos.
+
+
+
+
+## Elementos de la probabilidad conjunta {background-color="#e2e8f0"}
+
+* **Eventos** | Dos o más eventos definidos sobre el mismo espacio muestral.
+
+* **Intersección** | Resultados que cumplen todas las condiciones a la vez.
+
+* **Cotas** | $P(A\cap B)\le\min\{P(A),P(B)\}$ y vale 0 si los eventos son excluyentes.
+
+* **Independencia** | Solo si $A$ y $B$ son independientes, $P(A\cap B)=P(A)P(B)$.
+
+
+
+
+## Cuantificación de la probabilidad conjunta {background-color="#e2e8f0"}
+
+La probabilidad conjunta mide la posibilidad de que dos eventos ocurran simultáneamente.
+
+$$
+P(A\cap B)
+$$
+
+donde $A\cap B$ representa la ocurrencia de $A$ y $B$ al mismo tiempo.
+
+
+
+
+## Aplicaciones de la probabilidad conjunta {background-color="#e2e8f0"}
+
+* **Combinación de cargas** | Se calcula la probabilidad de que la carga viva máxima y un viento extremo coincidan sobre una estructura.
+
+* **Sistemas redundantes** | Una estación de bombeo con dos bombas en paralelo solo colapsa si fallan ambas a la vez y se calcula $P(A\cap B)$.
+
+* **Inundación costera** | Se calcula la probabilidad de que una crecida del río coincida con marea alta en la desembocadura.
+
+* **Pavimentos** | Se estima la probabilidad de que un tramo tenga a la vez tráfico pesado y fisuración, para priorizar mantenimiento.
+
+* **Control de calidad del concreto** | Se estima la probabilidad de que una mezcla presente simultáneamente resistencia baja y asentamiento fuera de especificación.
+
+
+
+
+## Caso de estudio [(excavación y lluvias intensas)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+En la excavación de un sótano bajo el nivel freático se registraron 120 semanas de obra. En cada una se anotó si hubo lluvia intensa y si la excavación sufrió una inundación.
+
+|                    | Con inundación | Sin inundación |
+| ------------------ | -------------: | -------------: |
+| **Lluvia intensa** |              9 |             15 |
+| **Sin lluvia**     |              3 |             93 |
+
+a) ¿Cuál es la probabilidad de que en una semana escogida al azar haya lluvia intensa e inundación?
+
+b) ¿Cuál es la probabilidad de que haya inundación sin lluvia intensa?
+
+c) ¿Cuánto suman las cuatro probabilidades conjuntas de la tabla? ¿Por qué?
+
+
+
+
+# Probabilidad marginal {background-color="#2d3748"}
+
+Describe la ocurrencia de un evento sin considerar el resultado de otro evento.
+
+
+
+
+## Elementos de la probabilidad marginal {background-color="#e2e8f0"}
+
+* **Probabilidades conjuntas** | Punto de partida: las probabilidades de todas las combinaciones del evento de interés con los resultados del otro.
+
+* **Partición** | El otro evento debe dividir el espacio muestral en casos excluyentes y exhaustivos, como $B$ y $B^c$. Si se solapan se cuenta dos veces y si falta alguno se subestima.
+
+* **Suma** | Se suman las conjuntas sobre todos los casos de la partición: $P(A)=\sum_i P(A\cap B_i)$.
+
+* **Limitación** | Los márgenes no determinan la conjunta. Dos tablas con las mismas marginales pueden tener asociaciones muy distintas entre los eventos.
+
+
+
+
+## Cuantificación de la probabilidad marginal {background-color="#e2e8f0"}
+
+Se obtiene sumando las probabilidades conjuntas asociadas al evento de interés.
+
+$$
+P(A)=P(A\cap B)+P(A\cap B^c)
+$$
+
+donde $B^c$ representa el complemento de $B$.
+
+
+
+
+## Aplicaciones de la probabilidad marginal {background-color="#e2e8f0"}
+
+* **Control de calidad del concreto** | Con los resultados de varias plantas se estima la probabilidad de que una probeta no cumpla al tomar todas las plantas en conjunto.
+
+* **Seguridad vial** | Una tabla de accidentes por tipo de vehículo y estado del pavimento da la proporción de accidentes de cada tipo de vehículo al sumar sobre todos los estados de la vía.
+
+* **Inspección de estructuras** | Con los registros de fisuración por tipo de elemento se estima la probabilidad de encontrar fisuras en un elemento escogido al azar.
+
+* **Geotecnia** | Con sondeos de distintas zonas se estima la probabilidad de hallar nivel freático a menos de 3 m en un punto cualquiera del proyecto, aunque el suelo cambie de una zona a otra.
+
+* **Mantenimiento de equipos** | Con los registros por turno se estima la probabilidad de falla de una máquina en un momento cualquiera de la operación.
+
+
+
+
+## Caso de estudio [(inspección de elementos estructurales)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Se inspeccionan 100 elementos estructurales de una edificación. Para cada uno se registra si presenta fisuras y si cumple con la especificación. Los resultados son:
+
+|                 | Cumple | No cumple |
+| --------------- | -----: | --------: |
+| **Con fisuras** |      8 |         2 |
+| **Sin fisuras** |     85 |         5 |
+
+a) ¿Cuál es la probabilidad de que un elemento escogido al azar presente fisuras y cumpla con la especificación?
+
+b) ¿Cuál es la probabilidad de que un elemento escogido al azar presente fisuras, sin considerar si cumple?
+
+
+
+
+# Probabilidad condicional {background-color="#2d3748"}
+
+Describe la ocurrencia de un evento cuando ya se sabe que otro ocurrió.
+
+
+
+
+## Elementos de la probabilidad condicional {background-color="#e2e8f0"}
+
+* **Evento condicionante** | Información que se sabe cierta: $B$ en $P(A\mid B)$. Debe cumplir $P(B)>0$.
+
+* **Espacio muestral reducido** | Al conocer $B$ solo quedan posibles los resultados de $B$. El espacio pasa de $\Omega$ a $B$.
+
+* **Normalización** | Se divide $P(A\cap B)$ entre $P(B)$ para que $B$ tenga probabilidad 1 dentro del nuevo espacio.
+
+* **Asimetría** | En general $P(A\mid B)\neq P(B\mid A)$. Ambas comparten el numerador $P(A\cap B)$ pero tienen denominadores distintos.
+
+* **Independencia** | $A$ y $B$ son independientes si $P(A\mid B)=P(A)$. Conocer $B$ no cambia la probabilidad de $A$.
+
+
+
+
+## Cuantificación de la probabilidad condicional {background-color="#e2e8f0"}
+
+Se obtiene dividiendo la probabilidad conjunta entre la probabilidad marginal del evento que se conoce.
+
+$$
+P(A\mid B)=\frac{P(A\cap B)}{P(B)},\qquad P(B)>0
+$$
+
+La expresión se lee "probabilidad de $A$ dado $B$".
+
+
+
+
+## Aplicaciones de la probabilidad condicional {background-color="#e2e8f0"}
+
+* **Hidrología de obra** | Se estima la probabilidad de que una excavación bajo el nivel freático se inunde dado que hubo lluvia intensa esa semana.
+
+* **Concreto** | Se estima la probabilidad de que una probeta cumpla la resistencia a 28 días dado que alcanzó un valor alto a los 7 días.
+
+* **Confiabilidad** | Se calcula la probabilidad de que un rodamiento dure otras 1 000 horas dado que ya funcionó 5 000 sin fallar.
+
+* **Seguridad vial** | Se estima la probabilidad de que un accidente sea grave dado que el pavimento estaba mojado.
+
+* **Ensayos no destructivos** | Se calcula la probabilidad de que una soldadura sea defectuosa dado que el ensayo ultrasónico la marcó como sospechosa.
+
+
+
+
+## Caso de estudio [(fisuras y cumplimiento de la especificación)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando la inspección de 100 elementos estructurales, donde se registró si cada elemento presenta fisuras y si cumple con la especificación:
+
+|                 | Cumple | No cumple |
+| --------------- | -----: | --------: |
+| **Con fisuras** |      8 |         2 |
+| **Sin fisuras** |     85 |         5 |
+
+a) Si se sabe que un elemento presenta fisuras, ¿cuál es la probabilidad de que cumpla con la especificación?
+
+b) Si se sabe que un elemento no presenta fisuras, ¿cuál es la probabilidad de que cumpla?
+
+c) Compare ambos resultados con la probabilidad de que un elemento cumpla sin conocer su estado de fisuración. ¿Son independientes las fisuras y el cumplimiento?
+
+
+
+
+# Probabilidad total {background-color="#2d3748"}
+
+Determina la probabilidad de un evento considerando los diferentes escenarios en los que puede ocurrir.
+
+
+
+
+## Elementos de la probabilidad total {background-color="#e2e8f0"}
+
+* **Partición** | Escenarios $A_1,\ldots,A_n$ mutuamente excluyentes y exhaustivos. Cada resultado de $\Omega$ pertenece a uno solo.
+
+* **Probabilidad de cada escenario** | $P(A_i)$ indica qué tan frecuente es cada escenario. Deben sumar 1.
+
+* **Probabilidad condicional del evento** | $P(B\mid A_i)$ indica qué tan probable es $B$ dentro de cada escenario.
+
+* **Ponderación** | $P(B)$ es el promedio de las condicionales pesado por la frecuencia de cada escenario.
+
+* **Limitación** | Si falta un escenario o las $P(A_i)$ no suman 1 el resultado queda sesgado.
+
+
+
+
+## Cuantificación de la probabilidad total {background-color="#e2e8f0"}
+
+Dada una partición $A_1,A_2,\ldots,A_n$ del espacio muestral, la probabilidad de un evento $B$ se obtiene sumando sus probabilidades conjuntas con cada escenario:
+
+$$
+P(B)=\sum_{i=1}^{n}P(B\cap A_i)=\sum_{i=1}^{n}P(B\mid A_i)P(A_i)
+$$
+
+
+
+
+## Aplicaciones de la probabilidad total {background-color="#e2e8f0"}
+
+* **Estabilidad de taludes** | Se combina la probabilidad de deslizamiento en cada condición de lluvia (seca, moderada o intensa) con la frecuencia de cada condición.
+
+* **Peligro sísmico** | Se pondera la probabilidad de daño dado cada nivel de sismo por la probabilidad de que ocurra ese nivel.
+
+* **Soldadura en obra** | Se combina la tasa de defectos de cada soldador con la proporción de juntas que ejecuta cada uno.
+
+* **Equipos de bombeo** | Se combina la probabilidad de falla de equipos nuevos y usados con la proporción de cada tipo en la flota.
+
+* **Suministro de materiales** | Se combina la tasa de incumplimiento de cada planta o proveedor con su participación en el volumen total.
+
+
+
+
+## Caso de estudio [(barras de acero de tres proveedores)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Una constructora recibe barras de acero corrugado de tres proveedores. Cada proveedor aporta una parte del suministro total y tiene una proporción de barras que no superan el ensayo de tracción:
+
+| Proveedor | Participación | No supera el ensayo |
+| --------- | ------------: | ------------------: |
+| $A_1$     |          40 % |                 2 % |
+| $A_2$     |          35 % |                 3 % |
+| $A_3$     |          25 % |                 5 % |
+
+a) ¿Cuál es la probabilidad de que una barra escogida al azar del suministro total no supere el ensayo?
+
+b) ¿Cuánto aporta cada proveedor a esa probabilidad?
+
+
+
+
+# Probabilidad bayesiana {background-color="#2d3748"}
+
+Actualiza la estimación de un evento mediante información previa y nueva evidencia.
+
+
+
+
+## Elementos de la probabilidad bayesiana {background-color="#e2e8f0"}
+
+* **Probabilidad previa** | $P(A)$ es lo que se cree sobre $A$ antes de ver la evidencia, a partir de datos históricos o de juicio experto.
+
+* **Verosimilitud** | $P(B\mid A)$ indica qué tan probable es observar la evidencia $B$ si $A$ es cierto.
+
+* **Evidencia** | $P(B)$ es la probabilidad de observar $B$ en general. Se calcula con la probabilidad total y normaliza el resultado.
+
+* **Probabilidad posterior** | $P(A\mid B)$ es la previa actualizada con la evidencia. Puede usarse como previa ante una nueva observación.
+
+* **Limitación** | La posterior depende de la previa. Si la evidencia es débil una previa mal elegida domina el resultado.
+
+
+
+
+## Cuantificación de la probabilidad bayesiana {background-color="#e2e8f0"}
+
+La probabilidad conjunta puede escribirse de dos maneras con la definición de condicional:
+
+$$
+P(A\cap B)=P(A\mid B)\,P(B)=P(B\mid A)\,P(A)
+$$
+
+Al dividir entre $P(B)>0$ se obtiene el teorema:
+
+$$
+\underbrace{P(A\mid B)}_{\text{posterior}}
+=
+\frac{\underbrace{P(B\mid A)}_{\text{verosimilitud}}\;\underbrace{P(A)}_{\text{previa}}}
+{\underbrace{P(B)}_{\text{evidencia}}}
+$$
+
+Si $P(B\mid A)>P(B)$ la evidencia favorece a $A$ y la posterior supera a la previa.
+
+
+
+
+## Teorema de Bayes con varios escenarios {background-color="#e2e8f0"}
+
+La evidencia $P(B)$ rara vez se conoce de forma directa. Se calcula con la probabilidad total sobre una partición $A_1,\ldots,A_n$:
+
+$$
+P(A_i\mid B)
+=
+\frac{P(B\mid A_i)P(A_i)}
+{\displaystyle\sum_{j=1}^{n}P(B\mid A_j)P(A_j)}
+$$
+
+1. Multiplicar $P(B\mid A_j)P(A_j)$ para cada escenario.
+2. Sumar los productos para obtener $P(B)$.
+3. Dividir cada producto entre esa suma.
+
+Las probabilidades posteriores deben sumar 1. La condicional aporta el numerador y la probabilidad total aporta el denominador.
+
+
+
+
+## Aplicaciones de la probabilidad bayesiana {background-color="#e2e8f0"}
+
+* **Ensayos no destructivos** | Probabilidad de que una soldadura tenga defecto dado que el ultrasonido la marcó como sospechosa.
+
+* **Evaluación de estructuras existentes** | Se actualiza la resistencia estimada del concreto con los núcleos extraídos, partiendo de datos de obras similares como previa.
+
+* **Monitoreo de salud estructural** | Probabilidad de daño en un puente dado un cambio en sus frecuencias de vibración.
+
+* **Geotecnia** | Se actualiza un parámetro del suelo, como la resistencia al corte, con nuevos sondeos y valores de la literatura como previa.
+
+* **Mantenimiento predictivo** | Probabilidad de que un equipo esté degradado dado que su vibración supera un umbral.
+
+
+
+
+## Caso de estudio [(origen de las barras que no superan el ensayo)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando el suministro de barras de acero corrugado de tres proveedores, cada uno con su participación y su proporción de barras que no superan el ensayo de tracción:
+
+| Proveedor | Participación | No supera el ensayo |
+| --------- | ------------: | ------------------: |
+| $A_1$     |          40 % |                 2 % |
+| $A_2$     |          35 % |                 3 % |
+| $A_3$     |          25 % |                 5 % |
+
+Se escoge al azar una barra y se comprueba que no superó el ensayo.
+
+a) ¿Cuál es la probabilidad de que provenga de cada proveedor?
+
+b) ¿Qué proveedor es el más probable? Compare su participación en el suministro con su participación entre las barras que fallan.
+
+
+
+
+## Caso de estudio [(ultrasonido en soldaduras)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+En una estructura metálica, el 8 % de las soldaduras presenta un defecto interno. Para detectarlo se aplica un ensayo de ultrasonido que marca una soldadura como sospechosa cuando detecta indicios de defecto. Se sabe que:
+
+* El ensayo marca como sospechosas el 95 % de las soldaduras con defecto.
+* El ensayo marca como sospechosas el 10 % de las soldaduras sin defecto.
+
+Si el ensayo marca una soldadura como sospechosa:
+
+a) ¿Cuál es la probabilidad de que realmente tenga un defecto?
+
+b) ¿Qué proporción de todas las soldaduras inspeccionadas resulta marcada como sospechosa?
