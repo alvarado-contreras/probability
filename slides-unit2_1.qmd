@@ -50,15 +50,17 @@ format:
 
 
 
-## Contenido de la sesión {background-color="#e4e4e7" style="font-size: 1.0em;"}
+## Probabilidad y muestreo {background-color="#e4e4e7" style="font-size: 1.0em;"}
 
-- **1.** Clases de experimentos
-- **2.** Teoría de la probabilidad: espacio muestral
-- **3.** Repaso de teoría de conjuntos
-- **4.** Evento y álgebra de eventos
-- **5.** $\sigma$-álgebra
-- **6.** Probabilidad: concepto, axiomas y ley de los grandes números
-- **7.** Probabilidad clásica y geométrica
+**1.** Clases de experimentos
+
+**2.** Teoría de la probabilidad: espacio muestral
+
+**3.** Repaso de teoría de conjuntos
+
+**4.** Evento y álgebra de eventos
+
+**5.** $\sigma$-álgebra
 
 
 
@@ -103,8 +105,21 @@ La frontera entre ambos no es filosófica, es de modelado. Se trata un fenómeno
 - **Azar intrínseco (indeterminismo real)** | Ocurre cuando, según la mejor teoría física actual, ni siquiera en principio es posible predecir el resultado.
 - **Azar epistémico (falta de información)** | Ocurre cuando el sistema es tan complejo y sensible que no podemos medir todas sus variables, aunque en principio sean deterministas.
 
-::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 15px;"}
-Casi todo el azar que se modela en ingeniería es epistémico, no es que el universo sea impredecible, es que no tenemos ni tendremos acceso práctico a todas las variables.
+
+
+
+::: {background-image="image_files/universe.jpg" background-size="cover"}
+
+# 
+
+[Foto por <a href="https://unsplash.com/@grakozy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Greg Rakozy</a> on <a href="https://unsplash.com/photos/silhouette-photography-of-person-oMpAz-DN-9I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 90%;"}
+**Casi todo el azar que se modela en ingeniería es epistémico, no es que el universo sea impredecible, es que no tenemos ni tendremos acceso práctico a todas las variables**
+:::
+:::
+
 :::
 
 

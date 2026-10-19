@@ -49,16 +49,23 @@ format:
 
 
 
-## Contenido de la sesión {background-color="#e4e4e7" style="font-size: 1.0em;"}
+## Probabilidad y muestreo {background-color="#e4e4e7" style="font-size: 1.0em;"}
 
-- **1.** Experimentos aleatorios, espacio muestral y eventos
-- **2.** Axiomas de probabilidad
-- **3.** Interpretaciones y técnicas de cálculo
-- **4.** Probabilidad clásica y geométrica
-- **5.** Probabilidad frecuencial
-- **6.** Probabilidad modelada y simulada
-- **7.** Probabilidad conjunta, marginal, condicional y total
-- **8.** Probabilidad bayesiana
+**1.** Experimentos aleatorios, espacio muestral y eventos
+
+**2.** Axiomas de probabilidad
+
+**3.** Interpretaciones y técnicas de cálculo
+
+**4.** Probabilidad clásica y geométrica
+
+**5.** Probabilidad frecuencial
+
+**6.** Probabilidad modelada y simulada
+
+**7.** Probabilidad conjunta, marginal, condicional y total
+
+**8.** Probabilidad bayesiana
 
 
 
@@ -103,16 +110,35 @@ Cualquier forma de asignar probabilidades debe cumplir:
 
 ## Interpretaciones y técnicas de cálculo {background-color="#e2e8f0"}
 
-**Interpretaciones** | Qué significa una probabilidad
+<p style="margin-bottom: 0.2em;"><strong>Interpretaciones</strong> | Qué significa una probabilidad</p>
+<div style="padding-left: 1.5em; margin-bottom: 1em;">
+- **Clásica** | Proporción de casos favorables entre casos posibles, todos igualmente probables. Su extensión a espacios continuos es la geométrica.
+- **Frecuencial** | Proporción de veces que ocurre el evento en ensayos repetidos.
+- **Bayesiana** | Grado de creencia, actualizado con nueva evidencia.
+</div>
 
-* **Clásica** | Proporción de casos favorables entre casos posibles, todos igualmente probables. Su extensión a espacios continuos es la geométrica.
-* **Frecuencial** | Proporción de veces que ocurre el evento en ensayos repetidos.
-* **Bayesiana** | Grado de creencia, actualizado con nueva evidencia.
+<p style="margin-bottom: 0.2em;"><strong>Técnicas de cálculo</strong> | Cómo se obtiene el número</p>
+<div style="padding-left: 1.5em;">
+- **Modelada** | Asigna probabilidades mediante distribuciones.
+- **Simulada** | Estima probabilidades reproduciendo el experimento en computador.
+</div>
 
-**Técnicas de cálculo** | Cómo se obtiene el número
 
-* **Modelada** | Asigna probabilidades mediante distribuciones.
-* **Simulada** | Estima probabilidades reproduciendo el experimento en computador.
+
+
+::: {background-image="image_files/fallingdices.jpg" background-size="cover"}
+
+# 
+
+[Foto por <a href="https://unsplash.com/@jogaway?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Greenaway</a> on <a href="https://unsplash.com/photos/a-group-of-dices-flying-in-the-air-TNUEQ73frkA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 90%;"}
+**Incluso cuando las leyes físicas son completamente deterministas, la incertidumbre matemática se impone a través del caos.**
+:::
+:::
+
+:::
 
 
 
@@ -315,6 +341,39 @@ Estima la ocurrencia de eventos mediante la reproducción computacional de exper
 * **Estimación** | Proporción de realizaciones en las que ocurre el evento.
 
 * **Limitación** | El resultado es aproximado y depende del modelo programado.
+
+
+
+
+## Independencia e Independencia condicional {background-color="#e2e8f0" style="font-size: 1.0em;"}
+
+::: {.columns}
+
+::: {.column style="width: 50%; font-size: 0.85em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Independencia
+
+Propiedad entre dos eventos sin condicionamiento previo.
+
+- **Definición:** Dos eventos $A$ y $B$ son independientes si:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A \cap B) = P(A)P(B)$$</div>
+- **Condición equivalente:** Si $P(B) > 0$:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A \mid B) = P(A)$$</div>
+- **Propiedad de complementos:** La independencia entre $A$ y $B$ implica la de $A$ y $B^c$, $A^c$ y $B$, y $A^c$ y $B^c$.
+:::
+
+::: {.column style="width: 50%; font-size: 0.85em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Independencia condicional
+
+Propiedad entre dos eventos dado un tercer evento $C$.
+
+- **Definición:** $A$ y $B$ son condicionalmente independientes dado $C$ con $P(C) > 0$ si:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A \cap B \mid C) = P(A \mid C)P(B \mid C)$$</div>
+- **Condición equivalente:** Si $P(B \cap C) > 0$:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A \mid B \cap C) = P(A \mid C)$$</div>
+- **Resultado:** La independencia no implica independencia condicional y viceversa.
+:::
+
+:::
 
 
 

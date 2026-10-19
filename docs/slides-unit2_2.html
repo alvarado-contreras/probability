@@ -163,18 +163,16 @@ Octubre 2026
 <li><strong>Unidad 5:</strong> Análisis de regresión y correlación</li>
 </ul>
 </section>
-<section id="contenido-de-la-sesión" class="slide level2 center" data-background-color="#e4e4e7" style="font-size: 1.0em;">
-<h2>Contenido de la sesión</h2>
-<ul>
-<li><strong>1.</strong> Experimentos aleatorios, espacio muestral y eventos</li>
-<li><strong>2.</strong> Axiomas de probabilidad</li>
-<li><strong>3.</strong> Interpretaciones y técnicas de cálculo</li>
-<li><strong>4.</strong> Probabilidad clásica y geométrica</li>
-<li><strong>5.</strong> Probabilidad frecuencial</li>
-<li><strong>6.</strong> Probabilidad modelada y simulada</li>
-<li><strong>7.</strong> Probabilidad conjunta, marginal, condicional y total</li>
-<li><strong>8.</strong> Probabilidad bayesiana</li>
-</ul>
+<section id="probabilidad-y-muestreo" class="slide level2 center" data-background-color="#e4e4e7" style="font-size: 1.0em;">
+<h2>Probabilidad y muestreo</h2>
+<p><strong>1.</strong> Experimentos aleatorios, espacio muestral y eventos</p>
+<p><strong>2.</strong> Axiomas de probabilidad</p>
+<p><strong>3.</strong> Interpretaciones y técnicas de cálculo</p>
+<p><strong>4.</strong> Probabilidad clásica y geométrica</p>
+<p><strong>5.</strong> Probabilidad frecuencial</p>
+<p><strong>6.</strong> Probabilidad modelada y simulada</p>
+<p><strong>7.</strong> Probabilidad conjunta, marginal, condicional y total</p>
+<p><strong>8.</strong> Probabilidad bayesiana</p>
 </section></section>
 <section>
 <section id="espacio-muestral-y-eventos" class="title-slide slide level1 center" data-background-color="#2d3748">
@@ -203,18 +201,36 @@ Octubre 2026
 </section>
 <section id="interpretaciones-y-técnicas-de-cálculo" class="slide level2 center" data-background-color="#e2e8f0">
 <h2>Interpretaciones y técnicas de cálculo</h2>
-<p><strong>Interpretaciones</strong> | Qué significa una probabilidad</p>
+<p style="margin-bottom: 0.2em;">
+<strong>Interpretaciones</strong> | Qué significa una probabilidad
+</p>
+<div style="padding-left: 1.5em; margin-bottom: 1em;">
 <ul>
 <li><strong>Clásica</strong> | Proporción de casos favorables entre casos posibles, todos igualmente probables. Su extensión a espacios continuos es la geométrica.</li>
 <li><strong>Frecuencial</strong> | Proporción de veces que ocurre el evento en ensayos repetidos.</li>
 <li><strong>Bayesiana</strong> | Grado de creencia, actualizado con nueva evidencia.</li>
 </ul>
-<p><strong>Técnicas de cálculo</strong> | Cómo se obtiene el número</p>
+</div>
+<p style="margin-bottom: 0.2em;">
+<strong>Técnicas de cálculo</strong> | Cómo se obtiene el número
+</p>
+<div style="padding-left: 1.5em;">
 <ul>
 <li><strong>Modelada</strong> | Asigna probabilidades mediante distribuciones.</li>
 <li><strong>Simulada</strong> | Estima probabilidades reproduciendo el experimento en computador.</li>
 </ul>
+</div>
 </section></section>
+<section id="section" class="title-slide slide level1 center" data-background-image="image_files/fallingdices.jpg" data-background-size="cover">
+<h1></h1>
+<p><span class="footer">Foto por <a href="https://unsplash.com/@jogaway?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Greenaway</a> on <a href="https://unsplash.com/photos/a-group-of-dices-flying-in-the-air-TNUEQ73frkA?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+<div style="text-align: center; margin-top: 5%;">
+<div style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 90%;">
+<p><strong>Incluso cuando las leyes físicas son completamente deterministas, la incertidumbre matemática se impone a través del caos.</strong></p>
+</div>
+</div>
+</section>
+
 <section>
 <section id="probabilidad-clásica" class="title-slide slide level1 center" data-background-color="#2d3748">
 <h1>Probabilidad clásica</h1>
@@ -347,6 +363,39 @@ Octubre 2026
 <li><p><strong>Estimación</strong> | Proporción de realizaciones en las que ocurre el evento.</p></li>
 <li><p><strong>Limitación</strong> | El resultado es aproximado y depende del modelo programado.</p></li>
 </ul>
+</section>
+<section id="independencia-e-independencia-condicional" class="slide level2 center" data-background-color="#e2e8f0" style="font-size: 1.0em;">
+<h2>Independencia e Independencia condicional</h2>
+<div class="columns">
+<div class="column" style="width: 50%; font-size: 0.85em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';">
+<h3 id="independencia">Independencia</h3>
+<p>Propiedad entre dos eventos sin condicionamiento previo.</p>
+<ul>
+<li><strong>Definición:</strong> Dos eventos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son independientes si:
+<div style="font-size: 1.0em; text-align: center;">
+<span class="math display">\[P(A \cap B) = P(A)P(B)\]</span>
+</div></li>
+<li><strong>Condición equivalente:</strong> Si <span class="math inline">\(P(B) &gt; 0\)</span>:
+<div style="font-size: 1.0em; text-align: center;">
+<span class="math display">\[P(A \mid B) = P(A)\]</span>
+</div></li>
+<li><strong>Propiedad de complementos:</strong> La independencia entre <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> implica la de <span class="math inline">\(A\)</span> y <span class="math inline">\(B^c\)</span>, <span class="math inline">\(A^c\)</span> y <span class="math inline">\(B\)</span>, y <span class="math inline">\(A^c\)</span> y <span class="math inline">\(B^c\)</span>.</li>
+</ul>
+</div><div class="column" style="width: 50%; font-size: 0.85em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';">
+<h3 id="independencia-condicional">Independencia condicional</h3>
+<p>Propiedad entre dos eventos dado un tercer evento <span class="math inline">\(C\)</span>.</p>
+<ul>
+<li><strong>Definición:</strong> <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> son condicionalmente independientes dado <span class="math inline">\(C\)</span> con <span class="math inline">\(P(C) &gt; 0\)</span> si:
+<div style="font-size: 1.0em; text-align: center;">
+<span class="math display">\[P(A \cap B \mid C) = P(A \mid C)P(B \mid C)\]</span>
+</div></li>
+<li><strong>Condición equivalente:</strong> Si <span class="math inline">\(P(B \cap C) &gt; 0\)</span>:
+<div style="font-size: 1.0em; text-align: center;">
+<span class="math display">\[P(A \mid B \cap C) = P(A \mid C)\]</span>
+</div></li>
+<li><strong>Resultado:</strong> La independencia no implica independencia condicional y viceversa.</li>
+</ul>
+</div></div>
 </section></section>
 <section>
 <section id="probabilidad-conjunta" class="title-slide slide level1 center" data-background-color="#2d3748">
