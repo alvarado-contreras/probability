@@ -312,7 +312,7 @@ Los escenarios contados con las técnicas de conteo, ahora con resultados elegid
 
 ## Caso de estudio [(códigos de alarma en un puente)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
 
-Retomando el sistema de monitoreo del puente, ahora el código de alarma de 3 dígitos se genera al azar.
+El sistema de monitoreo de un puente usa códigos de alarma de 3 dígitos (del 0 al 9), con repetición permitida. El código se genera al azar.
 
 a) ¿Cuál es la probabilidad de que el código se lea igual de izquierda a derecha que de derecha a izquierda?
 
@@ -323,7 +323,7 @@ b) ¿Cuál es la probabilidad de que el código contenga al menos un 0?
 
 ## Caso de estudio [(programación de vaciados)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
 
-Retomando las cinco losas del edificio, ahora el orden de vaciado se sortea.
+Cinco losas distintas de un edificio se vaciarán una tras otra. Dos de ellas, $L_1$ y $L_2$, requieren la misma bomba de concreto. El orden de vaciado se sortea.
 
 a) ¿Cuál es la probabilidad de que $L_1$ se vacíe antes que $L_2$?
 
@@ -334,7 +334,7 @@ b) ¿Cuál es la probabilidad de que $L_1$ y $L_2$ se vacíen de forma consecuti
 
 ## Caso de estudio [(postes de una cerca)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
 
-Retomando la cerca de 8 postes (5 de concreto y 3 de madera), ahora la ubicación de los postes se sortea.
+Una cerca perimetral lleva 8 postes en línea: 5 de concreto ($C$) y 3 de madera ($M$). La ubicación de los postes se sortea.
 
 a) ¿Cuál es la probabilidad de que el primer poste sea de madera?
 
@@ -345,7 +345,7 @@ b) ¿Cuál es la probabilidad de que no haya dos postes de madera contiguos?
 
 ## Caso de estudio [(inspección de soldaduras)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
 
-Retomando el nudo de 25 soldaduras (4 con porosidad), ahora el inspector escoge al azar las 5 que revisa.
+Un nudo de una estructura metálica tiene 25 soldaduras, de las cuales 4 presentan porosidad. El inspector escoge al azar 5 soldaduras para revisarlas.
 
 a) ¿Cuál es la probabilidad de que ninguna de las soldaduras revisadas presente porosidad?
 
@@ -356,7 +356,7 @@ b) ¿Cuál es la probabilidad de que exactamente una presente porosidad?
 
 ## Caso de estudio [(asignación de inspectores)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
 
-Retomando los dos inspectores y los 4 tramos, ahora cada inspector elige su tramo al azar y de forma independiente.
+Dos inspectores eligen cada uno uno de 4 tramos de una vía para inspeccionar. Cada inspector elige su tramo al azar y de forma independiente.
 
 a) Un estudiante afirma que la probabilidad de que ambos inspectores elijan el mismo tramo es $4/10$. ¿Tiene razón?
 
