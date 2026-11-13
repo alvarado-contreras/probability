@@ -1,0 +1,369 @@
+---
+title: "Probabilidad y Estadística"
+subtitle: "Conteo, probabilidad condicional y Bayes"
+pagetitle: "Conteo, probabilidad condicional y Bayes"
+author-meta: José A. Alvarado-Contreras
+affiliation-meta: Universidad de Los Andes - Venezuela
+author: José A. Alvarado-Contreras
+affiliation: Universidad Francisco de Paula Santander
+lang: es
+format:
+  revealjs:
+    theme: [slides-theme.scss]
+    slide-number: false
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+    auto-stretch: false
+---
+
+
+
+# Conteo y probabilidad condicional {style="margin-top: 45px; font-size: 1.2em;"}
+
+<h3 style="font-size: 1.0em;"> Espacio reducido, extracciones sucesivas, independencia y Bayes </h3>
+<hr>
+
+<h4 style="font-size: 0.6em; opacity: 0.6"> Noviembre 2026 </h4>
+
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+
+## Conteo, probabilidad condicional y Bayes {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+**1.** Probabilidad condicional por conteo
+
+**2.** Regla de la multiplicación
+
+**3.** Independencia por conteo
+
+**4.** Probabilidad total con muestreo
+
+**5.** Teorema de Bayes con muestreo
+
+
+
+
+# Probabilidad condicional por conteo {background-color="#2d3748"}
+
+Cuando los resultados son equiprobables, la probabilidad condicional se obtiene contando dentro del evento conocido.
+
+
+
+
+## Elementos de la condicional por conteo {background-color="#e2e8f0"}
+
+* **Evento conocido** | La información de que ocurrió $B$ reduce el espacio muestral de $\Omega$ a $B$.
+
+* **Equiprobabilidad conservada** | Los resultados de $B$ siguen siendo equiprobables entre sí, por eso basta contar.
+
+* **Conteo directo** | No hace falta calcular $P(B)$. Se cuentan los resultados de $B$ que también pertenecen a $A$.
+
+* **Asimetría** | $P(A\mid B)$ y $P(B\mid A)$ comparten el numerador $|A\cap B|$ pero cuentan en espacios distintos.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Solo es válido si los resultados de $\Omega$ son equiprobables. Si no lo son, se usa la definición con probabilidades.
+:::
+
+
+
+## Cuantificación de la condicional por conteo {background-color="#e2e8f0"}
+
+Si los resultados de $\Omega$ son equiprobables y $|B|>0$:
+
+$$ P(A\mid B)=\frac{P(A\cap B)}{P(B)}=\frac{|A\cap B|/|\Omega|}{|B|/|\Omega|}=\frac{|A\cap B|}{|B|} $$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+"El primero es defectuoso" y "al menos uno es defectuoso" son informaciones distintas: definen espacios reducidos distintos.
+:::
+
+
+
+
+## Caso de estudio [(sorteo de inspectores)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+De 6 inspectores, 2 tienen experiencia en puentes. Se sortean 2 inspectores para una visita. Se sabe que al menos uno de los sorteados tiene experiencia en puentes.
+
+a) ¿Cuál es la probabilidad de que ambos tengan experiencia en puentes?
+
+b) Compare con la probabilidad de ese evento sin la información adicional. ¿Por qué aumenta?
+
+
+
+
+# Regla de la multiplicación {background-color="#2d3748"}
+
+Calcula la probabilidad de eventos que ocurren en sucesión, multiplicando probabilidades condicionales.
+
+
+
+
+## Elementos de la regla de la multiplicación {background-color="#e2e8f0"}
+
+* **Sucesión** | El experimento se descompone en etapas: primera extracción, segunda extracción y así sucesivamente.
+
+* **Condicionales por etapa** | Cada factor es la probabilidad de la etapa dado lo ocurrido en las anteriores.
+
+* **Conteo de lo que queda** | Sin reemplazo, cada condicional se obtiene contando los elementos que quedan.
+
+* **Orden** | Si el evento depende de la posición, como "el primer defectuoso aparece en la tercera extracción", el conteo debe ser ordenado.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Con reemplazo los factores no cambian de una etapa a otra y la regla se reduce al producto de probabilidades.
+:::
+
+
+
+
+## Cuantificación de la regla de la multiplicación {background-color="#e2e8f0"}
+
+Se obtiene despejando la definición de probabilidad condicional:
+
+$$ P(A_1\cap A_2\cap\cdots\cap A_k)=P(A_1)\,P(A_2\mid A_1)\cdots P(A_k\mid A_1\cap\cdots\cap A_{k-1}) $$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+En una extracción sin reemplazo, la probabilidad de que el elemento en la posición $k$ tenga una característica es la misma para toda posición $k$.
+:::
+
+
+
+
+## Sin reemplazo y con reemplazo {background-color="#e2e8f0" style="font-size: 1.0em;"}
+
+::: {.columns}
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Sin reemplazo
+
+Cada elemento extraído sale de la población.
+
+- **Dos extracciones de interés:**
+  <div style="font-size: 1.0em; text-align: center;">$$\frac{K}{N}\cdot\frac{K-1}{N-1}=\frac{\binom{K}{2}}{\binom{N}{2}}$$</div>
+- **Dependencia:** La composición de la población cambia con cada extracción.
+:::
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Con reemplazo
+
+Cada elemento extraído se devuelve antes de la siguiente extracción.
+
+- **Dos extracciones de interés:**
+  <div style="font-size: 1.0em; text-align: center;">$$\frac{K}{N}\cdot\frac{K}{N}$$</div>
+- **Resultado:** Si la muestra es pequeña frente a $N$, ambos modelos dan valores casi iguales.
+:::
+
+:::
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Sin reemplazo, la regla de la multiplicación y el conteo con combinaciones dan el mismo valor. Comprobarlo es una forma de verificar el planteamiento.
+:::
+
+
+
+
+## Caso de estudio [(extracción de pernos)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+De una caja con 5 pernos, 2 de ellos defectuosos, se extraen 2 pernos al azar.
+
+a) Si la extracción es sin reemplazo, ¿cuál es la probabilidad de que ambos sean defectuosos? ¿Por qué no es 0.4 $\times$ 0.4?
+
+b) Verifique el resultado de (a) contando con combinaciones.
+
+c) ¿Cuál sería la probabilidad si cada perno se devolviera a la caja antes de la siguiente extracción?
+
+
+
+
+## Caso de estudio [(prueba de fusibles)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Una caja contiene 7 fusibles, 2 de ellos quemados. Un electricista los prueba uno por uno, en orden aleatorio, hasta encontrar los dos quemados.
+
+a) ¿Cuál es la probabilidad de encontrar los dos quemados en las dos primeras pruebas?
+
+b) ¿Cuál es la probabilidad de encontrar el segundo quemado exactamente en la tercera prueba?
+
+
+
+
+# Independencia por conteo {background-color="#2d3748"}
+
+Dos eventos son independientes si conocer uno no cambia la probabilidad del otro. Con resultados equiprobables, se comprueba contando.
+
+
+
+
+## Elementos de la independencia por conteo {background-color="#e2e8f0"}
+
+* **Verificación** | La independencia no se supone. Se comprueba con los conteos de $A$, $B$ y $A\cap B$.
+
+* **Mecanismo** | El mismo par de eventos puede ser independiente con reemplazo y dependiente sin reemplazo.
+
+* **Excluyentes** | Dos eventos excluyentes con probabilidad positiva nunca son independientes: si ocurre uno, el otro no puede ocurrir.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Que dos eventos no tengan relación física aparente no garantiza que sean independientes en el modelo.
+:::
+
+
+
+
+
+## Cuantificación de la independencia por conteo {background-color="#e2e8f0"}
+
+$A$ y $B$ son independientes si $P(A\cap B)=P(A)\,P(B)$. Con resultados equiprobables la condición equivale a:
+
+$$ |A\cap B|\cdot|\Omega|=|A|\cdot|B| $$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Sin reemplazo, $P(B)$ puede ser igual que con reemplazo y aun así $P(B\mid A)\neq P(B)$.
+:::
+
+
+
+
+## Caso de estudio [(losas de un edificio)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Un edificio tiene 12 losas. De ellas, 6 presentan fisuras, 4 presentan humedad y 2 presentan ambos problemas. Se escoge una losa al azar.
+
+a) ¿Son independientes los eventos "tiene fisuras" y "tiene humedad"?
+
+b) ¿Qué cambiaría si ninguna losa tuviera ambos problemas?
+
+
+
+
+# Probabilidad total con muestreo {background-color="#2d3748"}
+
+Cada escenario de la partición es una población de composición conocida y cada probabilidad condicional se obtiene contando.
+
+
+
+
+## Elementos de la probabilidad total con muestreo {background-color="#e2e8f0"}
+
+* **Escenarios** | Lotes, cajas o frentes con composición conocida. Forman una partición.
+
+* **Elección del escenario** | $P(A_i)$ describe cómo se elige el escenario. Los escenarios no tienen por qué ser equiprobables.
+
+* **Muestreo dentro del escenario** | Dado el escenario, la muestra es equiprobable y $P(B\mid A_i)$ se obtiene con las técnicas de conteo.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Juntar todos los escenarios en una sola población da un resultado distinto, porque ignora que la muestra sale de un único escenario.
+:::
+
+
+
+
+
+## Cuantificación de la probabilidad total con muestreo {background-color="#e2e8f0"}
+
+$$ P(B)=\sum_{i=1}^{n}P(B\mid A_i)\,P(A_i) $$
+
+Cuando el escenario $A_i$ es un lote de $N_i$ elementos con $K_i$ defectuosos y se toma una muestra de $n$:
+
+$$ P(\text{ningún defectuoso}\mid A_i)=\frac{\binom{N_i-K_i}{n}}{\binom{N_i}{n}} $$
+
+
+
+
+## Caso de estudio [(fugas en dos frentes)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Una empresa de acueducto tiene dos frentes de instalación. El frente 1 recibe el 70 % de las inspecciones y tiene 10 tuberías instaladas, 1 con fuga. El frente 2 recibe el 30 % y tiene 8 tuberías, 2 con fuga. En cada inspección se revisan 3 tuberías escogidas al azar en el frente visitado.
+
+a) ¿Cuál es la probabilidad de detectar al menos una fuga en una inspección?
+
+b) ¿Cuánto aporta cada frente a esa probabilidad?
+
+
+
+
+# Teorema de Bayes con muestreo {background-color="#2d3748"}
+
+Actualiza la probabilidad de cada escenario con la evidencia obtenida en una muestra.
+
+
+
+
+## Elementos de Bayes con muestreo {background-color="#e2e8f0"}
+
+* **Previa** | $P(A_i)$ la da el enunciado: un registro histórico o un supuesto por falta de información.
+
+* **Verosimilitud** | $P(B\mid A_i)$ se obtiene contando, como en la probabilidad total.
+
+* **Evidencia** | $P(B)$ es la probabilidad total del escenario anterior.
+
+* **Actualización sucesiva** | La posterior de una inspección sirve como previa de la siguiente. Actualizar paso a paso o de una vez da el mismo resultado.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Una muestra pequeña aporta poca evidencia y la posterior se aleja poco de la previa.
+:::
+
+
+
+
+
+## Cuantificación de Bayes con muestreo {background-color="#e2e8f0"}
+
+$$
+\underbrace{P(A_i\mid B)}_{\text{posterior}}
+=
+\frac{\overbrace{P(B\mid A_i)}^{\text{conteo}}\;\underbrace{P(A_i)}_{\text{previa}}}
+{\underbrace{\sum_{j}P(B\mid A_j)P(A_j)}_{\text{probabilidad total}}}
+$$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+La previa es la única pieza del teorema que no se obtiene contando, y de ella depende el resultado.
+:::
+
+
+
+
+## Tabla de Bayes {background-color="#e2e8f0"}
+
+| Escenario | Previa     | Verosimilitud    | Producto                  | Posterior                     |
+| :-------: | :--------: | :--------------: | :-----------------------: | :---------------------------: |
+| $A_1$     | $P(A_1)$   | $P(B\mid A_1)$   | $P(B\mid A_1)P(A_1)$      | $\dfrac{\text{producto}}{P(B)}$ |
+| $A_2$     | $P(A_2)$   | $P(B\mid A_2)$   | $P(B\mid A_2)P(A_2)$      | $\dfrac{\text{producto}}{P(B)}$ |
+| **Suma**  | $1$        |                  | $P(B)$                    | $1$                           |
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+La suma de la columna de productos es la probabilidad total. Si las posteriores no suman 1, hay un error de cálculo.
+:::
+
+
+
+
+## Caso de estudio [(origen de la fuga detectada)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando las inspecciones en los dos frentes de instalación del acueducto:
+
+| Frente | Participación en las inspecciones | Tuberías | Con fuga |
+| ------ | --------------------------------: | -------: | -------: |
+| 1      |                              70 % |       10 |        1 |
+| 2      |                              30 % |        8 |        2 |
+
+En una inspección se detectó al menos una fuga.
+
+a) ¿Cuál es la probabilidad de que la inspección se haya hecho en el frente 2?
+
+b) Compare con la participación del frente 2 en las inspecciones. ¿Por qué cambia tanto?

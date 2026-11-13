@@ -1,0 +1,363 @@
+---
+title: "Probabilidad y Estadística"
+subtitle: "Probabilidad clásica y técnicas de conteo"
+pagetitle: "Probabilidad clásica y técnicas de conteo"
+author-meta: José A. Alvarado-Contreras
+affiliation-meta: Universidad de Los Andes - Venezuela
+author: José A. Alvarado-Contreras
+affiliation: Universidad Francisco de Paula Santander
+lang: es
+format:
+  revealjs:
+    theme: [slides-theme.scss]
+    slide-number: true
+    controls: true
+    chalkboard: false
+    menu: false
+    progress: false
+    transition: slide
+    background-transition: fade
+    center-title-slide: true
+    center: true
+    code-overflow: wrap
+    highlight-style: github
+    fig-align: center
+    smaller: false
+    auto-stretch: false
+---
+
+
+
+# Probabilidad clásica {style="margin-top: 45px; font-size: 1.2em;"}
+
+<h3 style="font-size: 1.0em;"> Equiprobabilidad, conectores e inclusión-exclusión </h3>
+<hr>
+
+<h4 style="font-size: 0.6em; opacity: 0.6"> Noviembre 2026 </h4>
+
+
+
+
+## Unidades temáticas {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+- **Unidad 1:** Definiciones. Manejo de datos y medidas estadísticas
+- **Unidad 2:** Probabilidad y muestreo
+- **Unidad 3:** Variables aleatorias discretas y continuas y sus distribuciones
+- **Unidad 4:** Distribuciones muestrales. Introducción a los intervalos de confianza
+- **Unidad 5:** Análisis de regresión y correlación
+
+
+
+
+## Probabilidad clásica y técnicas de conteo {background-color="#e4e4e7" style="font-size: 1.0em;"}
+
+**1.** Equiprobabilidad y probabilidad clásica
+
+**2.** Los conectores "y" y "o"
+
+**3.** Inclusión-exclusión
+
+**4.** Equiprobabilidad en las técnicas de conteo
+
+**5.** Probabilidad con las técnicas de conteo
+
+
+
+
+# Equiprobabilidad {background-color="#2d3748"}
+
+La probabilidad clásica solo es válida si los resultados que se cuentan tienen la misma probabilidad de ocurrir.
+
+
+
+
+## Elementos de la equiprobabilidad {background-color="#e2e8f0"}
+
+* **Mecanismo aleatorio** | Lo que se elige al azar: un elemento, un orden, una muestra o una asignación.
+
+* **Resultados equiprobables** | Los elementos de $\Omega$ que ese mecanismo produce con igual probabilidad.
+
+* **Sorteo o supuesto** | La equiprobabilidad la garantiza un sorteo o la impone un modelo. En el segundo caso hay que verificar que el modelo se sostenga.
+
+* **Criterio común** | $|E|$ y $|\Omega|$ se cuentan con el mismo criterio, ambos ordenados o ambos sin orden.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Un conteo correcto sobre resultados que no son equiprobables produce una probabilidad equivocada.
+:::
+
+
+
+
+## Cuantificación de la probabilidad clásica {background-color="#e2e8f0"}
+
+Si los resultados de $\Omega$ son igualmente probables:
+
+$$ P(E)=\frac{|E|}{|\Omega|}, \qquad P(E)=1-P(E^c) $$
+
+1. Describir el experimento y su espacio muestral $\Omega$.
+2. Justificar por qué los resultados de $\Omega$ son equiprobables.
+3. Contar $|E|$ con el mismo criterio usado para $|\Omega|$.
+4. Calcular $P(E)$.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Para eventos del tipo "al menos uno" suele ser más sencillo contar el complemento, "ninguno".
+:::
+
+
+
+
+# Los conectores "y" y "o" {background-color="#2d3748"}
+
+El enunciado de un problema indica cómo se combinan los conteos y las probabilidades.
+
+
+
+
+## Conectores "y" y "o" {background-color="#e2e8f0" style="font-size: 1.0em;"}
+
+::: {.columns}
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Conector "y"
+
+Varias condiciones se cumplen a la vez o varias etapas se realizan una tras otra.
+
+- **En el conteo:** Se multiplican las opciones de cada etapa:
+  <div style="font-size: 1.0em; text-align: center;">$$N=n_1\times n_2$$</div>
+- **En la probabilidad:** Corresponde a la intersección:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A\cap B)$$</div>
+- **Precaución:** $P(A\cap B)=P(A)P(B)$ solo si $A$ y $B$ son independientes.
+:::
+
+::: {.column style="width: 50%; font-size: 0.9em; border: none; border-radius: 0px; padding: 1.25rem; transition: background-color 0.25s ease, transform 0.25s ease;" onmouseover="this.style.backgroundColor='#f7fafc'; this.style.transform='translateY(-3px)';" onmouseout="this.style.backgroundColor='transparent'; this.style.transform='translateY(0px)';"}
+### Conector "o"
+
+Se cumple una alternativa, la otra o ambas.
+
+- **En el conteo:** Se suman las opciones de cada alternativa:
+  <div style="font-size: 1.0em; text-align: center;">$$N=m+n$$</div>
+- **En la probabilidad:** Corresponde a la unión:
+  <div style="font-size: 1.0em; text-align: center;">$$P(A\cup B)$$</div>
+- **Precaución:** $P(A\cup B)=P(A)+P(B)$ solo si $A$ y $B$ son excluyentes.
+:::
+
+:::
+
+
+
+
+## Lectura de los conectores {background-color="#e2e8f0"}
+
+* **"O" inclusivo** | En probabilidad, "$A$ o $B$" incluye el caso en que ocurren ambos. Es la unión $A\cup B$.
+
+* **"O" exclusivo** | "Uno u otro, pero no ambos" se escribe $P(A\cup B)-P(A\cap B)$. El enunciado debe decirlo de forma explícita.
+
+* **"Al menos uno"** | Es un "o" entre muchos eventos.
+
+* **"Ninguno"** | Es un "y" entre complementos: no ocurre $A$ y no ocurre $B$.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Los conectores orientan el planteamiento, pero no lo resuelven.
+:::
+
+
+
+
+## Caso de estudio [(códigos de dos dígitos)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Un sistema genera al azar un código de 2 dígitos (del 0 al 9), con repetición permitida.
+
+a) ¿Cuál es la probabilidad de que el código empiece por 1 o termine en 1? ¿Por qué no es $0.1+0.1$?
+
+b) ¿Cuál es la probabilidad de que empiece por 1 y termine en 1? ¿Por qué aquí sí puede multiplicarse $0.1\times 0.1$?
+
+
+
+
+# Inclusión-exclusión {background-color="#2d3748"}
+
+Cuenta la unión de eventos que pueden ocurrir a la vez sin contar dos veces sus elementos comunes.
+
+
+
+
+## Elementos de la inclusión-exclusión {background-color="#e2e8f0"}
+
+* **Principio aditivo** | Si los eventos son disjuntos, el número de resultados de la unión es la suma de los de cada evento.
+
+* **Superposición** | Si los eventos comparten resultados, la suma cuenta dos veces la intersección.
+
+* **Corrección** | Se resta la intersección una vez. Con tres eventos se restan las intersecciones de a dos y se suma la triple.
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+El número de términos crece rápido con la cantidad de eventos.
+:::
+
+
+
+
+
+## Cuantificación de la inclusión-exclusión {background-color="#e2e8f0"}
+
+Para dos eventos:
+
+$$ P(A\cup B)=P(A)+P(B)-P(A\cap B) $$
+
+Para tres eventos:
+
+$$ P(A\cup B\cup C)=P(A)+P(B)+P(C)-P(A\cap B)-P(A\cap C)-P(B\cap C)+P(A\cap B\cap C) $$
+
+
+
+
+## Aplicaciones de la inclusión-exclusión {background-color="#e2e8f0"}
+
+* **Seguridad laboral** | Se calcula la proporción de trabajadores con al menos una de dos certificaciones exigidas.
+
+* **Inspección de prefabricados** | Se estima la probabilidad de que un elemento tenga al menos uno de varios defectos posibles.
+
+* **Gestión de proyectos** | Se calcula la proporción de proyectos con retraso o sobrecosto.
+
+* **Calidad del agua** | Se estima la probabilidad de que una muestra supere al menos uno de los límites normativos.
+
+* **Asignación de recursos** | Se calcula la probabilidad de que ningún frente quede sin equipos cuando estos se asignan al azar.
+
+
+
+
+## Caso de estudio [(calidad del agua de un río)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Se analizaron 60 muestras de agua de un río. De ellas, 15 superan el límite de coliformes, 10 superan el límite de turbiedad y 4 superan ambos. Se escoge una muestra al azar.
+
+a) ¿Cuál es la probabilidad de que la muestra supere al menos uno de los dos límites?
+
+b) ¿Cuál es la probabilidad de que supere exactamente uno?
+
+
+
+
+# Equiprobabilidad en las técnicas de conteo {background-color="#2d3748"}
+
+Cada técnica de conteo produce resultados equiprobables solo bajo un mecanismo aleatorio determinado.
+
+
+
+
+## Equiprobabilidad en las técnicas de conteo {background-color="#e2e8f0"}
+
+| Técnica                    | Los resultados son equiprobables si…                         |
+| -------------------------- | ------------------------------------------------------------ |
+| Principio multiplicativo   | cada etapa se elige al azar e independientemente              |
+| Permutaciones              | el orden se sortea                                            |
+| Permutaciones con repetición | el orden se sortea: cada patrón agrupa el mismo número de órdenes |
+| Combinaciones              | la muestra se extrae al azar: cada muestra agrupa $k!$ secuencias |
+| Combinaciones con repetición | solo si se sortea directamente una composición               |
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Las combinaciones con repetición son la excepción: cuentan bien las composiciones, pero casi nunca dan resultados equiprobables.
+:::
+
+
+
+
+## Elementos de las combinaciones con repetición en probabilidad {background-color="#e2e8f0"}
+
+* **Asignación individual** | Si $k$ objetos distinguibles se asignan uno por uno al azar, los resultados equiprobables son las $n^k$ asignaciones.
+
+* **Composiciones no equiprobables** | Una composición concentrada se obtiene de pocas maneras. Una repartida se obtiene de muchas.
+
+* **Uso legítimo** | Sirven como $|\Omega|$ solo si el mecanismo elige directamente una composición. También sirven para contar $|E|$, por ejemplo secuencias no decrecientes.
+
+* **Limitación** | Usarlas como $|\Omega|$ sin revisar el mecanismo es el error más frecuente del conteo aplicado a probabilidad.
+
+
+
+
+## Cuantificación de las combinaciones con repetición en probabilidad {background-color="#e2e8f0"}
+
+Si $k$ objetos se asignan uno por uno al azar entre $n$ categorías:
+
+$$ |\Omega|=n^k, \qquad P(\text{composición})=\frac{\text{asignaciones que producen la composición}}{n^k} $$
+
+::: {style="border-left: 2px solid #888; padding-left: 15px; line-height: 1.8; margin-top: 20px;"}
+Con 5 volquetas y 3 frentes hay 21 composiciones, pero $3^5=243$ asignaciones equiprobables. La composición $(5,0,0)$ se obtiene de 1 forma y la $(2,2,1)$ de 30.
+:::
+
+
+
+
+::: {background-image="image_files/abacus.jpg" background-size="cover"}
+
+#
+
+[Foto por <a href="https://unsplash.com/@crissyjarvis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Crissy Jarvis</a> on <a href="https://unsplash.com/photos/brown-abaca-gdL-UZfnD3I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>]{.footer}
+
+::: {style="text-align: center; margin-top: 5%;"}
+::: {style="display: inline-block; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 30px 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); font-size: 1.2em; color: #ffffff; max-width: 90%;"}
+**Contar bien no basta. Primero hay que saber qué fue lo que se eligió al azar.**
+:::
+:::
+
+:::
+
+
+
+
+# Probabilidad con las técnicas de conteo {background-color="#2d3748"}
+
+Los escenarios contados con las técnicas de conteo, ahora con resultados elegidos al azar.
+
+
+
+
+## Caso de estudio [(códigos de alarma en un puente)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando el sistema de monitoreo del puente, ahora el código de alarma de 3 dígitos se genera al azar.
+
+a) ¿Cuál es la probabilidad de que el código se lea igual de izquierda a derecha que de derecha a izquierda?
+
+b) ¿Cuál es la probabilidad de que el código contenga al menos un 0?
+
+
+
+
+## Caso de estudio [(programación de vaciados)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando las cinco losas del edificio, ahora el orden de vaciado se sortea.
+
+a) ¿Cuál es la probabilidad de que $L_1$ se vacíe antes que $L_2$?
+
+b) ¿Cuál es la probabilidad de que $L_1$ y $L_2$ se vacíen de forma consecutiva?
+
+
+
+
+## Caso de estudio [(postes de una cerca)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando la cerca de 8 postes (5 de concreto y 3 de madera), ahora la ubicación de los postes se sortea.
+
+a) ¿Cuál es la probabilidad de que el primer poste sea de madera?
+
+b) ¿Cuál es la probabilidad de que no haya dos postes de madera contiguos?
+
+
+
+
+## Caso de estudio [(inspección de soldaduras)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando el nudo de 25 soldaduras (4 con porosidad), ahora el inspector escoge al azar las 5 que revisa.
+
+a) ¿Cuál es la probabilidad de que ninguna de las soldaduras revisadas presente porosidad?
+
+b) ¿Cuál es la probabilidad de que exactamente una presente porosidad?
+
+
+
+
+## Caso de estudio [(asignación de inspectores)]{style="font-size: 65%;"} {background-color="#f2f2f2"}
+
+Retomando los dos inspectores y los 4 tramos, ahora cada inspector elige su tramo al azar y de forma independiente.
+
+a) Un estudiante afirma que la probabilidad de que ambos inspectores elijan el mismo tramo es $4/10$. ¿Tiene razón?
+
+b) Identifique el espacio muestral equiprobable y calcule la probabilidad correcta.
